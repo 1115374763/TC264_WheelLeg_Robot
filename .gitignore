@@ -1,0 +1,14 @@
+# 忽略编译输出文件夹
+Debug/
+Release/
+obj/
+*.o
+*.d
+*.elf
+*.hex
+*.bin
+
+# 忽略 IDE 自动生成的设置
+.settings/
+.project
+.cproject
