@@ -1,0 +1,7166 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
+	.compiler_invocation	"ctc -f cc14372a --dep-file=code/QuaternionEKF.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -IH:\\\\13333\\\\COMPETE DOUCMENT -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\code -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\code\\\\TLD7002_driver -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Configurations -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Infra -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Service -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\zf_common -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\zf_components -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\zf_device -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\zf_driver -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o code/QuaternionEKF.src ../code/QuaternionEKF.c"
+	.compiler_name		"ctc"
+	;source	'../code/QuaternionEKF.c'
+
+	
+$TC16X
+	
+	.sdecl	'.text.QuaternionEKF.IMU_QuaternionEKF_Init',code,cluster('IMU_QuaternionEKF_Init')
+	.sect	'.text.QuaternionEKF.IMU_QuaternionEKF_Init'
+	.align	2
+	
+	.global	IMU_QuaternionEKF_Init
+; Function IMU_QuaternionEKF_Init
+.L49:
+IMU_QuaternionEKF_Init:	.type	func
+	ld.w	d15,[a10]
+.L268:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L319:
+	mov	d0,#1
+.L320:
+	st.b	[a15],d0
+.L321:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L322:
+	st.w	[a15]428,d4
+.L323:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L324:
+	st.w	[a15]432,d5
+.L325:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L326:
+	st.w	[a15]436,d6
+.L327:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L328:
+	mov.u	d0,#52343
+	addih	d0,d0,#12843
+.L329:
+	st.w	[a15]456,d0
+.L330:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L331:
+	mov	d0,#0
+.L332:
+	st.b	[a15]312,d0
+.L333:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L334:
+	mov	e0,#0
+.L335:
+	st.d	[a15]316,e0
+.L336:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L337:
+	mov	e0,#0
+.L338:
+	st.d	[a15]324,e0
+.L339:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L340:
+	st.w	[a15]440,d15
+.L341:
+	movh	d15,#16256
+.L269:
+	cmp.f	d15,d7,d15
+	extr.u	d15,d15,#2,#1
+.L342:
+	jeq	d15,#0,.L2
+.L343:
+	movh	d7,#16256
+.L2:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L344:
+	st.w	[a15]460,d7
+.L345:
+	movh.a	a4,#@his(QEKF_INS)
+	lea	a4,[a4]@los(QEKF_INS)
+.L346:
+	add.a	a4,#4
+.L347:
+	mov	d4,#6
+.L266:
+	mov	d5,#0
+.L267:
+	mov	d6,#3
+.L265:
+	call	Kalman_Filter_Init
+.L264:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L348:
+	lea	a4,[a15]444
+.L349:
+	mov	d4,#1
+.L350:
+	mov	d5,#1
+.L351:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L352:
+	lea	a5,[a15]452
+	call	arm_mat_init_f32
+.L353:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L354:
+	ld.a	a15,[a15]236
+.L355:
+	movh	d15,#16256
+.L356:
+	st.w	[a15],d15
+.L357:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L358:
+	ld.a	a15,[a15]236
+.L359:
+	mov	d15,#0
+.L360:
+	st.w	[a15]4,d15
+.L361:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L362:
+	ld.a	a15,[a15]236
+.L363:
+	mov	d15,#0
+.L364:
+	st.w	[a15]8,d15
+.L365:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L366:
+	ld.a	a15,[a15]236
+.L367:
+	mov	d15,#0
+.L368:
+	st.w	[a15]12,d15
+.L369:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L370:
+	movh.a	a2,#@his(IMU_QuaternionEKF_Observe)
+	lea	a2,[a2]@los(IMU_QuaternionEKF_Observe)
+.L371:
+	st.a	[a15]208,a2
+.L372:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L373:
+	movh.a	a2,#@his(IMU_QuaternionEKF_F_Linearization_P_Fading)
+	lea	a2,[a2]@los(IMU_QuaternionEKF_F_Linearization_P_Fading)
+.L374:
+	st.a	[a15]212,a2
+.L375:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L376:
+	movh.a	a2,#@his(IMU_QuaternionEKF_SetH)
+	lea	a2,[a2]@los(IMU_QuaternionEKF_SetH)
+.L377:
+	st.a	[a15]216,a2
+.L378:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L379:
+	movh.a	a2,#@his(IMU_QuaternionEKF_xhatUpdate)
+	lea	a2,[a2]@los(IMU_QuaternionEKF_xhatUpdate)
+.L380:
+	st.a	[a15]220,a2
+.L381:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L382:
+	mov	d15,#1
+.L383:
+	st.b	[a15]46,d15
+.L384:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L385:
+	mov	d15,#1
+.L386:
+	st.b	[a15]47,d15
+.L387:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L388:
+	ld.a	a4,[a15]260
+.L389:
+	movh.a	a5,#@his(IMU_QuaternionEKF_F)
+	lea	a5,[a5]@los(IMU_QuaternionEKF_F)
+.L390:
+	mov	d4,#144
+	call	memcpy
+.L391:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L392:
+	ld.a	a4,[a15]252
+.L393:
+	movh.a	a5,#@his(IMU_QuaternionEKF_P)
+	lea	a5,[a5]@los(IMU_QuaternionEKF_P)
+.L394:
+	mov	d4,#144
+	call	memcpy
+.L395:
+	ret
+.L134:
+	
+__IMU_QuaternionEKF_Init_function_end:
+	.size	IMU_QuaternionEKF_Init,__IMU_QuaternionEKF_Init_function_end-IMU_QuaternionEKF_Init
+.L76:
+	; End of function
+	
+	.sdecl	'.text.QuaternionEKF.IMU_QuaternionEKF_Reset',code,cluster('IMU_QuaternionEKF_Reset')
+	.sect	'.text.QuaternionEKF.IMU_QuaternionEKF_Reset'
+	.align	2
+	
+	.global	IMU_QuaternionEKF_Reset
+; Function IMU_QuaternionEKF_Reset
+.L51:
+IMU_QuaternionEKF_Reset:	.type	func
+	movh.a	a4,#@his(QEKF_INS)
+	lea	a4,[a4]@los(QEKF_INS)
+.L779:
+	add.a	a4,#4
+.L780:
+	mov	d4,#6
+.L781:
+	mov	d5,#0
+.L782:
+	mov	d6,#3
+	call	Kalman_Filter_Reset
+.L783:
+	movh.a	a4,#@his(IMU_QuaternionEKF_P)
+	lea	a4,[a4]@los(IMU_QuaternionEKF_P)
+.L784:
+	movh.a	a5,#@his(IMU_QuaternionEKF_P_Const)
+	lea	a5,[a5]@los(IMU_QuaternionEKF_P_Const)
+.L785:
+	mov	d4,#144
+	call	memcpy
+.L786:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L787:
+	ld.a	a15,[a15]236
+.L788:
+	movh	d15,#16256
+.L789:
+	st.w	[a15],d15
+.L790:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L791:
+	ld.a	a15,[a15]236
+.L792:
+	mov	d15,#0
+.L793:
+	st.w	[a15]4,d15
+.L794:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L795:
+	ld.a	a15,[a15]236
+.L796:
+	mov	d15,#0
+.L797:
+	st.w	[a15]8,d15
+.L798:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L799:
+	ld.a	a15,[a15]236
+.L800:
+	mov	d15,#0
+.L801:
+	st.w	[a15]12,d15
+.L802:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L803:
+	mov	d15,#1
+.L804:
+	st.b	[a15]46,d15
+.L805:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L806:
+	mov	d15,#1
+.L807:
+	st.b	[a15]47,d15
+.L808:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L809:
+	ld.a	a4,[a15]260
+.L810:
+	movh.a	a5,#@his(IMU_QuaternionEKF_F)
+	lea	a5,[a5]@los(IMU_QuaternionEKF_F)
+.L811:
+	mov	d4,#144
+	call	memcpy
+.L812:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L813:
+	ld.a	a4,[a15]252
+.L814:
+	movh.a	a5,#@his(IMU_QuaternionEKF_P)
+	lea	a5,[a5]@los(IMU_QuaternionEKF_P)
+.L815:
+	mov	d4,#144
+	call	memcpy
+.L816:
+	ret
+.L176:
+	
+__IMU_QuaternionEKF_Reset_function_end:
+	.size	IMU_QuaternionEKF_Reset,__IMU_QuaternionEKF_Reset_function_end-IMU_QuaternionEKF_Reset
+.L86:
+	; End of function
+	
+	.sdecl	'.text.QuaternionEKF.IMU_QuaternionEKF_Update',code,cluster('IMU_QuaternionEKF_Update')
+	.sect	'.text.QuaternionEKF.IMU_QuaternionEKF_Update'
+	.align	2
+	
+	.global	IMU_QuaternionEKF_Update
+; Function IMU_QuaternionEKF_Update
+.L53:
+IMU_QuaternionEKF_Update:	.type	func
+	sub.a	a10,#16
+.L270:
+	mov	d8,d7
+.L273:
+	ld.w	d9,[a10]16
+.L274:
+	ld.w	d10,[a10]20
+.L275:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L400:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L401:
+	ld.w	d0,[a2]348
+.L402:
+	sub.f	d0,d4,d0
+.L403:
+	st.w	[a15]360,d0
+.L404:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L405:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L406:
+	ld.w	d0,[a2]352
+.L407:
+	sub.f	d0,d5,d0
+.L408:
+	st.w	[a15]364,d0
+.L409:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L410:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L411:
+	ld.w	d0,[a2]356
+.L412:
+	sub.f	d15,d6,d0
+.L413:
+	st.w	[a15]368,d15
+.L414:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L415:
+	ld.w	d15,[a15]360
+.L416:
+	movh	d0,#16128
+.L417:
+	mul.f	d15,d15,d0
+.L418:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L419:
+	ld.w	d0,[a15]440
+.L420:
+	mul.f	d15,d15,d0
+.L421:
+	st.w	[a10],d15
+.L422:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L423:
+	ld.w	d15,[a15]364
+.L424:
+	movh	d0,#16128
+.L425:
+	mul.f	d15,d15,d0
+.L426:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L427:
+	ld.w	d0,[a15]440
+.L428:
+	mul.f	d15,d15,d0
+.L429:
+	st.w	[a10]4,d15
+.L430:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L431:
+	ld.w	d15,[a15]368
+.L432:
+	movh	d0,#16128
+.L433:
+	mul.f	d15,d15,d0
+.L434:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L435:
+	ld.w	d0,[a15]440
+.L436:
+	mul.f	d15,d15,d0
+.L437:
+	st.w	[a10]8,d15
+.L438:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L439:
+	ld.a	a4,[a15]260
+.L440:
+	movh.a	a5,#@his(IMU_QuaternionEKF_F)
+	lea	a5,[a5]@los(IMU_QuaternionEKF_F)
+.L441:
+	mov	d4,#144
+.L272:
+	call	memcpy
+.L271:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L442:
+	ld.a	a15,[a15]260
+.L443:
+	ld.w	d15,[a10]
+.L444:
+	insn.t	d15,d15:31,d15:31
+.L445:
+	st.w	[a15]4,d15
+.L446:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L447:
+	ld.a	a15,[a15]260
+.L448:
+	ld.w	d15,[a10]4
+.L449:
+	insn.t	d15,d15:31,d15:31
+.L450:
+	st.w	[a15]8,d15
+.L451:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L452:
+	ld.a	a15,[a15]260
+.L453:
+	ld.w	d15,[a10]8
+.L454:
+	insn.t	d15,d15:31,d15:31
+.L455:
+	st.w	[a15]12,d15
+.L456:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L457:
+	ld.a	a15,[a15]260
+.L458:
+	ld.w	d15,[a10]
+.L459:
+	st.w	[a15]24,d15
+.L460:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L461:
+	ld.a	a15,[a15]260
+.L462:
+	ld.w	d15,[a10]8
+.L463:
+	st.w	[a15]32,d15
+.L464:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L465:
+	ld.a	a15,[a15]260
+.L466:
+	ld.w	d15,[a10]4
+.L467:
+	insn.t	d15,d15:31,d15:31
+.L468:
+	st.w	[a15]36,d15
+.L469:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L470:
+	ld.a	a15,[a15]260
+.L471:
+	ld.w	d15,[a10]4
+.L472:
+	st.w	[a15]48,d15
+.L473:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L474:
+	ld.a	a15,[a15]260
+.L475:
+	ld.w	d15,[a10]8
+.L476:
+	insn.t	d15,d15:31,d15:31
+.L477:
+	st.w	[a15]52,d15
+.L478:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L479:
+	ld.a	a15,[a15]260
+.L480:
+	ld.w	d15,[a10]
+.L481:
+	st.w	[a15]60,d15
+.L482:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L483:
+	ld.a	a15,[a15]260
+.L484:
+	ld.w	d15,[a10]8
+.L485:
+	st.w	[a15]72,d15
+.L486:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L487:
+	ld.a	a15,[a15]260
+.L488:
+	ld.w	d15,[a10]4
+.L489:
+	st.w	[a15]76,d15
+.L490:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L491:
+	ld.a	a15,[a15]260
+.L492:
+	ld.w	d15,[a10]
+.L493:
+	insn.t	d15,d15:31,d15:31
+.L494:
+	st.w	[a15]80,d15
+.L495:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L496:
+	st.w	[a15]372,d8
+.L497:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L498:
+	st.w	[a15]376,d9
+.L499:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L500:
+	st.w	[a15]380,d10
+.L501:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L502:
+	ld.w	d15,[a15]372
+.L503:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L504:
+	ld.w	d0,[a15]372
+.L505:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L506:
+	ld.w	d1,[a15]376
+.L507:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L508:
+	ld.w	d2,[a15]376
+.L509:
+	mul.f	d1,d1,d2
+.L510:
+	madd.f	d15,d1,d15,d0
+.L511:
+	madd.f	d15,d15,d10,d10
+.L158:
+	movh	d0,#16128
+.L512:
+	mul.f	d1,d15,d0
+.L277:
+	mov	d0,#23174
+	addih	d0,d0,#24375
+.L513:
+	sha	d15,#-1
+.L276:
+	sub	d0,d15
+.L514:
+	movh	d15,#16320
+.L515:
+	mul.f	d1,d1,d0
+.L278:
+	msub.f	d15,d15,d1,d0
+.L516:
+	mul.f	d15,d0,d15
+.L280:
+	j	.L3
+.L3:
+	st.w	[a10]12,d15
+.L159:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L517:
+	movh	d0,#16256
+.L279:
+	ld.w	d15,[a10]12
+.L281:
+	div.f	d15,d0,d15
+.L518:
+	st.w	[a15]404,d15
+.L519:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L520:
+	ld.a	a15,[a15]8
+.L521:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L522:
+	ld.w	d0,[a2]372
+.L523:
+	ld.w	d15,[a10]12
+.L524:
+	mul.f	d15,d0,d15
+.L525:
+	st.w	[a15],d15
+.L526:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L527:
+	ld.a	a15,[a15]8
+.L528:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L529:
+	ld.w	d0,[a2]376
+.L530:
+	ld.w	d15,[a10]12
+.L531:
+	mul.f	d15,d0,d15
+.L532:
+	st.w	[a15]4,d15
+.L533:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L534:
+	ld.a	a15,[a15]8
+.L535:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L536:
+	ld.w	d0,[a2]380
+.L537:
+	ld.w	d15,[a10]12
+.L538:
+	mul.f	d15,d0,d15
+.L539:
+	st.w	[a15]8,d15
+.L540:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L541:
+	ld.w	d15,[a15]368
+.L542:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L543:
+	ld.w	d0,[a15]368
+.L544:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L545:
+	ld.w	d1,[a15]360
+.L546:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L547:
+	ld.w	d2,[a15]360
+.L548:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L549:
+	ld.w	d3,[a15]364
+.L550:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L551:
+	ld.w	d4,[a15]364
+.L552:
+	mul.f	d3,d3,d4
+.L553:
+	madd.f	d1,d3,d1,d2
+.L554:
+	madd.f	d15,d1,d15,d0
+.L167:
+	movh	d0,#16128
+.L555:
+	mul.f	d1,d15,d0
+.L283:
+	mov	d0,#23174
+	addih	d0,d0,#24375
+.L556:
+	sha	d15,#-1
+.L282:
+	sub	d0,d15
+.L557:
+	movh	d15,#16320
+.L558:
+	mul.f	d1,d1,d0
+.L284:
+	msub.f	d15,d15,d1,d0
+.L559:
+	mul.f	d15,d0,d15
+.L285:
+	j	.L4
+.L4:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L560:
+	movh	d0,#16256
+.L169:
+	div.f	d0,d0,d15
+.L170:
+	st.w	[a15]400,d0
+.L561:
+	movh	d0,#16256
+.L171:
+	div.f	d15,d0,d15
+.L172:
+	mov.u	d0,#39322
+	addih	d0,d0,#16025
+.L562:
+	cmp.f	d15,d15,d0
+	extr.u	d15,d15,#0,#1
+.L563:
+	jeq	d15,#0,.L5
+.L564:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L565:
+	ld.w	d15,[a15]404
+.L566:
+	mov.u	d0,#52429
+	addih	d0,d0,#16660
+.L567:
+	cmp.f	d15,d15,d0
+	extr.u	d15,d15,#2,#1
+	jeq	d15,#0,.L6
+.L568:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L569:
+	ld.w	d15,[a15]404
+.L570:
+	mov.u	d0,#52429
+	addih	d0,d0,#16676
+.L571:
+	cmp.f	d15,d15,d0
+	extr.u	d15,d15,#0,#1
+	jeq	d15,#0,.L7
+.L572:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L573:
+	mov	d15,#1
+.L574:
+	st.b	[a15]313,d15
+.L575:
+	j	.L8
+.L7:
+.L6:
+.L5:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L576:
+	mov	d15,#0
+.L577:
+	st.b	[a15]313,d15
+.L8:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L578:
+	ld.a	a15,[a15]280
+.L579:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L580:
+	ld.w	d15,[a2]428
+.L581:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L582:
+	ld.w	d0,[a2]440
+.L583:
+	mul.f	d15,d15,d0
+.L584:
+	st.w	[a15],d15
+.L585:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L586:
+	ld.a	a15,[a15]280
+.L587:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L588:
+	ld.w	d15,[a2]428
+.L589:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L590:
+	ld.w	d0,[a2]440
+.L591:
+	mul.f	d15,d15,d0
+.L592:
+	st.w	[a15]28,d15
+.L593:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L594:
+	ld.a	a15,[a15]280
+.L595:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L596:
+	ld.w	d15,[a2]428
+.L597:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L598:
+	ld.w	d0,[a2]440
+.L599:
+	mul.f	d15,d15,d0
+.L600:
+	st.w	[a15]56,d15
+.L601:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L602:
+	ld.a	a15,[a15]280
+.L603:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L604:
+	ld.w	d15,[a2]428
+.L605:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L606:
+	ld.w	d0,[a2]440
+.L607:
+	mul.f	d15,d15,d0
+.L608:
+	st.w	[a15]84,d15
+.L609:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L610:
+	ld.a	a15,[a15]280
+.L611:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L612:
+	ld.w	d15,[a2]432
+.L613:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L614:
+	ld.w	d0,[a2]440
+.L615:
+	mul.f	d15,d15,d0
+.L616:
+	st.w	[a15]112,d15
+.L617:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L618:
+	ld.a	a15,[a15]280
+.L619:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L620:
+	ld.w	d15,[a2]432
+.L621:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L622:
+	ld.w	d0,[a2]440
+.L623:
+	mul.f	d15,d15,d0
+.L624:
+	st.w	[a15]140,d15
+.L625:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L626:
+	ld.a	a15,[a15]284
+.L627:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L628:
+	ld.w	d15,[a2]436
+.L629:
+	st.w	[a15],d15
+.L630:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L631:
+	ld.a	a15,[a15]284
+.L632:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L633:
+	ld.w	d15,[a2]436
+.L634:
+	st.w	[a15]16,d15
+.L635:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L636:
+	ld.a	a15,[a15]284
+.L637:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L638:
+	ld.w	d15,[a2]436
+.L639:
+	st.w	[a15]32,d15
+.L640:
+	movh.a	a4,#@his(QEKF_INS)
+	lea	a4,[a4]@los(QEKF_INS)
+.L641:
+	add.a	a4,#4
+	call	Kalman_Filter_Update
+.L642:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L643:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L644:
+	ld.a	a15,[a15]4
+.L645:
+	ld.w	d15,[a15]
+.L646:
+	st.w	[a2]332,d15
+.L647:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L648:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L649:
+	ld.a	a15,[a15]4
+.L650:
+	ld.w	d15,[a15]4
+.L651:
+	st.w	[a2]336,d15
+.L652:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L653:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L654:
+	ld.a	a15,[a15]4
+.L655:
+	ld.w	d15,[a15]8
+.L656:
+	st.w	[a2]340,d15
+.L657:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L658:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L659:
+	ld.a	a15,[a15]4
+.L660:
+	ld.w	d15,[a15]12
+.L661:
+	st.w	[a2]344,d15
+.L662:
+	movh.a	a12,#@his(QEKF_INS)
+	lea	a12,[a12]@los(QEKF_INS)
+.L663:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L664:
+	ld.w	d15,[a15]332
+.L665:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L666:
+	ld.w	d0,[a15]336
+.L667:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L668:
+	ld.w	d1,[a15]340
+.L669:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L670:
+	ld.w	d2,[a15]344
+.L671:
+	mul.f	d1,d1,d2
+.L672:
+	madd.f	d4,d1,d15,d0
+.L673:
+	movh	d15,#16128
+.L674:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L675:
+	ld.w	d0,[a15]336
+.L676:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L677:
+	ld.w	d1,[a15]336
+.L678:
+	msub.f	d15,d15,d0,d1
+.L679:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L680:
+	ld.w	d0,[a15]340
+.L681:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L682:
+	ld.w	d1,[a15]340
+.L683:
+	msub.f	d5,d15,d0,d1
+	call	atan2f
+.L684:
+	mov	d15,#12001
+	addih	d15,d15,#16997
+.L685:
+	mul.f	d15,d2,d15
+.L686:
+	st.w	[a12]412,d15
+.L687:
+	movh.a	a12,#@his(QEKF_INS)
+	lea	a12,[a12]@los(QEKF_INS)
+.L688:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L689:
+	ld.w	d15,[a15]336
+.L690:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L691:
+	ld.w	d0,[a15]344
+.L692:
+	mul.f	d15,d15,d0
+.L693:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L694:
+	ld.w	d0,[a15]332
+.L695:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L696:
+	ld.w	d1,[a15]340
+.L697:
+	msub.f	d15,d15,d0,d1
+.L698:
+	movh	d0,#49152
+.L699:
+	mul.f	d4,d15,d0
+	call	asinf
+.L700:
+	mov	d15,#12001
+	addih	d15,d15,#16997
+.L701:
+	mul.f	d15,d2,d15
+.L702:
+	st.w	[a12]416,d15
+.L703:
+	movh.a	a12,#@his(QEKF_INS)
+	lea	a12,[a12]@los(QEKF_INS)
+.L704:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L705:
+	ld.w	d15,[a15]336
+.L706:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L707:
+	ld.w	d0,[a15]340
+.L708:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L709:
+	ld.w	d1,[a15]332
+.L710:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L711:
+	ld.w	d2,[a15]344
+.L712:
+	mul.f	d1,d1,d2
+.L713:
+	madd.f	d4,d1,d15,d0
+.L714:
+	movh	d15,#16128
+.L715:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L716:
+	ld.w	d0,[a15]340
+.L717:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L718:
+	ld.w	d1,[a15]340
+.L719:
+	msub.f	d15,d15,d0,d1
+.L720:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L721:
+	ld.w	d0,[a15]344
+.L722:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L723:
+	ld.w	d1,[a15]344
+.L724:
+	msub.f	d5,d15,d0,d1
+	call	atan2f
+.L725:
+	mov	d15,#12001
+	addih	d15,d15,#16997
+.L726:
+	mul.f	d15,d2,d15
+.L727:
+	st.w	[a12]420,d15
+.L728:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L729:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L730:
+	ld.a	a15,[a15]4
+.L731:
+	ld.w	d15,[a15]16
+.L732:
+	st.w	[a2]348,d15
+.L733:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L734:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L735:
+	ld.a	a15,[a15]4
+.L736:
+	ld.w	d15,[a15]20
+.L737:
+	st.w	[a2]352,d15
+.L738:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L739:
+	mov	d15,#0
+.L740:
+	st.w	[a15]356,d15
+.L741:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L742:
+	ld.w	d15,[a15]420
+.L743:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L744:
+	ld.w	d0,[a15]466
+.L745:
+	sub.f	d15,d15,d0
+.L746:
+	movh	d0,#17204
+.L747:
+	cmp.f	d15,d15,d0
+	extr.u	d15,d15,#2,#1
+.L748:
+	jeq	d15,#0,.L9
+.L749:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L750:
+	ld.h	d15,[a2]464
+.L751:
+	add	d15,#-1
+	st.h	[a15]464,d15
+.L752:
+	j	.L10
+.L9:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L753:
+	ld.w	d15,[a15]420
+.L754:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L755:
+	ld.w	d0,[a15]466
+.L756:
+	sub.f	d15,d15,d0
+.L757:
+	movh	d0,#49972
+.L758:
+	cmp.f	d15,d15,d0
+	extr.u	d15,d15,#0,#1
+.L759:
+	jeq	d15,#0,.L11
+.L760:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L761:
+	ld.h	d15,[a2]464
+.L762:
+	add	d15,#1
+	st.h	[a15]464,d15
+.L11:
+.L10:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L763:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L764:
+	ld.h	d15,[a2]464
+	itof	d15,d15
+.L765:
+	movh	d0,#17332
+.L766:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L767:
+	ld.w	d1,[a2]420
+.L768:
+	madd.f	d15,d1,d15,d0
+.L769:
+	st.w	[a15]424,d15
+.L770:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L771:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L772:
+	ld.w	d15,[a2]420
+.L773:
+	st.w	[a15]466,d15
+.L774:
+	ret
+.L142:
+	
+__IMU_QuaternionEKF_Update_function_end:
+	.size	IMU_QuaternionEKF_Update,__IMU_QuaternionEKF_Update_function_end-IMU_QuaternionEKF_Update
+.L81:
+	; End of function
+	
+	.sdecl	'.text.QuaternionEKF.IMU_QuaternionEKF_F_Linearization_P_Fading',code,cluster('IMU_QuaternionEKF_F_Linearization_P_Fading')
+	.sect	'.text.QuaternionEKF.IMU_QuaternionEKF_F_Linearization_P_Fading'
+	.align	2
+	
+; Function IMU_QuaternionEKF_F_Linearization_P_Fading
+.L55:
+IMU_QuaternionEKF_F_Linearization_P_Fading:	.type	func
+	sub.a	a10,#24
+.L286:
+	ld.a	a15,[a4]236
+.L852:
+	ld.w	d15,[a15]
+.L853:
+	st.w	[a10],d15
+.L854:
+	ld.a	a15,[a4]236
+.L855:
+	ld.w	d15,[a15]4
+.L856:
+	st.w	[a10]4,d15
+.L857:
+	ld.a	a15,[a4]236
+.L858:
+	ld.w	d15,[a15]8
+.L859:
+	st.w	[a10]8,d15
+.L860:
+	ld.a	a15,[a4]236
+.L861:
+	ld.w	d15,[a15]12
+.L862:
+	st.w	[a10]12,d15
+.L863:
+	ld.w	d0,[a10]12
+.L864:
+	ld.w	d1,[a10]12
+.L865:
+	ld.w	d2,[a10]8
+.L866:
+	ld.w	d3,[a10]8
+.L867:
+	ld.w	d4,[a10]
+.L868:
+	ld.w	d5,[a10]
+.L869:
+	ld.w	d6,[a10]4
+.L870:
+	ld.w	d15,[a10]4
+.L871:
+	mul.f	d15,d6,d15
+.L872:
+	madd.f	d15,d15,d4,d5
+.L873:
+	madd.f	d15,d15,d2,d3
+.L874:
+	madd.f	d15,d15,d0,d1
+.L195:
+	movh	d0,#16128
+.L875:
+	mul.f	d1,d15,d0
+.L288:
+	mov	d0,#23174
+	addih	d0,d0,#24375
+.L876:
+	sha	d15,#-1
+.L287:
+	sub	d0,d15
+.L877:
+	movh	d15,#16320
+.L878:
+	mul.f	d1,d1,d0
+.L289:
+	msub.f	d15,d15,d1,d0
+.L879:
+	mul.f	d15,d0,d15
+.L291:
+	j	.L12
+.L12:
+	st.w	[a10]16,d15
+.L196:
+	mov	d0,#0
+.L290:
+	j	.L13
+.L14:
+	mul	d15,d0,#4
+.L880:
+	ld.a	a15,[a4]236
+.L881:
+	addsc.a	a15,a15,d15,#0
+	mul	d15,d0,#4
+.L882:
+	ld.a	a2,[a4]236
+.L883:
+	addsc.a	a2,a2,d15,#0
+	ld.w	d1,[a2]
+.L884:
+	ld.w	d15,[a10]16
+.L885:
+	mul.f	d15,d1,d15
+	st.w	[a15],d15
+.L886:
+	add	d0,#1
+.L13:
+	jlt.u	d0,#4,.L14
+.L201:
+	ld.a	a15,[a4]256
+.L887:
+	ld.w	d15,[a10]4
+.L888:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L889:
+	ld.w	d0,[a2]440
+.L292:
+	mul.f	d15,d15,d0
+.L890:
+	movh	d0,#16128
+.L891:
+	mul.f	d15,d15,d0
+.L892:
+	st.w	[a15]16,d15
+.L893:
+	ld.a	a15,[a4]256
+.L894:
+	ld.w	d15,[a10]8
+.L895:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L896:
+	ld.w	d0,[a2]440
+.L897:
+	mul.f	d15,d15,d0
+.L898:
+	movh	d0,#16128
+.L899:
+	mul.f	d15,d15,d0
+.L900:
+	st.w	[a15]20,d15
+.L901:
+	ld.a	a15,[a4]256
+.L902:
+	ld.w	d15,[a10]
+.L903:
+	insn.t	d15,d15:31,d15:31
+.L904:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L905:
+	ld.w	d0,[a2]440
+.L906:
+	mul.f	d15,d15,d0
+.L907:
+	movh	d0,#16128
+.L908:
+	mul.f	d15,d15,d0
+.L909:
+	st.w	[a15]40,d15
+.L910:
+	ld.a	a15,[a4]256
+.L911:
+	ld.w	d15,[a10]12
+.L912:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L913:
+	ld.w	d0,[a2]440
+.L914:
+	mul.f	d15,d15,d0
+.L915:
+	movh	d0,#16128
+.L916:
+	mul.f	d15,d15,d0
+.L917:
+	st.w	[a15]44,d15
+.L918:
+	ld.a	a15,[a4]256
+.L919:
+	ld.w	d15,[a10]12
+.L920:
+	insn.t	d15,d15:31,d15:31
+.L921:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L922:
+	ld.w	d0,[a2]440
+.L923:
+	mul.f	d15,d15,d0
+.L924:
+	movh	d0,#16128
+.L925:
+	mul.f	d15,d15,d0
+.L926:
+	st.w	[a15]64,d15
+.L927:
+	ld.a	a15,[a4]256
+.L928:
+	ld.w	d15,[a10]
+.L929:
+	insn.t	d15,d15:31,d15:31
+.L930:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L931:
+	ld.w	d0,[a2]440
+.L932:
+	mul.f	d15,d15,d0
+.L933:
+	movh	d0,#16128
+.L934:
+	mul.f	d15,d15,d0
+.L935:
+	st.w	[a15]68,d15
+.L936:
+	ld.a	a15,[a4]256
+.L937:
+	ld.w	d15,[a10]8
+.L938:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L939:
+	ld.w	d0,[a2]440
+.L940:
+	mul.f	d15,d15,d0
+.L941:
+	movh	d0,#16128
+.L942:
+	mul.f	d15,d15,d0
+.L943:
+	st.w	[a15]88,d15
+.L944:
+	ld.a	a15,[a4]256
+.L945:
+	ld.w	d15,[a10]4
+.L946:
+	insn.t	d15,d15:31,d15:31
+.L947:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L948:
+	ld.w	d0,[a2]440
+.L949:
+	mul.f	d15,d15,d0
+.L950:
+	movh	d0,#16128
+.L951:
+	mul.f	d15,d15,d0
+.L952:
+	st.w	[a15]92,d15
+.L953:
+	ld.a	a15,[a4]248
+	ld.a	a2,[a4]248
+.L954:
+	ld.w	d15,[a2]112
+.L955:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L956:
+	ld.w	d0,[a2]460
+.L957:
+	div.f	d15,d15,d0
+	st.w	[a15]112,d15
+.L958:
+	ld.a	a15,[a4]248
+	ld.a	a2,[a4]248
+.L959:
+	ld.w	d15,[a2]140
+.L960:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L961:
+	ld.w	d0,[a2]460
+.L962:
+	div.f	d15,d15,d0
+	st.w	[a15]140,d15
+.L963:
+	ld.a	a15,[a4]248
+.L964:
+	ld.w	d15,[a15]112
+.L965:
+	mov	d0,#16384
+	addih	d0,d0,#17948
+.L966:
+	cmp.f	d15,d15,d0
+	extr.u	d15,d15,#2,#1
+.L967:
+	jeq	d15,#0,.L15
+.L968:
+	ld.a	a15,[a4]248
+.L969:
+	mov	d15,#16384
+	addih	d15,d15,#17948
+.L970:
+	st.w	[a15]112,d15
+.L15:
+	ld.a	a15,[a4]248
+.L971:
+	ld.w	d15,[a15]140
+.L972:
+	mov	d0,#16384
+	addih	d0,d0,#17948
+.L973:
+	cmp.f	d15,d15,d0
+	extr.u	d15,d15,#2,#1
+.L974:
+	jeq	d15,#0,.L16
+.L975:
+	ld.a	a15,[a4]248
+.L976:
+	mov	d15,#16384
+	addih	d15,d15,#17948
+.L977:
+	st.w	[a15]140,d15
+.L16:
+	ret
+.L183:
+	
+__IMU_QuaternionEKF_F_Linearization_P_Fading_function_end:
+	.size	IMU_QuaternionEKF_F_Linearization_P_Fading,__IMU_QuaternionEKF_F_Linearization_P_Fading_function_end-IMU_QuaternionEKF_F_Linearization_P_Fading
+.L111:
+	; End of function
+	
+	.sdecl	'.text.QuaternionEKF.IMU_QuaternionEKF_SetH',code,cluster('IMU_QuaternionEKF_SetH')
+	.sect	'.text.QuaternionEKF.IMU_QuaternionEKF_SetH'
+	.align	2
+	
+; Function IMU_QuaternionEKF_SetH
+.L57:
+IMU_QuaternionEKF_SetH:	.type	func
+	sub.a	a10,#16
+.L293:
+	mov.aa	a12,a4
+.L295:
+	ld.a	a2,[a12]236
+.L982:
+	ld.w	d15,[a2]
+.L983:
+	movh	d0,#16384
+.L984:
+	mul.f	d15,d15,d0
+.L985:
+	st.w	[a10],d15
+.L986:
+	ld.a	a15,[a12]236
+.L987:
+	ld.w	d15,[a15]4
+.L988:
+	movh	d0,#16384
+.L989:
+	mul.f	d15,d15,d0
+.L990:
+	st.w	[a10]4,d15
+.L991:
+	ld.a	a15,[a12]236
+.L992:
+	ld.w	d15,[a15]8
+.L993:
+	movh	d0,#16384
+.L994:
+	mul.f	d15,d15,d0
+.L995:
+	st.w	[a10]8,d15
+.L996:
+	ld.a	a15,[a12]236
+.L997:
+	ld.w	d15,[a15]12
+.L998:
+	movh	d0,#16384
+.L999:
+	mul.f	d15,d15,d0
+.L1000:
+	st.w	[a10]12,d15
+.L1001:
+	ld.a	a4,[a12]268
+.L294:
+	mov	d4,#0
+.L1002:
+	movh.a	a15,#@his(sizeof_float)
+	lea	a15,[a15]@los(sizeof_float)
+	ld.hu	d0,[a15]0
+.L1003:
+	ld.bu	d15,[a12]14
+.L1004:
+	mul	d0,d15
+.L1005:
+	ld.bu	d15,[a12]12
+.L1006:
+	mul	d5,d0,d15
+	call	memset
+.L1007:
+	ld.a	a15,[a12]268
+.L1008:
+	ld.w	d15,[a10]8
+.L1009:
+	insn.t	d15,d15:31,d15:31
+.L1010:
+	st.w	[a15],d15
+.L1011:
+	ld.a	a15,[a12]268
+.L1012:
+	ld.w	d15,[a10]12
+.L1013:
+	st.w	[a15]4,d15
+.L1014:
+	ld.a	a15,[a12]268
+.L1015:
+	ld.w	d15,[a10]
+.L1016:
+	insn.t	d15,d15:31,d15:31
+.L1017:
+	st.w	[a15]8,d15
+.L1018:
+	ld.a	a15,[a12]268
+.L1019:
+	ld.w	d15,[a10]4
+.L1020:
+	st.w	[a15]12,d15
+.L1021:
+	ld.a	a15,[a12]268
+.L1022:
+	ld.w	d15,[a10]4
+.L1023:
+	st.w	[a15]24,d15
+.L1024:
+	ld.a	a15,[a12]268
+.L1025:
+	ld.w	d15,[a10]
+.L1026:
+	st.w	[a15]28,d15
+.L1027:
+	ld.a	a15,[a12]268
+.L1028:
+	ld.w	d15,[a10]12
+.L1029:
+	st.w	[a15]32,d15
+.L1030:
+	ld.a	a15,[a12]268
+.L1031:
+	ld.w	d15,[a10]8
+.L1032:
+	st.w	[a15]36,d15
+.L1033:
+	ld.a	a15,[a12]268
+.L1034:
+	ld.w	d15,[a10]
+.L1035:
+	st.w	[a15]48,d15
+.L1036:
+	ld.a	a15,[a12]268
+.L1037:
+	ld.w	d15,[a10]4
+.L1038:
+	insn.t	d15,d15:31,d15:31
+.L1039:
+	st.w	[a15]52,d15
+.L1040:
+	ld.a	a15,[a12]268
+.L1041:
+	ld.w	d15,[a10]8
+.L1042:
+	insn.t	d15,d15:31,d15:31
+.L1043:
+	st.w	[a15]56,d15
+.L1044:
+	ld.a	a15,[a12]268
+.L1045:
+	ld.w	d15,[a10]12
+.L1046:
+	st.w	[a15]60,d15
+.L1047:
+	ret
+.L204:
+	
+__IMU_QuaternionEKF_SetH_function_end:
+	.size	IMU_QuaternionEKF_SetH,__IMU_QuaternionEKF_SetH_function_end-IMU_QuaternionEKF_SetH
+.L116:
+	; End of function
+	
+	.sdecl	'.text.QuaternionEKF.IMU_QuaternionEKF_xhatUpdate',code,cluster('IMU_QuaternionEKF_xhatUpdate')
+	.sect	'.text.QuaternionEKF.IMU_QuaternionEKF_xhatUpdate'
+	.align	2
+	
+; Function IMU_QuaternionEKF_xhatUpdate
+.L59:
+IMU_QuaternionEKF_xhatUpdate:	.type	func
+	sub.a	a10,#16
+.L296:
+	mov.aa	a12,a4
+.L298:
+	lea	a4,[a12]120
+.L297:
+	lea	a5,[a12]128
+	call	arm_mat_trans_f32
+.L1052:
+	st.b	[a12]200,d2
+.L1053:
+	ld.hu	d15,[a12]120
+.L1054:
+	st.h	[a12]168,d15
+.L1055:
+	ld.hu	d15,[a12]90
+.L1056:
+	st.h	[a12]170,d15
+.L1057:
+	lea	a4,[a12]120
+.L1058:
+	lea	a5,[a12]88
+.L1059:
+	lea	a6,[a12]168
+	call	arm_mat_mult_f32
+.L1060:
+	st.b	[a12]200,d2
+.L1061:
+	ld.hu	d15,[a12]168
+.L1062:
+	st.h	[a12]176,d15
+.L1063:
+	ld.hu	d15,[a12]130
+.L1064:
+	st.h	[a12]178,d15
+.L1065:
+	lea	a4,[a12]168
+.L1066:
+	lea	a5,[a12]128
+.L1067:
+	lea	a6,[a12]176
+	call	arm_mat_mult_f32
+.L1068:
+	st.b	[a12]200,d2
+.L1069:
+	ld.hu	d15,[a12]144
+.L1070:
+	st.h	[a12]160,d15
+.L1071:
+	ld.hu	d15,[a12]146
+.L1072:
+	st.h	[a12]162,d15
+.L1073:
+	lea	a4,[a12]176
+.L1074:
+	lea	a5,[a12]144
+.L1075:
+	lea	a6,[a12]160
+	call	arm_mat_add_f32
+.L1076:
+	st.b	[a12]200,d2
+.L1077:
+	lea	a4,[a12]160
+.L1078:
+	lea	a5,[a12]176
+	call	arm_mat_inverse_f32
+.L1079:
+	st.b	[a12]200,d2
+.L1080:
+	ld.a	a2,[a12]236
+.L1081:
+	ld.w	d15,[a2]
+.L1082:
+	st.w	[a10],d15
+.L1083:
+	ld.a	a15,[a12]236
+.L1084:
+	ld.w	d15,[a15]4
+.L1085:
+	st.w	[a10]4,d15
+.L1086:
+	ld.a	a15,[a12]236
+.L1087:
+	ld.w	d15,[a15]8
+.L1088:
+	st.w	[a10]8,d15
+.L1089:
+	ld.a	a15,[a12]236
+.L1090:
+	ld.w	d15,[a15]12
+.L1091:
+	st.w	[a10]12,d15
+.L1092:
+	ld.hu	d15,[a12]120
+.L1093:
+	st.h	[a12]184,d15
+.L1094:
+	mov	d15,#1
+.L1095:
+	st.h	[a12]186,d15
+.L1096:
+	ld.a	a15,[a12]300
+.L1097:
+	ld.w	d15,[a10]4
+.L1098:
+	ld.w	d0,[a10]12
+.L1099:
+	mul.f	d0,d15,d0
+.L1100:
+	ld.w	d1,[a10]
+.L1101:
+	ld.w	d15,[a10]8
+.L1102:
+	msub.f	d15,d0,d1,d15
+.L1103:
+	movh	d0,#16384
+.L1104:
+	mul.f	d15,d15,d0
+.L1105:
+	st.w	[a15],d15
+.L1106:
+	ld.a	a15,[a12]300
+.L1107:
+	ld.w	d0,[a10]
+.L1108:
+	ld.w	d1,[a10]4
+.L1109:
+	ld.w	d2,[a10]8
+.L1110:
+	ld.w	d15,[a10]12
+.L1111:
+	mul.f	d15,d2,d15
+.L1112:
+	madd.f	d15,d15,d0,d1
+.L1113:
+	movh	d0,#16384
+.L1114:
+	mul.f	d15,d15,d0
+.L1115:
+	st.w	[a15]4,d15
+.L1116:
+	ld.a	a15,[a12]300
+.L1117:
+	ld.w	d0,[a10]12
+.L1118:
+	ld.w	d1,[a10]12
+.L1119:
+	ld.w	d15,[a10]
+.L1120:
+	ld.w	d2,[a10]
+.L1121:
+	mul.f	d2,d15,d2
+.L1122:
+	ld.w	d3,[a10]4
+.L1123:
+	ld.w	d15,[a10]4
+.L1124:
+	msub.f	d2,d2,d3,d15
+.L1125:
+	ld.w	d3,[a10]8
+.L1126:
+	ld.w	d15,[a10]8
+.L1127:
+	msub.f	d15,d2,d3,d15
+.L1128:
+	madd.f	d15,d15,d0,d1
+.L1129:
+	st.w	[a15]8,d15
+.L224:
+	mov	d3,#0
+.L299:
+	j	.L17
+.L18:
+	mul	d15,d3,#4
+	ld.a	a15,[a12]300
+	addsc.a	a15,a15,d15,#0
+	ld.w	d15,[a15]
+	insert	d15,d15,#0,#31,#1
+	ftoiz	d0,d15
+.L228:
+	mov	d15,#1024
+.L1130:
+	sub	d15,d0
+.L236:
+	insert	d0,d15,#0,#12,#20
+.L1131:
+	movh.a	a15,#@his(Ifx_g_LutLSincosF32)
+	lea	a15,[a15]@los(Ifx_g_LutLSincosF32)
+.L242:
+	ld.b	d15,[a15]2
+.L1132:
+	rsub	d15,#0
+	sh	d1,d0,d15
+.L301:
+	ld.a	a2,[a15]4
+.L1133:
+	mul	d15,d1,#8
+	addsc.a	a2,a2,d15,#0
+.L1134:
+	ld.w	d2,[a2]
+.L1135:
+	utof	d0,d0
+.L1136:
+	ld.a	a15,[a15]4
+.L1137:
+	mul	d15,d1,#8
+	addsc.a	a15,a15,d15,#0
+.L1138:
+	ld.w	d15,[a15]4
+.L1139:
+	madd.f	d0,d15,d2,d0
+.L1140:
+	j	.L19
+.L19:
+	j	.L20
+.L20:
+	j	.L21
+.L21:
+	mul	d15,d3,#4
+.L1141:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L1142:
+	addsc.a	a15,a15,d15,#0
+.L233:
+	st.w	[a15]384,d0
+.L234:
+	add	d3,#1
+.L17:
+	jlt.u	d3,#3,.L18
+.L225:
+	ld.hu	d15,[a12]72
+.L1143:
+	st.h	[a12]192,d15
+.L1144:
+	mov	d15,#1
+.L1145:
+	st.h	[a12]194,d15
+.L1146:
+	lea	a4,[a12]72
+.L1147:
+	lea	a5,[a12]184
+.L1148:
+	lea	a6,[a12]192
+	call	arm_mat_sub_f32
+.L300:
+	st.b	[a12]200,d2
+.L1149:
+	ld.hu	d15,[a12]192
+.L1150:
+	st.h	[a12]168,d15
+.L1151:
+	mov	d15,#1
+.L1152:
+	st.h	[a12]170,d15
+.L1153:
+	lea	a4,[a12]176
+.L1154:
+	lea	a5,[a12]192
+.L1155:
+	lea	a6,[a12]168
+	call	arm_mat_mult_f32
+.L1156:
+	st.b	[a12]200,d2
+.L1157:
+	mov	d15,#1
+.L1158:
+	st.h	[a12]184,d15
+.L1159:
+	ld.hu	d15,[a12]192
+.L1160:
+	st.h	[a12]186,d15
+.L1161:
+	lea	a4,[a12]192
+.L1162:
+	lea	a5,[a12]184
+	call	arm_mat_trans_f32
+.L1163:
+	st.b	[a12]200,d2
+.L1164:
+	lea	a4,[a12]184
+.L1165:
+	lea	a5,[a12]168
+.L1166:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L1167:
+	lea	a6,[a15]444
+	call	arm_mat_mult_f32
+.L1168:
+	st.b	[a12]200,d2
+.L1169:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L1170:
+	ld.w	d15,[a15]452
+.L1171:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L1172:
+	ld.w	d0,[a15]456
+.L1173:
+	movh	d1,#16128
+.L1174:
+	mul.f	d0,d0,d1
+.L1175:
+	cmp.f	d15,d15,d0
+	extr.u	d15,d15,#0,#1
+.L1176:
+	jeq	d15,#0,.L22
+.L1177:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L1178:
+	mov	d15,#1
+.L1179:
+	st.b	[a15]312,d15
+.L22:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L1180:
+	ld.w	d15,[a15]452
+.L1181:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L1182:
+	ld.w	d0,[a15]456
+.L1183:
+	cmp.f	d15,d15,d0
+	extr.u	d15,d15,#2,#1
+.L1184:
+	jeq	d15,#0,.L23
+.L1185:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L1186:
+	ld.bu	d15,[a15]312
+	jeq	d15,#0,.L24
+.L1187:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L1188:
+	ld.bu	d15,[a15]313
+.L1189:
+	jeq	d15,#0,.L25
+.L1190:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L1191:
+	ld.d	e0,[a2]316
+.L1192:
+	addx	d0,d0,#1
+	addc	d1,d1,#0
+	st.d	[a15]316,e0
+.L1193:
+	j	.L26
+.L25:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L1194:
+	mov	e0,#0
+.L1195:
+	st.d	[a15]316,e0
+.L26:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L1196:
+	ld.d	e0,[a15]316
+.L1197:
+	mov	e2,#50
+.L1198:
+	ge.u	d15,d2,d0
+	and.eq	d15,d1,d3
+	or.lt.u	d15,d1,d3
+.L1199:
+	jne	d15,#0,.L27
+.L1200:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L1201:
+	mov	d15,#0
+.L1202:
+	st.b	[a15]312,d15
+.L1203:
+	mov	d15,#0
+.L1204:
+	st.b	[a12]44,d15
+.L1205:
+	j	.L28
+.L27:
+	ld.a	a4,[a12]232
+.L1206:
+	ld.a	a5,[a12]236
+.L1207:
+	movh.a	a15,#@his(sizeof_float)
+	lea	a15,[a15]@los(sizeof_float)
+	ld.hu	d4,[a15]0
+.L1208:
+	ld.bu	d15,[a12]12
+.L1209:
+	mul	d4,d15
+	call	memcpy
+.L1210:
+	ld.a	a4,[a12]248
+.L1211:
+	ld.a	a5,[a12]252
+.L1212:
+	movh.a	a15,#@his(sizeof_float)
+	lea	a15,[a15]@los(sizeof_float)
+	ld.hu	d0,[a15]0
+.L1213:
+	ld.bu	d15,[a12]12
+.L1214:
+	mul	d0,d15
+.L1215:
+	ld.bu	d15,[a12]12
+.L1216:
+	mul	d4,d0,d15
+	call	memcpy
+.L1217:
+	mov	d15,#1
+.L1218:
+	st.b	[a12]44,d15
+.L1219:
+	j	.L29
+.L28:
+	j	.L30
+.L24:
+.L23:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L1220:
+	ld.w	d15,[a15]452
+.L1221:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L1222:
+	ld.w	d0,[a15]456
+.L1223:
+	mov.u	d1,#52429
+	addih	d1,d1,#15820
+.L1224:
+	mul.f	d0,d0,d1
+.L1225:
+	cmp.f	d15,d15,d0
+	extr.u	d15,d15,#2,#1
+.L1226:
+	jeq	d15,#0,.L31
+.L1227:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L1228:
+	ld.bu	d15,[a15]312
+	jeq	d15,#0,.L32
+.L1229:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L1230:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L1231:
+	ld.w	d15,[a2]456
+.L1232:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L1233:
+	ld.w	d0,[a2]452
+.L1234:
+	sub.f	d15,d15,d0
+.L1235:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L1236:
+	ld.w	d0,[a2]456
+.L1237:
+	mov	d1,#26214
+	addih	d1,d1,#16230
+.L1238:
+	mul.f	d0,d0,d1
+.L1239:
+	div.f	d15,d15,d0
+.L1240:
+	st.w	[a15]408,d15
+.L1241:
+	j	.L33
+.L32:
+.L31:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L1242:
+	movh	d15,#16256
+.L1243:
+	st.w	[a15]408,d15
+.L33:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L1244:
+	mov	e0,#0
+.L1245:
+	st.d	[a15]316,e0
+.L1246:
+	mov	d15,#0
+.L1247:
+	st.b	[a12]44,d15
+.L30:
+	ld.hu	d15,[a12]88
+.L1248:
+	st.h	[a12]168,d15
+.L1249:
+	ld.hu	d15,[a12]130
+.L1250:
+	st.h	[a12]170,d15
+.L1251:
+	lea	a4,[a12]88
+.L1252:
+	lea	a5,[a12]128
+.L1253:
+	lea	a6,[a12]168
+	call	arm_mat_mult_f32
+.L1254:
+	st.b	[a12]200,d2
+.L1255:
+	lea	a4,[a12]168
+.L1256:
+	lea	a5,[a12]176
+.L1257:
+	lea	a6,[a12]152
+	call	arm_mat_mult_f32
+.L1258:
+	st.b	[a12]200,d2
+.L250:
+	mov	d0,#0
+.L302:
+	j	.L34
+.L35:
+	mul	d15,d0,#4
+.L1259:
+	ld.a	a15,[a12]284
+.L1260:
+	addsc.a	a15,a15,d15,#0
+	mul	d15,d0,#4
+.L1261:
+	ld.a	a2,[a12]284
+.L1262:
+	addsc.a	a2,a2,d15,#0
+	ld.w	d15,[a2]
+.L1263:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L1264:
+	ld.w	d1,[a2]408
+.L1265:
+	mul.f	d15,d15,d1
+	st.w	[a15],d15
+.L1266:
+	add	d0,#1
+.L303:
+	extr.u	d0,d0,#0,#8
+.L34:
+	ld.hu	d15,[a12]152
+.L1267:
+	ld.hu	d1,[a12]154
+.L1268:
+	mul	d15,d1
+.L1269:
+	jlt	d0,d15,.L35
+.L251:
+	mov	d0,#4
+.L304:
+	j	.L36
+.L37:
+	mov	d1,#0
+.L306:
+	j	.L38
+.L39:
+	mov	d15,#3
+.L1270:
+	madd	d15,d1,d0,d15
+.L1271:
+	mul	d15,d15,#4
+.L1272:
+	ld.a	a15,[a12]284
+.L1273:
+	addsc.a	a15,a15,d15,#0
+.L1274:
+	mov	d15,#3
+.L1275:
+	madd	d15,d1,d0,d15
+.L1276:
+	mul	d15,d15,#4
+.L1277:
+	ld.a	a2,[a12]284
+.L1278:
+	addsc.a	a2,a2,d15,#0
+	ld.w	d2,[a2]
+.L1279:
+	add	d15,d0,#-4
+.L1280:
+	mul	d15,d15,#4
+.L1281:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L1282:
+	addsc.a	a2,a2,d15,#0
+	ld.w	d15,[a2]384
+.L1283:
+	mov.u	d3,#63876
+	addih	d3,d3,#16162
+.L1284:
+	mul.f	d15,d15,d3
+.L1285:
+	mul.f	d15,d2,d15
+	st.w	[a15],d15
+.L1286:
+	add	d1,#1
+.L38:
+	jlt.u	d1,#3,.L39
+.L255:
+	add	d0,#1
+.L36:
+	jlt.u	d0,#6,.L37
+.L253:
+	ld.hu	d15,[a12]152
+.L1287:
+	st.h	[a12]184,d15
+.L1288:
+	mov	d15,#1
+.L1289:
+	st.h	[a12]186,d15
+.L1290:
+	lea	a4,[a12]152
+.L1291:
+	lea	a5,[a12]192
+.L1292:
+	lea	a6,[a12]184
+	call	arm_mat_mult_f32
+.L305:
+	st.b	[a12]200,d2
+.L1293:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L1294:
+	ld.bu	d15,[a15]312
+.L1295:
+	jeq	d15,#0,.L40
+.L257:
+	mov	d2,#4
+.L307:
+	j	.L41
+.L42:
+	mul	d15,d2,#4
+.L1296:
+	ld.a	a15,[a12]188
+.L1297:
+	addsc.a	a15,a15,d15,#0
+	ld.w	d15,[a15]
+.L1298:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L1299:
+	ld.w	d0,[a15]440
+.L1300:
+	mov.u	d1,#55050
+	addih	d1,d1,#15395
+.L1301:
+	mul.f	d0,d0,d1
+.L1302:
+	cmp.f	d15,d15,d0
+	extr.u	d15,d15,#2,#1
+.L1303:
+	jeq	d15,#0,.L43
+.L1304:
+	mul	d15,d2,#4
+.L1305:
+	ld.a	a15,[a12]188
+.L1306:
+	addsc.a	a15,a15,d15,#0
+.L1307:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L1308:
+	ld.w	d15,[a2]440
+.L1309:
+	mov.u	d0,#55050
+	addih	d0,d0,#15395
+.L1310:
+	mul.f	d15,d15,d0
+.L1311:
+	st.w	[a15],d15
+.L43:
+	mul	d15,d2,#4
+.L1312:
+	ld.a	a15,[a12]188
+.L1313:
+	addsc.a	a15,a15,d15,#0
+	ld.w	d15,[a15]
+.L1314:
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L1315:
+	ld.w	d0,[a15]440
+.L1316:
+	mov.u	d1,#55050
+	addih	d1,d1,#48163
+.L1317:
+	mul.f	d0,d0,d1
+.L1318:
+	cmp.f	d15,d15,d0
+	extr.u	d15,d15,#0,#1
+.L1319:
+	jeq	d15,#0,.L44
+.L1320:
+	mul	d15,d2,#4
+.L1321:
+	ld.a	a15,[a12]188
+.L1322:
+	addsc.a	a15,a15,d15,#0
+.L1323:
+	movh.a	a2,#@his(QEKF_INS)
+	lea	a2,[a2]@los(QEKF_INS)
+.L1324:
+	ld.w	d15,[a2]440
+.L1325:
+	mov.u	d0,#55050
+	addih	d0,d0,#48163
+.L1326:
+	mul.f	d15,d15,d0
+.L1327:
+	st.w	[a15],d15
+.L44:
+	add	d2,#1
+.L41:
+	jlt.u	d2,#6,.L42
+.L40:
+	ld.a	a15,[a12]188
+.L1328:
+	mov	d15,#0
+.L1329:
+	st.w	[a15]12,d15
+.L1330:
+	lea	a4,[a12]56
+.L1331:
+	lea	a5,[a12]184
+.L1332:
+	lea	a6,[a12]48
+	call	arm_mat_add_f32
+.L1333:
+	st.b	[a12]200,d2
+.L29:
+	ret
+.L214:
+	
+__IMU_QuaternionEKF_xhatUpdate_function_end:
+	.size	IMU_QuaternionEKF_xhatUpdate,__IMU_QuaternionEKF_xhatUpdate_function_end-IMU_QuaternionEKF_xhatUpdate
+.L121:
+	; End of function
+	
+	.sdecl	'.text.QuaternionEKF.IMU_QuaternionEKF_Observe',code,cluster('IMU_QuaternionEKF_Observe')
+	.sect	'.text.QuaternionEKF.IMU_QuaternionEKF_Observe'
+	.align	2
+	
+; Function IMU_QuaternionEKF_Observe
+.L61:
+IMU_QuaternionEKF_Observe:	.type	func
+	mov.aa	a15,a4
+.L309:
+	movh.a	a4,#@his(IMU_QuaternionEKF_P)
+.L308:
+	lea	a4,[a4]@los(IMU_QuaternionEKF_P)
+.L839:
+	ld.a	a5,[a15]248
+.L840:
+	mov	d4,#144
+	call	memcpy
+.L841:
+	movh.a	a4,#@his(IMU_QuaternionEKF_K)
+	lea	a4,[a4]@los(IMU_QuaternionEKF_K)
+.L842:
+	ld.a	a5,[a15]284
+.L843:
+	mov	d4,#72
+	call	memcpy
+.L844:
+	movh.a	a4,#@his(IMU_QuaternionEKF_H)
+	lea	a4,[a4]@los(IMU_QuaternionEKF_H)
+.L845:
+	ld.a	a5,[a15]268
+.L846:
+	mov	d4,#72
+	call	memcpy
+.L847:
+	ret
+.L180:
+	
+__IMU_QuaternionEKF_Observe_function_end:
+	.size	IMU_QuaternionEKF_Observe,__IMU_QuaternionEKF_Observe_function_end-IMU_QuaternionEKF_Observe
+.L106:
+	; End of function
+	
+	.sdecl	'.text.QuaternionEKF.Get_Pitch',code,cluster('Get_Pitch')
+	.sect	'.text.QuaternionEKF.Get_Pitch'
+	.align	2
+	
+	.global	Get_Pitch
+; Function Get_Pitch
+.L63:
+Get_Pitch:	.type	func
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L821:
+	ld.w	d2,[a15]416
+.L822:
+	j	.L45
+.L45:
+	ret
+.L177:
+	
+__Get_Pitch_function_end:
+	.size	Get_Pitch,__Get_Pitch_function_end-Get_Pitch
+.L91:
+	; End of function
+	
+	.sdecl	'.text.QuaternionEKF.Get_Roll',code,cluster('Get_Roll')
+	.sect	'.text.QuaternionEKF.Get_Roll'
+	.align	2
+	
+	.global	Get_Roll
+; Function Get_Roll
+.L65:
+Get_Roll:	.type	func
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L827:
+	ld.w	d2,[a15]412
+.L828:
+	j	.L46
+.L46:
+	ret
+.L178:
+	
+__Get_Roll_function_end:
+	.size	Get_Roll,__Get_Roll_function_end-Get_Roll
+.L96:
+	; End of function
+	
+	.sdecl	'.text.QuaternionEKF.Get_Yaw',code,cluster('Get_Yaw')
+	.sect	'.text.QuaternionEKF.Get_Yaw'
+	.align	2
+	
+	.global	Get_Yaw
+; Function Get_Yaw
+.L67:
+Get_Yaw:	.type	func
+	movh.a	a15,#@his(QEKF_INS)
+	lea	a15,[a15]@los(QEKF_INS)
+.L833:
+	ld.w	d2,[a15]420
+.L834:
+	j	.L47
+.L47:
+	ret
+.L179:
+	
+__Get_Yaw_function_end:
+	.size	Get_Yaw,__Get_Yaw_function_end-Get_Yaw
+.L101:
+	; End of function
+	
+	.sdecl	'.data.QuaternionEKF.QEKF_INS',data,cluster('QEKF_INS')
+	.sect	'.data.QuaternionEKF.QEKF_INS'
+	.global	QEKF_INS
+	.align	4
+QEKF_INS:	.type	object
+	.size	QEKF_INS,472
+	.space	472
+	.sdecl	'.rodata.QuaternionEKF.IMU_QuaternionEKF_F',data,rom,cluster('IMU_QuaternionEKF_F')
+	.sect	'.rodata.QuaternionEKF.IMU_QuaternionEKF_F'
+	.global	IMU_QuaternionEKF_F
+	.align	2
+IMU_QuaternionEKF_F:	.type	object
+	.size	IMU_QuaternionEKF_F,144
+	.word	1065353216
+	.space	24
+	.word	1065353216
+	.space	24
+	.word	1065353216
+	.space	24
+	.word	1065353216
+	.space	24
+	.word	1065353216
+	.space	24
+	.word	1065353216
+	.sdecl	'.rodata.QuaternionEKF.IMU_QuaternionEKF_P_Const',data,rom,cluster('IMU_QuaternionEKF_P_Const')
+	.sect	'.rodata.QuaternionEKF.IMU_QuaternionEKF_P_Const'
+	.global	IMU_QuaternionEKF_P_Const
+	.align	2
+IMU_QuaternionEKF_P_Const:	.type	object
+	.size	IMU_QuaternionEKF_P_Const,144
+	.word	1203982336,1036831949,1036831949,1036831949,1036831949,1036831949,1036831949,1203982336
+	.word	1036831949,1036831949,1036831949,1036831949,1036831949,1036831949,1203982336,1036831949
+	.word	1036831949,1036831949,1036831949,1036831949,1036831949,1203982336,1036831949,1036831949
+	.word	1036831949,1036831949,1036831949,1036831949,1120403456,1036831949,1036831949,1036831949
+	.word	1036831949,1036831949,1036831949,1120403456
+	.sdecl	'.data.QuaternionEKF.IMU_QuaternionEKF_P',data,cluster('IMU_QuaternionEKF_P')
+	.sect	'.data.QuaternionEKF.IMU_QuaternionEKF_P'
+	.global	IMU_QuaternionEKF_P
+	.align	2
+IMU_QuaternionEKF_P:	.type	object
+	.size	IMU_QuaternionEKF_P,144
+	.word	1203982336,1036831949,1036831949,1036831949,1036831949,1036831949,1036831949,1203982336
+	.word	1036831949,1036831949,1036831949,1036831949,1036831949,1036831949,1203982336,1036831949
+	.word	1036831949,1036831949,1036831949,1036831949,1036831949,1203982336,1036831949,1036831949
+	.word	1036831949,1036831949,1036831949,1036831949,1120403456,1036831949,1036831949,1036831949
+	.word	1036831949,1036831949,1036831949,1120403456
+	.sdecl	'.bss.QuaternionEKF.IMU_QuaternionEKF_K',data,cluster('IMU_QuaternionEKF_K')
+	.sect	'.bss.QuaternionEKF.IMU_QuaternionEKF_K'
+	.global	IMU_QuaternionEKF_K
+	.align	2
+IMU_QuaternionEKF_K:	.type	object
+	.size	IMU_QuaternionEKF_K,72
+	.space	72
+	.sdecl	'.bss.QuaternionEKF.IMU_QuaternionEKF_H',data,cluster('IMU_QuaternionEKF_H')
+	.sect	'.bss.QuaternionEKF.IMU_QuaternionEKF_H'
+	.global	IMU_QuaternionEKF_H
+	.align	2
+IMU_QuaternionEKF_H:	.type	object
+	.size	IMU_QuaternionEKF_H,72
+	.space	72
+	.calls	'__INDIRECT__','IMU_QuaternionEKF_Observe'
+	.calls	'__INDIRECT__','IMU_QuaternionEKF_F_Linearization_P_Fading'
+	.calls	'__INDIRECT__','IMU_QuaternionEKF_SetH'
+	.calls	'__INDIRECT__','IMU_QuaternionEKF_xhatUpdate'
+	.calls	'IMU_QuaternionEKF_Init','Kalman_Filter_Init'
+	.calls	'IMU_QuaternionEKF_Init','arm_mat_init_f32'
+	.calls	'IMU_QuaternionEKF_Init','memcpy'
+	.calls	'IMU_QuaternionEKF_Reset','Kalman_Filter_Reset'
+	.calls	'IMU_QuaternionEKF_Reset','memcpy'
+	.calls	'IMU_QuaternionEKF_Update','memcpy'
+	.calls	'IMU_QuaternionEKF_Update','Kalman_Filter_Update'
+	.calls	'IMU_QuaternionEKF_Update','atan2f'
+	.calls	'IMU_QuaternionEKF_Update','asinf'
+	.calls	'IMU_QuaternionEKF_SetH','memset'
+	.calls	'IMU_QuaternionEKF_xhatUpdate','arm_mat_trans_f32'
+	.calls	'IMU_QuaternionEKF_xhatUpdate','arm_mat_mult_f32'
+	.calls	'IMU_QuaternionEKF_xhatUpdate','arm_mat_add_f32'
+	.calls	'IMU_QuaternionEKF_xhatUpdate','arm_mat_inverse_f32'
+	.calls	'IMU_QuaternionEKF_xhatUpdate','arm_mat_sub_f32'
+	.calls	'IMU_QuaternionEKF_xhatUpdate','memcpy'
+	.calls	'IMU_QuaternionEKF_Observe','memcpy'
+	.calls	'IMU_QuaternionEKF_Init','',0
+	.calls	'IMU_QuaternionEKF_Reset','',0
+	.calls	'IMU_QuaternionEKF_Update','',16
+	.calls	'IMU_QuaternionEKF_F_Linearization_P_Fading','',24
+	.calls	'IMU_QuaternionEKF_SetH','',16
+	.calls	'IMU_QuaternionEKF_xhatUpdate','',16
+	.calls	'IMU_QuaternionEKF_Observe','',0
+	.calls	'Get_Pitch','',0
+	.calls	'Get_Roll','',0
+	.extern	asinf
+	.extern	atan2f
+	.extern	Ifx_g_LutLSincosF32
+	.extern	memcpy
+	.extern	memset
+	.extern	arm_mat_init_f32
+	.extern	arm_mat_add_f32
+	.extern	arm_mat_sub_f32
+	.extern	arm_mat_mult_f32
+	.extern	arm_mat_trans_f32
+	.extern	arm_mat_inverse_f32
+	.extern	sizeof_float
+	.extern	Kalman_Filter_Init
+	.extern	Kalman_Filter_Reset
+	.extern	Kalman_Filter_Update
+	.extern	__INDIRECT__
+	.calls	'Get_Yaw','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L69:
+	.word	5094
+	.half	3
+	.word	.L70
+	.byte	4
+.L68:
+	.byte	1
+	.byte	'../code/QuaternionEKF.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1
+	.word	.L71
+	.byte	2,1,1,3
+	.word	152
+	.byte	4
+	.byte	'Ifx__jump_and_link',0,3,1,61,17,1,1,5
+	.byte	'fun',0,1,61,43
+	.word	155
+	.byte	6,0,7
+	.byte	'__fract',0,4,128,1
+.L135:
+	.byte	7
+	.byte	'float',0,4,4,8
+	.byte	'Ifx__float_to_fract',0,3,1,152,2,18
+	.word	200
+	.byte	1,1,5
+	.byte	'a',0,1,152,2,44
+	.word	212
+	.byte	6,0,7
+	.byte	'unsigned long long int',0,8,7,9
+	.byte	'void',0,3
+	.word	292
+	.byte	8
+	.byte	'__ld64',0,3,2,135,1,19
+	.word	266
+	.byte	1,1,5
+	.byte	'addr',0,2,135,1,32
+	.word	298
+	.byte	6,0,4
+	.byte	'__st64',0,3,2,143,1,17,1,1,5
+	.byte	'addr',0,2,143,1,30
+	.word	298
+	.byte	5
+	.byte	'value',0,2,143,1,43
+	.word	266
+	.byte	6,0,10,4,61,9,8,11
+	.byte	'real',0
+	.word	212
+	.byte	4,2,35,0,11
+	.byte	'imag',0
+	.word	212
+	.byte	4,2,35,4,0,12
+	.word	384
+	.byte	3
+	.word	418
+	.byte	8
+	.byte	'IFX_Cf32_dot',0,3,3,85,20
+	.word	212
+	.byte	1,1,5
+	.byte	'b',0,3,85,49
+	.word	423
+	.byte	6,0,8
+	.byte	'IFX_Cf32_mag',0,3,3,91,20
+	.word	212
+	.byte	1,1,5
+	.byte	'c',0,3,91,49
+	.word	423
+	.byte	13,6,0,0,3
+	.word	384
+	.byte	4
+	.byte	'IFX_Cf32_set',0,3,3,125,17,1,1,5
+	.byte	'a',0,3,125,40
+	.word	502
+	.byte	5
+	.byte	're',0,3,125,51
+	.word	212
+	.byte	5
+	.byte	'im',0,3,125,63
+	.word	212
+	.byte	6,0,7
+	.byte	'unsigned short int',0,2,7,7
+	.byte	'char',0,1,6,10,5,57,9,8,11
+	.byte	'gain',0
+	.word	212
+	.byte	4,2,35,0,11
+	.byte	'offset',0
+	.word	212
+	.byte	4,2,35,4,0,12
+	.word	591
+	.byte	3
+	.word	627
+	.byte	10,5,63,9,8,11
+	.byte	'segmentCount',0
+	.word	561
+	.byte	2,2,35,0,11
+	.byte	'shift',0
+	.word	583
+	.byte	1,2,35,2,11
+	.byte	'segments',0
+	.word	632
+	.byte	4,2,35,4,0,12
+	.word	637
+	.byte	3
+	.word	698
+.L248:
+	.byte	7
+	.byte	'unsigned long int',0,4,7
+.L241:
+	.byte	8
+	.byte	'Ifx_LutIndexedLinearF32_search',0,3,5,87,20
+	.word	212
+	.byte	1,1
+.L243:
+	.byte	5
+	.byte	'ml',0,5,87,82
+	.word	703
+.L245:
+	.byte	5
+	.byte	'index',0,5,87,93
+	.word	708
+.L247:
+	.byte	6,0
+.L165:
+	.byte	7
+	.byte	'long int',0,4,5
+.L235:
+	.byte	8
+	.byte	'Ifx_LutLSincosF32_sin',0,3,6,70,20
+	.word	212
+	.byte	1,1
+.L237:
+	.byte	5
+	.byte	'fxpAngle',0,6,70,59
+	.word	798
+.L239:
+	.byte	13,6,0,0
+.L227:
+	.byte	8
+	.byte	'Ifx_LutLSincosF32_cos',0,3,6,84,20
+	.word	212
+	.byte	1,1
+.L229:
+	.byte	5
+	.byte	'fxpAngle',0,6,84,59
+	.word	798
+.L231:
+	.byte	13,6,0,0
+.L157:
+	.byte	8
+	.byte	'invSqrt',0,3,7,149,4,21
+	.word	212
+	.byte	1,1
+.L160:
+	.byte	5
+	.byte	'x',0,7,149,4,35
+	.word	212
+.L162:
+	.byte	6,0,14
+	.byte	'__fabsf',0
+	.word	212
+	.byte	1,1,1,1,15
+	.byte	'f',0
+	.word	212
+	.byte	0,16
+	.word	160
+	.byte	17
+	.word	186
+	.byte	6,0,16
+	.word	221
+	.byte	17
+	.word	253
+	.byte	6,0,16
+	.word	303
+	.byte	17
+	.word	322
+	.byte	6,0,16
+	.word	338
+	.byte	17
+	.word	353
+	.byte	17
+	.word	367
+	.byte	6,0,18
+	.byte	'asinf',0,8,98,25
+	.word	212
+	.byte	1,1,1,1,19,8,98,43
+	.word	212
+	.byte	0,18
+	.byte	'atan2f',0,8,107,25
+	.word	212
+	.byte	1,1,1,1,19,8,107,43
+	.word	212
+	.byte	19,8,107,50
+	.word	212
+	.byte	0,16
+	.word	428
+	.byte	17
+	.word	452
+	.byte	6,0,16
+	.word	464
+	.byte	17
+	.word	488
+	.byte	13,20
+	.word	428
+	.byte	17
+	.word	452
+	.byte	21
+	.word	462
+	.byte	0,6,0,0,16
+	.word	507
+	.byte	17
+	.word	527
+	.byte	17
+	.word	537
+	.byte	17
+	.word	548
+	.byte	6,0,16
+	.word	729
+	.byte	17
+	.word	771
+	.byte	17
+	.word	782
+	.byte	6,0,16
+	.word	810
+	.byte	17
+	.word	843
+	.byte	13,20
+	.word	729
+	.byte	17
+	.word	771
+	.byte	17
+	.word	782
+	.byte	21
+	.word	796
+	.byte	0,6,0,0,16
+	.word	864
+	.byte	17
+	.word	897
+	.byte	13,20
+	.word	810
+	.byte	17
+	.word	843
+	.byte	22
+	.word	860
+	.byte	20
+	.word	729
+	.byte	17
+	.word	771
+	.byte	17
+	.word	782
+	.byte	21
+	.word	796
+	.byte	0,21
+	.word	861
+	.byte	0,0,6,0,0,23
+	.word	298
+	.byte	12
+	.word	292
+	.byte	3
+	.word	1270
+	.byte	23
+	.word	1275
+	.byte	7
+	.byte	'unsigned int',0,4,7,18
+	.byte	'memcpy',0,9,53,17
+	.word	298
+	.byte	1,1,1,1,19,9,53,33
+	.word	1265
+	.byte	19,9,53,56
+	.word	1280
+	.byte	19,9,53,68
+	.word	1285
+	.byte	0,7
+	.byte	'int',0,4,5,18
+	.byte	'memset',0,9,56,17
+	.word	298
+	.byte	1,1,1,1,19,9,56,33
+	.word	298
+	.byte	19,9,56,36
+	.word	1345
+	.byte	19,9,56,41
+	.word	1285
+	.byte	0,3
+	.word	212
+	.byte	10,10,94,11,8,11
+	.byte	'numRows',0
+	.word	561
+	.byte	2,2,35,0,11
+	.byte	'numCols',0
+	.word	561
+	.byte	2,2,35,2,11
+	.byte	'pData',0
+	.word	1396
+	.byte	4,2,35,4,0,3
+	.word	1401
+	.byte	24
+	.byte	'arm_mat_init_f32',0,10,108,7,1,1,1,1,5
+	.byte	'S',0,10,109,35
+	.word	1456
+	.byte	5
+	.byte	'nRows',0,10,110,18
+	.word	561
+	.byte	5
+	.byte	'nColumns',0,10,111,18
+	.word	561
+	.byte	5
+	.byte	'pData',0,10,112,21
+	.word	1396
+	.byte	0,25,10,20,11,1,26
+	.byte	'ARM_MATH_DECOMPOSITION_FAILURE',0,121,26
+	.byte	'ARM_MATH_TEST_FAILURE',0,122,26
+	.byte	'ARM_MATH_SINGULAR',0,123,26
+	.byte	'ARM_MATH_NANINF',0,124,26
+	.byte	'ARM_MATH_SIZE_MISMATCH',0,125,26
+	.byte	'ARM_MATH_LENGTH_ERROR',0,126,26
+	.byte	'ARM_MATH_ARGUMENT_ERROR',0,127,26
+	.byte	'ARM_MATH_SUCCESS',0,0,0,12
+	.word	1401
+	.byte	3
+	.word	1737
+	.byte	18
+	.byte	'arm_mat_add_f32',0,10,122,13
+	.word	1542
+	.byte	1,1,1,1,5
+	.byte	'pSrcA',0,10,123,35
+	.word	1742
+	.byte	5
+	.byte	'pSrcB',0,10,124,35
+	.word	1742
+	.byte	5
+	.byte	'pDst',0,10,125,35
+	.word	1456
+	.byte	0,18
+	.byte	'arm_mat_sub_f32',0,10,136,1,13
+	.word	1542
+	.byte	1,1,1,1,5
+	.byte	'pSrcA',0,10,137,1,35
+	.word	1742
+	.byte	5
+	.byte	'pSrcB',0,10,138,1,35
+	.word	1742
+	.byte	5
+	.byte	'pDst',0,10,139,1,35
+	.word	1456
+	.byte	0,18
+	.byte	'arm_mat_mult_f32',0,10,150,1,13
+	.word	1542
+	.byte	1,1,1,1,5
+	.byte	'pSrcA',0,10,151,1,35
+	.word	1742
+	.byte	5
+	.byte	'pSrcB',0,10,152,1,35
+	.word	1742
+	.byte	5
+	.byte	'pDst',0,10,153,1,35
+	.word	1456
+	.byte	0,18
+	.byte	'arm_mat_trans_f32',0,10,162,1,12
+	.word	1542
+	.byte	1,1,1,1,5
+	.byte	'pSrc',0,10,163,1,35
+	.word	1742
+	.byte	5
+	.byte	'pDst',0,10,164,1,35
+	.word	1456
+	.byte	0,18
+	.byte	'arm_mat_inverse_f32',0,10,173,1,14
+	.word	1542
+	.byte	1,1,1,1,5
+	.byte	'src',0,10,174,1,35
+	.word	1742
+	.byte	5
+	.byte	'dst',0,10,175,1,29
+	.word	1456
+	.byte	0
+.L202:
+	.byte	7
+	.byte	'unsigned char',0,1,8,3
+	.word	2086
+	.byte	3
+	.word	.L310-.L69
+	.byte	27,1,1,28
+	.word	2108
+	.byte	0,3
+	.word	2113
+.L310:
+	.byte	29
+	.byte	'kf_t',0,11,16,16,180,2,11
+	.byte	'FilteredValue',0
+	.word	1396
+	.byte	4,2,35,0,11
+	.byte	'MeasuredVector',0
+	.word	1396
+	.byte	4,2,35,4,11
+	.byte	'ControlVector',0
+	.word	1396
+	.byte	4,2,35,8,11
+	.byte	'xhatSize',0
+	.word	2086
+	.byte	1,2,35,12,11
+	.byte	'uSize',0
+	.word	2086
+	.byte	1,2,35,13,11
+	.byte	'zSize',0
+	.word	2086
+	.byte	1,2,35,14,11
+	.byte	'UseAutoAdjustment',0
+	.word	2086
+	.byte	1,2,35,15,11
+	.byte	'MeasurementValidNum',0
+	.word	2086
+	.byte	1,2,35,16,11
+	.byte	'MeasurementMap',0
+	.word	2103
+	.byte	4,2,35,20,11
+	.byte	'MeasurementDegree',0
+	.word	1396
+	.byte	4,2,35,24,11
+	.byte	'MatR_DiagonalElements',0
+	.word	1396
+	.byte	4,2,35,28,11
+	.byte	'StateMinVariance',0
+	.word	1396
+	.byte	4,2,35,32,11
+	.byte	'temp',0
+	.word	2103
+	.byte	4,2,35,36,11
+	.byte	'SkipEq1',0
+	.word	2086
+	.byte	1,2,35,40,11
+	.byte	'SkipEq2',0
+	.word	2086
+	.byte	1,2,35,41,11
+	.byte	'SkipEq3',0
+	.word	2086
+	.byte	1,2,35,42,11
+	.byte	'SkipEq4',0
+	.word	2086
+	.byte	1,2,35,43,11
+	.byte	'SkipEq5',0
+	.word	2086
+	.byte	1,2,35,44,11
+	.byte	'xhat',0
+	.word	1401
+	.byte	8,2,35,48,11
+	.byte	'xhatminus',0
+	.word	1401
+	.byte	8,2,35,56,11
+	.byte	'u',0
+	.word	1401
+	.byte	8,2,35,64,11
+	.byte	'z',0
+	.word	1401
+	.byte	8,2,35,72,11
+	.byte	'P',0
+	.word	1401
+	.byte	8,2,35,80,11
+	.byte	'Pminus',0
+	.word	1401
+	.byte	8,2,35,88,11
+	.byte	'F',0
+	.word	1401
+	.byte	8,2,35,96,11
+	.byte	'FT',0
+	.word	1401
+	.byte	8,2,35,104,11
+	.byte	'B',0
+	.word	1401
+	.byte	8,2,35,112,11
+	.byte	'H',0
+	.word	1401
+	.byte	8,2,35,120,11
+	.byte	'HT',0
+	.word	1401
+	.byte	8,3,35,128,1,11
+	.byte	'Q',0
+	.word	1401
+	.byte	8,3,35,136,1,11
+	.byte	'R',0
+	.word	1401
+	.byte	8,3,35,144,1,11
+	.byte	'K',0
+	.word	1401
+	.byte	8,3,35,152,1,11
+	.byte	'S',0
+	.word	1401
+	.byte	8,3,35,160,1,11
+	.byte	'temp_matrix',0
+	.word	1401
+	.byte	8,3,35,168,1,11
+	.byte	'temp_matrix1',0
+	.word	1401
+	.byte	8,3,35,176,1,11
+	.byte	'temp_vector',0
+	.word	1401
+	.byte	8,3,35,184,1,11
+	.byte	'temp_vector1',0
+	.word	1401
+	.byte	8,3,35,192,1,11
+	.byte	'MatStatus',0
+	.word	583
+	.byte	1,3,35,200,1,11
+	.byte	'User_Func0_f',0
+	.word	2122
+	.byte	4,3,35,204,1,11
+	.byte	'User_Func1_f',0
+	.word	2122
+	.byte	4,3,35,208,1,11
+	.byte	'User_Func2_f',0
+	.word	2122
+	.byte	4,3,35,212,1,11
+	.byte	'User_Func3_f',0
+	.word	2122
+	.byte	4,3,35,216,1,11
+	.byte	'User_Func4_f',0
+	.word	2122
+	.byte	4,3,35,220,1,11
+	.byte	'User_Func5_f',0
+	.word	2122
+	.byte	4,3,35,224,1,11
+	.byte	'User_Func6_f',0
+	.word	2122
+	.byte	4,3,35,228,1,11
+	.byte	'xhat_data',0
+	.word	1396
+	.byte	4,3,35,232,1,11
+	.byte	'xhatminus_data',0
+	.word	1396
+	.byte	4,3,35,236,1,11
+	.byte	'u_data',0
+	.word	1396
+	.byte	4,3,35,240,1,11
+	.byte	'z_data',0
+	.word	1396
+	.byte	4,3,35,244,1,11
+	.byte	'P_data',0
+	.word	1396
+	.byte	4,3,35,248,1,11
+	.byte	'Pminus_data',0
+	.word	1396
+	.byte	4,3,35,252,1,11
+	.byte	'F_data',0
+	.word	1396
+	.byte	4,3,35,128,2,11
+	.byte	'FT_data',0
+	.word	1396
+	.byte	4,3,35,132,2,11
+	.byte	'B_data',0
+	.word	1396
+	.byte	4,3,35,136,2,11
+	.byte	'H_data',0
+	.word	1396
+	.byte	4,3,35,140,2,11
+	.byte	'HT_data',0
+	.word	1396
+	.byte	4,3,35,144,2,11
+	.byte	'Q_data',0
+	.word	1396
+	.byte	4,3,35,148,2,11
+	.byte	'R_data',0
+	.word	1396
+	.byte	4,3,35,152,2,11
+	.byte	'K_data',0
+	.word	1396
+	.byte	4,3,35,156,2,11
+	.byte	'S_data',0
+	.word	1396
+	.byte	4,3,35,160,2,11
+	.byte	'temp_matrix_data',0
+	.word	1396
+	.byte	4,3,35,164,2,11
+	.byte	'temp_matrix_data1',0
+	.word	1396
+	.byte	4,3,35,168,2,11
+	.byte	'temp_vector_data',0
+	.word	1396
+	.byte	4,3,35,172,2,11
+	.byte	'temp_vector_data1',0
+	.word	1396
+	.byte	4,3,35,176,2,0
+.L181:
+	.byte	3
+	.word	2127
+	.byte	24
+	.byte	'Kalman_Filter_Init',0,11,80,6,1,1,1,1,5
+	.byte	'kf',0,11,80,41
+	.word	3362
+	.byte	5
+	.byte	'xhatSize',0,11,80,53
+	.word	2086
+	.byte	5
+	.byte	'uSize',0,11,80,71
+	.word	2086
+	.byte	5
+	.byte	'zSize',0,11,80,86
+	.word	2086
+	.byte	0,24
+	.byte	'Kalman_Filter_Reset',0,11,81,6,1,1,1,1,5
+	.byte	'kf',0,11,81,42
+	.word	3362
+	.byte	5
+	.byte	'xhatSize',0,11,81,54
+	.word	2086
+	.byte	5
+	.byte	'uSize',0,11,81,72
+	.word	2086
+	.byte	5
+	.byte	'zSize',0,11,81,87
+	.word	2086
+	.byte	0,18
+	.byte	'Kalman_Filter_Update',0,11,88,8
+	.word	1396
+	.byte	1,1,1,1,5
+	.byte	'kf',0,11,88,45
+	.word	3362
+	.byte	0
+.L149:
+	.byte	30
+	.word	212
+.L151:
+	.byte	30
+	.word	212
+.L153:
+	.byte	30
+	.word	212
+.L155:
+	.byte	30
+	.word	212
+	.byte	16
+	.word	918
+	.byte	17
+	.word	938
+	.byte	6,0
+.L185:
+	.byte	30
+	.word	212
+.L187:
+	.byte	30
+	.word	212
+.L189:
+	.byte	30
+	.word	212
+.L191:
+	.byte	30
+	.word	212
+.L193:
+	.byte	30
+	.word	212
+.L206:
+	.byte	30
+	.word	212
+.L208:
+	.byte	30
+	.word	212
+.L210:
+	.byte	30
+	.word	212
+.L212:
+	.byte	30
+	.word	212
+.L216:
+	.byte	30
+	.word	212
+.L218:
+	.byte	30
+	.word	212
+.L220:
+	.byte	30
+	.word	212
+.L222:
+	.byte	30
+	.word	212
+	.byte	31
+	.byte	'__INDIRECT__',0,7,1,1,1,1,1,7
+	.byte	'short int',0,2,5,32
+	.byte	'__wchar_t',0,7,1,1
+	.word	3698
+	.byte	32
+	.byte	'__size_t',0,7,1,1
+	.word	1285
+	.byte	32
+	.byte	'__ptrdiff_t',0,7,1,1
+	.word	1345
+	.byte	33,1,3
+	.word	3766
+	.byte	32
+	.byte	'__codeptr',0,7,1,1
+	.word	3768
+	.byte	32
+	.byte	'__intptr_t',0,7,1,1
+	.word	1345
+	.byte	32
+	.byte	'__uintptr_t',0,7,1,1
+	.word	1285
+	.byte	32
+	.byte	'size_t',0,12,24,25
+	.word	1285
+	.byte	32
+	.byte	'uint8',0,13,105,29
+	.word	2086
+	.byte	32
+	.byte	'uint16',0,13,109,29
+	.word	561
+	.byte	32
+	.byte	'uint32',0,13,113,29
+	.word	708
+	.byte	32
+	.byte	'uint64',0,13,118,29
+	.word	266
+	.byte	32
+	.byte	'sint8',0,13,122,29
+	.word	583
+	.byte	32
+	.byte	'sint16',0,13,126,29
+	.word	3698
+	.byte	32
+	.byte	'sint32',0,13,131,1,29
+	.word	798
+	.byte	7
+	.byte	'long long int',0,8,5,32
+	.byte	'sint64',0,13,138,1,29
+	.word	3949
+	.byte	32
+	.byte	'float32',0,13,167,1,29
+	.word	212
+	.byte	32
+	.byte	'pvoid',0,4,57,28
+	.word	298
+	.byte	32
+	.byte	'cfloat32',0,4,65,3
+	.word	384
+	.byte	32
+	.byte	'Ifx_TickTime',0,4,79,28
+	.word	3949
+	.byte	32
+	.byte	'Ifx_Lut_FxpAngle',0,14,84,16
+	.word	798
+	.byte	32
+	.byte	'Ifx_LutIndexedLinearF32_Item',0,5,61,3
+	.word	591
+	.byte	32
+	.byte	'Ifx_LutIndexedLinearF32',0,5,68,3
+	.word	637
+	.byte	12
+	.word	637
+	.byte	34
+	.byte	'Ifx_g_LutLSincosF32',0,6,62,42
+	.word	4145
+	.byte	1,1,32
+	.byte	'_iob_flag_t',0,15,82,25
+	.word	561
+	.byte	32
+	.byte	'int8_t',0,16,241,1,41
+	.word	583
+	.byte	32
+	.byte	'uint8_t',0,16,242,1,41
+	.word	2086
+	.byte	32
+	.byte	'int16_t',0,16,245,1,41
+	.word	3698
+	.byte	32
+	.byte	'uint16_t',0,16,246,1,41
+	.word	561
+	.byte	32
+	.byte	'uint64_t',0,16,134,2,41
+	.word	266
+	.byte	32
+	.byte	'int8',0,17,54,29
+	.word	583
+	.byte	32
+	.byte	'int16',0,17,55,29
+	.word	3698
+	.byte	32
+	.byte	'int32',0,17,56,29
+	.word	1345
+	.byte	32
+	.byte	'int64',0,17,57,29
+	.word	3949
+	.byte	32
+	.byte	'arm_status',0,10,30,5
+	.word	1542
+	.byte	32
+	.byte	'arm_matrix_instance_f32',0,10,99,5
+	.word	1401
+	.byte	32
+	.byte	'KalmanFilter_t',0,11,76,3
+	.word	2127
+	.byte	34
+	.byte	'sizeof_float',0,11,78,17
+	.word	561
+	.byte	1,1,35,16
+	.word	212
+	.byte	36,3,0,35,12
+	.word	212
+	.byte	36,2,0,35,4
+	.word	212
+	.byte	36,0,0
+.L259:
+	.byte	10,18,27,9,216,3,11
+	.byte	'Initialized',0
+	.word	2086
+	.byte	1,2,35,0,11
+	.byte	'IMU_QuaternionEKF',0
+	.word	2127
+	.byte	180,2,2,35,4,11
+	.byte	'ConvergeFlag',0
+	.word	2086
+	.byte	1,3,35,184,2,11
+	.byte	'StableFlag',0
+	.word	2086
+	.byte	1,3,35,185,2,11
+	.byte	'ErrorCount',0
+	.word	266
+	.byte	8,3,35,188,2,11
+	.byte	'UpdateCount',0
+	.word	266
+	.byte	8,3,35,196,2,11
+	.byte	'q',0
+	.word	4438
+	.byte	16,3,35,204,2,11
+	.byte	'GyroBias',0
+	.word	4447
+	.byte	12,3,35,220,2,11
+	.byte	'Gyro',0
+	.word	4447
+	.byte	12,3,35,232,2,11
+	.byte	'Accel',0
+	.word	4447
+	.byte	12,3,35,244,2,11
+	.byte	'OrientationCosine',0
+	.word	4447
+	.byte	12,3,35,128,3,11
+	.byte	'accLPFcoef',0
+	.word	212
+	.byte	4,3,35,140,3,11
+	.byte	'gyro_norm',0
+	.word	212
+	.byte	4,3,35,144,3,11
+	.byte	'accl_norm',0
+	.word	212
+	.byte	4,3,35,148,3,11
+	.byte	'AdaptiveGainScale',0
+	.word	212
+	.byte	4,3,35,152,3,11
+	.byte	'Roll',0
+	.word	212
+	.byte	4,3,35,156,3,11
+	.byte	'Pitch',0
+	.word	212
+	.byte	4,3,35,160,3,11
+	.byte	'Yaw',0
+	.word	212
+	.byte	4,3,35,164,3,11
+	.byte	'YawTotalAngle',0
+	.word	212
+	.byte	4,3,35,168,3,11
+	.byte	'Q1',0
+	.word	212
+	.byte	4,3,35,172,3,11
+	.byte	'Q2',0
+	.word	212
+	.byte	4,3,35,176,3,11
+	.byte	'R',0
+	.word	212
+	.byte	4,3,35,180,3,11
+	.byte	'dt',0
+	.word	212
+	.byte	4,3,35,184,3,11
+	.byte	'ChiSquare',0
+	.word	1401
+	.byte	8,3,35,188,3,11
+	.byte	'ChiSquare_Data',0
+	.word	4456
+	.byte	4,3,35,196,3,11
+	.byte	'ChiSquareTestThreshold',0
+	.word	212
+	.byte	4,3,35,200,3,11
+	.byte	'lambda',0
+	.word	212
+	.byte	4,3,35,204,3,11
+	.byte	'YawRoundCount',0
+	.word	3698
+	.byte	2,3,35,208,3,11
+	.byte	'YawAngleLast',0
+	.word	212
+	.byte	4,3,35,210,3,0,32
+	.byte	'QEKF_INS_t',0,18,68,3
+	.word	4465
+.L262:
+	.byte	35,144,1
+	.word	212
+	.byte	36,35,0
+.L260:
+	.byte	12
+	.word	5068
+.L261:
+	.byte	12
+	.word	5068
+.L263:
+	.byte	35,72
+	.word	212
+	.byte	36,17,0,0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L70:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,21,0,54,15,39,12,0,0,3,15,0,73,19,0,0,4,46,1,3,8,32,13
+	.byte	58,15,59,15,57,15,54,15,39,12,0,0,5,5,0,3,8,58,15,59,15,57,15,73,19,0,0,6,11,0,0,0,7,36,0,3,8,11,15,62
+	.byte	15,0,0,8,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,9,59,0,3,8,0,0,10,19,1,58,15,59,15,57
+	.byte	15,11,15,0,0,11,13,0,3,8,73,19,11,15,56,9,0,0,12,38,0,73,19,0,0,13,11,1,0,0,14,46,1,3,8,73,19,54,15,39
+	.byte	12,63,12,60,12,0,0,15,5,0,3,8,73,19,0,0,16,46,1,49,19,0,0,17,5,0,49,19,0,0,18,46,1,3,8,58,15,59,15,57
+	.byte	15,73,19,54,15,39,12,63,12,60,12,0,0,19,5,0,58,15,59,15,57,15,73,19,0,0,20,29,1,49,19,0,0,21,11,0,49,19
+	.byte	0,0,22,11,1,49,19,0,0,23,55,0,73,19,0,0,24,46,1,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,25,4
+	.byte	1,58,15,59,15,57,15,11,15,0,0,26,40,0,3,8,28,13,0,0,27,21,1,54,15,39,12,0,0,28,5,0,73,19,0,0,29,19,1,3
+	.byte	8,58,15,59,15,57,15,11,15,0,0,30,53,0,73,19,0,0,31,46,0,3,8,58,15,59,15,57,15,54,15,63,12,60,12,0,0,32
+	.byte	22,0,3,8,58,15,59,15,57,15,73,19,0,0,33,21,0,54,15,0,0,34,52,0,3,8,58,15,59,15,57,15,73,19,63,12,60,12
+	.byte	0,0,35,1,1,11,15,73,19,0,0,36,33,0,47,15,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L71:
+	.word	.L312-.L311
+.L311:
+	.half	3
+	.word	.L314-.L313
+.L313:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'H:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math',0
+	.byte	'D:\\Infineon\\AURIX-Studio-1.10.24\\tools\\Compilers\\Tasking_1.1r8\\ctc\\include\\',0
+	.byte	'H:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\zf_common',0,0
+	.byte	'H:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\Cpu\\Std\\IfxCpu_IntrinsicsTasking.h',0
+	.byte	0,0,0
+	.byte	'H:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\Cpu\\Std\\IfxCpu_Intrinsics.h',0
+	.byte	0,0,0
+	.byte	'H:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\SysSe\\Math\\IFX_Cf32.h',0
+	.byte	0,0,0
+	.byte	'H:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\Cpu\\Std\\Ifx_Types.h',0
+	.byte	0,0,0
+	.byte	'Ifx_LutIndexedLinearF32.h',0,1,0,0
+	.byte	'Ifx_LutLSincosF32.h',0,1,0,0
+	.byte	'../code/QuaternionEKF.c',0,0,0,0
+	.byte	'math.h',0,2,0,0
+	.byte	'string.h',0,2,0,0
+	.byte	'..\\code\\matrix.h',0,0,0,0
+	.byte	'..\\code\\kalman_filter.h',0,0,0,0
+	.byte	'stddef.h',0,2,0,0
+	.byte	'H:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\Cpu\\Std\\Platform_Types.h',0
+	.byte	0,0,0
+	.byte	'Ifx_Lut.h',0,1,0,0
+	.byte	'stdio.h',0,2,0,0
+	.byte	'stdint.h',0,2,0,0
+	.byte	'zf_common_typedef.h',0,3,0,0
+	.byte	'..\\code\\QuaternionEKF.h',0,0,0,0,0
+.L314:
+.L312:
+	.sdecl	'.debug_info',debug,cluster('IMU_QuaternionEKF_Init')
+	.sect	'.debug_info'
+.L72:
+	.word	340
+	.half	3
+	.word	.L73
+	.byte	4,1
+	.byte	'../code/QuaternionEKF.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1
+	.word	.L75,.L74
+	.byte	2
+	.word	.L68
+	.byte	3
+	.byte	'IMU_QuaternionEKF_Init',0,1,57,6,1,1,1
+	.word	.L49,.L134,.L48
+	.byte	4
+	.byte	'process_noise1',0,1,57,35
+	.word	.L135,.L136
+	.byte	4
+	.byte	'process_noise2',0,1,57,57
+	.word	.L135,.L137
+	.byte	4
+	.byte	'measure_noise',0,1,57,79
+	.word	.L135,.L138
+	.byte	4
+	.byte	'lambda',0,1,57,100
+	.word	.L135,.L139
+	.byte	4
+	.byte	'dt',0,1,57,114
+	.word	.L135,.L140
+	.byte	4
+	.byte	'lpf',0,1,57,124
+	.word	.L135,.L141
+	.byte	5
+	.word	.L49,.L134
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('IMU_QuaternionEKF_Init')
+	.sect	'.debug_abbrev'
+.L73:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('IMU_QuaternionEKF_Init')
+	.sect	'.debug_line'
+.L74:
+	.word	.L316-.L315
+.L315:
+	.half	3
+	.word	.L318-.L317
+.L317:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/QuaternionEKF.c',0,0,0,0,0
+.L318:
+	.byte	5,6,7,0,5,2
+	.word	.L49
+	.byte	3,56,1,5,5,9
+	.half	.L268-.L49
+	.byte	3,2,1,5,28,9
+	.half	.L319-.L268
+	.byte	1,5,26,9
+	.half	.L320-.L319
+	.byte	1,5,5,9
+	.half	.L321-.L320
+	.byte	3,1,1,5,17,9
+	.half	.L322-.L321
+	.byte	1,5,5,9
+	.half	.L323-.L322
+	.byte	3,1,1,5,17,9
+	.half	.L324-.L323
+	.byte	1,5,5,9
+	.half	.L325-.L324
+	.byte	3,1,1,5,16,9
+	.half	.L326-.L325
+	.byte	1,5,5,9
+	.half	.L327-.L326
+	.byte	3,1,1,5,39,9
+	.half	.L328-.L327
+	.byte	1,5,37,9
+	.half	.L329-.L328
+	.byte	1,5,5,9
+	.half	.L330-.L329
+	.byte	3,1,1,5,29,9
+	.half	.L331-.L330
+	.byte	1,5,27,9
+	.half	.L332-.L331
+	.byte	1,5,5,9
+	.half	.L333-.L332
+	.byte	3,1,1,5,27,9
+	.half	.L334-.L333
+	.byte	1,5,25,9
+	.half	.L335-.L334
+	.byte	1,5,5,9
+	.half	.L336-.L335
+	.byte	3,1,1,5,28,9
+	.half	.L337-.L336
+	.byte	1,5,26,9
+	.half	.L338-.L337
+	.byte	1,5,5,9
+	.half	.L339-.L338
+	.byte	3,1,1,5,17,9
+	.half	.L340-.L339
+	.byte	1,5,18,9
+	.half	.L341-.L340
+	.byte	3,2,1,5,16,9
+	.half	.L269-.L341
+	.byte	1,5,5,9
+	.half	.L342-.L269
+	.byte	1,5,18,7,9
+	.half	.L343-.L342
+	.byte	3,2,1,5,5,9
+	.half	.L2-.L343
+	.byte	3,2,1,5,21,9
+	.half	.L344-.L2
+	.byte	1,5,25,9
+	.half	.L345-.L344
+	.byte	3,3,1,5,33,9
+	.half	.L346-.L345
+	.byte	1,5,53,9
+	.half	.L347-.L346
+	.byte	1,5,56,9
+	.half	.L266-.L347
+	.byte	1,5,59,9
+	.half	.L267-.L266
+	.byte	1,5,18,9
+	.half	.L264-.L267
+	.byte	3,1,1,5,26,9
+	.half	.L348-.L264
+	.byte	1,5,38,9
+	.half	.L349-.L348
+	.byte	1,5,41,9
+	.half	.L350-.L349
+	.byte	1,5,53,9
+	.half	.L351-.L350
+	.byte	1,5,61,9
+	.half	.L352-.L351
+	.byte	1,5,5,9
+	.half	.L353-.L352
+	.byte	3,3,1,5,31,9
+	.half	.L354-.L353
+	.byte	1,5,47,9
+	.half	.L355-.L354
+	.byte	1,5,45,9
+	.half	.L356-.L355
+	.byte	1,5,5,9
+	.half	.L357-.L356
+	.byte	3,1,1,5,31,9
+	.half	.L358-.L357
+	.byte	1,5,47,9
+	.half	.L359-.L358
+	.byte	1,5,45,9
+	.half	.L360-.L359
+	.byte	1,5,5,9
+	.half	.L361-.L360
+	.byte	3,1,1,5,31,9
+	.half	.L362-.L361
+	.byte	1,5,47,9
+	.half	.L363-.L362
+	.byte	1,5,45,9
+	.half	.L364-.L363
+	.byte	1,5,5,9
+	.half	.L365-.L364
+	.byte	3,1,1,5,31,9
+	.half	.L366-.L365
+	.byte	1,5,47,9
+	.half	.L367-.L366
+	.byte	1,5,45,9
+	.half	.L368-.L367
+	.byte	1,5,5,9
+	.half	.L369-.L368
+	.byte	3,3,1,5,47,9
+	.half	.L370-.L369
+	.byte	1,5,45,9
+	.half	.L371-.L370
+	.byte	1,5,5,9
+	.half	.L372-.L371
+	.byte	3,1,1,5,47,9
+	.half	.L373-.L372
+	.byte	1,5,45,9
+	.half	.L374-.L373
+	.byte	1,5,5,9
+	.half	.L375-.L374
+	.byte	3,1,1,5,47,9
+	.half	.L376-.L375
+	.byte	1,5,45,9
+	.half	.L377-.L376
+	.byte	1,5,5,9
+	.half	.L378-.L377
+	.byte	3,1,1,5,47,9
+	.half	.L379-.L378
+	.byte	1,5,45,9
+	.half	.L380-.L379
+	.byte	1,5,5,9
+	.half	.L381-.L380
+	.byte	3,3,1,5,42,9
+	.half	.L382-.L381
+	.byte	1,5,40,9
+	.half	.L383-.L382
+	.byte	1,5,5,9
+	.half	.L384-.L383
+	.byte	3,1,1,5,42,9
+	.half	.L385-.L384
+	.byte	1,5,40,9
+	.half	.L386-.L385
+	.byte	1,5,12,9
+	.half	.L387-.L386
+	.byte	3,2,1,5,38,9
+	.half	.L388-.L387
+	.byte	1,5,47,9
+	.half	.L389-.L388
+	.byte	1,5,68,9
+	.half	.L390-.L389
+	.byte	1,5,12,9
+	.half	.L391-.L390
+	.byte	3,1,1,5,38,9
+	.half	.L392-.L391
+	.byte	1,5,47,9
+	.half	.L393-.L392
+	.byte	1,5,68,9
+	.half	.L394-.L393
+	.byte	1,5,1,9
+	.half	.L395-.L394
+	.byte	3,1,1,7,9
+	.half	.L76-.L395
+	.byte	0,1,1
+.L316:
+	.sdecl	'.debug_ranges',debug,cluster('IMU_QuaternionEKF_Init')
+	.sect	'.debug_ranges'
+.L75:
+	.word	-1,.L49,0,.L76-.L49,0,0
+	.sdecl	'.debug_info',debug,cluster('IMU_QuaternionEKF_Update')
+	.sect	'.debug_info'
+.L77:
+	.word	609
+	.half	3
+	.word	.L78
+	.byte	4,1
+	.byte	'../code/QuaternionEKF.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1
+	.word	.L80,.L79
+	.byte	2
+	.word	.L68
+	.byte	3
+	.byte	'IMU_QuaternionEKF_Update',0,1,126,6,1,1,1
+	.word	.L53,.L142,.L52
+	.byte	4
+	.byte	'gx',0,1,126,37
+	.word	.L135,.L143
+	.byte	4
+	.byte	'gy',0,1,126,47
+	.word	.L135,.L144
+	.byte	4
+	.byte	'gz',0,1,126,57
+	.word	.L135,.L145
+	.byte	4
+	.byte	'ax',0,1,126,67
+	.word	.L135,.L146
+	.byte	4
+	.byte	'ay',0,1,126,77
+	.word	.L135,.L147
+	.byte	4
+	.byte	'az',0,1,126,87
+	.word	.L135,.L148
+	.byte	5
+	.word	.L53,.L142
+	.byte	6
+	.byte	'halfgxdt',0,1,129,1,20
+	.word	.L149,.L150
+	.byte	6
+	.byte	'halfgydt',0,1,129,1,30
+	.word	.L151,.L152
+	.byte	6
+	.byte	'halfgzdt',0,1,129,1,40
+	.word	.L153,.L154
+	.byte	6
+	.byte	'accelInvNorm',0,1,130,1,20
+	.word	.L155,.L156
+	.byte	7
+	.word	.L157,.L158,.L159
+	.byte	8
+	.word	.L160,.L161
+	.byte	9
+	.word	.L162,.L158,.L159
+	.byte	6
+	.byte	'halfx',0,1,151,4,11
+	.word	.L135,.L163
+	.byte	6
+	.byte	'y',0,1,152,4,11
+	.word	.L135,.L164
+	.byte	6
+	.byte	'i',0,1,153,4,10
+	.word	.L165,.L166
+	.byte	0,0,7
+	.word	.L157,.L167,.L4
+	.byte	8
+	.word	.L160,.L161
+	.byte	10
+	.word	.L162,.L168
+	.byte	6
+	.byte	'halfx',0,1,151,4,11
+	.word	.L135,.L173
+	.byte	6
+	.byte	'y',0,1,152,4,11
+	.word	.L135,.L174
+	.byte	6
+	.byte	'i',0,1,153,4,10
+	.word	.L165,.L175
+	.byte	0,0,7
+	.word	.L157,.L169,.L170
+	.byte	8
+	.word	.L160,.L161
+	.byte	0,7
+	.word	.L157,.L171,.L172
+	.byte	8
+	.word	.L160,.L161
+	.byte	0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('IMU_QuaternionEKF_Update')
+	.sect	'.debug_abbrev'
+.L78:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,7,29,1,49,16,17,1,18,1,0,0,8,5,0,49,16,2,6,0,0,9,11,1,49,16,17,1,18
+	.byte	1,0,0,10,11,1,49,16,85,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('IMU_QuaternionEKF_Update')
+	.sect	'.debug_line'
+.L79:
+	.word	.L397-.L396
+.L396:
+	.half	3
+	.word	.L399-.L398
+.L398:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/QuaternionEKF.c',0,0,0,0,0
+.L399:
+	.byte	5,6,7,0,5,2
+	.word	.L53
+	.byte	3,253,0,1,5,5,9
+	.half	.L275-.L53
+	.byte	3,15,1,5,29,9
+	.half	.L400-.L275
+	.byte	1,5,46,9
+	.half	.L401-.L400
+	.byte	1,5,27,9
+	.half	.L402-.L401
+	.byte	1,5,22,9
+	.half	.L403-.L402
+	.byte	1,5,5,9
+	.half	.L404-.L403
+	.byte	3,1,1,5,29,9
+	.half	.L405-.L404
+	.byte	1,5,46,9
+	.half	.L406-.L405
+	.byte	1,5,27,9
+	.half	.L407-.L406
+	.byte	1,5,22,9
+	.half	.L408-.L407
+	.byte	1,5,5,9
+	.half	.L409-.L408
+	.byte	3,1,1,5,29,9
+	.half	.L410-.L409
+	.byte	1,5,46,9
+	.half	.L411-.L410
+	.byte	1,5,27,9
+	.half	.L412-.L411
+	.byte	1,5,22,9
+	.half	.L413-.L412
+	.byte	1,5,23,9
+	.half	.L414-.L413
+	.byte	3,3,1,5,36,9
+	.half	.L415-.L414
+	.byte	1,5,16,9
+	.half	.L416-.L415
+	.byte	1,5,21,9
+	.half	.L417-.L416
+	.byte	1,5,42,9
+	.half	.L418-.L417
+	.byte	1,5,50,9
+	.half	.L419-.L418
+	.byte	1,5,40,9
+	.half	.L420-.L419
+	.byte	1,5,14,9
+	.half	.L421-.L420
+	.byte	1,5,23,9
+	.half	.L422-.L421
+	.byte	3,1,1,5,36,9
+	.half	.L423-.L422
+	.byte	1,5,16,9
+	.half	.L424-.L423
+	.byte	1,5,21,9
+	.half	.L425-.L424
+	.byte	1,5,42,9
+	.half	.L426-.L425
+	.byte	1,5,50,9
+	.half	.L427-.L426
+	.byte	1,5,40,9
+	.half	.L428-.L427
+	.byte	1,5,14,9
+	.half	.L429-.L428
+	.byte	1,5,23,9
+	.half	.L430-.L429
+	.byte	3,1,1,5,36,9
+	.half	.L431-.L430
+	.byte	1,5,16,9
+	.half	.L432-.L431
+	.byte	1,5,21,9
+	.half	.L433-.L432
+	.byte	1,5,42,9
+	.half	.L434-.L433
+	.byte	1,5,50,9
+	.half	.L435-.L434
+	.byte	1,5,40,9
+	.half	.L436-.L435
+	.byte	1,5,14,9
+	.half	.L437-.L436
+	.byte	1,5,12,9
+	.half	.L438-.L437
+	.byte	3,4,1,5,38,9
+	.half	.L439-.L438
+	.byte	1,5,47,9
+	.half	.L440-.L439
+	.byte	1,5,68,9
+	.half	.L441-.L440
+	.byte	1,5,5,9
+	.half	.L271-.L441
+	.byte	3,2,1,5,31,9
+	.half	.L442-.L271
+	.byte	1,5,45,9
+	.half	.L443-.L442
+	.byte	1,5,44,9
+	.half	.L444-.L443
+	.byte	1,5,42,9
+	.half	.L445-.L444
+	.byte	1,5,5,9
+	.half	.L446-.L445
+	.byte	3,1,1,5,31,9
+	.half	.L447-.L446
+	.byte	1,5,45,9
+	.half	.L448-.L447
+	.byte	1,5,44,9
+	.half	.L449-.L448
+	.byte	1,5,42,9
+	.half	.L450-.L449
+	.byte	1,5,5,9
+	.half	.L451-.L450
+	.byte	3,1,1,5,31,9
+	.half	.L452-.L451
+	.byte	1,5,45,9
+	.half	.L453-.L452
+	.byte	1,5,44,9
+	.half	.L454-.L453
+	.byte	1,5,42,9
+	.half	.L455-.L454
+	.byte	1,5,5,9
+	.half	.L456-.L455
+	.byte	3,2,1,5,31,9
+	.half	.L457-.L456
+	.byte	1,5,44,9
+	.half	.L458-.L457
+	.byte	1,5,42,9
+	.half	.L459-.L458
+	.byte	1,5,5,9
+	.half	.L460-.L459
+	.byte	3,1,1,5,31,9
+	.half	.L461-.L460
+	.byte	1,5,44,9
+	.half	.L462-.L461
+	.byte	1,5,42,9
+	.half	.L463-.L462
+	.byte	1,5,5,9
+	.half	.L464-.L463
+	.byte	3,1,1,5,31,9
+	.half	.L465-.L464
+	.byte	1,5,45,9
+	.half	.L466-.L465
+	.byte	1,5,44,9
+	.half	.L467-.L466
+	.byte	1,5,42,9
+	.half	.L468-.L467
+	.byte	1,5,5,9
+	.half	.L469-.L468
+	.byte	3,2,1,5,31,9
+	.half	.L470-.L469
+	.byte	1,5,45,9
+	.half	.L471-.L470
+	.byte	1,5,43,9
+	.half	.L472-.L471
+	.byte	1,5,5,9
+	.half	.L473-.L472
+	.byte	3,1,1,5,31,9
+	.half	.L474-.L473
+	.byte	1,5,46,9
+	.half	.L475-.L474
+	.byte	1,5,45,9
+	.half	.L476-.L475
+	.byte	1,5,43,9
+	.half	.L477-.L476
+	.byte	1,5,5,9
+	.half	.L478-.L477
+	.byte	3,1,1,5,31,9
+	.half	.L479-.L478
+	.byte	1,5,45,9
+	.half	.L480-.L479
+	.byte	1,5,43,9
+	.half	.L481-.L480
+	.byte	1,5,5,9
+	.half	.L482-.L481
+	.byte	3,2,1,5,31,9
+	.half	.L483-.L482
+	.byte	1,5,45,9
+	.half	.L484-.L483
+	.byte	1,5,43,9
+	.half	.L485-.L484
+	.byte	1,5,5,9
+	.half	.L486-.L485
+	.byte	3,1,1,5,31,9
+	.half	.L487-.L486
+	.byte	1,5,45,9
+	.half	.L488-.L487
+	.byte	1,5,43,9
+	.half	.L489-.L488
+	.byte	1,5,5,9
+	.half	.L490-.L489
+	.byte	3,1,1,5,31,9
+	.half	.L491-.L490
+	.byte	1,5,46,9
+	.half	.L492-.L491
+	.byte	1,5,45,9
+	.half	.L493-.L492
+	.byte	1,5,43,9
+	.half	.L494-.L493
+	.byte	1,5,5,9
+	.half	.L495-.L494
+	.byte	3,2,1,5,23,9
+	.half	.L496-.L495
+	.byte	1,5,5,9
+	.half	.L497-.L496
+	.byte	3,1,1,5,23,9
+	.half	.L498-.L497
+	.byte	1,5,5,9
+	.half	.L499-.L498
+	.byte	3,1,1,5,23,9
+	.half	.L500-.L499
+	.byte	1,5,28,9
+	.half	.L501-.L500
+	.byte	3,15,1,5,42,9
+	.half	.L502-.L501
+	.byte	1,5,48,9
+	.half	.L503-.L502
+	.byte	1,5,62,9
+	.half	.L504-.L503
+	.byte	1,5,68,9
+	.half	.L505-.L504
+	.byte	1,5,82,9
+	.half	.L506-.L505
+	.byte	1,5,88,9
+	.half	.L507-.L506
+	.byte	1,5,102,9
+	.half	.L508-.L507
+	.byte	1,5,86,9
+	.half	.L509-.L508
+	.byte	1,5,66,9
+	.half	.L510-.L509
+	.byte	1,5,106,9
+	.half	.L511-.L510
+	.byte	1,5,19,9
+	.half	.L158-.L511
+	.byte	3,220,2,1,5,24,9
+	.half	.L512-.L158
+	.byte	1,5,9,9
+	.half	.L277-.L512
+	.byte	3,3,1,5,25,9
+	.half	.L513-.L277
+	.byte	1,5,20,9
+	.half	.L276-.L513
+	.byte	1,5,14,9
+	.half	.L514-.L276
+	.byte	3,2,1,5,28,9
+	.half	.L515-.L514
+	.byte	1,5,19,9
+	.half	.L278-.L515
+	.byte	1,5,11,9
+	.half	.L516-.L278
+	.byte	1,5,5,9
+	.half	.L280-.L516
+	.byte	3,1,1,5,18,9
+	.half	.L3-.L280
+	.byte	3,158,125,1,5,5,9
+	.half	.L159-.L3
+	.byte	3,1,1,5,26,9
+	.half	.L517-.L159
+	.byte	1,5,33,9
+	.half	.L279-.L517
+	.byte	1,5,31,9
+	.half	.L281-.L279
+	.byte	1,5,24,9
+	.half	.L518-.L281
+	.byte	1,5,5,9
+	.half	.L519-.L518
+	.byte	3,3,1,5,31,9
+	.half	.L520-.L519
+	.byte	1,5,52,9
+	.half	.L521-.L520
+	.byte	1,5,66,9
+	.half	.L522-.L521
+	.byte	1,5,72,9
+	.half	.L523-.L522
+	.byte	1,5,70,9
+	.half	.L524-.L523
+	.byte	1,5,50,9
+	.half	.L525-.L524
+	.byte	1,5,5,9
+	.half	.L526-.L525
+	.byte	3,1,1,5,31,9
+	.half	.L527-.L526
+	.byte	1,5,52,9
+	.half	.L528-.L527
+	.byte	1,5,66,9
+	.half	.L529-.L528
+	.byte	1,5,72,9
+	.half	.L530-.L529
+	.byte	1,5,70,9
+	.half	.L531-.L530
+	.byte	1,5,50,9
+	.half	.L532-.L531
+	.byte	1,5,5,9
+	.half	.L533-.L532
+	.byte	3,1,1,5,31,9
+	.half	.L534-.L533
+	.byte	1,5,52,9
+	.half	.L535-.L534
+	.byte	1,5,66,9
+	.half	.L536-.L535
+	.byte	1,5,72,9
+	.half	.L537-.L536
+	.byte	1,5,70,9
+	.half	.L538-.L537
+	.byte	1,5,50,9
+	.half	.L539-.L538
+	.byte	1,5,113,9
+	.half	.L540-.L539
+	.byte	3,3,1,5,126,9
+	.half	.L541-.L540
+	.byte	1,5,132,1,9
+	.half	.L542-.L541
+	.byte	1,5,145,1,9
+	.half	.L543-.L542
+	.byte	1,5,39,9
+	.half	.L544-.L543
+	.byte	1,5,52,9
+	.half	.L545-.L544
+	.byte	1,5,58,9
+	.half	.L546-.L545
+	.byte	1,5,71,9
+	.half	.L547-.L546
+	.byte	1,5,76,9
+	.half	.L548-.L547
+	.byte	1,5,89,9
+	.half	.L549-.L548
+	.byte	1,5,95,9
+	.half	.L550-.L549
+	.byte	1,5,108,9
+	.half	.L551-.L550
+	.byte	1,5,93,9
+	.half	.L552-.L551
+	.byte	1,5,75,9
+	.half	.L553-.L552
+	.byte	1,5,112,9
+	.half	.L554-.L553
+	.byte	1,5,19,9
+	.half	.L167-.L554
+	.byte	3,211,2,1,5,24,9
+	.half	.L555-.L167
+	.byte	1,5,9,9
+	.half	.L283-.L555
+	.byte	3,3,1,5,25,9
+	.half	.L556-.L283
+	.byte	1,5,20,9
+	.half	.L282-.L556
+	.byte	1,5,14,9
+	.half	.L557-.L282
+	.byte	3,2,1,5,28,9
+	.half	.L558-.L557
+	.byte	1,5,19,9
+	.half	.L284-.L558
+	.byte	1,5,11,9
+	.half	.L559-.L284
+	.byte	1,5,5,9
+	.half	.L285-.L559
+	.byte	3,1,1,9
+	.half	.L4-.L285
+	.byte	3,167,125,1,5,26,9
+	.half	.L560-.L4
+	.byte	1,5,30,9
+	.half	.L169-.L560
+	.byte	1,5,24,9
+	.half	.L170-.L169
+	.byte	1,5,17,9
+	.half	.L561-.L170
+	.byte	3,5,1,5,30,9
+	.half	.L172-.L561
+	.byte	1,5,28,9
+	.half	.L562-.L172
+	.byte	1,5,9,9
+	.half	.L563-.L562
+	.byte	1,5,38,7,9
+	.half	.L564-.L563
+	.byte	1,5,46,9
+	.half	.L565-.L564
+	.byte	1,5,64,9
+	.half	.L566-.L565
+	.byte	1,5,57,9
+	.half	.L567-.L566
+	.byte	1,5,74,9
+	.half	.L568-.L567
+	.byte	1,5,82,9
+	.half	.L569-.L568
+	.byte	1,5,100,9
+	.half	.L570-.L569
+	.byte	1,5,93,9
+	.half	.L571-.L570
+	.byte	1,5,9,9
+	.half	.L572-.L571
+	.byte	3,2,1,5,31,9
+	.half	.L573-.L572
+	.byte	1,5,29,9
+	.half	.L574-.L573
+	.byte	1,5,32,9
+	.half	.L575-.L574
+	.byte	1,5,9,9
+	.half	.L5-.L575
+	.byte	3,4,1,5,31,9
+	.half	.L576-.L5
+	.byte	1,5,29,9
+	.half	.L577-.L576
+	.byte	1,5,5,9
+	.half	.L8-.L577
+	.byte	3,4,1,5,31,9
+	.half	.L578-.L8
+	.byte	1,5,44,9
+	.half	.L579-.L578
+	.byte	1,5,52,9
+	.half	.L580-.L579
+	.byte	1,5,58,9
+	.half	.L581-.L580
+	.byte	1,5,66,9
+	.half	.L582-.L581
+	.byte	1,5,56,9
+	.half	.L583-.L582
+	.byte	1,5,42,9
+	.half	.L584-.L583
+	.byte	1,5,5,9
+	.half	.L585-.L584
+	.byte	3,1,1,5,31,9
+	.half	.L586-.L585
+	.byte	1,5,44,9
+	.half	.L587-.L586
+	.byte	1,5,52,9
+	.half	.L588-.L587
+	.byte	1,5,58,9
+	.half	.L589-.L588
+	.byte	1,5,66,9
+	.half	.L590-.L589
+	.byte	1,5,56,9
+	.half	.L591-.L590
+	.byte	1,5,42,9
+	.half	.L592-.L591
+	.byte	1,5,5,9
+	.half	.L593-.L592
+	.byte	3,1,1,5,31,9
+	.half	.L594-.L593
+	.byte	1,5,45,9
+	.half	.L595-.L594
+	.byte	1,5,53,9
+	.half	.L596-.L595
+	.byte	1,5,59,9
+	.half	.L597-.L596
+	.byte	1,5,67,9
+	.half	.L598-.L597
+	.byte	1,5,57,9
+	.half	.L599-.L598
+	.byte	1,5,43,9
+	.half	.L600-.L599
+	.byte	1,5,5,9
+	.half	.L601-.L600
+	.byte	3,1,1,5,31,9
+	.half	.L602-.L601
+	.byte	1,5,45,9
+	.half	.L603-.L602
+	.byte	1,5,53,9
+	.half	.L604-.L603
+	.byte	1,5,59,9
+	.half	.L605-.L604
+	.byte	1,5,67,9
+	.half	.L606-.L605
+	.byte	1,5,57,9
+	.half	.L607-.L606
+	.byte	1,5,43,9
+	.half	.L608-.L607
+	.byte	1,5,5,9
+	.half	.L609-.L608
+	.byte	3,1,1,5,31,9
+	.half	.L610-.L609
+	.byte	1,5,45,9
+	.half	.L611-.L610
+	.byte	1,5,53,9
+	.half	.L612-.L611
+	.byte	1,5,59,9
+	.half	.L613-.L612
+	.byte	1,5,67,9
+	.half	.L614-.L613
+	.byte	1,5,57,9
+	.half	.L615-.L614
+	.byte	1,5,43,9
+	.half	.L616-.L615
+	.byte	1,5,5,9
+	.half	.L617-.L616
+	.byte	3,1,1,5,31,9
+	.half	.L618-.L617
+	.byte	1,5,45,9
+	.half	.L619-.L618
+	.byte	1,5,53,9
+	.half	.L620-.L619
+	.byte	1,5,59,9
+	.half	.L621-.L620
+	.byte	1,5,67,9
+	.half	.L622-.L621
+	.byte	1,5,57,9
+	.half	.L623-.L622
+	.byte	1,5,43,9
+	.half	.L624-.L623
+	.byte	1,5,5,9
+	.half	.L625-.L624
+	.byte	3,1,1,5,31,9
+	.half	.L626-.L625
+	.byte	1,5,44,9
+	.half	.L627-.L626
+	.byte	1,5,52,9
+	.half	.L628-.L627
+	.byte	1,5,42,9
+	.half	.L629-.L628
+	.byte	1,5,5,9
+	.half	.L630-.L629
+	.byte	3,1,1,5,31,9
+	.half	.L631-.L630
+	.byte	1,5,44,9
+	.half	.L632-.L631
+	.byte	1,5,52,9
+	.half	.L633-.L632
+	.byte	1,5,42,9
+	.half	.L634-.L633
+	.byte	1,5,5,9
+	.half	.L635-.L634
+	.byte	3,1,1,5,31,9
+	.half	.L636-.L635
+	.byte	1,5,44,9
+	.half	.L637-.L636
+	.byte	1,5,52,9
+	.half	.L638-.L637
+	.byte	1,5,42,9
+	.half	.L639-.L638
+	.byte	1,5,27,9
+	.half	.L640-.L639
+	.byte	3,3,1,5,35,9
+	.half	.L641-.L640
+	.byte	1,5,9,9
+	.half	.L642-.L641
+	.byte	3,3,1,5,25,9
+	.half	.L643-.L642
+	.byte	1,5,51,9
+	.half	.L644-.L643
+	.byte	1,5,65,9
+	.half	.L645-.L644
+	.byte	1,5,23,9
+	.half	.L646-.L645
+	.byte	1,5,5,9
+	.half	.L647-.L646
+	.byte	3,1,1,5,21,9
+	.half	.L648-.L647
+	.byte	1,5,47,9
+	.half	.L649-.L648
+	.byte	1,5,61,9
+	.half	.L650-.L649
+	.byte	1,5,19,9
+	.half	.L651-.L650
+	.byte	1,5,5,9
+	.half	.L652-.L651
+	.byte	3,1,1,5,21,9
+	.half	.L653-.L652
+	.byte	1,5,47,9
+	.half	.L654-.L653
+	.byte	1,5,61,9
+	.half	.L655-.L654
+	.byte	1,5,19,9
+	.half	.L656-.L655
+	.byte	1,5,5,9
+	.half	.L657-.L656
+	.byte	3,1,1,5,21,9
+	.half	.L658-.L657
+	.byte	1,5,47,9
+	.half	.L659-.L658
+	.byte	1,5,61,9
+	.half	.L660-.L659
+	.byte	1,5,19,9
+	.half	.L661-.L660
+	.byte	1,5,5,9
+	.half	.L662-.L661
+	.byte	3,2,1,5,36,9
+	.half	.L663-.L662
+	.byte	1,5,46,9
+	.half	.L664-.L663
+	.byte	1,5,50,9
+	.half	.L665-.L664
+	.byte	1,5,60,9
+	.half	.L666-.L665
+	.byte	1,5,66,9
+	.half	.L667-.L666
+	.byte	1,5,76,9
+	.half	.L668-.L667
+	.byte	1,5,80,9
+	.half	.L669-.L668
+	.byte	1,5,90,9
+	.half	.L670-.L669
+	.byte	1,5,79,9
+	.half	.L671-.L670
+	.byte	1,5,64,9
+	.half	.L672-.L671
+	.byte	1,5,95,9
+	.half	.L673-.L672
+	.byte	1,5,102,9
+	.half	.L674-.L673
+	.byte	1,5,112,9
+	.half	.L675-.L674
+	.byte	1,5,116,9
+	.half	.L676-.L675
+	.byte	1,5,126,9
+	.half	.L677-.L676
+	.byte	1,5,100,9
+	.half	.L678-.L677
+	.byte	1,5,132,1,9
+	.half	.L679-.L678
+	.byte	1,5,142,1,9
+	.half	.L680-.L679
+	.byte	1,5,146,1,9
+	.half	.L681-.L680
+	.byte	1,5,156,1,9
+	.half	.L682-.L681
+	.byte	1,5,130,1,9
+	.half	.L683-.L682
+	.byte	1,5,19,9
+	.half	.L684-.L683
+	.byte	1,5,28,9
+	.half	.L685-.L684
+	.byte	1,5,18,9
+	.half	.L686-.L685
+	.byte	1,5,5,9
+	.half	.L687-.L686
+	.byte	3,1,1,5,48,9
+	.half	.L688-.L687
+	.byte	1,5,58,9
+	.half	.L689-.L688
+	.byte	1,5,62,9
+	.half	.L690-.L689
+	.byte	1,5,72,9
+	.half	.L691-.L690
+	.byte	1,5,61,9
+	.half	.L692-.L691
+	.byte	1,5,78,9
+	.half	.L693-.L692
+	.byte	1,5,88,9
+	.half	.L694-.L693
+	.byte	1,5,92,9
+	.half	.L695-.L694
+	.byte	1,5,102,9
+	.half	.L696-.L695
+	.byte	1,5,76,9
+	.half	.L697-.L696
+	.byte	1,5,39,9
+	.half	.L698-.L697
+	.byte	1,5,76,9
+	.half	.L699-.L698
+	.byte	1,5,21,9
+	.half	.L700-.L699
+	.byte	1,5,31,9
+	.half	.L701-.L700
+	.byte	1,5,20,9
+	.half	.L702-.L701
+	.byte	1,5,5,9
+	.half	.L703-.L702
+	.byte	3,1,1,5,37,9
+	.half	.L704-.L703
+	.byte	1,5,47,9
+	.half	.L705-.L704
+	.byte	1,5,51,9
+	.half	.L706-.L705
+	.byte	1,5,61,9
+	.half	.L707-.L706
+	.byte	1,5,67,9
+	.half	.L708-.L707
+	.byte	1,5,77,9
+	.half	.L709-.L708
+	.byte	1,5,81,9
+	.half	.L710-.L709
+	.byte	1,5,91,9
+	.half	.L711-.L710
+	.byte	1,5,80,9
+	.half	.L712-.L711
+	.byte	1,5,65,9
+	.half	.L713-.L712
+	.byte	1,5,96,9
+	.half	.L714-.L713
+	.byte	1,5,103,9
+	.half	.L715-.L714
+	.byte	1,5,113,9
+	.half	.L716-.L715
+	.byte	1,5,117,9
+	.half	.L717-.L716
+	.byte	1,5,127,9
+	.half	.L718-.L717
+	.byte	1,5,101,9
+	.half	.L719-.L718
+	.byte	1,5,133,1,9
+	.half	.L720-.L719
+	.byte	1,5,143,1,9
+	.half	.L721-.L720
+	.byte	1,5,147,1,9
+	.half	.L722-.L721
+	.byte	1,5,157,1,9
+	.half	.L723-.L722
+	.byte	1,5,131,1,9
+	.half	.L724-.L723
+	.byte	1,5,20,9
+	.half	.L725-.L724
+	.byte	1,5,29,9
+	.half	.L726-.L725
+	.byte	1,5,18,9
+	.half	.L727-.L726
+	.byte	1,5,5,9
+	.half	.L728-.L727
+	.byte	3,2,1,5,28,9
+	.half	.L729-.L728
+	.byte	1,5,54,9
+	.half	.L730-.L729
+	.byte	1,5,68,9
+	.half	.L731-.L730
+	.byte	1,5,26,9
+	.half	.L732-.L731
+	.byte	1,5,5,9
+	.half	.L733-.L732
+	.byte	3,1,1,5,28,9
+	.half	.L734-.L733
+	.byte	1,5,54,9
+	.half	.L735-.L734
+	.byte	1,5,68,9
+	.half	.L736-.L735
+	.byte	1,5,26,9
+	.half	.L737-.L736
+	.byte	1,5,5,9
+	.half	.L738-.L737
+	.byte	3,1,1,5,28,9
+	.half	.L739-.L738
+	.byte	1,5,26,9
+	.half	.L740-.L739
+	.byte	1,5,9,9
+	.half	.L741-.L740
+	.byte	3,2,1,5,17,9
+	.half	.L742-.L741
+	.byte	1,5,24,9
+	.half	.L743-.L742
+	.byte	1,5,32,9
+	.half	.L744-.L743
+	.byte	1,5,22,9
+	.half	.L745-.L744
+	.byte	1,5,48,9
+	.half	.L746-.L745
+	.byte	1,5,46,9
+	.half	.L747-.L746
+	.byte	1,5,5,9
+	.half	.L748-.L747
+	.byte	1,5,9,7,9
+	.half	.L749-.L748
+	.byte	3,2,1,5,17,9
+	.half	.L750-.L749
+	.byte	1,5,31,9
+	.half	.L751-.L750
+	.byte	1,5,33,9
+	.half	.L752-.L751
+	.byte	1,5,14,9
+	.half	.L9-.L752
+	.byte	3,2,1,5,22,9
+	.half	.L753-.L9
+	.byte	1,5,29,9
+	.half	.L754-.L753
+	.byte	1,5,37,9
+	.half	.L755-.L754
+	.byte	1,5,27,9
+	.half	.L756-.L755
+	.byte	1,5,53,9
+	.half	.L757-.L756
+	.byte	1,5,51,9
+	.half	.L758-.L757
+	.byte	1,5,10,9
+	.half	.L759-.L758
+	.byte	1,5,9,7,9
+	.half	.L760-.L759
+	.byte	3,2,1,5,17,9
+	.half	.L761-.L760
+	.byte	1,5,31,9
+	.half	.L762-.L761
+	.byte	1,5,5,9
+	.half	.L10-.L762
+	.byte	3,2,1,5,39,9
+	.half	.L763-.L10
+	.byte	1,5,47,9
+	.half	.L764-.L763
+	.byte	1,5,30,9
+	.half	.L765-.L764
+	.byte	1,5,64,9
+	.half	.L766-.L765
+	.byte	1,5,72,9
+	.half	.L767-.L766
+	.byte	1,5,62,9
+	.half	.L768-.L767
+	.byte	1,5,28,9
+	.half	.L769-.L768
+	.byte	1,5,5,9
+	.half	.L770-.L769
+	.byte	3,1,1,5,29,9
+	.half	.L771-.L770
+	.byte	1,5,37,9
+	.half	.L772-.L771
+	.byte	1,5,27,9
+	.half	.L773-.L772
+	.byte	1,5,1,9
+	.half	.L774-.L773
+	.byte	3,9,1,7,9
+	.half	.L81-.L774
+	.byte	0,1,1
+.L397:
+	.sdecl	'.debug_ranges',debug,cluster('IMU_QuaternionEKF_Update')
+	.sect	'.debug_ranges'
+.L80:
+	.word	-1,.L53,0,.L81-.L53,0,0
+.L168:
+	.word	-1,.L53,.L167-.L53,.L4-.L53,.L169-.L53,.L170-.L53,.L171-.L53,.L172-.L53,0,0
+	.sdecl	'.debug_info',debug,cluster('IMU_QuaternionEKF_Reset')
+	.sect	'.debug_info'
+.L82:
+	.word	211
+	.half	3
+	.word	.L83
+	.byte	4,1
+	.byte	'../code/QuaternionEKF.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1
+	.word	.L85,.L84
+	.byte	2
+	.word	.L68
+	.byte	3
+	.byte	'IMU_QuaternionEKF_Reset',0,1,99,6,1,1,1
+	.word	.L51,.L176,.L50
+	.byte	4
+	.word	.L51,.L176
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('IMU_QuaternionEKF_Reset')
+	.sect	'.debug_abbrev'
+.L83:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('IMU_QuaternionEKF_Reset')
+	.sect	'.debug_line'
+.L84:
+	.word	.L776-.L775
+.L775:
+	.half	3
+	.word	.L778-.L777
+.L777:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/QuaternionEKF.c',0,0,0,0,0
+.L778:
+	.byte	5,26,7,0,5,2
+	.word	.L51
+	.byte	3,229,0,1,5,34,9
+	.half	.L779-.L51
+	.byte	1,5,54,9
+	.half	.L780-.L779
+	.byte	1,5,57,9
+	.half	.L781-.L780
+	.byte	1,5,60,9
+	.half	.L782-.L781
+	.byte	1,5,12,9
+	.half	.L783-.L782
+	.byte	3,2,1,5,33,9
+	.half	.L784-.L783
+	.byte	1,5,60,9
+	.half	.L785-.L784
+	.byte	1,5,5,9
+	.half	.L786-.L785
+	.byte	3,3,1,5,31,9
+	.half	.L787-.L786
+	.byte	1,5,47,9
+	.half	.L788-.L787
+	.byte	1,5,45,9
+	.half	.L789-.L788
+	.byte	1,5,5,9
+	.half	.L790-.L789
+	.byte	3,1,1,5,31,9
+	.half	.L791-.L790
+	.byte	1,5,47,9
+	.half	.L792-.L791
+	.byte	1,5,45,9
+	.half	.L793-.L792
+	.byte	1,5,5,9
+	.half	.L794-.L793
+	.byte	3,1,1,5,31,9
+	.half	.L795-.L794
+	.byte	1,5,47,9
+	.half	.L796-.L795
+	.byte	1,5,45,9
+	.half	.L797-.L796
+	.byte	1,5,5,9
+	.half	.L798-.L797
+	.byte	3,1,1,5,31,9
+	.half	.L799-.L798
+	.byte	1,5,47,9
+	.half	.L800-.L799
+	.byte	1,5,45,9
+	.half	.L801-.L800
+	.byte	1,5,5,9
+	.half	.L802-.L801
+	.byte	3,3,1,5,42,9
+	.half	.L803-.L802
+	.byte	1,5,40,9
+	.half	.L804-.L803
+	.byte	1,5,5,9
+	.half	.L805-.L804
+	.byte	3,1,1,5,42,9
+	.half	.L806-.L805
+	.byte	1,5,40,9
+	.half	.L807-.L806
+	.byte	1,5,12,9
+	.half	.L808-.L807
+	.byte	3,2,1,5,38,9
+	.half	.L809-.L808
+	.byte	1,5,47,9
+	.half	.L810-.L809
+	.byte	1,5,68,9
+	.half	.L811-.L810
+	.byte	1,5,12,9
+	.half	.L812-.L811
+	.byte	3,1,1,5,38,9
+	.half	.L813-.L812
+	.byte	1,5,47,9
+	.half	.L814-.L813
+	.byte	1,5,68,9
+	.half	.L815-.L814
+	.byte	1,5,1,9
+	.half	.L816-.L815
+	.byte	3,1,1,7,9
+	.half	.L86-.L816
+	.byte	0,1,1
+.L776:
+	.sdecl	'.debug_ranges',debug,cluster('IMU_QuaternionEKF_Reset')
+	.sect	'.debug_ranges'
+.L85:
+	.word	-1,.L51,0,.L86-.L51,0,0
+	.sdecl	'.debug_info',debug,cluster('Get_Pitch')
+	.sect	'.debug_info'
+.L87:
+	.word	202
+	.half	3
+	.word	.L88
+	.byte	4,1
+	.byte	'../code/QuaternionEKF.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1
+	.word	.L90,.L89
+	.byte	2
+	.word	.L68
+	.byte	3
+	.byte	'Get_Pitch',0,1,129,4,7
+	.word	.L135
+	.byte	1,1,1
+	.word	.L63,.L177,.L62
+	.byte	4
+	.word	.L63,.L177
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Get_Pitch')
+	.sect	'.debug_abbrev'
+.L88:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Get_Pitch')
+	.sect	'.debug_line'
+.L89:
+	.word	.L818-.L817
+.L817:
+	.half	3
+	.word	.L820-.L819
+.L819:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/QuaternionEKF.c',0,0,0,0,0
+.L820:
+	.byte	5,12,7,0,5,2
+	.word	.L63
+	.byte	3,130,4,1,5,20,9
+	.half	.L821-.L63
+	.byte	1,5,5,9
+	.half	.L822-.L821
+	.byte	1,5,1,9
+	.half	.L45-.L822
+	.byte	3,1,1,7,9
+	.half	.L91-.L45
+	.byte	0,1,1
+.L818:
+	.sdecl	'.debug_ranges',debug,cluster('Get_Pitch')
+	.sect	'.debug_ranges'
+.L90:
+	.word	-1,.L63,0,.L91-.L63,0,0
+	.sdecl	'.debug_info',debug,cluster('Get_Roll')
+	.sect	'.debug_info'
+.L92:
+	.word	201
+	.half	3
+	.word	.L93
+	.byte	4,1
+	.byte	'../code/QuaternionEKF.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1
+	.word	.L95,.L94
+	.byte	2
+	.word	.L68
+	.byte	3
+	.byte	'Get_Roll',0,1,134,4,7
+	.word	.L135
+	.byte	1,1,1
+	.word	.L65,.L178,.L64
+	.byte	4
+	.word	.L65,.L178
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Get_Roll')
+	.sect	'.debug_abbrev'
+.L93:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Get_Roll')
+	.sect	'.debug_line'
+.L94:
+	.word	.L824-.L823
+.L823:
+	.half	3
+	.word	.L826-.L825
+.L825:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/QuaternionEKF.c',0,0,0,0,0
+.L826:
+	.byte	5,12,7,0,5,2
+	.word	.L65
+	.byte	3,135,4,1,5,20,9
+	.half	.L827-.L65
+	.byte	1,5,5,9
+	.half	.L828-.L827
+	.byte	1,5,1,9
+	.half	.L46-.L828
+	.byte	3,1,1,7,9
+	.half	.L96-.L46
+	.byte	0,1,1
+.L824:
+	.sdecl	'.debug_ranges',debug,cluster('Get_Roll')
+	.sect	'.debug_ranges'
+.L95:
+	.word	-1,.L65,0,.L96-.L65,0,0
+	.sdecl	'.debug_info',debug,cluster('Get_Yaw')
+	.sect	'.debug_info'
+.L97:
+	.word	200
+	.half	3
+	.word	.L98
+	.byte	4,1
+	.byte	'../code/QuaternionEKF.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1
+	.word	.L100,.L99
+	.byte	2
+	.word	.L68
+	.byte	3
+	.byte	'Get_Yaw',0,1,139,4,7
+	.word	.L135
+	.byte	1,1,1
+	.word	.L67,.L179,.L66
+	.byte	4
+	.word	.L67,.L179
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Get_Yaw')
+	.sect	'.debug_abbrev'
+.L98:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Get_Yaw')
+	.sect	'.debug_line'
+.L99:
+	.word	.L830-.L829
+.L829:
+	.half	3
+	.word	.L832-.L831
+.L831:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/QuaternionEKF.c',0,0,0,0,0
+.L832:
+	.byte	5,12,7,0,5,2
+	.word	.L67
+	.byte	3,140,4,1,5,20,9
+	.half	.L833-.L67
+	.byte	1,5,5,9
+	.half	.L834-.L833
+	.byte	1,5,1,9
+	.half	.L47-.L834
+	.byte	3,1,1,7,9
+	.half	.L101-.L47
+	.byte	0,1,1
+.L830:
+	.sdecl	'.debug_ranges',debug,cluster('Get_Yaw')
+	.sect	'.debug_ranges'
+.L100:
+	.word	-1,.L67,0,.L101-.L67,0,0
+	.sdecl	'.debug_info',debug,cluster('IMU_QuaternionEKF_Observe')
+	.sect	'.debug_info'
+.L102:
+	.word	230
+	.half	3
+	.word	.L103
+	.byte	4,1
+	.byte	'../code/QuaternionEKF.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1
+	.word	.L105,.L104
+	.byte	2
+	.word	.L68
+	.byte	3
+	.byte	'IMU_QuaternionEKF_Observe',0,2,1,250,3,13,1,1
+	.word	.L61,.L180,.L60
+	.byte	4
+	.byte	'kf',0,1,250,3,55
+	.word	.L181,.L182
+	.byte	5
+	.word	.L61,.L180
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('IMU_QuaternionEKF_Observe')
+	.sect	'.debug_abbrev'
+.L103:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,32,13,58,15,59,15,57,15
+	.byte	54,15,39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('IMU_QuaternionEKF_Observe')
+	.sect	'.debug_line'
+.L104:
+	.word	.L836-.L835
+.L835:
+	.half	3
+	.word	.L838-.L837
+.L837:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/QuaternionEKF.c',0,0,0,0,0
+.L838:
+	.byte	5,13,7,0,5,2
+	.word	.L61
+	.byte	3,249,3,1,5,12,9
+	.half	.L309-.L61
+	.byte	3,2,1,5,35,9
+	.half	.L839-.L309
+	.byte	1,5,45,9
+	.half	.L840-.L839
+	.byte	1,5,12,9
+	.half	.L841-.L840
+	.byte	3,1,1,5,35,9
+	.half	.L842-.L841
+	.byte	1,5,45,9
+	.half	.L843-.L842
+	.byte	1,5,12,9
+	.half	.L844-.L843
+	.byte	3,1,1,5,35,9
+	.half	.L845-.L844
+	.byte	1,5,45,9
+	.half	.L846-.L845
+	.byte	1,5,1,9
+	.half	.L847-.L846
+	.byte	3,1,1,7,9
+	.half	.L106-.L847
+	.byte	0,1,1
+.L836:
+	.sdecl	'.debug_ranges',debug,cluster('IMU_QuaternionEKF_Observe')
+	.sect	'.debug_ranges'
+.L105:
+	.word	-1,.L61,0,.L106-.L61,0,0
+	.sdecl	'.debug_info',debug,cluster('IMU_QuaternionEKF_F_Linearization_P_Fading')
+	.sect	'.debug_info'
+.L107:
+	.word	445
+	.half	3
+	.word	.L108
+	.byte	4,1
+	.byte	'../code/QuaternionEKF.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1
+	.word	.L110,.L109
+	.byte	2
+	.word	.L68
+	.byte	3
+	.byte	'IMU_QuaternionEKF_F_Linearization_P_Fading',0,2,1,136,2,20,1,1
+	.word	.L55,.L183,.L54
+	.byte	4
+	.byte	'kf',0,1,136,2,79
+	.word	.L181,.L184
+	.byte	5
+	.word	.L55,.L183
+	.byte	6
+	.byte	'q0',0,1,138,2,20
+	.word	.L185,.L186
+	.byte	6
+	.byte	'q1',0,1,138,2,24
+	.word	.L187,.L188
+	.byte	6
+	.byte	'q2',0,1,138,2,28
+	.word	.L189,.L190
+	.byte	6
+	.byte	'q3',0,1,138,2,32
+	.word	.L191,.L192
+	.byte	6
+	.byte	'qInvNorm',0,1,139,2,20
+	.word	.L193,.L194
+	.byte	7
+	.word	.L157,.L195,.L196
+	.byte	8
+	.word	.L160,.L197
+	.byte	9
+	.word	.L162,.L195,.L196
+	.byte	6
+	.byte	'halfx',0,1,151,4,11
+	.word	.L135,.L198
+	.byte	6
+	.byte	'y',0,1,152,4,11
+	.word	.L135,.L199
+	.byte	6
+	.byte	'i',0,1,153,4,10
+	.word	.L165,.L200
+	.byte	0,0,5
+	.word	.L196,.L201
+	.byte	6
+	.byte	'i',0,1,148,2,18
+	.word	.L202,.L203
+	.byte	0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('IMU_QuaternionEKF_F_Linearization_P_Fading')
+	.sect	'.debug_abbrev'
+.L108:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,32,13,58,15,59,15,57,15
+	.byte	54,15,39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,7,29,1,49,16,17,1,18,1,0,0,8,5,0,49,16,2,6,0,0,9,11,1,49,16,17,1,18
+	.byte	1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('IMU_QuaternionEKF_F_Linearization_P_Fading')
+	.sect	'.debug_line'
+.L109:
+	.word	.L849-.L848
+.L848:
+	.half	3
+	.word	.L851-.L850
+.L850:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/QuaternionEKF.c',0,0,0,0,0
+.L851:
+	.byte	5,20,7,0,5,2
+	.word	.L55
+	.byte	3,135,2,1,5,12,9
+	.half	.L286-.L55
+	.byte	3,5,1,5,28,9
+	.half	.L852-.L286
+	.byte	1,5,8,9
+	.half	.L853-.L852
+	.byte	1,5,12,9
+	.half	.L854-.L853
+	.byte	3,1,1,5,28,9
+	.half	.L855-.L854
+	.byte	1,5,8,9
+	.half	.L856-.L855
+	.byte	1,5,12,9
+	.half	.L857-.L856
+	.byte	3,1,1,5,28,9
+	.half	.L858-.L857
+	.byte	1,5,8,9
+	.half	.L859-.L858
+	.byte	1,5,12,9
+	.half	.L860-.L859
+	.byte	3,1,1,5,28,9
+	.half	.L861-.L860
+	.byte	1,5,8,9
+	.half	.L862-.L861
+	.byte	1,5,54,9
+	.half	.L863-.L862
+	.byte	3,3,1,5,59,9
+	.half	.L864-.L863
+	.byte	1,5,44,9
+	.half	.L865-.L864
+	.byte	1,5,49,9
+	.half	.L866-.L865
+	.byte	1,5,24,9
+	.half	.L867-.L866
+	.byte	1,5,29,9
+	.half	.L868-.L867
+	.byte	1,5,34,9
+	.half	.L869-.L868
+	.byte	1,5,39,9
+	.half	.L870-.L869
+	.byte	1,5,37,9
+	.half	.L871-.L870
+	.byte	1,5,32,9
+	.half	.L872-.L871
+	.byte	1,5,42,9
+	.half	.L873-.L872
+	.byte	1,5,52,9
+	.half	.L874-.L873
+	.byte	1,5,19,9
+	.half	.L195-.L874
+	.byte	3,132,2,1,5,24,9
+	.half	.L875-.L195
+	.byte	1,5,9,9
+	.half	.L288-.L875
+	.byte	3,3,1,5,25,9
+	.half	.L876-.L288
+	.byte	1,5,20,9
+	.half	.L287-.L876
+	.byte	1,5,14,9
+	.half	.L877-.L287
+	.byte	3,2,1,5,28,9
+	.half	.L878-.L877
+	.byte	1,5,19,9
+	.half	.L289-.L878
+	.byte	1,5,11,9
+	.half	.L879-.L289
+	.byte	1,5,5,9
+	.half	.L291-.L879
+	.byte	3,1,1,5,14,9
+	.half	.L12-.L291
+	.byte	3,246,125,1,5,20,9
+	.half	.L196-.L12
+	.byte	3,1,1,5,30,9
+	.half	.L290-.L196
+	.byte	1,5,27,9
+	.half	.L14-.L290
+	.byte	3,2,1,5,11,9
+	.half	.L880-.L14
+	.byte	1,5,27,9
+	.half	.L881-.L880
+	.byte	1,5,11,9
+	.half	.L882-.L881
+	.byte	1,5,27,9
+	.half	.L883-.L882
+	.byte	1,5,34,9
+	.half	.L884-.L883
+	.byte	1,5,31,9
+	.half	.L885-.L884
+	.byte	1,5,33,9
+	.half	.L886-.L885
+	.byte	3,126,1,5,30,9
+	.half	.L13-.L886
+	.byte	1,5,7,7,9
+	.half	.L201-.L13
+	.byte	3,13,1,5,21,9
+	.half	.L887-.L201
+	.byte	1,5,26,9
+	.half	.L888-.L887
+	.byte	1,5,34,9
+	.half	.L889-.L888
+	.byte	1,5,24,9
+	.half	.L292-.L889
+	.byte	1,5,39,9
+	.half	.L890-.L292
+	.byte	1,5,38,9
+	.half	.L891-.L890
+	.byte	1,5,19,9
+	.half	.L892-.L891
+	.byte	1,5,7,9
+	.half	.L893-.L892
+	.byte	3,1,1,5,21,9
+	.half	.L894-.L893
+	.byte	1,5,26,9
+	.half	.L895-.L894
+	.byte	1,5,34,9
+	.half	.L896-.L895
+	.byte	1,5,24,9
+	.half	.L897-.L896
+	.byte	1,5,39,9
+	.half	.L898-.L897
+	.byte	1,5,38,9
+	.half	.L899-.L898
+	.byte	1,5,19,9
+	.half	.L900-.L899
+	.byte	1,5,7,9
+	.half	.L901-.L900
+	.byte	3,2,1,5,23,9
+	.half	.L902-.L901
+	.byte	1,5,22,9
+	.half	.L903-.L902
+	.byte	1,5,28,9
+	.half	.L904-.L903
+	.byte	1,5,36,9
+	.half	.L905-.L904
+	.byte	1,5,26,9
+	.half	.L906-.L905
+	.byte	1,5,41,9
+	.half	.L907-.L906
+	.byte	1,5,40,9
+	.half	.L908-.L907
+	.byte	1,5,20,9
+	.half	.L909-.L908
+	.byte	1,5,7,9
+	.half	.L910-.L909
+	.byte	3,1,1,5,22,9
+	.half	.L911-.L910
+	.byte	1,5,27,9
+	.half	.L912-.L911
+	.byte	1,5,35,9
+	.half	.L913-.L912
+	.byte	1,5,25,9
+	.half	.L914-.L913
+	.byte	1,5,40,9
+	.half	.L915-.L914
+	.byte	1,5,39,9
+	.half	.L916-.L915
+	.byte	1,5,20,9
+	.half	.L917-.L916
+	.byte	1,5,7,9
+	.half	.L918-.L917
+	.byte	3,2,1,5,23,9
+	.half	.L919-.L918
+	.byte	1,5,22,9
+	.half	.L920-.L919
+	.byte	1,5,28,9
+	.half	.L921-.L920
+	.byte	1,5,36,9
+	.half	.L922-.L921
+	.byte	1,5,26,9
+	.half	.L923-.L922
+	.byte	1,5,41,9
+	.half	.L924-.L923
+	.byte	1,5,40,9
+	.half	.L925-.L924
+	.byte	1,5,20,9
+	.half	.L926-.L925
+	.byte	1,5,7,9
+	.half	.L927-.L926
+	.byte	3,1,1,5,23,9
+	.half	.L928-.L927
+	.byte	1,5,22,9
+	.half	.L929-.L928
+	.byte	1,5,28,9
+	.half	.L930-.L929
+	.byte	1,5,36,9
+	.half	.L931-.L930
+	.byte	1,5,26,9
+	.half	.L932-.L931
+	.byte	1,5,41,9
+	.half	.L933-.L932
+	.byte	1,5,40,9
+	.half	.L934-.L933
+	.byte	1,5,20,9
+	.half	.L935-.L934
+	.byte	1,5,7,9
+	.half	.L936-.L935
+	.byte	3,2,1,5,22,9
+	.half	.L937-.L936
+	.byte	1,5,27,9
+	.half	.L938-.L937
+	.byte	1,5,35,9
+	.half	.L939-.L938
+	.byte	1,5,25,9
+	.half	.L940-.L939
+	.byte	1,5,40,9
+	.half	.L941-.L940
+	.byte	1,5,39,9
+	.half	.L942-.L941
+	.byte	1,5,20,9
+	.half	.L943-.L942
+	.byte	1,5,7,9
+	.half	.L944-.L943
+	.byte	3,1,1,5,23,9
+	.half	.L945-.L944
+	.byte	1,5,22,9
+	.half	.L946-.L945
+	.byte	1,5,28,9
+	.half	.L947-.L946
+	.byte	1,5,36,9
+	.half	.L948-.L947
+	.byte	1,5,26,9
+	.half	.L949-.L948
+	.byte	1,5,41,9
+	.half	.L950-.L949
+	.byte	1,5,40,9
+	.half	.L951-.L950
+	.byte	1,5,20,9
+	.half	.L952-.L951
+	.byte	1,5,7,9
+	.half	.L953-.L952
+	.byte	3,3,1,5,15,9
+	.half	.L954-.L953
+	.byte	1,5,23,9
+	.half	.L955-.L954
+	.byte	1,5,31,9
+	.half	.L956-.L955
+	.byte	1,5,20,9
+	.half	.L957-.L956
+	.byte	1,5,7,9
+	.half	.L958-.L957
+	.byte	3,1,1,5,15,9
+	.half	.L959-.L958
+	.byte	1,5,23,9
+	.half	.L960-.L959
+	.byte	1,5,31,9
+	.half	.L961-.L960
+	.byte	1,5,20,9
+	.half	.L962-.L961
+	.byte	1,5,11,9
+	.half	.L963-.L962
+	.byte	3,3,1,5,19,9
+	.half	.L964-.L963
+	.byte	1,5,26,9
+	.half	.L965-.L964
+	.byte	1,5,24,9
+	.half	.L966-.L965
+	.byte	1,5,5,9
+	.half	.L967-.L966
+	.byte	1,5,11,7,9
+	.half	.L968-.L967
+	.byte	3,2,1,5,26,9
+	.half	.L969-.L968
+	.byte	1,5,24,9
+	.half	.L970-.L969
+	.byte	1,5,11,9
+	.half	.L15-.L970
+	.byte	3,2,1,5,19,9
+	.half	.L971-.L15
+	.byte	1,5,26,9
+	.half	.L972-.L971
+	.byte	1,5,24,9
+	.half	.L973-.L972
+	.byte	1,5,5,9
+	.half	.L974-.L973
+	.byte	1,5,11,7,9
+	.half	.L975-.L974
+	.byte	3,2,1,5,26,9
+	.half	.L976-.L975
+	.byte	1,5,24,9
+	.half	.L977-.L976
+	.byte	1,5,1,9
+	.half	.L16-.L977
+	.byte	3,2,1,7,9
+	.half	.L111-.L16
+	.byte	0,1,1
+.L849:
+	.sdecl	'.debug_ranges',debug,cluster('IMU_QuaternionEKF_F_Linearization_P_Fading')
+	.sect	'.debug_ranges'
+.L110:
+	.word	-1,.L55,0,.L111-.L55,0,0
+	.sdecl	'.debug_info',debug,cluster('IMU_QuaternionEKF_SetH')
+	.sect	'.debug_info'
+.L112:
+	.word	316
+	.half	3
+	.word	.L113
+	.byte	4,1
+	.byte	'../code/QuaternionEKF.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1
+	.word	.L115,.L114
+	.byte	2
+	.word	.L68
+	.byte	3
+	.byte	'IMU_QuaternionEKF_SetH',0,2,1,193,2,20,1,1
+	.word	.L57,.L204,.L56
+	.byte	4
+	.byte	'kf',0,1,193,2,59
+	.word	.L181,.L205
+	.byte	5
+	.word	.L57,.L204
+	.byte	6
+	.byte	'doubleq0',0,1,195,2,20
+	.word	.L206,.L207
+	.byte	6
+	.byte	'doubleq1',0,1,195,2,30
+	.word	.L208,.L209
+	.byte	6
+	.byte	'doubleq2',0,1,195,2,40
+	.word	.L210,.L211
+	.byte	6
+	.byte	'doubleq3',0,1,195,2,50
+	.word	.L212,.L213
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('IMU_QuaternionEKF_SetH')
+	.sect	'.debug_abbrev'
+.L113:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,32,13,58,15,59,15,57,15
+	.byte	54,15,39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('IMU_QuaternionEKF_SetH')
+	.sect	'.debug_line'
+.L114:
+	.word	.L979-.L978
+.L978:
+	.half	3
+	.word	.L981-.L980
+.L980:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/QuaternionEKF.c',0,0,0,0,0
+.L981:
+	.byte	5,20,7,0,5,2
+	.word	.L57
+	.byte	3,192,2,1,5,22,9
+	.half	.L295-.L57
+	.byte	3,10,1,5,38,9
+	.half	.L982-.L295
+	.byte	1,5,16,9
+	.half	.L983-.L982
+	.byte	1,5,18,9
+	.half	.L984-.L983
+	.byte	1,5,14,9
+	.half	.L985-.L984
+	.byte	1,5,22,9
+	.half	.L986-.L985
+	.byte	3,1,1,5,38,9
+	.half	.L987-.L986
+	.byte	1,5,16,9
+	.half	.L988-.L987
+	.byte	1,5,18,9
+	.half	.L989-.L988
+	.byte	1,5,14,9
+	.half	.L990-.L989
+	.byte	1,5,22,9
+	.half	.L991-.L990
+	.byte	3,1,1,5,38,9
+	.half	.L992-.L991
+	.byte	1,5,16,9
+	.half	.L993-.L992
+	.byte	1,5,18,9
+	.half	.L994-.L993
+	.byte	1,5,14,9
+	.half	.L995-.L994
+	.byte	1,5,22,9
+	.half	.L996-.L995
+	.byte	3,1,1,5,38,9
+	.half	.L997-.L996
+	.byte	1,5,16,9
+	.half	.L998-.L997
+	.byte	1,5,18,9
+	.half	.L999-.L998
+	.byte	1,5,14,9
+	.half	.L1000-.L999
+	.byte	1,9
+	.half	.L1001-.L1000
+	.byte	3,2,1,5,24,9
+	.half	.L294-.L1001
+	.byte	1,5,27,9
+	.half	.L1002-.L294
+	.byte	1,5,44,9
+	.half	.L1003-.L1002
+	.byte	1,5,40,9
+	.half	.L1004-.L1003
+	.byte	1,5,56,9
+	.half	.L1005-.L1004
+	.byte	1,5,52,9
+	.half	.L1006-.L1005
+	.byte	1,5,7,9
+	.half	.L1007-.L1006
+	.byte	3,2,1,5,22,9
+	.half	.L1008-.L1007
+	.byte	1,5,21,9
+	.half	.L1009-.L1008
+	.byte	1,5,19,9
+	.half	.L1010-.L1009
+	.byte	1,5,7,9
+	.half	.L1011-.L1010
+	.byte	3,1,1,5,21,9
+	.half	.L1012-.L1011
+	.byte	1,5,19,9
+	.half	.L1013-.L1012
+	.byte	1,5,7,9
+	.half	.L1014-.L1013
+	.byte	3,1,1,5,22,9
+	.half	.L1015-.L1014
+	.byte	1,5,21,9
+	.half	.L1016-.L1015
+	.byte	1,5,19,9
+	.half	.L1017-.L1016
+	.byte	1,5,7,9
+	.half	.L1018-.L1017
+	.byte	3,1,1,5,21,9
+	.half	.L1019-.L1018
+	.byte	1,5,19,9
+	.half	.L1020-.L1019
+	.byte	1,5,7,9
+	.half	.L1021-.L1020
+	.byte	3,2,1,5,21,9
+	.half	.L1022-.L1021
+	.byte	1,5,19,9
+	.half	.L1023-.L1022
+	.byte	1,5,7,9
+	.half	.L1024-.L1023
+	.byte	3,1,1,5,21,9
+	.half	.L1025-.L1024
+	.byte	1,5,19,9
+	.half	.L1026-.L1025
+	.byte	1,5,7,9
+	.half	.L1027-.L1026
+	.byte	3,1,1,5,21,9
+	.half	.L1028-.L1027
+	.byte	1,5,19,9
+	.half	.L1029-.L1028
+	.byte	1,5,7,9
+	.half	.L1030-.L1029
+	.byte	3,1,1,5,21,9
+	.half	.L1031-.L1030
+	.byte	1,5,19,9
+	.half	.L1032-.L1031
+	.byte	1,5,7,9
+	.half	.L1033-.L1032
+	.byte	3,2,1,5,22,9
+	.half	.L1034-.L1033
+	.byte	1,5,20,9
+	.half	.L1035-.L1034
+	.byte	1,5,7,9
+	.half	.L1036-.L1035
+	.byte	3,1,1,5,23,9
+	.half	.L1037-.L1036
+	.byte	1,5,22,9
+	.half	.L1038-.L1037
+	.byte	1,5,20,9
+	.half	.L1039-.L1038
+	.byte	1,5,7,9
+	.half	.L1040-.L1039
+	.byte	3,1,1,5,23,9
+	.half	.L1041-.L1040
+	.byte	1,5,22,9
+	.half	.L1042-.L1041
+	.byte	1,5,20,9
+	.half	.L1043-.L1042
+	.byte	1,5,7,9
+	.half	.L1044-.L1043
+	.byte	3,1,1,5,22,9
+	.half	.L1045-.L1044
+	.byte	1,5,20,9
+	.half	.L1046-.L1045
+	.byte	1,5,1,9
+	.half	.L1047-.L1046
+	.byte	3,1,1,7,9
+	.half	.L116-.L1047
+	.byte	0,1,1
+.L979:
+	.sdecl	'.debug_ranges',debug,cluster('IMU_QuaternionEKF_SetH')
+	.sect	'.debug_ranges'
+.L115:
+	.word	-1,.L57,0,.L116-.L57,0,0
+	.sdecl	'.debug_info',debug,cluster('IMU_QuaternionEKF_xhatUpdate')
+	.sect	'.debug_info'
+.L117:
+	.word	595
+	.half	3
+	.word	.L118
+	.byte	4,1
+	.byte	'../code/QuaternionEKF.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1
+	.word	.L120,.L119
+	.byte	2
+	.word	.L68
+	.byte	3
+	.byte	'IMU_QuaternionEKF_xhatUpdate',0,2,1,233,2,20,1,1
+	.word	.L59,.L214,.L58
+	.byte	4
+	.byte	'kf',0,1,233,2,65
+	.word	.L181,.L215
+	.byte	5
+	.word	.L59,.L214
+	.byte	6
+	.byte	'q0',0,1,235,2,20
+	.word	.L216,.L217
+	.byte	6
+	.byte	'q1',0,1,235,2,24
+	.word	.L218,.L219
+	.byte	6
+	.byte	'q2',0,1,235,2,28
+	.word	.L220,.L221
+	.byte	6
+	.byte	'q3',0,1,235,2,32
+	.word	.L222,.L223
+	.byte	5
+	.word	.L224,.L225
+	.byte	6
+	.byte	'i',0,1,134,3,18
+	.word	.L202,.L226
+	.byte	7
+	.word	.L227,.L228,.L21
+	.byte	8
+	.word	.L229,.L230
+	.byte	9
+	.word	.L231,.L232
+	.byte	7
+	.word	.L235,.L236,.L20
+	.byte	8
+	.word	.L237,.L238
+	.byte	9
+	.word	.L239,.L240
+	.byte	7
+	.word	.L241,.L242,.L19
+	.byte	8
+	.word	.L243,.L244
+	.byte	8
+	.word	.L245,.L246
+	.byte	10
+	.word	.L247,.L242,.L19
+	.byte	6
+	.byte	'i',0,2,89,12
+	.word	.L248,.L249
+	.byte	0,0,0,0,7
+	.word	.L235,.L233,.L234
+	.byte	8
+	.word	.L237,.L238
+	.byte	0,0,0,7
+	.word	.L227,.L233,.L234
+	.byte	8
+	.word	.L229,.L230
+	.byte	0,0,5
+	.word	.L250,.L251
+	.byte	6
+	.byte	'i',0,1,208,3,18
+	.word	.L202,.L252
+	.byte	0,5
+	.word	.L251,.L253
+	.byte	6
+	.byte	'i',0,1,212,3,18
+	.word	.L202,.L254
+	.byte	5
+	.word	.L37,.L255
+	.byte	6
+	.byte	'j',0,1,214,3,22
+	.word	.L202,.L256
+	.byte	0,0,5
+	.word	.L257,.L40
+	.byte	6
+	.byte	'i',0,1,227,3,22
+	.word	.L202,.L258
+	.byte	0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('IMU_QuaternionEKF_xhatUpdate')
+	.sect	'.debug_abbrev'
+.L118:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,32,13,58,15,59,15,57,15
+	.byte	54,15,39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,7,29,1,49,16,17,1,18,1,0,0,8,5,0,49,16,2,6,0,0,9,11,1,49,16,85,6,0,0
+	.byte	10,11,1,49,16,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('IMU_QuaternionEKF_xhatUpdate')
+	.sect	'.debug_line'
+.L119:
+	.word	.L1049-.L1048
+.L1048:
+	.half	3
+	.word	.L1051-.L1050
+.L1050:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'H:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math',0
+	.byte	0
+	.byte	'../code/QuaternionEKF.c',0,0,0,0
+	.byte	'Ifx_LutIndexedLinearF32.h',0,1,0,0
+	.byte	'Ifx_LutLSincosF32.h',0,1,0,0,0
+.L1051:
+	.byte	5,20,7,0,5,2
+	.word	.L59
+	.byte	3,232,2,1,5,41,9
+	.half	.L298-.L59
+	.byte	3,4,1,5,49,9
+	.half	.L297-.L298
+	.byte	1,5,19,9
+	.half	.L1052-.L297
+	.byte	1,5,36,9
+	.half	.L1053-.L1052
+	.byte	3,1,1,5,29,9
+	.half	.L1054-.L1053
+	.byte	1,5,41,9
+	.half	.L1055-.L1054
+	.byte	3,1,1,5,29,9
+	.half	.L1056-.L1055
+	.byte	1,5,40,9
+	.half	.L1057-.L1056
+	.byte	3,1,1,5,48,9
+	.half	.L1058-.L1057
+	.byte	1,5,61,9
+	.half	.L1059-.L1058
+	.byte	1,5,19,9
+	.half	.L1060-.L1059
+	.byte	1,5,47,9
+	.half	.L1061-.L1060
+	.byte	3,1,1,5,30,9
+	.half	.L1062-.L1061
+	.byte	1,5,38,9
+	.half	.L1063-.L1062
+	.byte	3,1,1,5,30,9
+	.half	.L1064-.L1063
+	.byte	1,5,40,9
+	.half	.L1065-.L1064
+	.byte	3,1,1,5,58,9
+	.half	.L1066-.L1065
+	.byte	1,5,67,9
+	.half	.L1067-.L1066
+	.byte	1,5,19,9
+	.half	.L1068-.L1067
+	.byte	1,5,26,9
+	.half	.L1069-.L1068
+	.byte	3,1,1,5,19,9
+	.half	.L1070-.L1069
+	.byte	1,5,26,9
+	.half	.L1071-.L1070
+	.byte	3,1,1,5,19,9
+	.half	.L1072-.L1071
+	.byte	1,5,35,9
+	.half	.L1073-.L1072
+	.byte	3,1,1,5,54,9
+	.half	.L1074-.L1073
+	.byte	1,5,62,9
+	.half	.L1075-.L1074
+	.byte	1,5,19,9
+	.half	.L1076-.L1075
+	.byte	1,5,39,9
+	.half	.L1077-.L1076
+	.byte	3,1,1,5,47,9
+	.half	.L1078-.L1077
+	.byte	1,5,19,9
+	.half	.L1079-.L1078
+	.byte	1,5,12,9
+	.half	.L1080-.L1079
+	.byte	3,2,1,5,28,9
+	.half	.L1081-.L1080
+	.byte	1,5,8,9
+	.half	.L1082-.L1081
+	.byte	1,5,12,9
+	.half	.L1083-.L1082
+	.byte	3,1,1,5,28,9
+	.half	.L1084-.L1083
+	.byte	1,5,8,9
+	.half	.L1085-.L1084
+	.byte	1,5,12,9
+	.half	.L1086-.L1085
+	.byte	3,1,1,5,28,9
+	.half	.L1087-.L1086
+	.byte	1,5,8,9
+	.half	.L1088-.L1087
+	.byte	1,5,12,9
+	.half	.L1089-.L1088
+	.byte	3,1,1,5,28,9
+	.half	.L1090-.L1089
+	.byte	1,5,8,9
+	.half	.L1091-.L1090
+	.byte	1,5,36,9
+	.half	.L1092-.L1091
+	.byte	3,2,1,5,29,9
+	.half	.L1093-.L1092
+	.byte	1,5,31,9
+	.half	.L1094-.L1093
+	.byte	3,1,1,5,29,9
+	.half	.L1095-.L1094
+	.byte	1,5,7,9
+	.half	.L1096-.L1095
+	.byte	3,2,1,5,36,9
+	.half	.L1097-.L1096
+	.byte	1,5,41,9
+	.half	.L1098-.L1097
+	.byte	1,5,39,9
+	.half	.L1099-.L1098
+	.byte	1,5,46,9
+	.half	.L1100-.L1099
+	.byte	1,5,51,9
+	.half	.L1101-.L1100
+	.byte	1,5,44,9
+	.half	.L1102-.L1101
+	.byte	1,5,31,9
+	.half	.L1103-.L1102
+	.byte	1,5,33,9
+	.half	.L1104-.L1103
+	.byte	1,5,29,9
+	.half	.L1105-.L1104
+	.byte	1,5,7,9
+	.half	.L1106-.L1105
+	.byte	3,1,1,5,36,9
+	.half	.L1107-.L1106
+	.byte	1,5,41,9
+	.half	.L1108-.L1107
+	.byte	1,5,46,9
+	.half	.L1109-.L1108
+	.byte	1,5,51,9
+	.half	.L1110-.L1109
+	.byte	1,5,49,9
+	.half	.L1111-.L1110
+	.byte	1,5,44,9
+	.half	.L1112-.L1111
+	.byte	1,5,31,9
+	.half	.L1113-.L1112
+	.byte	1,5,33,9
+	.half	.L1114-.L1113
+	.byte	1,5,29,9
+	.half	.L1115-.L1114
+	.byte	1,5,7,9
+	.half	.L1116-.L1115
+	.byte	3,1,1,5,61,9
+	.half	.L1117-.L1116
+	.byte	1,5,66,9
+	.half	.L1118-.L1117
+	.byte	1,5,31,9
+	.half	.L1119-.L1118
+	.byte	1,5,36,9
+	.half	.L1120-.L1119
+	.byte	1,5,34,9
+	.half	.L1121-.L1120
+	.byte	1,5,41,9
+	.half	.L1122-.L1121
+	.byte	1,5,46,9
+	.half	.L1123-.L1122
+	.byte	1,5,39,9
+	.half	.L1124-.L1123
+	.byte	1,5,51,9
+	.half	.L1125-.L1124
+	.byte	1,5,56,9
+	.half	.L1126-.L1125
+	.byte	1,5,49,9
+	.half	.L1127-.L1126
+	.byte	1,5,59,9
+	.half	.L1128-.L1127
+	.byte	1,5,29,9
+	.half	.L1129-.L1128
+	.byte	1,5,20,9
+	.half	.L224-.L1129
+	.byte	3,3,1,5,30,9
+	.half	.L299-.L224
+	.byte	1,5,53,9
+	.half	.L18-.L299
+	.byte	3,2,1,4,3,5,52,9
+	.half	.L228-.L18
+	.byte	3,206,125,1,5,57,9
+	.half	.L1130-.L228
+	.byte	1,5,25,9
+	.half	.L236-.L1130
+	.byte	3,114,1,5,44,9
+	.half	.L1131-.L236
+	.byte	3,2,1,4,2,5,20,9
+	.half	.L242-.L1131
+	.byte	3,16,1,5,15,9
+	.half	.L1132-.L242
+	.byte	1,9
+	.half	.L301-.L1132
+	.byte	3,2,1,5,25,9
+	.half	.L1133-.L301
+	.byte	1,5,28,9
+	.half	.L1134-.L1133
+	.byte	1,5,36,9
+	.half	.L1135-.L1134
+	.byte	1,5,47,9
+	.half	.L1136-.L1135
+	.byte	1,5,57,9
+	.half	.L1137-.L1136
+	.byte	1,5,60,9
+	.half	.L1138-.L1137
+	.byte	1,5,43,9
+	.half	.L1139-.L1138
+	.byte	1,5,5,9
+	.half	.L1140-.L1139
+	.byte	1,4,3,9
+	.half	.L19-.L1140
+	.byte	3,110,1,9
+	.half	.L20-.L19
+	.byte	3,12,1,4,1,5,35,9
+	.half	.L21-.L20
+	.byte	3,178,2,1,5,9,9
+	.half	.L1141-.L21
+	.byte	1,5,35,9
+	.half	.L1142-.L1141
+	.byte	1,5,39,9
+	.half	.L233-.L1142
+	.byte	1,5,33,9
+	.half	.L234-.L233
+	.byte	3,126,1,5,30,9
+	.half	.L17-.L234
+	.byte	1,5,37,7,9
+	.half	.L225-.L17
+	.byte	3,6,1,5,30,9
+	.half	.L1143-.L225
+	.byte	1,5,32,9
+	.half	.L1144-.L1143
+	.byte	3,1,1,5,30,9
+	.half	.L1145-.L1144
+	.byte	1,5,40,9
+	.half	.L1146-.L1145
+	.byte	3,1,1,5,48,9
+	.half	.L1147-.L1146
+	.byte	1,5,66,9
+	.half	.L1148-.L1147
+	.byte	1,5,19,9
+	.half	.L300-.L1148
+	.byte	1,5,47,9
+	.half	.L1149-.L300
+	.byte	3,3,1,5,29,9
+	.half	.L1150-.L1149
+	.byte	1,5,31,9
+	.half	.L1151-.L1150
+	.byte	3,1,1,5,29,9
+	.half	.L1152-.L1151
+	.byte	1,5,40,9
+	.half	.L1153-.L1152
+	.byte	3,1,1,5,59,9
+	.half	.L1154-.L1153
+	.byte	1,5,78,9
+	.half	.L1155-.L1154
+	.byte	1,5,19,9
+	.half	.L1156-.L1155
+	.byte	1,5,31,9
+	.half	.L1157-.L1156
+	.byte	3,1,1,5,29,9
+	.half	.L1158-.L1157
+	.byte	1,5,47,9
+	.half	.L1159-.L1158
+	.byte	3,1,1,5,29,9
+	.half	.L1160-.L1159
+	.byte	1,5,41,9
+	.half	.L1161-.L1160
+	.byte	3,1,1,5,60,9
+	.half	.L1162-.L1161
+	.byte	1,5,19,9
+	.half	.L1163-.L1162
+	.byte	1,5,40,9
+	.half	.L1164-.L1163
+	.byte	3,1,1,5,58,9
+	.half	.L1165-.L1164
+	.byte	1,5,74,9
+	.half	.L1166-.L1165
+	.byte	1,5,82,9
+	.half	.L1167-.L1166
+	.byte	1,5,19,9
+	.half	.L1168-.L1167
+	.byte	1,5,9,9
+	.half	.L1169-.L1168
+	.byte	3,2,1,5,32,9
+	.half	.L1170-.L1169
+	.byte	1,5,45,9
+	.half	.L1171-.L1170
+	.byte	1,5,53,9
+	.half	.L1172-.L1171
+	.byte	1,5,38,9
+	.half	.L1173-.L1172
+	.byte	1,5,43,9
+	.half	.L1174-.L1173
+	.byte	1,5,36,9
+	.half	.L1175-.L1174
+	.byte	1,5,5,9
+	.half	.L1176-.L1175
+	.byte	1,5,9,7,9
+	.half	.L1177-.L1176
+	.byte	3,2,1,5,33,9
+	.half	.L1178-.L1177
+	.byte	1,5,31,9
+	.half	.L1179-.L1178
+	.byte	1,5,9,9
+	.half	.L22-.L1179
+	.byte	3,3,1,5,32,9
+	.half	.L1180-.L22
+	.byte	1,5,38,9
+	.half	.L1181-.L1180
+	.byte	1,5,46,9
+	.half	.L1182-.L1181
+	.byte	1,5,36,9
+	.half	.L1183-.L1182
+	.byte	1,5,9,9
+	.half	.L1184-.L1183
+	.byte	1,5,73,7,9
+	.half	.L1185-.L1184
+	.byte	1,5,81,9
+	.half	.L1186-.L1185
+	.byte	1,5,13,9
+	.half	.L1187-.L1186
+	.byte	3,2,1,5,21,9
+	.half	.L1188-.L1187
+	.byte	1,5,9,9
+	.half	.L1189-.L1188
+	.byte	1,5,13,7,9
+	.half	.L1190-.L1189
+	.byte	3,2,1,5,21,9
+	.half	.L1191-.L1190
+	.byte	1,5,32,9
+	.half	.L1192-.L1191
+	.byte	1,5,34,9
+	.half	.L1193-.L1192
+	.byte	1,5,13,9
+	.half	.L25-.L1193
+	.byte	3,4,1,5,35,9
+	.half	.L1194-.L25
+	.byte	1,5,33,9
+	.half	.L1195-.L1194
+	.byte	1,5,13,9
+	.half	.L26-.L1195
+	.byte	3,3,1,5,21,9
+	.half	.L1196-.L26
+	.byte	1,5,35,9
+	.half	.L1197-.L1196
+	.byte	1,5,33,9
+	.half	.L1198-.L1197
+	.byte	1,5,9,9
+	.half	.L1199-.L1198
+	.byte	1,5,13,7,9
+	.half	.L1200-.L1199
+	.byte	3,3,1,5,37,9
+	.half	.L1201-.L1200
+	.byte	1,5,35,9
+	.half	.L1202-.L1201
+	.byte	1,5,27,9
+	.half	.L1203-.L1202
+	.byte	3,1,1,5,25,9
+	.half	.L1204-.L1203
+	.byte	1,5,38,9
+	.half	.L1205-.L1204
+	.byte	3,127,1,5,22,9
+	.half	.L27-.L1205
+	.byte	3,8,1,5,37,9
+	.half	.L1206-.L27
+	.byte	1,5,55,9
+	.half	.L1207-.L1206
+	.byte	1,5,72,9
+	.half	.L1208-.L1207
+	.byte	1,5,68,9
+	.half	.L1209-.L1208
+	.byte	1,5,22,9
+	.half	.L1210-.L1209
+	.byte	3,1,1,5,34,9
+	.half	.L1211-.L1210
+	.byte	1,5,49,9
+	.half	.L1212-.L1211
+	.byte	1,5,66,9
+	.half	.L1213-.L1212
+	.byte	1,5,62,9
+	.half	.L1214-.L1213
+	.byte	1,5,81,9
+	.half	.L1215-.L1214
+	.byte	1,5,77,9
+	.half	.L1216-.L1215
+	.byte	1,5,27,9
+	.half	.L1217-.L1216
+	.byte	3,1,1,5,25,9
+	.half	.L1218-.L1217
+	.byte	1,5,13,9
+	.half	.L1219-.L1218
+	.byte	3,1,1,5,9,9
+	.half	.L28-.L1219
+	.byte	3,120,1,5,13,9
+	.half	.L23-.L28
+	.byte	3,14,1,5,36,9
+	.half	.L1220-.L23
+	.byte	1,5,49,9
+	.half	.L1221-.L1220
+	.byte	1,5,57,9
+	.half	.L1222-.L1221
+	.byte	1,5,42,9
+	.half	.L1223-.L1222
+	.byte	1,5,47,9
+	.half	.L1224-.L1223
+	.byte	1,5,40,9
+	.half	.L1225-.L1224
+	.byte	1,5,13,9
+	.half	.L1226-.L1225
+	.byte	1,5,84,7,9
+	.half	.L1227-.L1226
+	.byte	1,5,92,9
+	.half	.L1228-.L1227
+	.byte	1,5,13,9
+	.half	.L1229-.L1228
+	.byte	3,2,1,5,43,9
+	.half	.L1230-.L1229
+	.byte	1,5,51,9
+	.half	.L1231-.L1230
+	.byte	1,5,77,9
+	.half	.L1232-.L1231
+	.byte	1,5,100,9
+	.half	.L1233-.L1232
+	.byte	1,5,75,9
+	.half	.L1234-.L1233
+	.byte	1,5,115,9
+	.half	.L1235-.L1234
+	.byte	1,5,123,9
+	.half	.L1236-.L1235
+	.byte	1,5,108,9
+	.half	.L1237-.L1236
+	.byte	1,5,113,9
+	.half	.L1238-.L1237
+	.byte	1,5,105,9
+	.half	.L1239-.L1238
+	.byte	1,5,40,9
+	.half	.L1240-.L1239
+	.byte	1,5,147,1,9
+	.half	.L1241-.L1240
+	.byte	1,5,13,9
+	.half	.L31-.L1241
+	.byte	3,4,1,5,42,9
+	.half	.L1242-.L31
+	.byte	1,5,40,9
+	.half	.L1243-.L1242
+	.byte	1,5,9,9
+	.half	.L33-.L1243
+	.byte	3,2,1,5,31,9
+	.half	.L1244-.L33
+	.byte	1,5,29,9
+	.half	.L1245-.L1244
+	.byte	1,5,23,9
+	.half	.L1246-.L1245
+	.byte	3,1,1,5,21,9
+	.half	.L1247-.L1246
+	.byte	1,5,41,9
+	.half	.L30-.L1247
+	.byte	3,4,1,5,29,9
+	.half	.L1248-.L30
+	.byte	1,5,37,9
+	.half	.L1249-.L1248
+	.byte	3,1,1,5,29,9
+	.half	.L1250-.L1249
+	.byte	1,5,40,9
+	.half	.L1251-.L1250
+	.byte	3,1,1,5,53,9
+	.half	.L1252-.L1251
+	.byte	1,5,62,9
+	.half	.L1253-.L1252
+	.byte	1,5,19,9
+	.half	.L1254-.L1253
+	.byte	1,5,40,9
+	.half	.L1255-.L1254
+	.byte	3,1,1,5,58,9
+	.half	.L1256-.L1255
+	.byte	1,5,77,9
+	.half	.L1257-.L1256
+	.byte	1,5,19,9
+	.half	.L1258-.L1257
+	.byte	1,5,20,9
+	.half	.L250-.L1258
+	.byte	3,3,1,5,58,9
+	.half	.L302-.L250
+	.byte	1,5,19,9
+	.half	.L35-.L302
+	.byte	3,2,1,5,11,9
+	.half	.L1259-.L35
+	.byte	1,5,19,9
+	.half	.L1260-.L1259
+	.byte	1,5,11,9
+	.half	.L1261-.L1260
+	.byte	1,5,19,9
+	.half	.L1262-.L1261
+	.byte	1,5,26,9
+	.half	.L1263-.L1262
+	.byte	1,5,34,9
+	.half	.L1264-.L1263
+	.byte	1,5,23,9
+	.half	.L1265-.L1264
+	.byte	1,5,61,9
+	.half	.L1266-.L1265
+	.byte	3,126,1,5,34,9
+	.half	.L34-.L1266
+	.byte	1,5,50,9
+	.half	.L1267-.L34
+	.byte	1,5,43,9
+	.half	.L1268-.L1267
+	.byte	1,5,58,9
+	.half	.L1269-.L1268
+	.byte	1,5,20,7,9
+	.half	.L251-.L1269
+	.byte	3,4,1,5,30,9
+	.half	.L304-.L251
+	.byte	1,5,24,9
+	.half	.L37-.L304
+	.byte	3,2,1,5,34,9
+	.half	.L306-.L37
+	.byte	1,5,28,9
+	.half	.L39-.L306
+	.byte	3,2,1,5,30,9
+	.half	.L1270-.L39
+	.byte	1,5,23,9
+	.half	.L1271-.L1270
+	.byte	1,5,15,9
+	.half	.L1272-.L1271
+	.byte	1,5,23,9
+	.half	.L1273-.L1272
+	.byte	1,5,28,9
+	.half	.L1274-.L1273
+	.byte	1,5,30,9
+	.half	.L1275-.L1274
+	.byte	1,5,23,9
+	.half	.L1276-.L1275
+	.byte	1,5,15,9
+	.half	.L1277-.L1276
+	.byte	1,5,23,9
+	.half	.L1278-.L1277
+	.byte	1,5,67,9
+	.half	.L1279-.L1278
+	.byte	1,5,64,9
+	.half	.L1280-.L1279
+	.byte	1,5,38,9
+	.half	.L1281-.L1280
+	.byte	1,5,64,9
+	.half	.L1282-.L1281
+	.byte	1,5,74,9
+	.half	.L1283-.L1282
+	.byte	1,5,72,9
+	.half	.L1284-.L1283
+	.byte	1,5,35,9
+	.half	.L1285-.L1284
+	.byte	1,5,37,9
+	.half	.L1286-.L1285
+	.byte	3,126,1,5,34,9
+	.half	.L38-.L1286
+	.byte	1,5,33,7,9
+	.half	.L255-.L38
+	.byte	3,126,1,5,30,9
+	.half	.L36-.L255
+	.byte	1,5,36,7,9
+	.half	.L253-.L36
+	.byte	3,8,1,5,29,9
+	.half	.L1287-.L253
+	.byte	1,5,31,9
+	.half	.L1288-.L1287
+	.byte	3,1,1,5,29,9
+	.half	.L1289-.L1288
+	.byte	1,5,40,9
+	.half	.L1290-.L1289
+	.byte	3,1,1,5,48,9
+	.half	.L1291-.L1290
+	.byte	1,5,67,9
+	.half	.L1292-.L1291
+	.byte	1,5,19,9
+	.half	.L305-.L1292
+	.byte	1,5,9,9
+	.half	.L1293-.L305
+	.byte	3,3,1,5,17,9
+	.half	.L1294-.L1293
+	.byte	1,5,5,9
+	.half	.L1295-.L1294
+	.byte	1,5,24,7,9
+	.half	.L257-.L1295
+	.byte	3,2,1,5,34,9
+	.half	.L307-.L257
+	.byte	1,5,38,9
+	.half	.L42-.L307
+	.byte	3,2,1,5,32,9
+	.half	.L1296-.L42
+	.byte	1,5,38,9
+	.half	.L1297-.L1296
+	.byte	1,5,52,9
+	.half	.L1298-.L1297
+	.byte	1,5,60,9
+	.half	.L1299-.L1298
+	.byte	1,5,44,9
+	.half	.L1300-.L1299
+	.byte	1,5,50,9
+	.half	.L1301-.L1300
+	.byte	1,5,42,9
+	.half	.L1302-.L1301
+	.byte	1,5,13,9
+	.half	.L1303-.L1302
+	.byte	1,5,38,7,9
+	.half	.L1304-.L1303
+	.byte	3,2,1,5,32,9
+	.half	.L1305-.L1304
+	.byte	1,5,38,9
+	.half	.L1306-.L1305
+	.byte	1,5,52,9
+	.half	.L1307-.L1306
+	.byte	1,5,60,9
+	.half	.L1308-.L1307
+	.byte	1,5,44,9
+	.half	.L1309-.L1308
+	.byte	1,5,50,9
+	.half	.L1310-.L1309
+	.byte	1,5,42,9
+	.half	.L1311-.L1310
+	.byte	1,5,38,9
+	.half	.L43-.L1311
+	.byte	3,2,1,5,32,9
+	.half	.L1312-.L43
+	.byte	1,5,38,9
+	.half	.L1313-.L1312
+	.byte	1,5,53,9
+	.half	.L1314-.L1313
+	.byte	1,5,61,9
+	.half	.L1315-.L1314
+	.byte	1,5,44,9
+	.half	.L1316-.L1315
+	.byte	1,5,61,9
+	.half	.L1317-.L1316
+	.byte	1,5,42,9
+	.half	.L1318-.L1317
+	.byte	1,5,13,9
+	.half	.L1319-.L1318
+	.byte	1,5,38,7,9
+	.half	.L1320-.L1319
+	.byte	3,2,1,5,32,9
+	.half	.L1321-.L1320
+	.byte	1,5,38,9
+	.half	.L1322-.L1321
+	.byte	1,5,53,9
+	.half	.L1323-.L1322
+	.byte	1,5,61,9
+	.half	.L1324-.L1323
+	.byte	1,5,44,9
+	.half	.L1325-.L1324
+	.byte	1,5,61,9
+	.half	.L1326-.L1325
+	.byte	1,5,42,9
+	.half	.L1327-.L1326
+	.byte	1,5,37,9
+	.half	.L44-.L1327
+	.byte	3,120,1,5,34,9
+	.half	.L41-.L44
+	.byte	1,5,20,7,9
+	.half	.L40-.L41
+	.byte	3,14,1,5,32,9
+	.half	.L1328-.L40
+	.byte	1,5,30,9
+	.half	.L1329-.L1328
+	.byte	1,5,35,9
+	.half	.L1330-.L1329
+	.byte	3,1,1,5,51,9
+	.half	.L1331-.L1330
+	.byte	1,5,69,9
+	.half	.L1332-.L1331
+	.byte	1,5,19,9
+	.half	.L1333-.L1332
+	.byte	1,5,1,9
+	.half	.L29-.L1333
+	.byte	3,1,1,7,9
+	.half	.L121-.L29
+	.byte	0,1,1
+.L1049:
+	.sdecl	'.debug_ranges',debug,cluster('IMU_QuaternionEKF_xhatUpdate')
+	.sect	'.debug_ranges'
+.L120:
+	.word	-1,.L59,0,.L121-.L59,0,0
+.L232:
+	.word	-1,.L59,.L228-.L59,.L21-.L59,.L233-.L59,.L234-.L59,0,0
+.L240:
+	.word	-1,.L59,.L236-.L59,.L20-.L59,.L233-.L59,.L234-.L59,0,0
+	.sdecl	'.debug_info',debug,cluster('QEKF_INS')
+	.sect	'.debug_info'
+.L122:
+	.word	174
+	.half	3
+	.word	.L123
+	.byte	4,1
+	.byte	'../code/QuaternionEKF.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1,2
+	.word	.L68
+	.byte	3
+	.byte	'QEKF_INS',0,7,18,12
+	.word	.L259
+	.byte	1,5,3
+	.word	QEKF_INS
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('QEKF_INS')
+	.sect	'.debug_abbrev'
+.L123:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('IMU_QuaternionEKF_F')
+	.sect	'.debug_info'
+.L124:
+	.word	185
+	.half	3
+	.word	.L125
+	.byte	4,1
+	.byte	'../code/QuaternionEKF.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1,2
+	.word	.L68
+	.byte	3
+	.byte	'IMU_QuaternionEKF_F',0,7,20,13
+	.word	.L260
+	.byte	1,5,3
+	.word	IMU_QuaternionEKF_F
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('IMU_QuaternionEKF_F')
+	.sect	'.debug_abbrev'
+.L125:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('IMU_QuaternionEKF_P_Const')
+	.sect	'.debug_info'
+.L126:
+	.word	191
+	.half	3
+	.word	.L127
+	.byte	4,1
+	.byte	'../code/QuaternionEKF.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1,2
+	.word	.L68
+	.byte	3
+	.byte	'IMU_QuaternionEKF_P_Const',0,7,27,13
+	.word	.L261
+	.byte	1,5,3
+	.word	IMU_QuaternionEKF_P_Const
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('IMU_QuaternionEKF_P_Const')
+	.sect	'.debug_abbrev'
+.L127:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('IMU_QuaternionEKF_P')
+	.sect	'.debug_info'
+.L128:
+	.word	185
+	.half	3
+	.word	.L129
+	.byte	4,1
+	.byte	'../code/QuaternionEKF.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1,2
+	.word	.L68
+	.byte	3
+	.byte	'IMU_QuaternionEKF_P',0,7,34,7
+	.word	.L262
+	.byte	1,5,3
+	.word	IMU_QuaternionEKF_P
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('IMU_QuaternionEKF_P')
+	.sect	'.debug_abbrev'
+.L129:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('IMU_QuaternionEKF_K')
+	.sect	'.debug_info'
+.L130:
+	.word	185
+	.half	3
+	.word	.L131
+	.byte	4,1
+	.byte	'../code/QuaternionEKF.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1,2
+	.word	.L68
+	.byte	3
+	.byte	'IMU_QuaternionEKF_K',0,7,40,7
+	.word	.L263
+	.byte	1,5,3
+	.word	IMU_QuaternionEKF_K
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('IMU_QuaternionEKF_K')
+	.sect	'.debug_abbrev'
+.L131:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('IMU_QuaternionEKF_H')
+	.sect	'.debug_info'
+.L132:
+	.word	185
+	.half	3
+	.word	.L133
+	.byte	4,1
+	.byte	'../code/QuaternionEKF.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1,2
+	.word	.L68
+	.byte	3
+	.byte	'IMU_QuaternionEKF_H',0,7,41,7
+	.word	.L263
+	.byte	1,5,3
+	.word	IMU_QuaternionEKF_H
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('IMU_QuaternionEKF_H')
+	.sect	'.debug_abbrev'
+.L133:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_loc',debug,cluster('Get_Pitch')
+	.sect	'.debug_loc'
+.L62:
+	.word	-1,.L63,0,.L177-.L63
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Get_Roll')
+	.sect	'.debug_loc'
+.L64:
+	.word	-1,.L65,0,.L178-.L65
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Get_Yaw')
+	.sect	'.debug_loc'
+.L66:
+	.word	-1,.L67,0,.L179-.L67
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('IMU_QuaternionEKF_F_Linearization_P_Fading')
+	.sect	'.debug_loc'
+.L54:
+	.word	-1,.L55,0,.L286-.L55
+	.half	2
+	.byte	138,0
+	.word	.L286-.L55,.L183-.L55
+	.half	2
+	.byte	138,24
+	.word	.L183-.L55,.L183-.L55
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L198:
+	.word	-1,.L55,.L288-.L55,.L289-.L55
+	.half	1
+	.byte	81
+	.word	0,0
+.L203:
+	.word	-1,.L55,.L290-.L55,.L292-.L55
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L200:
+	.word	-1,.L55,.L287-.L55,.L290-.L55
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L184:
+	.word	-1,.L55,0,.L183-.L55
+	.half	1
+	.byte	100
+	.word	0,0
+.L186:
+	.word	-1,.L55,0,.L183-.L55
+	.half	2
+	.byte	145,104
+	.word	0,0
+.L188:
+	.word	-1,.L55,0,.L183-.L55
+	.half	2
+	.byte	145,108
+	.word	0,0
+.L190:
+	.word	-1,.L55,0,.L183-.L55
+	.half	2
+	.byte	145,112
+	.word	0,0
+.L192:
+	.word	-1,.L55,0,.L183-.L55
+	.half	2
+	.byte	145,116
+	.word	0,0
+.L194:
+	.word	-1,.L55,0,.L183-.L55
+	.half	2
+	.byte	145,120
+	.word	0,0
+.L197:
+	.word	0,0
+.L199:
+	.word	-1,.L55,.L195-.L55,.L287-.L55
+	.half	1
+	.byte	95
+	.word	.L291-.L55,.L14-.L55
+	.half	1
+	.byte	95
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('IMU_QuaternionEKF_Init')
+	.sect	'.debug_loc'
+.L48:
+	.word	-1,.L49,0,.L134-.L49
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L140:
+	.word	-1,.L49,0,.L134-.L49
+	.half	2
+	.byte	145,0
+	.word	0,.L134-.L49
+	.half	2
+	.byte	145,0
+	.word	.L268-.L49,.L269-.L49
+	.half	1
+	.byte	95
+	.word	0,0
+.L139:
+	.word	-1,.L49,0,.L264-.L49
+	.half	1
+	.byte	87
+	.word	0,0
+.L141:
+	.word	-1,.L49,0,.L134-.L49
+	.half	2
+	.byte	145,4
+	.word	0,0
+.L138:
+	.word	-1,.L49,0,.L265-.L49
+	.half	1
+	.byte	86
+	.word	0,0
+.L136:
+	.word	-1,.L49,0,.L266-.L49
+	.half	1
+	.byte	84
+	.word	0,0
+.L137:
+	.word	-1,.L49,0,.L267-.L49
+	.half	1
+	.byte	85
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('IMU_QuaternionEKF_Observe')
+	.sect	'.debug_loc'
+.L60:
+	.word	-1,.L61,0,.L180-.L61
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L182:
+	.word	-1,.L61,0,.L308-.L61
+	.half	1
+	.byte	100
+	.word	.L309-.L61,.L180-.L61
+	.half	1
+	.byte	111
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('IMU_QuaternionEKF_Reset')
+	.sect	'.debug_loc'
+.L50:
+	.word	-1,.L51,0,.L176-.L51
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('IMU_QuaternionEKF_SetH')
+	.sect	'.debug_loc'
+.L56:
+	.word	-1,.L57,0,.L293-.L57
+	.half	2
+	.byte	138,0
+	.word	.L293-.L57,.L204-.L57
+	.half	2
+	.byte	138,16
+	.word	.L204-.L57,.L204-.L57
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L207:
+	.word	-1,.L57,0,.L204-.L57
+	.half	2
+	.byte	145,112
+	.word	0,0
+.L209:
+	.word	-1,.L57,0,.L204-.L57
+	.half	2
+	.byte	145,116
+	.word	0,0
+.L211:
+	.word	-1,.L57,0,.L204-.L57
+	.half	2
+	.byte	145,120
+	.word	0,0
+.L213:
+	.word	-1,.L57,0,.L204-.L57
+	.half	2
+	.byte	145,124
+	.word	0,0
+.L205:
+	.word	-1,.L57,0,.L294-.L57
+	.half	1
+	.byte	100
+	.word	.L295-.L57,.L204-.L57
+	.half	1
+	.byte	108
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('IMU_QuaternionEKF_Update')
+	.sect	'.debug_loc'
+.L52:
+	.word	-1,.L53,0,.L270-.L53
+	.half	2
+	.byte	138,0
+	.word	.L270-.L53,.L142-.L53
+	.half	2
+	.byte	138,16
+	.word	.L142-.L53,.L142-.L53
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L156:
+	.word	-1,.L53,0,.L142-.L53
+	.half	2
+	.byte	145,124
+	.word	0,0
+.L146:
+	.word	-1,.L53,0,.L271-.L53
+	.half	1
+	.byte	87
+	.word	.L273-.L53,.L142-.L53
+	.half	1
+	.byte	88
+	.word	0,0
+.L147:
+	.word	-1,.L53,0,.L142-.L53
+	.half	2
+	.byte	145,0
+	.word	0,.L142-.L53
+	.half	2
+	.byte	145,0
+	.word	.L274-.L53,.L142-.L53
+	.half	1
+	.byte	89
+	.word	0,0
+.L148:
+	.word	-1,.L53,0,.L142-.L53
+	.half	2
+	.byte	145,4
+	.word	0,.L142-.L53
+	.half	2
+	.byte	145,4
+	.word	.L275-.L53,.L142-.L53
+	.half	1
+	.byte	90
+	.word	0,0
+.L143:
+	.word	-1,.L53,0,.L272-.L53
+	.half	1
+	.byte	84
+	.word	0,0
+.L144:
+	.word	-1,.L53,0,.L271-.L53
+	.half	1
+	.byte	85
+	.word	0,0
+.L145:
+	.word	-1,.L53,0,.L271-.L53
+	.half	1
+	.byte	86
+	.word	0,0
+.L150:
+	.word	-1,.L53,0,.L142-.L53
+	.half	2
+	.byte	145,112
+	.word	0,0
+.L152:
+	.word	-1,.L53,0,.L142-.L53
+	.half	2
+	.byte	145,116
+	.word	0,0
+.L154:
+	.word	-1,.L53,0,.L142-.L53
+	.half	2
+	.byte	145,120
+	.word	0,0
+.L173:
+	.word	-1,.L53,.L283-.L53,.L284-.L53
+	.half	1
+	.byte	81
+	.word	0,0
+.L163:
+	.word	-1,.L53,.L277-.L53,.L278-.L53
+	.half	1
+	.byte	81
+	.word	0,0
+.L175:
+	.word	-1,.L53,.L282-.L53,.L169-.L53
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L166:
+	.word	-1,.L53,.L276-.L53,.L279-.L53
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L161:
+	.word	0,0
+.L164:
+	.word	-1,.L53,.L158-.L53,.L276-.L53
+	.half	1
+	.byte	95
+	.word	.L280-.L53,.L281-.L53
+	.half	1
+	.byte	95
+	.word	0,0
+.L174:
+	.word	-1,.L53,.L167-.L53,.L282-.L53
+	.half	1
+	.byte	95
+	.word	.L285-.L53,.L172-.L53
+	.half	1
+	.byte	95
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('IMU_QuaternionEKF_xhatUpdate')
+	.sect	'.debug_loc'
+.L58:
+	.word	-1,.L59,0,.L296-.L59
+	.half	2
+	.byte	138,0
+	.word	.L296-.L59,.L214-.L59
+	.half	2
+	.byte	138,16
+	.word	.L214-.L59,.L214-.L59
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L238:
+	.word	0,0
+.L230:
+	.word	0,0
+.L249:
+	.word	-1,.L59,.L301-.L59,.L17-.L59
+	.half	1
+	.byte	81
+	.word	0,0
+.L226:
+	.word	-1,.L59,.L299-.L59,.L300-.L59
+	.half	1
+	.byte	83
+	.word	0,0
+.L252:
+	.word	-1,.L59,.L302-.L59,.L303-.L59
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L34-.L59,.L304-.L59
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L254:
+	.word	-1,.L59,.L304-.L59,.L305-.L59
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L258:
+	.word	-1,.L59,.L307-.L59,.L40-.L59
+	.half	1
+	.byte	82
+	.word	0,0
+.L246:
+	.word	0,0
+.L256:
+	.word	-1,.L59,.L306-.L59,.L36-.L59
+	.half	1
+	.byte	81
+	.word	0,0
+.L215:
+	.word	-1,.L59,0,.L297-.L59
+	.half	1
+	.byte	100
+	.word	.L298-.L59,.L214-.L59
+	.half	1
+	.byte	108
+	.word	0,0
+.L244:
+	.word	0,0
+.L217:
+	.word	-1,.L59,0,.L214-.L59
+	.half	2
+	.byte	145,112
+	.word	0,0
+.L219:
+	.word	-1,.L59,0,.L214-.L59
+	.half	2
+	.byte	145,116
+	.word	0,0
+.L221:
+	.word	-1,.L59,0,.L214-.L59
+	.half	2
+	.byte	145,120
+	.word	0,0
+.L223:
+	.word	-1,.L59,0,.L214-.L59
+	.half	2
+	.byte	145,124
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L1334:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('IMU_QuaternionEKF_Init')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L1334,.L49,.L134-.L49
+	.sdecl	'.debug_frame',debug,cluster('IMU_QuaternionEKF_Reset')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L1334,.L51,.L176-.L51
+	.sdecl	'.debug_frame',debug,cluster('IMU_QuaternionEKF_Update')
+	.sect	'.debug_frame'
+	.word	36
+	.word	.L1334,.L53,.L142-.L53
+	.byte	4
+	.word	(.L270-.L53)/2
+	.byte	19,16,22,26,3,19,138,16,4
+	.word	(.L142-.L270)/2
+	.byte	19,0,8,26,0,0
+	.sdecl	'.debug_frame',debug,cluster('IMU_QuaternionEKF_F_Linearization_P_Fading')
+	.sect	'.debug_frame'
+	.word	44
+	.word	.L1334,.L55,.L183-.L55
+	.byte	8,19,8,21,8,22,8,23,4
+	.word	(.L286-.L55)/2
+	.byte	19,24,22,26,3,19,138,24,4
+	.word	(.L183-.L286)/2
+	.byte	19,0,8,26,0,0
+	.sdecl	'.debug_frame',debug,cluster('IMU_QuaternionEKF_SetH')
+	.sect	'.debug_frame'
+	.word	36
+	.word	.L1334,.L57,.L204-.L57
+	.byte	4
+	.word	(.L293-.L57)/2
+	.byte	19,16,22,26,3,19,138,16,4
+	.word	(.L204-.L293)/2
+	.byte	19,0,8,26,0,0
+	.sdecl	'.debug_frame',debug,cluster('IMU_QuaternionEKF_xhatUpdate')
+	.sect	'.debug_frame'
+	.word	36
+	.word	.L1334,.L59,.L214-.L59
+	.byte	4
+	.word	(.L296-.L59)/2
+	.byte	19,16,22,26,3,19,138,16,4
+	.word	(.L214-.L296)/2
+	.byte	19,0,8,26,0,0
+	.sdecl	'.debug_frame',debug,cluster('IMU_QuaternionEKF_Observe')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L1334,.L61,.L180-.L61
+	.sdecl	'.debug_frame',debug,cluster('Get_Pitch')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L1334,.L63,.L177-.L63
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('Get_Roll')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L1334,.L65,.L178-.L65
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('Get_Yaw')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L1334,.L67,.L179-.L67
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	; Module end

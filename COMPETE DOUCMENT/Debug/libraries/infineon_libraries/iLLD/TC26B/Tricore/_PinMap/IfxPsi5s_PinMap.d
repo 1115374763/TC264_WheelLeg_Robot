@@ -1,0 +1,56 @@
+IfxPsi5s_PinMap.o :	../libraries/infineon_libraries/iLLD/TC26B/Tricore/_PinMap/IfxPsi5s_PinMap.c
+../libraries/infineon_libraries/iLLD/TC26B/Tricore/_PinMap/IfxPsi5s_PinMap.c :
+IfxPsi5s_PinMap.o :	..\libraries\infineon_libraries\iLLD\TC26B\Tricore\_PinMap\IfxPsi5s_PinMap.h
+..\libraries\infineon_libraries\iLLD\TC26B\Tricore\_PinMap\IfxPsi5s_PinMap.h :
+IfxPsi5s_PinMap.o :	"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxPsi5s_reg.h"
+"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxPsi5s_reg.h" :
+IfxPsi5s_PinMap.o :	"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxPsi5s_regdef.h"
+"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxPsi5s_regdef.h" :
+IfxPsi5s_PinMap.o :	"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\Ifx_TypesReg.h"
+"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\Ifx_TypesReg.h" :
+IfxPsi5s_PinMap.o :	"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\_Impl\IfxPsi5s_cfg.h"
+"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\_Impl\IfxPsi5s_cfg.h" :
+IfxPsi5s_PinMap.o :	"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Port\Std\IfxPort.h"
+"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Port\Std\IfxPort.h" :
+IfxPsi5s_PinMap.o :	"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\_Impl\IfxPort_cfg.h"
+"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\_Impl\IfxPort_cfg.h" :
+IfxPsi5s_PinMap.o :	"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\IfxCpu_Intrinsics.h"
+"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\IfxCpu_Intrinsics.h" :
+IfxPsi5s_PinMap.o :	"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Ifx_Types.h"
+"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Ifx_Types.h" :
+IfxPsi5s_PinMap.o :	"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\Compilers.h"
+"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\Compilers.h" :
+IfxPsi5s_PinMap.o :	"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\Configurations\Ifx_Cfg.h"
+"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\Configurations\Ifx_Cfg.h" :
+IfxPsi5s_PinMap.o :	"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\CompilerTasking.h"
+"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\CompilerTasking.h" :
+IfxPsi5s_PinMap.o :	"D:\Infineon\AURIX-Studio-1.10.24\tools\Compilers\Tasking_1.1r8\ctc\include\stddef.h"
+"D:\Infineon\AURIX-Studio-1.10.24\tools\Compilers\Tasking_1.1r8\ctc\include\stddef.h" :
+IfxPsi5s_PinMap.o :	"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Platform_Types.h"
+"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Platform_Types.h" :
+IfxPsi5s_PinMap.o :	"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Ifx_TypesTasking.h"
+"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Ifx_TypesTasking.h" :
+IfxPsi5s_PinMap.o :	"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\IfxCpu_IntrinsicsTasking.h"
+"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\IfxCpu_IntrinsicsTasking.h" :
+IfxPsi5s_PinMap.o :	"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxPort_reg.h"
+"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxPort_reg.h" :
+IfxPsi5s_PinMap.o :	"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxPort_regdef.h"
+"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxPort_regdef.h" :
+IfxPsi5s_PinMap.o :	"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Scu\Std\IfxScuWdt.h"
+"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Scu\Std\IfxScuWdt.h" :
+IfxPsi5s_PinMap.o :	"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\_Impl\IfxScu_cfg.h"
+"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\_Impl\IfxScu_cfg.h" :
+IfxPsi5s_PinMap.o :	"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxScu_bf.h"
+"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxScu_bf.h" :
+IfxPsi5s_PinMap.o :	"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxFlash_bf.h"
+"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxFlash_bf.h" :
+IfxPsi5s_PinMap.o :	"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Ifx_Types.h"
+"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Ifx_Types.h" :
+IfxPsi5s_PinMap.o :	"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxScu_reg.h"
+"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxScu_reg.h" :
+IfxPsi5s_PinMap.o :	"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxScu_regdef.h"
+"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxScu_regdef.h" :
+IfxPsi5s_PinMap.o :	"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Scu\Std\IfxScuWdt.asm.h"
+"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Scu\Std\IfxScuWdt.asm.h" :
+IfxPsi5s_PinMap.o :	"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Ifx_Types.h"
+"H:\\13333\\COMPETE DOUCMENT\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Ifx_Types.h" :
