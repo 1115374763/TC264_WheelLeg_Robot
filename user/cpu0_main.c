@@ -25,11 +25,7 @@ int core0_main(void)
     uart_receiver_init();
     cpu_wait_event_ready();
 
-//        while(1)
-//        {
-//            single_mode++;
-//            printf("%d\n",single_mode);
-//        }
+
     while (TRUE)
     {
 
