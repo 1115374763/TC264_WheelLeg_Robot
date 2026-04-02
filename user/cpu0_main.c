@@ -37,7 +37,7 @@ int core0_main(void)
     uart_receiver_init();
     cpu_wait_event_ready();
 
-/////
+//tonbubaocun
 while (1)
     {
         if (1 == uart_receiver.finsh_flag)
