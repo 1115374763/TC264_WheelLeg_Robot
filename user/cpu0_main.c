@@ -37,7 +37,6 @@ int core0_main(void)
     uart_receiver_init();
     cpu_wait_event_ready();
 
-//queshi
 while (1)
     {
         if (1 == uart_receiver.finsh_flag)
@@ -66,6 +65,30 @@ while (1)
                     cur_ch4_mode = 3; 
                 else                                      
                     cur_ch4_mode = 2; 
+
+                // =========================================================
+                // 【优化】通道2 (油门) 速度状态控制
+                // 摇杆中位值在 992~1000 左右，设定 950~1050 为停止死区，防止误动
+                // =========================================================
+                if (ch2_thr >= 950 && ch2_thr <= 1050)
+                {
+                    mode_stop = 1;
+                    mode_stright = 0;
+                    mode_back = 0;
+                }
+                else if (ch2_thr > 1050) // 摇杆上推 (1050 ~ 1800)
+                {
+                    mode_stop = 0;
+                    mode_stright = 1;
+                    mode_back = 0;
+                }
+                else if (ch2_thr < 950) // 摇杆下推 (200 ~ 950)
+                {
+                    mode_stop = 0;
+                    mode_stright = 0;
+                    mode_back = 1;
+                }
+                // =========================================================
 
                 // 差值过滤打印
                 if (ABS_DIFF(ch1_dir, rc.last_ch1) > 30 || ABS_DIFF(ch2_thr, rc.last_ch2) > 30) {
@@ -103,6 +126,12 @@ while (1)
                 {
                     if (rc.error_print_flag == 0) {
                         printf("[RC_ERROR] Remote Disconnected!\r\n"); 
+                        
+                        // 失控保护：遥控器断开时强制停车
+                        mode_stop = 1;
+                        mode_stright = 0;
+                        mode_back = 0;
+                        
                         rc.error_print_flag = 1;
                     }
                     rc.disconnect_cnt = 20; // 防止数值溢出
