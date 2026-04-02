@@ -4,6 +4,8 @@ int Target_Err_time;
 extern int time_single_1;
 extern int time_single_an;
 
+// 声明我们在 core0 或者 common 中定义的全局变量
+extern float remote_dir_err; 
 
 void core1_main(void)
 {
@@ -11,14 +13,12 @@ void core1_main(void)
     interrupt_global_enable(0);             // 打开全局中断
     // 此处编写用户代码 例如外设初始化代码等
 
-    // 此处编写用户代码 例如外设初始化代码等
     cpu_wait_event_ready();                 // 等待所有核心初始化完毕
+    
     while (TRUE)
     {
-               location_banlance_error = balance_location_PID(-0);//转向环
+        // 将固定的 -0 替换为遥控器动态下发的方向偏差
+        location_banlance_error = balance_location_PID(remote_dir_err);
     }
-
-
 }
 #pragma section all restore
-// **************************** 代码区域 ****************************
