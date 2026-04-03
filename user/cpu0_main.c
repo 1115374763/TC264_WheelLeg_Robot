@@ -4,6 +4,9 @@
 #include "swj.h"
 #pragma section all "cpu0_dsram"
 extern int single_mode;
+extern int hengduan_flag;
+extern uint16 jumptime0, jumptime1, jumptime2, jumptime3, jumptime4;
+extern int jump_out;
 int mode_stop,mode_stright,mode_back;
 #define ABS_DIFF(a, b) ((a) > (b) ? ((a) - (b)) : ((b) - (a)))
 // 将本语句与#pragma section all restore语句之间的全局变量都放在CPU0的RAM中
@@ -41,7 +44,9 @@ int core0_main(void)
 
 while (1)
     {
-
+        // =========================================================
+        // 独立按键启动逻辑
+        // =========================================================
         if (gpio_get_level(P20_9) == 0) // 检测到按键按下 (低电平)
         {
             system_delay_ms(20);        // 软件消抖 (延时20ms，逐飞库自带此函数)
@@ -53,7 +58,7 @@ while (1)
         }
 
         // =========================================================
-        // 原有的遥控器解析逻辑
+        // 遥控器解析逻辑
         // =========================================================
         if (1 == uart_receiver.finsh_flag)
         {
@@ -70,9 +75,10 @@ while (1)
                 uint16_t ch1_dir = uart_receiver.channel[0]; 
                 uint16_t ch2_thr = uart_receiver.channel[1]; 
                 
+                // ---------------------------------------------------------
                 // 通道1 (方向) 转向映射控制
+                // ---------------------------------------------------------
                 float turn_ratio = 0.05f; 
-
                 if (ch1_dir > 1050)      
                 {
                     remote_dir_err = (1050 - ch1_dir) * turn_ratio; 
@@ -86,7 +92,9 @@ while (1)
                     remote_dir_err = 0.0f;
                 }
 
+                // ---------------------------------------------------------
                 // 通道2 (油门) 速度状态控制
+                // ---------------------------------------------------------
                 if (ch2_thr >= 950 && ch2_thr <= 1050)
                 {
                     mode_stop = 1;
@@ -106,13 +114,83 @@ while (1)
                     mode_back = 1;
                 }
 
-                // 其他通道按键状态更新...
+                // ---------------------------------------------------------
+                // 其他通道状态读取
+                // ---------------------------------------------------------
                 uint8_t cur_ch3 = (uart_receiver.channel[2] > RC_MID_VAL) ? 1 : 0;
-                // ...(此处省略打印代码，保持你原来的即可)
+                uint8_t cur_ch5 = (uart_receiver.channel[4] > RC_MID_VAL) ? 1 : 0;
+                uint8_t cur_ch6 = (uart_receiver.channel[5] > RC_MID_VAL) ? 1 : 0;
+
+                uint8_t cur_ch4_mode = 2; 
+                if (uart_receiver.channel[3] < 600)       
+                    cur_ch4_mode = 1; 
+                else if (uart_receiver.channel[3] > 1400) 
+                    cur_ch4_mode = 3; 
+                else                                      
+                    cur_ch4_mode = 2; 
+
+                // ---------------------------------------------------------
+                // 状态打印与通道触发逻辑
+                // ---------------------------------------------------------
+                if (cur_ch3 != rc.ch3_state) {
+                    rc.ch3_state = cur_ch3;
+                    printf("[RC] 通道3 按键改变! 当前: %d\r\n", rc.ch3_state);
+                }
+                
+                if (cur_ch5 != rc.ch5_state) {
+                    rc.ch5_state = cur_ch5;
+                    printf("[RC] 通道5 按键改变! 当前: %d\r\n", rc.ch5_state);
+                }
+
+                if (cur_ch4_mode != rc.ch4_mode) {
+                    rc.ch4_mode = cur_ch4_mode; 
+                    printf("[RC] 通道4 三段开关切换! 当前模式: %d\r\n", rc.ch4_mode);
+                }
+
+                // =========================================================
+                // 【核心】通道6 边沿检测跳跃逻辑 (单次触发，防止连跳)
+                // =========================================================
+                if (cur_ch6 != rc.ch6_state) 
+                {
+                    rc.ch6_state = cur_ch6; // 立即更新状态，防止重复触发
+                    
+                    if (cur_ch6 == 1) 
+                    {
+                        // 动作：0 -> 1 (拨下开关触发跳跃)
+                        hengduan_flag = 1;
+                        
+                        // 清零所有状态机计时器，保证起跳干脆利落
+                        jumptime0 = 0;
+                        jumptime1 = 0;
+                        jumptime2 = 0;
+                        jumptime3 = 0;
+                        jumptime4 = 0;
+                        jump_out = 0;
+                        
+                        printf("[RC_JUMP] 通道6 开启: 触发单次跳跃!\r\n");
+                    } 
+                    else 
+                    {
+                        // 动作：1 -> 0 (拨回开关强制复位)
+                        hengduan_flag = 0;
+                        
+                        // 同样清零计时器，为下一次跳跃做准备
+                        jumptime0 = 0;
+                        jumptime1 = 0;
+                        jumptime2 = 0;
+                        jumptime3 = 0;
+                        jumptime4 = 0;
+                        jump_out = 0;
+                        
+                        printf("[RC_JUMP] 通道6 关闭: 跳跃系统已复位!\r\n");
+                    }
+                }
             }
             else
             {
+                // ---------------------------------------------------------
                 // 断连保护逻辑
+                // ---------------------------------------------------------
                 rc.disconnect_cnt++;
                 if (rc.disconnect_cnt > 20) 
                 {

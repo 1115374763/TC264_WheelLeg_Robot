@@ -143,7 +143,7 @@ void inverseKinematics()
             jumptime0++;
             IKParam.YLeft  = 163.0f; // 起跳需要最大爆发力，直接阶跃
             IKParam.YRight = 163.0f; 
-            if (jumptime0 >= 118) {
+            if (jumptime0 >= 130) {
                 jumptime0 = 0;
                 hengduan_flag = 2;
             }
@@ -153,8 +153,8 @@ void inverseKinematics()
         {
             jumptime1++;
             // 优化点：使用低通滤波平滑收腿，避免瞬态冲击扫齿。下限抬高到 45 保证机械不死点。
-            IKParam.YLeft  = IKParam.YLeft  + (45.0f - IKParam.YLeft)  * 0.2f;
-            IKParam.YRight = IKParam.YRight + (45.0f - IKParam.YRight) * 0.2f;
+            IKParam.YLeft  = IKParam.YLeft  + (45.0f - IKParam.YLeft)  * 0.23f;
+            IKParam.YRight = IKParam.YRight + (45.0f - IKParam.YRight) * 0.23f;
             if (jumptime1 >= 95) {
                 jumptime1 = 0;
                 hengduan_flag = 3;
@@ -165,8 +165,8 @@ void inverseKinematics()
         {
             jumptime2++;
             // 优化点：落地前腿要半弯曲（比如80），太直容易震坏，太弯缓冲行程不够
-            IKParam.YLeft  = IKParam.YLeft  + (80.0f - IKParam.YLeft)  * 0.15f;
-            IKParam.YRight = IKParam.YRight + (80.0f - IKParam.YRight) * 0.15f;
+            IKParam.YLeft  = IKParam.YLeft  + (82.0f - IKParam.YLeft)  * 0.15f;
+            IKParam.YRight = IKParam.YRight + (82.0f - IKParam.YRight) * 0.15f;
             if (jumptime2 >= 90) {
                 jumptime2 = 0;
                 hengduan_flag = 4;
@@ -177,8 +177,8 @@ void inverseKinematics()
         {
             jumptime3++;
             // 优化点：缓慢恢复到平地常态高度 51，吸收落地动能
-            IKParam.YLeft  = IKParam.YLeft  + (51.0f - IKParam.YLeft)  * 0.05f; 
-            IKParam.YRight = IKParam.YRight + (51.0f - IKParam.YRight) * 0.05f;
+            IKParam.YLeft  = IKParam.YLeft  + (51.0f - IKParam.YLeft)  * 0.04f; 
+            IKParam.YRight = IKParam.YRight + (51.0f - IKParam.YRight) * 0.04f;
             
             if (jumptime3 >= 100) {
                 jumptime3 = 0;
