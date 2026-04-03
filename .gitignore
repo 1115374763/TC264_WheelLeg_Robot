@@ -1,0 +1,23 @@
+# 编译输出文件夹
+Debug/
+Release/
+Listings/
+Objects/
+
+# 编译产生的临时文件
+*.obj
+*.o
+*.d
+*.crf
+*.lnp
+*.axf
+*.htm
+*.dep
+*.build_log.htm
+
+# IDE 个人设置（最容易导致换电脑报错的文件）
+*.uvgui.*
+*.uvguix.*
+*.scvd
+*.bak
+*.dep
