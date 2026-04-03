@@ -122,113 +122,140 @@ void inverseKinematics()
   if(IKParam.XRight >80) IKParam.XRight=80;
   else if(IKParam.XRight<-55) IKParam.XRight=-55;
 
-  if(hengduan_flag!=0)
-  {
-      IKParam.XLeft  = o11+18;
-      IKParam.XRight = o11+18;
-
-      if(IKParam.XLeft >80) IKParam.XLeft=80;
-      else if(IKParam.XLeft<-55) IKParam.XLeft=-55;
-      if(IKParam.XRight >80) IKParam.XRight=80;
-      else if(IKParam.XRight<-55) IKParam.XRight=-55;
-  }
-  else{
-      IKParam.XLeft  = o11+20;
-      IKParam.XRight = o11+20;
-
-      if(IKParam.XLeft >80) IKParam.XLeft=80;
-      else if(IKParam.XLeft<-55) IKParam.XLeft=-55;
-      if(IKParam.XRight >80) IKParam.XRight=80;
-      else if(IKParam.XRight<-55) IKParam.XRight=-55;
-  }
 
 
-
-
-  if(hengduan_flag==1)//1
-  {
-      jumptime0++;
-      IKParam.YLeft = 163;IKParam.YRight = 163;
-      if(jumptime0>=118)//5
-      {
-          jumptime0 = 0;
-          hengduan_flag=2;
-
-      }
-  }
-  if(hengduan_flag==2){
-      jumptime1++;
-      IKParam.YLeft = 32;IKParam.YRight = 32;//IKParam.YLeft = 51;IKParam.YRight = 51;
-          if(jumptime1>=95)//15
-          {
-              jumptime1 = 0;
-              hengduan_flag=3;
-
-          }
-  }
-  if(hengduan_flag==3){
-              jumptime2++;
-              IKParam.YLeft = 60;IKParam.YRight = 60;
-              if(jumptime2>=90)//80
-              {
-                  jumptime2 = 0;
-                  hengduan_flag=4;
-              }
-  }
-  if(hengduan_flag==4){
-      jumptime3++;
-      IKParam.YLeft = IKParam.YLeft-0.09;
-      IKParam.YRight =IKParam.YRight-0.09;
-              if(jumptime3>=100)//80
-              {
-                  jump_out=1;
-                  jumptime3=0;
-              }
-  }
-
-    if(jump_out==1)
+  // =========================================================
+    // 【高度与跳跃状态机】严格互斥，防止指令打架
+    // =========================================================
+    if (hengduan_flag != 0) 
     {
-        jumptime4++;
-          if(jumptime4>=5000)
-          {
-              jump_out=0;
-              jumptime4=0;
-              hengduan_flag=0;
-          }
-  }
+        // 跳跃期间的 X 轴姿态微调
+        IKParam.XLeft  = o11 + 18;
+        IKParam.XRight = o11 + 18;
+        if(IKParam.XLeft > 80) IKParam.XLeft = 80;
+        else if(IKParam.XLeft < -55) IKParam.XLeft = -55;
+        if(IKParam.XRight > 80) IKParam.XRight = 80;
+        else if(IKParam.XRight < -55) IKParam.XRight = -55;
 
+        // --- 阶段1：爆发蹬腿 (起跳) ---
+        if (hengduan_flag == 1) 
+        {
+            jumptime0++;
+            IKParam.YLeft  = 163.0f; // 起跳需要最大爆发力，直接阶跃
+            IKParam.YRight = 163.0f; 
+            if (jumptime0 >= 118) {
+                jumptime0 = 0;
+                hengduan_flag = 2;
+            }
+        }
+        // --- 阶段2：腾空收腿 (越障) ---
+        else if (hengduan_flag == 2) 
+        {
+            jumptime1++;
+            // 优化点：使用低通滤波平滑收腿，避免瞬态冲击扫齿。下限抬高到 45 保证机械不死点。
+            IKParam.YLeft  = IKParam.YLeft  + (45.0f - IKParam.YLeft)  * 0.2f;
+            IKParam.YRight = IKParam.YRight + (45.0f - IKParam.YRight) * 0.2f;
+            if (jumptime1 >= 95) {
+                jumptime1 = 0;
+                hengduan_flag = 3;
+            }
+        }
+        // --- 阶段3：准备着陆 (伸出腿当弹簧) ---
+        else if (hengduan_flag == 3) 
+        {
+            jumptime2++;
+            // 优化点：落地前腿要半弯曲（比如80），太直容易震坏，太弯缓冲行程不够
+            IKParam.YLeft  = IKParam.YLeft  + (80.0f - IKParam.YLeft)  * 0.15f;
+            IKParam.YRight = IKParam.YRight + (80.0f - IKParam.YRight) * 0.15f;
+            if (jumptime2 >= 90) {
+                jumptime2 = 0;
+                hengduan_flag = 4;
+            }
+        }
+        // --- 阶段4：落地缓冲与恢复常态 ---
+        else if (hengduan_flag == 4) 
+        {
+            jumptime3++;
+            // 优化点：缓慢恢复到平地常态高度 51，吸收落地动能
+            IKParam.YLeft  = IKParam.YLeft  + (51.0f - IKParam.YLeft)  * 0.05f; 
+            IKParam.YRight = IKParam.YRight + (51.0f - IKParam.YRight) * 0.05f;
+            
+            if (jumptime3 >= 100) {
+                jumptime3 = 0;
+                jump_out = 1;
+                hengduan_flag = 5; // 转移到冷却阶段，防止枚举混乱
+            }
+        }
+        // --- 阶段5：跳跃冷却 (防连跳) ---
+        else if (hengduan_flag == 5 && jump_out == 1)
+        {
+            jumptime4++;
+            // 保持常态高度
+            IKParam.YLeft  = IKParam.YLeft  + (51.0f - IKParam.YLeft)  * 0.1f;
+            IKParam.YRight = IKParam.YRight + (51.0f - IKParam.YRight) * 0.1f;
 
+            if (jumptime4 >= 5000) { // 冷却时间到达
+                jump_out = 0;
+                jumptime4 = 0;
+                hengduan_flag = 0;   // 彻底退出跳跃模式
+            }
+        }
 
+        // 跳跃期间强制进行 Y 轴安全限幅
+        if(IKParam.YLeft > 175) IKParam.YLeft = 175;
+        else if(IKParam.YLeft < 45) IKParam.YLeft = 45; // 保护下限
+        if(IKParam.YRight > 175) IKParam.YRight = 175;
+        else if(IKParam.YRight < 45) IKParam.YRight = 45;
+    }
+    // =========================================================
+    // 【常态与其他模式】只有不在跳跃时才执行，绝对互斥！
+    // =========================================================
+    else if (SingleBridge_mode == 1) // === 单边桥模式 ===
+    {
+        Exceptspeed = 820;
+        Ex_roll = balance_rollangle_PI(QEKF_INS.Roll, -4.0);
+        IKParam.YLeft  = 79 - Ex_roll;
+        IKParam.YRight = 79 + Ex_roll;
 
+        if(IKParam.YLeft > 175) IKParam.YLeft = 175;
+        else if(IKParam.YLeft < 40) IKParam.YLeft = 40;
+        if(IKParam.YRight > 175) IKParam.YRight = 175;
+        else if(IKParam.YRight < 40) IKParam.YRight = 40;
+    }
+    else if (flag1 == 1) // === 坡道模式 ===
+    {
+        Exceptspeed = 800;
+        IKParam.YLeft = IKParam.YLeft + (56.0f + lora3a22_uart_transfer.joystick[3] / 20.0f - IKParam.YLeft) / 5.0f;
+        if(IKParam.YLeft > 175) IKParam.YLeft = 175;
+        else if(IKParam.YLeft < 40) IKParam.YLeft = 40;
 
+        IKParam.YRight = IKParam.YRight + (56.0f + lora3a22_uart_transfer.joystick[3] / 20.0f - IKParam.YRight) / 5.0f;
+        if(IKParam.YRight > 175) IKParam.YRight = 175;
+        else if(IKParam.YRight < 40) IKParam.YRight = 40;
+    }
+    else // === 正常平地模式 ===
+    {
+        IKParam.YLeft = IKParam.YLeft + (51.0f + lora3a22_uart_transfer.joystick[3] / 20.0f - IKParam.YLeft) / 5.0f;
+        if(IKParam.YLeft > 175) IKParam.YLeft = 175;
+        else if(IKParam.YLeft < 40) IKParam.YLeft = 40;
 
-   if(SingleBridge_mode==1)//单边桥？
-  {
+        IKParam.YRight = IKParam.YRight + (51.0f + lora3a22_uart_transfer.joystick[3] / 20.0f - IKParam.YRight) / 5.0f;
+        if(IKParam.YRight > 175) IKParam.YRight = 175;
+        else if(IKParam.YRight < 40) IKParam.YRight = 40;
+    }
 
-      Exceptspeed=820;
-      Ex_roll = balance_rollangle_PI( QEKF_INS.Roll , -4.0)  ;//pao
-      IKParam.YLeft  = 79 - Ex_roll;
-      IKParam.YRight = 79 + Ex_roll;
+    // 单边桥的防卡死逻辑保持独立
+    if (once == 1) {
+        Check_obstacle_flag = 0;
+        time_single++;
+    }
+    if (time_single > time_single_time) {
+        SingleBridge_mode = 0;
+        once = 0;
+        time_single = 0;
+    }
 
-      if(IKParam.YLeft >175) IKParam.YLeft=175;
-        else if(IKParam.YLeft<40) IKParam.YLeft=40;
-      if(IKParam.YRight >175) IKParam.YRight=175;
-      else if(IKParam.YRight<40) IKParam.YRight=40;
-
-  }
-
-  if(once==1)
-  {
-      Check_obstacle_flag=0;
-      time_single++;
-  }
-  if(time_single>time_single_time)
-  {
-      SingleBridge_mode=0;
-      once=0;
-      time_single=0;
-  }
-
+    // ... 下方继续保留你的运动学解算代码：float aLeft = 2 * IKParam.XLeft * L1; ...
 
 
 

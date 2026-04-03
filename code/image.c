@@ -2898,8 +2898,8 @@ void Element_recognition(void)
 //    Check_obstacle();   //≈–∂œµ•±ﬂ«≈
 //    if(!flag1&&once==0&&!hengduan_flag&&!flag1)
 //    {Check_obstacle1();} //–°’œ∞≠
-    if(!hengduan_flag&&!SingleBridge_mode&&!Check_obstacle_flag&&!annulus_L_Flag&&!annulus_R_Flag&&!flag1)
-    {hengduan();}         //∫·∂œ’œ∞≠Ã¯‘æ ∂±
+    // if(!hengduan_flag&&!SingleBridge_mode&&!Check_obstacle_flag&&!annulus_L_Flag&&!annulus_R_Flag&&!flag1)
+    // {hengduan();}         //∫·∂œ’œ∞≠Ã¯‘æ ∂±
 
 
 
