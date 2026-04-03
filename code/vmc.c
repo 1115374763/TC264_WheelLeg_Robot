@@ -210,53 +210,25 @@ void inverseKinematics()
     // =========================================================
     // 【常态与其他模式】只有不在跳跃时才执行，绝对互斥！
     // =========================================================
-    else if (SingleBridge_mode == 1) // === 单边桥模式 ===
+else if (SingleBridge_mode == 1) // === 单边桥模式 ===
     {
-        Exceptspeed = 820;
-        Ex_roll = balance_rollangle_PI(QEKF_INS.Roll, -4.0);
-        IKParam.YLeft  = 79 - Ex_roll;
-        IKParam.YRight = 79 + Ex_roll;
+        // 2. Roll轴姿态补偿 (建议将 -4.0 改为 0.0，除非陀螺仪安装偏了必须靠 -4.0 调平)
+        Ex_roll = balance_rollangle_PI(QEKF_INS.Roll, -1.0); 
+        
+        // 计算目标高度 (基准高度抬升至 79)
+        float target_YLeft  = 79.0f - Ex_roll;
+        float target_YRight = 79.0f + Ex_roll;
 
+        // 3. 丝滑过渡：一阶低通滤波，防止进桥瞬间腿长突变把车弹飞
+        IKParam.YLeft  = IKParam.YLeft  + (target_YLeft  - IKParam.YLeft)  * 0.15f;
+        IKParam.YRight = IKParam.YRight + (target_YRight - IKParam.YRight) * 0.15f;
+
+        // 安全限幅
         if(IKParam.YLeft > 175) IKParam.YLeft = 175;
         else if(IKParam.YLeft < 40) IKParam.YLeft = 40;
         if(IKParam.YRight > 175) IKParam.YRight = 175;
         else if(IKParam.YRight < 40) IKParam.YRight = 40;
     }
-    else if (flag1 == 1) // === 坡道模式 ===
-    {
-        Exceptspeed = 800;
-        IKParam.YLeft = IKParam.YLeft + (56.0f + lora3a22_uart_transfer.joystick[3] / 20.0f - IKParam.YLeft) / 5.0f;
-        if(IKParam.YLeft > 175) IKParam.YLeft = 175;
-        else if(IKParam.YLeft < 40) IKParam.YLeft = 40;
-
-        IKParam.YRight = IKParam.YRight + (56.0f + lora3a22_uart_transfer.joystick[3] / 20.0f - IKParam.YRight) / 5.0f;
-        if(IKParam.YRight > 175) IKParam.YRight = 175;
-        else if(IKParam.YRight < 40) IKParam.YRight = 40;
-    }
-    else // === 正常平地模式 ===
-    {
-        IKParam.YLeft = IKParam.YLeft + (51.0f + lora3a22_uart_transfer.joystick[3] / 20.0f - IKParam.YLeft) / 5.0f;
-        if(IKParam.YLeft > 175) IKParam.YLeft = 175;
-        else if(IKParam.YLeft < 40) IKParam.YLeft = 40;
-
-        IKParam.YRight = IKParam.YRight + (51.0f + lora3a22_uart_transfer.joystick[3] / 20.0f - IKParam.YRight) / 5.0f;
-        if(IKParam.YRight > 175) IKParam.YRight = 175;
-        else if(IKParam.YRight < 40) IKParam.YRight = 40;
-    }
-
-    // 单边桥的防卡死逻辑保持独立
-    if (once == 1) {
-        Check_obstacle_flag = 0;
-        time_single++;
-    }
-    if (time_single > time_single_time) {
-        SingleBridge_mode = 0;
-        once = 0;
-        time_single = 0;
-    }
-
-    // ... 下方继续保留你的运动学解算代码：float aLeft = 2 * IKParam.XLeft * L1; ...
-
 
 
 
@@ -272,8 +244,6 @@ void inverseKinematics()
           IKParam.YRight = IKParam.YRight + (56.0+lora3a22_uart_transfer.joystick[3]/20.0  - IKParam.YRight)/5.0;//
           if(IKParam.YRight >175) IKParam.YRight=175;
           else if(IKParam.YRight<40) IKParam.YRight=40;
-
-
       }
 
 

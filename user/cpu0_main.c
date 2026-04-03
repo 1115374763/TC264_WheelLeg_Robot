@@ -7,6 +7,8 @@ extern int single_mode;
 extern int hengduan_flag;
 extern uint16 jumptime0, jumptime1, jumptime2, jumptime3, jumptime4;
 extern int jump_out;
+extern uint8 SingleBridge_mode;
+extern void balance_rollangle_pi_init(void);
 int mode_stop,mode_stright,mode_back;
 #define ABS_DIFF(a, b) ((a) > (b) ? ((a) - (b)) : ((b) - (a)))
 // 将本语句与#pragma section all restore语句之间的全局变量都放在CPU0的RAM中
@@ -146,7 +148,31 @@ while (1)
                     rc.ch4_mode = cur_ch4_mode; 
                     printf("[RC] 通道4 三段开关切换! 当前模式: %d\r\n", rc.ch4_mode);
                 }
-
+                // =========================================================
+                // 【重构】通道5 单边桥模式开关控制
+                // =========================================================
+                if (cur_ch5 != rc.ch5_state) 
+                {
+                    rc.ch5_state = cur_ch5;
+                    
+                    if (cur_ch5 == 1) 
+                    {
+                        // 拨下开关：进入单边桥模式
+                        SingleBridge_mode = 1;
+                        printf("[RC_BRIDGE] 通道5 开启: 进入单边桥模式!\r\n");
+                    } 
+                    else 
+                    {
+                        // 拨回开关：关闭单边桥模式
+                        SingleBridge_mode = 0;
+                        
+                        // 【核心安全逻辑】退出时立刻清空 Roll 环补偿的积分记忆
+                        // 防止下次上桥瞬间，车子带着历史误差猛烈抽搐
+                        balance_rollangle_pi_init(); 
+                        
+                        printf("[RC_BRIDGE] 通道5 关闭: 退出单边桥模式，PID已洗白!\r\n");
+                    }
+                }
                 // =========================================================
                 // 【核心】通道6 边沿检测跳跃逻辑 (单次触发，防止连跳)
                 // =========================================================
