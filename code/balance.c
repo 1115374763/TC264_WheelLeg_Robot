@@ -239,24 +239,38 @@ void balance_gyro_weizhi_pd_init(void)
   @brief     速度环
   @note      位置式
 -------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------
+  @brief     速度环/位置环
+  @note      位置式
+-------------------------------------------------------------------------------------------------------------------*/
 void balance_encoder_PD(float encoder, float exspeed)
 {
     // 计算当前速度偏差
     balance_encoder_pd.error = exspeed - encoder;
 
-    // --- 新增：积分项累加（记录被推走的位移） ---
+    // 积分项累加（记录被推走的位移）
     balance_encoder_pd.i_integral += balance_encoder_pd.error;
 
-    // --- 新增：积分限幅（非常重要！） ---
-    // 防止你推得太远导致积分饱和（俗称“攒劲”），松手后机器人全速疯跑或剧烈震荡
-    // 这里的 5000 是一个经验估值，你可以根据实际 PWM 上限调整
+    // 积分限幅
     if(balance_encoder_pd.i_integral > 5000)       balance_encoder_pd.i_integral = 5000;
     else if(balance_encoder_pd.i_integral < -5000) balance_encoder_pd.i_integral = -5000;
 
-    // --- 修改：将 Ki * i_integral 加入到 PWM 计算中 ---
+    // --- 算出原始的 motor_pwm 输出 ---
     motor_pwm = balance_encoder_pd.kp * balance_encoder_pd.error 
-              + balance_encoder_pd.ki * balance_encoder_pd.i_integral   // 新增这一段
+              + balance_encoder_pd.ki * balance_encoder_pd.i_integral   
               + balance_encoder_pd.kd * (balance_encoder_pd.error - balance_encoder_pd.last_error);
+
+    // =========================================================
+    // 【核心位置】在这里加入落地刹车/削峰逻辑
+    // 拦截速度环的异常爆发，防止狂奔
+    // =========================================================
+    if (hengduan_flag == 3 || hengduan_flag == 4) 
+    {
+        // 落地瞬间（阶段3和阶段4），将电机的最大输出 PWM 强行削减
+        // (注: 3000 这个值你可以根据实际电机的硬度适当调大或调小)
+        if(motor_pwm > 3000)       motor_pwm = 3000; 
+        else if(motor_pwm < -3000) motor_pwm = -3000;
+    }
 
     balance_encoder_pd.last_error = balance_encoder_pd.error;
 }

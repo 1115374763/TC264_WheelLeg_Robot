@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
-	.compiler_invocation	"ctc -f cc33984a --dep-file=code/balance.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -IH:\\\\13333\\\\COMPETE DOUCMENT -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\code -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\code\\\\TLD7002_driver -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Configurations -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Infra -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Service -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\zf_common -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\zf_components -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\zf_device -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\zf_driver -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o code/balance.src ../code/balance.c"
+	.compiler_invocation	"ctc -f cc33076a --dep-file=code/balance.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -IH:\\\\13333\\\\COMPETE DOUCMENT -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\code -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\code\\\\TLD7002_driver -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Configurations -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Infra -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Service -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\zf_common -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\zf_components -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\zf_device -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\zf_driver -IH:\\\\13333\\\\COMPETE DOUCMENT\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o code/balance.src ../code/balance.c"
 	.compiler_name		"ctc"
 	;source	'../code/balance.c'
 
@@ -13,120 +13,120 @@ $TC16X
 	
 	.global	balance_location_PID
 ; Function balance_location_PID
-.L22:
+.L27:
 balance_location_PID:	.type	func
 	mov.u	d0,#32768
-.L207:
+.L212:
 	addih	d0,d0,#17304
-.L314:
+.L332:
 	movh.a	a15,#@his(balance_location_pid)
 	lea	a15,[a15]@los(balance_location_pid)
-.L315:
+.L333:
 	st.w	[a15]16,d4
-.L316:
+.L334:
 	movh.a	a15,#@his(balance_location_pid)
 	lea	a15,[a15]@los(balance_location_pid)
 	movh.a	a2,#@his(balance_location_pid)
 	lea	a2,[a2]@los(balance_location_pid)
-.L317:
+.L335:
 	ld.w	d15,[a2]12
-.L318:
+.L336:
 	add.f	d15,d15,d4
 	st.w	[a15]12,d15
-.L319:
+.L337:
 	movh.a	a15,#@his(SingleBridge_mode)
 	lea	a15,[a15]@los(SingleBridge_mode)
 	ld.bu	d15,[a15]
 	jeq	d15,#1,.L2
-.L320:
+.L338:
 	movh.a	a15,#@his(hengduan_flag)
 	lea	a15,[a15]@los(hengduan_flag)
 	ld.w	d15,[a15]
-.L321:
+.L339:
 	jeq	d15,#0,.L3
 .L2:
 	movh.a	a15,#@his(balance_location_pid)
 	lea	a15,[a15]@los(balance_location_pid)
-.L322:
+.L340:
 	movh	d15,#16800
-.L323:
+.L341:
 	st.w	[a15],d15
-.L324:
+.L342:
 	j	.L4
 .L3:
 	movh.a	a15,#@his(balance_location_pid)
 	lea	a15,[a15]@los(balance_location_pid)
-.L325:
+.L343:
 	movh.a	a2,#@his(Lp_Base)
 	lea	a2,[a2]@los(Lp_Base)
 	ld.w	d15,[a2]
-.L326:
+.L344:
 	st.w	[a15],d15
 .L4:
 	movh.a	a15,#@his(balance_location_pid)
 	lea	a15,[a15]@los(balance_location_pid)
-.L327:
+.L345:
 	ld.w	d1,[a15]
-.L328:
+.L346:
 	movh.a	a15,#@his(balance_location_pid)
 	lea	a15,[a15]@los(balance_location_pid)
-.L329:
+.L347:
 	ld.w	d2,[a15]8
-.L330:
+.L348:
 	movh.a	a15,#@his(balance_location_pid)
 	lea	a15,[a15]@los(balance_location_pid)
-.L331:
+.L349:
 	ld.w	d15,[a15]20
-.L332:
+.L350:
 	sub.f	d15,d4,d15
-.L333:
+.L351:
 	mul.f	d15,d2,d15
-.L334:
+.L352:
 	madd.f	d15,d15,d1,d4
-.L335:
+.L353:
 	movh.a	a15,#@his(QEKF_INS)
 	lea	a15,[a15]@los(QEKF_INS)
-.L336:
+.L354:
 	ld.w	d1,[a15]368
-.L337:
+.L355:
 	msub.f	d2,d15,d0,d1
-.L208:
+.L213:
 	movh	d15,#17430
-.L338:
+.L356:
 	cmp.f	d15,d2,d15
 	and	d15,#6
 	ne	d15,d15,#0
-.L339:
+.L357:
 	jeq	d15,#0,.L5
-.L340:
+.L358:
 	movh	d2,#17455
-.L341:
+.L359:
 	j	.L6
 .L5:
 	movh	d15,#50198
-.L342:
+.L360:
 	cmp.f	d15,d2,d15
 	and	d15,#3
 	ne	d15,d15,#0
-.L343:
+.L361:
 	jeq	d15,#0,.L7
-.L344:
+.L362:
 	movh	d2,#50223
 .L7:
 .L6:
 	movh.a	a15,#@his(balance_location_pid)
 	lea	a15,[a15]@los(balance_location_pid)
-.L345:
+.L363:
 	st.w	[a15]20,d4
-.L346:
+.L364:
 	j	.L8
 .L8:
 	ret
-.L172:
+.L177:
 	
 __balance_location_PID_function_end:
 	.size	balance_location_PID,__balance_location_PID_function_end-balance_location_PID
-.L67:
+.L72:
 	; End of function
 	
 	.sdecl	'.text.balance.balance_location_pid_init',code,cluster('balance_location_pid_init')
@@ -135,64 +135,64 @@ __balance_location_PID_function_end:
 	
 	.global	balance_location_pid_init
 ; Function balance_location_pid_init
-.L24:
+.L29:
 balance_location_pid_init:	.type	func
-	movh.a	a15,#@his(balance_location_pid)
-	lea	a15,[a15]@los(balance_location_pid)
-.L351:
-	mov	d15,#0
-.L352:
-	st.w	[a15],d15
-.L353:
-	movh.a	a15,#@his(balance_location_pid)
-	lea	a15,[a15]@los(balance_location_pid)
-.L354:
-	mov	d15,#0
-.L355:
-	st.w	[a15]4,d15
-.L356:
-	movh.a	a15,#@his(balance_location_pid)
-	lea	a15,[a15]@los(balance_location_pid)
-.L357:
-	mov.u	d15,#39322
-	addih	d15,d15,#16025
-.L358:
-	st.w	[a15]8,d15
-.L359:
-	movh.a	a15,#@his(balance_location_pid)
-	lea	a15,[a15]@los(balance_location_pid)
-.L360:
-	mov	d15,#0
-.L361:
-	st.w	[a15]12,d15
-.L362:
-	movh.a	a15,#@his(balance_location_pid)
-	lea	a15,[a15]@los(balance_location_pid)
-.L363:
-	mov	d15,#0
-.L364:
-	st.w	[a15]20,d15
-.L365:
-	movh.a	a15,#@his(balance_location_pid)
-	lea	a15,[a15]@los(balance_location_pid)
-.L366:
-	mov	d15,#0
-.L367:
-	st.w	[a15]24,d15
-.L368:
 	movh.a	a15,#@his(balance_location_pid)
 	lea	a15,[a15]@los(balance_location_pid)
 .L369:
 	mov	d15,#0
 .L370:
-	st.w	[a15]16,d15
+	st.w	[a15],d15
 .L371:
+	movh.a	a15,#@his(balance_location_pid)
+	lea	a15,[a15]@los(balance_location_pid)
+.L372:
+	mov	d15,#0
+.L373:
+	st.w	[a15]4,d15
+.L374:
+	movh.a	a15,#@his(balance_location_pid)
+	lea	a15,[a15]@los(balance_location_pid)
+.L375:
+	mov.u	d15,#39322
+	addih	d15,d15,#16025
+.L376:
+	st.w	[a15]8,d15
+.L377:
+	movh.a	a15,#@his(balance_location_pid)
+	lea	a15,[a15]@los(balance_location_pid)
+.L378:
+	mov	d15,#0
+.L379:
+	st.w	[a15]12,d15
+.L380:
+	movh.a	a15,#@his(balance_location_pid)
+	lea	a15,[a15]@los(balance_location_pid)
+.L381:
+	mov	d15,#0
+.L382:
+	st.w	[a15]20,d15
+.L383:
+	movh.a	a15,#@his(balance_location_pid)
+	lea	a15,[a15]@los(balance_location_pid)
+.L384:
+	mov	d15,#0
+.L385:
+	st.w	[a15]24,d15
+.L386:
+	movh.a	a15,#@his(balance_location_pid)
+	lea	a15,[a15]@los(balance_location_pid)
+.L387:
+	mov	d15,#0
+.L388:
+	st.w	[a15]16,d15
+.L389:
 	ret
-.L178:
+.L183:
 	
 __balance_location_pid_init_function_end:
 	.size	balance_location_pid_init,__balance_location_pid_init_function_end-balance_location_pid_init
-.L72:
+.L77:
 	; End of function
 	
 	.sdecl	'.text.balance.balance_velocity_PID',code,cluster('balance_velocity_PID')
@@ -201,127 +201,127 @@ __balance_location_pid_init_function_end:
 	
 	.global	balance_velocity_PID
 ; Function balance_velocity_PID
-.L26:
+.L31:
 balance_velocity_PID:	.type	func
 	movh.a	a15,#@his(balance_velocity_PID_Encoder)
 	lea	a15,[a15]@los(balance_velocity_PID_Encoder)
-.L376:
+.L394:
 	sub.f	d15,d5,d4
-.L377:
+.L395:
 	st.w	[a15],d15
-.L378:
+.L396:
 	movh.a	a15,#@his(balance_velocity_pid)
 	lea	a15,[a15]@los(balance_velocity_pid)
-.L379:
+.L397:
 	sub.f	d15,d5,d4
-.L380:
+.L398:
 	st.w	[a15]16,d15
-.L381:
+.L399:
 	movh.a	a15,#@his(balance_velocity_pid)
 	lea	a15,[a15]@los(balance_velocity_pid)
 	movh.a	a2,#@his(balance_velocity_pid)
 	lea	a2,[a2]@los(balance_velocity_pid)
-.L382:
+.L400:
 	ld.w	d15,[a2]12
-.L383:
+.L401:
 	sub.f	d0,d5,d4
-.L384:
+.L402:
 	add.f	d15,d15,d0
 	st.w	[a15]12,d15
-.L385:
-	movh.a	a15,#@his(balance_velocity_pid)
-	lea	a15,[a15]@los(balance_velocity_pid)
-.L386:
-	ld.w	d15,[a15]12
-.L387:
-	movh	d0,#49312
-.L388:
-	cmp.f	d15,d15,d0
-	extr.u	d15,d15,#0,#1
-.L389:
-	jeq	d15,#0,.L9
-.L390:
-	movh.a	a15,#@his(balance_velocity_pid)
-	lea	a15,[a15]@los(balance_velocity_pid)
-.L391:
-	movh	d15,#49312
-.L392:
-	st.w	[a15]12,d15
-.L393:
-	j	.L10
-.L9:
-	movh.a	a15,#@his(balance_velocity_pid)
-	lea	a15,[a15]@los(balance_velocity_pid)
-.L394:
-	ld.w	d15,[a15]12
-.L395:
-	movh	d0,#16544
-.L396:
-	cmp.f	d15,d15,d0
-	extr.u	d15,d15,#2,#1
-.L397:
-	jeq	d15,#0,.L11
-.L398:
-	movh.a	a15,#@his(balance_velocity_pid)
-	lea	a15,[a15]@los(balance_velocity_pid)
-.L399:
-	movh	d15,#16544
-.L400:
-	st.w	[a15]12,d15
-.L11:
-.L10:
-	movh.a	a15,#@his(balance_velocity_pid)
-	lea	a15,[a15]@los(balance_velocity_pid)
-.L401:
-	ld.w	d0,[a15]8
-.L402:
-	sub.f	d1,d5,d4
 .L403:
 	movh.a	a15,#@his(balance_velocity_pid)
 	lea	a15,[a15]@los(balance_velocity_pid)
 .L404:
-	ld.w	d15,[a15]20
+	ld.w	d15,[a15]12
 .L405:
-	sub.f	d1,d1,d15
+	movh	d0,#49312
 .L406:
-	movh.a	a15,#@his(balance_velocity_pid)
-	lea	a15,[a15]@los(balance_velocity_pid)
+	cmp.f	d15,d15,d0
+	extr.u	d15,d15,#0,#1
 .L407:
-	ld.w	d2,[a15]
+	jeq	d15,#0,.L9
 .L408:
-	sub.f	d3,d5,d4
-.L409:
 	movh.a	a15,#@his(balance_velocity_pid)
 	lea	a15,[a15]@los(balance_velocity_pid)
+.L409:
+	movh	d15,#49312
 .L410:
-	ld.w	d6,[a15]4
+	st.w	[a15]12,d15
 .L411:
+	j	.L10
+.L9:
 	movh.a	a15,#@his(balance_velocity_pid)
 	lea	a15,[a15]@los(balance_velocity_pid)
 .L412:
 	ld.w	d15,[a15]12
 .L413:
-	mul.f	d15,d6,d15
+	movh	d0,#16544
 .L414:
-	madd.f	d15,d15,d2,d3
+	cmp.f	d15,d15,d0
+	extr.u	d15,d15,#2,#1
 .L415:
-	madd.f	d2,d15,d0,d1
-.L209:
+	jeq	d15,#0,.L11
+.L416:
 	movh.a	a15,#@his(balance_velocity_pid)
 	lea	a15,[a15]@los(balance_velocity_pid)
-.L416:
-	sub.f	d15,d5,d4
 .L417:
-	st.w	[a15]20,d15
+	movh	d15,#16544
 .L418:
+	st.w	[a15]12,d15
+.L11:
+.L10:
+	movh.a	a15,#@his(balance_velocity_pid)
+	lea	a15,[a15]@los(balance_velocity_pid)
+.L419:
+	ld.w	d0,[a15]8
+.L420:
+	sub.f	d1,d5,d4
+.L421:
+	movh.a	a15,#@his(balance_velocity_pid)
+	lea	a15,[a15]@los(balance_velocity_pid)
+.L422:
+	ld.w	d15,[a15]20
+.L423:
+	sub.f	d1,d1,d15
+.L424:
+	movh.a	a15,#@his(balance_velocity_pid)
+	lea	a15,[a15]@los(balance_velocity_pid)
+.L425:
+	ld.w	d2,[a15]
+.L426:
+	sub.f	d3,d5,d4
+.L427:
+	movh.a	a15,#@his(balance_velocity_pid)
+	lea	a15,[a15]@los(balance_velocity_pid)
+.L428:
+	ld.w	d6,[a15]4
+.L429:
+	movh.a	a15,#@his(balance_velocity_pid)
+	lea	a15,[a15]@los(balance_velocity_pid)
+.L430:
+	ld.w	d15,[a15]12
+.L431:
+	mul.f	d15,d6,d15
+.L432:
+	madd.f	d15,d15,d2,d3
+.L433:
+	madd.f	d2,d15,d0,d1
+.L214:
+	movh.a	a15,#@his(balance_velocity_pid)
+	lea	a15,[a15]@los(balance_velocity_pid)
+.L434:
+	sub.f	d15,d5,d4
+.L435:
+	st.w	[a15]20,d15
+.L436:
 	j	.L12
 .L12:
 	ret
-.L179:
+.L184:
 	
 __balance_velocity_PID_function_end:
 	.size	balance_velocity_PID,__balance_velocity_PID_function_end-balance_velocity_PID
-.L77:
+.L82:
 	; End of function
 	
 	.sdecl	'.text.balance.balance_velocity_pid_init',code,cluster('balance_velocity_pid_init')
@@ -330,64 +330,64 @@ __balance_velocity_PID_function_end:
 	
 	.global	balance_velocity_pid_init
 ; Function balance_velocity_pid_init
-.L28:
+.L33:
 balance_velocity_pid_init:	.type	func
 	movh.a	a15,#@his(balance_velocity_pid)
 	lea	a15,[a15]@los(balance_velocity_pid)
-.L423:
+.L441:
 	mov.u	d15,#52429
 	addih	d15,d15,#15692
-.L424:
-	st.w	[a15],d15
-.L425:
-	movh.a	a15,#@his(balance_velocity_pid)
-	lea	a15,[a15]@los(balance_velocity_pid)
-.L426:
-	mov	d15,#0
-.L427:
-	st.w	[a15]4,d15
-.L428:
-	movh.a	a15,#@his(balance_velocity_pid)
-	lea	a15,[a15]@los(balance_velocity_pid)
-.L429:
-	mov	d15,#0
-.L430:
-	st.w	[a15]8,d15
-.L431:
-	movh.a	a15,#@his(balance_velocity_pid)
-	lea	a15,[a15]@los(balance_velocity_pid)
-.L432:
-	mov	d15,#0
-.L433:
-	st.w	[a15]12,d15
-.L434:
-	movh.a	a15,#@his(balance_velocity_pid)
-	lea	a15,[a15]@los(balance_velocity_pid)
-.L435:
-	mov	d15,#0
-.L436:
-	st.w	[a15]20,d15
-.L437:
-	movh.a	a15,#@his(balance_velocity_pid)
-	lea	a15,[a15]@los(balance_velocity_pid)
-.L438:
-	mov	d15,#0
-.L439:
-	st.w	[a15]24,d15
-.L440:
-	movh.a	a15,#@his(balance_velocity_pid)
-	lea	a15,[a15]@los(balance_velocity_pid)
-.L441:
-	mov	d15,#0
 .L442:
-	st.w	[a15]16,d15
+	st.w	[a15],d15
 .L443:
+	movh.a	a15,#@his(balance_velocity_pid)
+	lea	a15,[a15]@los(balance_velocity_pid)
+.L444:
+	mov	d15,#0
+.L445:
+	st.w	[a15]4,d15
+.L446:
+	movh.a	a15,#@his(balance_velocity_pid)
+	lea	a15,[a15]@los(balance_velocity_pid)
+.L447:
+	mov	d15,#0
+.L448:
+	st.w	[a15]8,d15
+.L449:
+	movh.a	a15,#@his(balance_velocity_pid)
+	lea	a15,[a15]@los(balance_velocity_pid)
+.L450:
+	mov	d15,#0
+.L451:
+	st.w	[a15]12,d15
+.L452:
+	movh.a	a15,#@his(balance_velocity_pid)
+	lea	a15,[a15]@los(balance_velocity_pid)
+.L453:
+	mov	d15,#0
+.L454:
+	st.w	[a15]20,d15
+.L455:
+	movh.a	a15,#@his(balance_velocity_pid)
+	lea	a15,[a15]@los(balance_velocity_pid)
+.L456:
+	mov	d15,#0
+.L457:
+	st.w	[a15]24,d15
+.L458:
+	movh.a	a15,#@his(balance_velocity_pid)
+	lea	a15,[a15]@los(balance_velocity_pid)
+.L459:
+	mov	d15,#0
+.L460:
+	st.w	[a15]16,d15
+.L461:
 	ret
-.L183:
+.L188:
 	
 __balance_velocity_pid_init_function_end:
 	.size	balance_velocity_pid_init,__balance_velocity_pid_init_function_end-balance_velocity_pid_init
-.L82:
+.L87:
 	; End of function
 	
 	.sdecl	'.text.balance.balance_angle_P',code,cluster('balance_angle_P')
@@ -396,120 +396,120 @@ __balance_velocity_pid_init_function_end:
 	
 	.global	balance_angle_P
 ; Function balance_angle_P
-.L30:
+.L35:
 balance_angle_P:	.type	func
 	movh.a	a15,#@his(balance_angle_p)
 	lea	a15,[a15]@los(balance_angle_p)
-.L448:
+.L466:
 	sub.f	d15,d4,d5
-.L449:
+.L467:
 	st.w	[a15]16,d15
-.L450:
+.L468:
 	movh.a	a15,#@his(balance_angle_p)
 	lea	a15,[a15]@los(balance_angle_p)
 	movh.a	a2,#@his(balance_angle_p)
 	lea	a2,[a2]@los(balance_angle_p)
-.L451:
+.L469:
 	ld.w	d15,[a2]12
-.L452:
+.L470:
 	sub.f	d0,d4,d5
-.L453:
+.L471:
 	add.f	d15,d15,d0
 	st.w	[a15]12,d15
-.L454:
-	movh.a	a15,#@his(balance_angle_p)
-	lea	a15,[a15]@los(balance_angle_p)
-.L455:
-	ld.w	d15,[a15]12
-.L456:
-	movh	d0,#49864
-.L457:
-	cmp.f	d15,d15,d0
-	extr.u	d15,d15,#0,#1
-.L458:
-	jeq	d15,#0,.L13
-.L459:
-	movh.a	a15,#@his(balance_angle_p)
-	lea	a15,[a15]@los(balance_angle_p)
-.L460:
-	movh	d15,#49864
-.L461:
-	st.w	[a15]12,d15
-.L462:
-	j	.L14
-.L13:
-	movh.a	a15,#@his(balance_angle_p)
-	lea	a15,[a15]@los(balance_angle_p)
-.L463:
-	ld.w	d15,[a15]12
-.L464:
-	movh	d0,#17096
-.L465:
-	cmp.f	d15,d15,d0
-	extr.u	d15,d15,#2,#1
-.L466:
-	jeq	d15,#0,.L15
-.L467:
-	movh.a	a15,#@his(balance_angle_p)
-	lea	a15,[a15]@los(balance_angle_p)
-.L468:
-	movh	d15,#17096
-.L469:
-	st.w	[a15]12,d15
-.L15:
-.L14:
-	movh.a	a15,#@his(balance_angle_p)
-	lea	a15,[a15]@los(balance_angle_p)
-.L470:
-	ld.w	d0,[a15]8
-.L471:
-	sub.f	d1,d4,d5
 .L472:
 	movh.a	a15,#@his(balance_angle_p)
 	lea	a15,[a15]@los(balance_angle_p)
 .L473:
-	ld.w	d15,[a15]20
+	ld.w	d15,[a15]12
 .L474:
-	sub.f	d1,d1,d15
+	movh	d0,#49864
 .L475:
-	movh.a	a15,#@his(balance_angle_p)
-	lea	a15,[a15]@los(balance_angle_p)
+	cmp.f	d15,d15,d0
+	extr.u	d15,d15,#0,#1
 .L476:
-	ld.w	d2,[a15]
+	jeq	d15,#0,.L13
 .L477:
-	sub.f	d3,d4,d5
-.L478:
 	movh.a	a15,#@his(balance_angle_p)
 	lea	a15,[a15]@los(balance_angle_p)
+.L478:
+	movh	d15,#49864
 .L479:
-	ld.w	d6,[a15]4
+	st.w	[a15]12,d15
 .L480:
+	j	.L14
+.L13:
 	movh.a	a15,#@his(balance_angle_p)
 	lea	a15,[a15]@los(balance_angle_p)
 .L481:
 	ld.w	d15,[a15]12
 .L482:
-	mul.f	d15,d6,d15
+	movh	d0,#17096
 .L483:
-	madd.f	d15,d15,d2,d3
+	cmp.f	d15,d15,d0
+	extr.u	d15,d15,#2,#1
 .L484:
-	madd.f	d2,d15,d0,d1
-.L210:
+	jeq	d15,#0,.L15
+.L485:
 	movh.a	a15,#@his(balance_angle_p)
 	lea	a15,[a15]@los(balance_angle_p)
-.L485:
-	sub.f	d15,d4,d5
 .L486:
-	st.w	[a15]20,d15
+	movh	d15,#17096
 .L487:
+	st.w	[a15]12,d15
+.L15:
+.L14:
+	movh.a	a15,#@his(balance_angle_p)
+	lea	a15,[a15]@los(balance_angle_p)
+.L488:
+	ld.w	d0,[a15]8
+.L489:
+	sub.f	d1,d4,d5
+.L490:
+	movh.a	a15,#@his(balance_angle_p)
+	lea	a15,[a15]@los(balance_angle_p)
+.L491:
+	ld.w	d15,[a15]20
+.L492:
+	sub.f	d1,d1,d15
+.L493:
+	movh.a	a15,#@his(balance_angle_p)
+	lea	a15,[a15]@los(balance_angle_p)
+.L494:
+	ld.w	d2,[a15]
+.L495:
+	sub.f	d3,d4,d5
+.L496:
+	movh.a	a15,#@his(balance_angle_p)
+	lea	a15,[a15]@los(balance_angle_p)
+.L497:
+	ld.w	d6,[a15]4
+.L498:
+	movh.a	a15,#@his(balance_angle_p)
+	lea	a15,[a15]@los(balance_angle_p)
+.L499:
+	ld.w	d15,[a15]12
+.L500:
+	mul.f	d15,d6,d15
+.L501:
+	madd.f	d15,d15,d2,d3
+.L502:
+	madd.f	d2,d15,d0,d1
+.L215:
+	movh.a	a15,#@his(balance_angle_p)
+	lea	a15,[a15]@los(balance_angle_p)
+.L503:
+	sub.f	d15,d4,d5
+.L504:
+	st.w	[a15]20,d15
+.L505:
 	j	.L16
 .L16:
 	ret
-.L184:
+.L189:
 	
 __balance_angle_P_function_end:
 	.size	balance_angle_P,__balance_angle_P_function_end-balance_angle_P
-.L87:
+.L92:
 	; End of function
 	
 	.sdecl	'.text.balance.balance_angle_p_init',code,cluster('balance_angle_p_init')
@@ -518,63 +518,63 @@ __balance_angle_P_function_end:
 	
 	.global	balance_angle_p_init
 ; Function balance_angle_p_init
-.L32:
+.L37:
 balance_angle_p_init:	.type	func
 	movh.a	a15,#@his(balance_angle_p)
 	lea	a15,[a15]@los(balance_angle_p)
-.L492:
-	movh	d15,#16948
-.L493:
-	st.w	[a15],d15
-.L494:
-	movh.a	a15,#@his(balance_angle_p)
-	lea	a15,[a15]@los(balance_angle_p)
-.L495:
-	mov	d15,#0
-.L496:
-	st.w	[a15]4,d15
-.L497:
-	movh.a	a15,#@his(balance_angle_p)
-	lea	a15,[a15]@los(balance_angle_p)
-.L498:
-	movh	d15,#16840
-.L499:
-	st.w	[a15]8,d15
-.L500:
-	movh.a	a15,#@his(balance_angle_p)
-	lea	a15,[a15]@los(balance_angle_p)
-.L501:
-	mov	d15,#0
-.L502:
-	st.w	[a15]12,d15
-.L503:
-	movh.a	a15,#@his(balance_angle_p)
-	lea	a15,[a15]@los(balance_angle_p)
-.L504:
-	mov	d15,#0
-.L505:
-	st.w	[a15]20,d15
-.L506:
-	movh.a	a15,#@his(balance_angle_p)
-	lea	a15,[a15]@los(balance_angle_p)
-.L507:
-	mov	d15,#0
-.L508:
-	st.w	[a15]24,d15
-.L509:
-	movh.a	a15,#@his(balance_angle_p)
-	lea	a15,[a15]@los(balance_angle_p)
 .L510:
-	mov	d15,#0
+	movh	d15,#16948
 .L511:
-	st.w	[a15]16,d15
+	st.w	[a15],d15
 .L512:
+	movh.a	a15,#@his(balance_angle_p)
+	lea	a15,[a15]@los(balance_angle_p)
+.L513:
+	mov	d15,#0
+.L514:
+	st.w	[a15]4,d15
+.L515:
+	movh.a	a15,#@his(balance_angle_p)
+	lea	a15,[a15]@los(balance_angle_p)
+.L516:
+	movh	d15,#16840
+.L517:
+	st.w	[a15]8,d15
+.L518:
+	movh.a	a15,#@his(balance_angle_p)
+	lea	a15,[a15]@los(balance_angle_p)
+.L519:
+	mov	d15,#0
+.L520:
+	st.w	[a15]12,d15
+.L521:
+	movh.a	a15,#@his(balance_angle_p)
+	lea	a15,[a15]@los(balance_angle_p)
+.L522:
+	mov	d15,#0
+.L523:
+	st.w	[a15]20,d15
+.L524:
+	movh.a	a15,#@his(balance_angle_p)
+	lea	a15,[a15]@los(balance_angle_p)
+.L525:
+	mov	d15,#0
+.L526:
+	st.w	[a15]24,d15
+.L527:
+	movh.a	a15,#@his(balance_angle_p)
+	lea	a15,[a15]@los(balance_angle_p)
+.L528:
+	mov	d15,#0
+.L529:
+	st.w	[a15]16,d15
+.L530:
 	ret
-.L189:
+.L194:
 	
 __balance_angle_p_init_function_end:
 	.size	balance_angle_p_init,__balance_angle_p_init_function_end-balance_angle_p_init
-.L92:
+.L97:
 	; End of function
 	
 	.sdecl	'.text.balance.balance_gyro_weizhi_PD',code,cluster('balance_gyro_weizhi_PD')
@@ -583,67 +583,67 @@ __balance_angle_p_init_function_end:
 	
 	.global	balance_gyro_weizhi_PD
 ; Function balance_gyro_weizhi_PD
-.L34:
+.L39:
 balance_gyro_weizhi_PD:	.type	func
 	mov	e8,d5,d4
-.L580:
+.L598:
 	movh.a	a15,#@his(balance_gyro_weizhi_pd)
 	lea	a15,[a15]@los(balance_gyro_weizhi_pd)
-.L213:
+.L218:
 	sub.f	d15,d9,d8
-.L214:
+.L219:
 	st.w	[a15]16,d15
-.L581:
+.L599:
 	movh.a	a12,#@his(balance_pwm)
 	lea	a12,[a12]@los(balance_pwm)
-.L582:
+.L600:
 	movh.a	a15,#@his(balance_gyro_weizhi_pd)
 	lea	a15,[a15]@los(balance_gyro_weizhi_pd)
-.L583:
+.L601:
 	ld.w	d0,[a15]
-.L215:
-	sub.f	d1,d9,d8
-.L216:
-	movh.a	a15,#@his(balance_gyro_weizhi_pd)
-	lea	a15,[a15]@los(balance_gyro_weizhi_pd)
-.L584:
-	ld.w	d2,[a15]8
-.L217:
-	sub.f	d3,d9,d8
-.L218:
-	movh.a	a15,#@his(balance_gyro_weizhi_pd)
-	lea	a15,[a15]@los(balance_gyro_weizhi_pd)
-.L585:
-	ld.w	d15,[a15]20
-.L586:
-	sub.f	d15,d3,d15
-.L587:
-	mul.f	d15,d2,d15
-.L588:
-	madd.f	d4,d15,d0,d1
-.L212:
-	call	__f_ftos
-.L211:
-	st.h	[a12],d2
-.L589:
-	movh.a	a15,#@his(balance_gyro_weizhi_pd)
-	lea	a15,[a15]@los(balance_gyro_weizhi_pd)
-.L219:
-	sub.f	d15,d9,d8
 .L220:
+	sub.f	d1,d9,d8
+.L221:
+	movh.a	a15,#@his(balance_gyro_weizhi_pd)
+	lea	a15,[a15]@los(balance_gyro_weizhi_pd)
+.L602:
+	ld.w	d2,[a15]8
+.L222:
+	sub.f	d3,d9,d8
+.L223:
+	movh.a	a15,#@his(balance_gyro_weizhi_pd)
+	lea	a15,[a15]@los(balance_gyro_weizhi_pd)
+.L603:
+	ld.w	d15,[a15]20
+.L604:
+	sub.f	d15,d3,d15
+.L605:
+	mul.f	d15,d2,d15
+.L606:
+	madd.f	d4,d15,d0,d1
+.L217:
+	call	__f_ftos
+.L216:
+	st.h	[a12],d2
+.L607:
+	movh.a	a15,#@his(balance_gyro_weizhi_pd)
+	lea	a15,[a15]@los(balance_gyro_weizhi_pd)
+.L224:
+	sub.f	d15,d9,d8
+.L225:
 	st.w	[a15]20,d15
-.L590:
+.L608:
 	movh.a	a15,#@his(balance_pwm)
 	lea	a15,[a15]@los(balance_pwm)
 	ld.h	d4,[a15]
 	call	momentumwheel_pwm_control
-.L591:
+.L609:
 	ret
-.L196:
+.L201:
 	
 __balance_gyro_weizhi_PD_function_end:
 	.size	balance_gyro_weizhi_PD,__balance_gyro_weizhi_PD_function_end-balance_gyro_weizhi_PD
-.L107:
+.L112:
 	; End of function
 	
 	.sdecl	'.text.balance.balance_gyro_weizhi_pd_init',code,cluster('balance_gyro_weizhi_pd_init')
@@ -652,63 +652,63 @@ __balance_gyro_weizhi_PD_function_end:
 	
 	.global	balance_gyro_weizhi_pd_init
 ; Function balance_gyro_weizhi_pd_init
-.L36:
+.L41:
 balance_gyro_weizhi_pd_init:	.type	func
 	movh.a	a15,#@his(balance_gyro_weizhi_pd)
 	lea	a15,[a15]@los(balance_gyro_weizhi_pd)
-.L596:
-	movh	d15,#16752
-.L597:
-	st.w	[a15],d15
-.L598:
-	movh.a	a15,#@his(balance_gyro_weizhi_pd)
-	lea	a15,[a15]@los(balance_gyro_weizhi_pd)
-.L599:
-	mov	d15,#0
-.L600:
-	st.w	[a15]4,d15
-.L601:
-	movh.a	a15,#@his(balance_gyro_weizhi_pd)
-	lea	a15,[a15]@los(balance_gyro_weizhi_pd)
-.L602:
-	movh	d15,#17097
-.L603:
-	st.w	[a15]8,d15
-.L604:
-	movh.a	a15,#@his(balance_gyro_weizhi_pd)
-	lea	a15,[a15]@los(balance_gyro_weizhi_pd)
-.L605:
-	mov	d15,#0
-.L606:
-	st.w	[a15]12,d15
-.L607:
-	movh.a	a15,#@his(balance_gyro_weizhi_pd)
-	lea	a15,[a15]@los(balance_gyro_weizhi_pd)
-.L608:
-	mov	d15,#0
-.L609:
-	st.w	[a15]20,d15
-.L610:
-	movh.a	a15,#@his(balance_gyro_weizhi_pd)
-	lea	a15,[a15]@los(balance_gyro_weizhi_pd)
-.L611:
-	mov	d15,#0
-.L612:
-	st.w	[a15]24,d15
-.L613:
-	movh.a	a15,#@his(balance_gyro_weizhi_pd)
-	lea	a15,[a15]@los(balance_gyro_weizhi_pd)
 .L614:
-	mov	d15,#0
+	movh	d15,#16752
 .L615:
-	st.w	[a15]16,d15
+	st.w	[a15],d15
 .L616:
+	movh.a	a15,#@his(balance_gyro_weizhi_pd)
+	lea	a15,[a15]@los(balance_gyro_weizhi_pd)
+.L617:
+	mov	d15,#0
+.L618:
+	st.w	[a15]4,d15
+.L619:
+	movh.a	a15,#@his(balance_gyro_weizhi_pd)
+	lea	a15,[a15]@los(balance_gyro_weizhi_pd)
+.L620:
+	movh	d15,#17097
+.L621:
+	st.w	[a15]8,d15
+.L622:
+	movh.a	a15,#@his(balance_gyro_weizhi_pd)
+	lea	a15,[a15]@los(balance_gyro_weizhi_pd)
+.L623:
+	mov	d15,#0
+.L624:
+	st.w	[a15]12,d15
+.L625:
+	movh.a	a15,#@his(balance_gyro_weizhi_pd)
+	lea	a15,[a15]@los(balance_gyro_weizhi_pd)
+.L626:
+	mov	d15,#0
+.L627:
+	st.w	[a15]20,d15
+.L628:
+	movh.a	a15,#@his(balance_gyro_weizhi_pd)
+	lea	a15,[a15]@los(balance_gyro_weizhi_pd)
+.L629:
+	mov	d15,#0
+.L630:
+	st.w	[a15]24,d15
+.L631:
+	movh.a	a15,#@his(balance_gyro_weizhi_pd)
+	lea	a15,[a15]@los(balance_gyro_weizhi_pd)
+.L632:
+	mov	d15,#0
+.L633:
+	st.w	[a15]16,d15
+.L634:
 	ret
-.L200:
+.L205:
 	
 __balance_gyro_weizhi_pd_init_function_end:
 	.size	balance_gyro_weizhi_pd_init,__balance_gyro_weizhi_pd_init_function_end-balance_gyro_weizhi_pd_init
-.L112:
+.L117:
 	; End of function
 	
 	.sdecl	'.text.balance.balance_encoder_PD',code,cluster('balance_encoder_PD')
@@ -717,130 +717,175 @@ __balance_gyro_weizhi_pd_init_function_end:
 	
 	.global	balance_encoder_PD
 ; Function balance_encoder_PD
-.L38:
+.L43:
 balance_encoder_PD:	.type	func
 	mov	e8,d5,d4
-.L253:
+.L258:
 	movh.a	a15,#@his(balance_encoder_pd)
 	lea	a15,[a15]@los(balance_encoder_pd)
-.L223:
+.L228:
 	sub.f	d15,d9,d8
-.L224:
+.L229:
 	st.w	[a15]16,d15
-.L254:
+.L259:
 	movh.a	a15,#@his(balance_encoder_pd)
 	lea	a15,[a15]@los(balance_encoder_pd)
 	movh.a	a2,#@his(balance_encoder_pd)
 	lea	a2,[a2]@los(balance_encoder_pd)
-.L255:
+.L260:
 	ld.w	d15,[a2]12
-.L225:
+.L230:
 	sub.f	d0,d9,d8
-.L226:
+.L231:
 	add.f	d15,d15,d0
 	st.w	[a15]12,d15
-.L256:
-	movh.a	a15,#@his(balance_encoder_pd)
-	lea	a15,[a15]@los(balance_encoder_pd)
-.L257:
-	ld.w	d15,[a15]12
-.L258:
-	mov	d0,#16384
-	addih	d0,d0,#17820
-.L259:
-	cmp.f	d15,d15,d0
-	extr.u	d15,d15,#2,#1
-.L260:
-	jeq	d15,#0,.L17
 .L261:
 	movh.a	a15,#@his(balance_encoder_pd)
 	lea	a15,[a15]@los(balance_encoder_pd)
 .L262:
+	ld.w	d15,[a15]12
+.L263:
+	mov	d0,#16384
+	addih	d0,d0,#17820
+.L264:
+	cmp.f	d15,d15,d0
+	extr.u	d15,d15,#2,#1
+.L265:
+	jeq	d15,#0,.L17
+.L266:
+	movh.a	a15,#@his(balance_encoder_pd)
+	lea	a15,[a15]@los(balance_encoder_pd)
+.L267:
 	mov	d15,#16384
 	addih	d15,d15,#17820
-.L263:
+.L268:
 	st.w	[a15]12,d15
-.L264:
+.L269:
 	j	.L18
 .L17:
 	movh.a	a15,#@his(balance_encoder_pd)
 	lea	a15,[a15]@los(balance_encoder_pd)
-.L265:
+.L270:
 	ld.w	d15,[a15]12
-.L266:
+.L271:
 	mov	d0,#16384
 	addih	d0,d0,#50588
-.L267:
+.L272:
 	cmp.f	d15,d15,d0
 	extr.u	d15,d15,#0,#1
-.L268:
+.L273:
 	jeq	d15,#0,.L19
-.L269:
+.L274:
 	movh.a	a15,#@his(balance_encoder_pd)
 	lea	a15,[a15]@los(balance_encoder_pd)
-.L270:
+.L275:
 	mov	d15,#16384
 	addih	d15,d15,#50588
-.L271:
+.L276:
 	st.w	[a15]12,d15
 .L19:
 .L18:
 	movh.a	a12,#@his(motor_pwm)
 	lea	a12,[a12]@los(motor_pwm)
-.L272:
-	movh.a	a15,#@his(balance_encoder_pd)
-	lea	a15,[a15]@los(balance_encoder_pd)
-.L273:
-	ld.w	d0,[a15]8
-.L227:
-	sub.f	d1,d9,d8
-.L228:
-	movh.a	a15,#@his(balance_encoder_pd)
-	lea	a15,[a15]@los(balance_encoder_pd)
-.L274:
-	ld.w	d15,[a15]20
-.L275:
-	sub.f	d1,d1,d15
-.L276:
-	movh.a	a15,#@his(balance_encoder_pd)
-	lea	a15,[a15]@los(balance_encoder_pd)
 .L277:
-	ld.w	d2,[a15]
-.L229:
-	sub.f	d3,d9,d8
-.L230:
 	movh.a	a15,#@his(balance_encoder_pd)
 	lea	a15,[a15]@los(balance_encoder_pd)
 .L278:
-	ld.w	d4,[a15]4
-.L221:
+	ld.w	d0,[a15]8
+.L232:
+	sub.f	d1,d9,d8
+.L233:
 	movh.a	a15,#@his(balance_encoder_pd)
 	lea	a15,[a15]@los(balance_encoder_pd)
 .L279:
-	ld.w	d15,[a15]12
+	ld.w	d15,[a15]20
 .L280:
-	mul.f	d15,d4,d15
+	sub.f	d1,d1,d15
 .L281:
-	madd.f	d15,d15,d2,d3
-.L282:
-	madd.f	d4,d15,d0,d1
-	call	__f_ftos
-.L222:
-	st.h	[a12],d2
-.L283:
 	movh.a	a15,#@his(balance_encoder_pd)
 	lea	a15,[a15]@los(balance_encoder_pd)
-.L231:
-	sub.f	d15,d9,d8
-.L232:
-	st.w	[a15]20,d15
+.L282:
+	ld.w	d2,[a15]
+.L234:
+	sub.f	d3,d9,d8
+.L235:
+	movh.a	a15,#@his(balance_encoder_pd)
+	lea	a15,[a15]@los(balance_encoder_pd)
+.L283:
+	ld.w	d4,[a15]4
+.L226:
+	movh.a	a15,#@his(balance_encoder_pd)
+	lea	a15,[a15]@los(balance_encoder_pd)
 .L284:
+	ld.w	d15,[a15]12
+.L285:
+	mul.f	d15,d4,d15
+.L286:
+	madd.f	d15,d15,d2,d3
+.L287:
+	madd.f	d4,d15,d0,d1
+	call	__f_ftos
+.L227:
+	st.h	[a12],d2
+.L288:
+	movh.a	a15,#@his(hengduan_flag)
+	lea	a15,[a15]@los(hengduan_flag)
+	ld.w	d15,[a15]
+	jeq	d15,#3,.L20
+.L289:
+	movh.a	a15,#@his(hengduan_flag)
+	lea	a15,[a15]@los(hengduan_flag)
+	ld.w	d15,[a15]
+.L290:
+	jne	d15,#4,.L21
+.L20:
+	movh.a	a15,#@his(motor_pwm)
+	lea	a15,[a15]@los(motor_pwm)
+	ld.h	d15,[a15]
+.L291:
+	mov	d0,#3000
+.L292:
+	jge	d0,d15,.L22
+.L293:
+	movh.a	a15,#@his(motor_pwm)
+	lea	a15,[a15]@los(motor_pwm)
+.L294:
+	mov	d15,#3000
+.L295:
+	st.h	[a15],d15
+.L296:
+	j	.L23
+.L22:
+	movh.a	a15,#@his(motor_pwm)
+	lea	a15,[a15]@los(motor_pwm)
+	ld.h	d15,[a15]
+.L297:
+	mov	d0,#-3000
+.L298:
+	jge	d15,d0,.L24
+.L299:
+	movh.a	a15,#@his(motor_pwm)
+	lea	a15,[a15]@los(motor_pwm)
+.L300:
+	mov	d15,#-3000
+.L301:
+	st.h	[a15],d15
+.L24:
+.L23:
+.L21:
+	movh.a	a15,#@his(balance_encoder_pd)
+	lea	a15,[a15]@los(balance_encoder_pd)
+.L236:
+	sub.f	d15,d9,d8
+.L237:
+	st.w	[a15]20,d15
+.L302:
 	ret
-.L167:
+.L172:
 	
 __balance_encoder_PD_function_end:
 	.size	balance_encoder_PD,__balance_encoder_PD_function_end-balance_encoder_PD
-.L57:
+.L62:
 	; End of function
 	
 	.sdecl	'.text.balance.balance_encoder_pd_init',code,cluster('balance_encoder_pd_init')
@@ -849,66 +894,66 @@ __balance_encoder_PD_function_end:
 	
 	.global	balance_encoder_pd_init
 ; Function balance_encoder_pd_init
-.L40:
+.L45:
 balance_encoder_pd_init:	.type	func
 	movh.a	a15,#@his(balance_encoder_pd)
 	lea	a15,[a15]@los(balance_encoder_pd)
-.L289:
+.L307:
 	mov.u	d15,#49807
 	addih	d15,d15,#15861
-.L290:
+.L308:
 	st.w	[a15],d15
-.L291:
+.L309:
 	movh.a	a15,#@his(balance_encoder_pd)
 	lea	a15,[a15]@los(balance_encoder_pd)
-.L292:
+.L310:
 	mov	d15,#4719
 	addih	d15,d15,#15107
-.L293:
+.L311:
 	st.w	[a15]4,d15
-.L294:
+.L312:
 	movh.a	a15,#@his(balance_encoder_pd)
 	lea	a15,[a15]@los(balance_encoder_pd)
-.L295:
+.L313:
 	mov	d15,#18770
 	addih	d15,d15,#14877
-.L296:
+.L314:
 	st.w	[a15]8,d15
-.L297:
+.L315:
 	movh.a	a15,#@his(balance_encoder_pd)
 	lea	a15,[a15]@los(balance_encoder_pd)
-.L298:
+.L316:
 	mov	d15,#0
-.L299:
+.L317:
 	st.w	[a15]12,d15
-.L300:
+.L318:
 	movh.a	a15,#@his(balance_encoder_pd)
 	lea	a15,[a15]@los(balance_encoder_pd)
-.L301:
+.L319:
 	mov	d15,#0
-.L302:
+.L320:
 	st.w	[a15]20,d15
-.L303:
+.L321:
 	movh.a	a15,#@his(balance_encoder_pd)
 	lea	a15,[a15]@los(balance_encoder_pd)
-.L304:
+.L322:
 	mov	d15,#0
-.L305:
+.L323:
 	st.w	[a15]24,d15
-.L306:
+.L324:
 	movh.a	a15,#@his(balance_encoder_pd)
 	lea	a15,[a15]@los(balance_encoder_pd)
-.L307:
+.L325:
 	mov	d15,#0
-.L308:
+.L326:
 	st.w	[a15]16,d15
-.L309:
+.L327:
 	ret
-.L171:
+.L176:
 	
 __balance_encoder_pd_init_function_end:
 	.size	balance_encoder_pd_init,__balance_encoder_pd_init_function_end-balance_encoder_pd_init
-.L62:
+.L67:
 	; End of function
 	
 	.sdecl	'.text.balance.balance_gyro_PD',code,cluster('balance_gyro_PD')
@@ -917,133 +962,133 @@ __balance_encoder_pd_init_function_end:
 	
 	.global	balance_gyro_PD
 ; Function balance_gyro_PD
-.L42:
+.L47:
 balance_gyro_PD:	.type	func
 	mov	e8,d5,d4
-.L517:
+.L535:
 	movh.a	a15,#@his(balance_gyro_pd)
 	lea	a15,[a15]@los(balance_gyro_pd)
-.L235:
+.L240:
 	sub.f	d15,d9,d8
-.L236:
+.L241:
 	st.w	[a15]16,d15
-.L518:
+.L536:
 	movh.a	a12,#@his(momentumwheel_pwm)
 	lea	a12,[a12]@los(momentumwheel_pwm)
-.L519:
+.L537:
 	movh.a	a15,#@his(balance_gyro_pd)
 	lea	a15,[a15]@los(balance_gyro_pd)
-.L520:
+.L538:
 	ld.w	d4,[a15]8
-.L234:
-	sub.f	d0,d9,d8
-.L237:
-	movh.a	a15,#@his(balance_gyro_pd)
-	lea	a15,[a15]@los(balance_gyro_pd)
-.L521:
-	ld.w	d15,[a15]20
-.L522:
-	movh	d1,#16384
-.L523:
-	msub.f	d0,d0,d15,d1
-.L524:
-	movh.a	a15,#@his(balance_gyro_pd)
-	lea	a15,[a15]@los(balance_gyro_pd)
-.L525:
-	ld.w	d15,[a15]24
-.L526:
-	add.f	d0,d0,d15
-.L527:
-	movh.a	a15,#@his(balance_gyro_pd)
-	lea	a15,[a15]@los(balance_gyro_pd)
-.L528:
-	ld.w	d1,[a15]
-.L238:
-	sub.f	d2,d9,d8
 .L239:
+	sub.f	d0,d9,d8
+.L242:
 	movh.a	a15,#@his(balance_gyro_pd)
 	lea	a15,[a15]@los(balance_gyro_pd)
-.L529:
+.L539:
 	ld.w	d15,[a15]20
-.L530:
-	sub.f	d2,d2,d15
-.L531:
+.L540:
+	movh	d1,#16384
+.L541:
+	msub.f	d0,d0,d15,d1
+.L542:
 	movh.a	a15,#@his(balance_gyro_pd)
 	lea	a15,[a15]@los(balance_gyro_pd)
-.L532:
+.L543:
+	ld.w	d15,[a15]24
+.L544:
+	add.f	d0,d0,d15
+.L545:
+	movh.a	a15,#@his(balance_gyro_pd)
+	lea	a15,[a15]@los(balance_gyro_pd)
+.L546:
+	ld.w	d1,[a15]
+.L243:
+	sub.f	d2,d9,d8
+.L244:
+	movh.a	a15,#@his(balance_gyro_pd)
+	lea	a15,[a15]@los(balance_gyro_pd)
+.L547:
+	ld.w	d15,[a15]20
+.L548:
+	sub.f	d2,d2,d15
+.L549:
+	movh.a	a15,#@his(balance_gyro_pd)
+	lea	a15,[a15]@los(balance_gyro_pd)
+.L550:
 	ld.w	d15,[a15]4
-.L240:
+.L245:
 	sub.f	d3,d9,d8
-.L241:
+.L246:
 	mul.f	d3,d15,d3
-.L533:
+.L551:
 	madd.f	d15,d3,d1,d2
-.L534:
+.L552:
 	madd.f	d4,d15,d4,d0
 	call	__f_ftos
-.L233:
+.L238:
 	st.h	[a12],d2
-.L535:
+.L553:
 	movh.a	a15,#@his(PWM_OUT)
 	lea	a15,[a15]@los(PWM_OUT)
 	movh.a	a2,#@his(PWM_OUT)
 	lea	a2,[a2]@los(PWM_OUT)
 	ld.w	d15,[a2]
-.L536:
+.L554:
 	movh.a	a2,#@his(momentumwheel_pwm)
 	lea	a2,[a2]@los(momentumwheel_pwm)
 	ld.h	d0,[a2]
-.L537:
+.L555:
 	add	d15,d0
 	st.w	[a15],d15
-.L538:
+.L556:
 	movh.a	a15,#@his(balance_gyro_pd)
 	lea	a15,[a15]@los(balance_gyro_pd)
-.L539:
+.L557:
 	movh.a	a2,#@his(balance_gyro_pd)
 	lea	a2,[a2]@los(balance_gyro_pd)
-.L540:
+.L558:
 	ld.w	d15,[a2]20
-.L541:
+.L559:
 	st.w	[a15]24,d15
-.L542:
+.L560:
 	movh.a	a15,#@his(balance_gyro_pd)
 	lea	a15,[a15]@los(balance_gyro_pd)
-.L242:
+.L247:
 	sub.f	d15,d9,d8
-.L243:
+.L248:
 	st.w	[a15]20,d15
-.L543:
+.L561:
 	movh.a	a15,#@his(PWM_OUT)
 	lea	a15,[a15]@los(PWM_OUT)
 	ld.w	d4,[a15]
-.L544:
+.L562:
 	rsub	d4,#0
-.L545:
+.L563:
 	movh.a	a15,#@his(PWM_OUT_sudu)
 	lea	a15,[a15]@los(PWM_OUT_sudu)
 	ld.w	d15,[a15]
-.L546:
+.L564:
 	add	d4,d15
 	call	momentumwheel_pwm_control_f
-.L547:
+.L565:
 	movh.a	a15,#@his(PWM_OUT)
 	lea	a15,[a15]@los(PWM_OUT)
 	ld.w	d4,[a15]
-.L548:
+.L566:
 	movh.a	a15,#@his(PWM_OUT_sudu)
 	lea	a15,[a15]@los(PWM_OUT_sudu)
 	ld.w	d15,[a15]
-.L549:
+.L567:
 	add	d4,d15
 	call	momentumwheel_pwm_control_a
-.L550:
+.L568:
 	ret
-.L190:
+.L195:
 	
 __balance_gyro_PD_function_end:
 	.size	balance_gyro_PD,__balance_gyro_PD_function_end-balance_gyro_PD
-.L97:
+.L102:
 	; End of function
 	
 	.sdecl	'.text.balance.balance_gyro_pd_init',code,cluster('balance_gyro_pd_init')
@@ -1052,64 +1097,64 @@ __balance_gyro_PD_function_end:
 	
 	.global	balance_gyro_pd_init
 ; Function balance_gyro_pd_init
-.L44:
+.L49:
 balance_gyro_pd_init:	.type	func
 	movh.a	a15,#@his(balance_gyro_pd)
 	lea	a15,[a15]@los(balance_gyro_pd)
-.L555:
+.L573:
 	movh	d15,#17658
-.L556:
+.L574:
 	st.w	[a15],d15
-.L557:
+.L575:
 	movh.a	a15,#@his(balance_gyro_pd)
 	lea	a15,[a15]@los(balance_gyro_pd)
-.L558:
+.L576:
 	mov.u	d15,#39322
 	addih	d15,d15,#17047
-.L559:
+.L577:
 	st.w	[a15]4,d15
-.L560:
+.L578:
 	movh.a	a15,#@his(balance_gyro_pd)
 	lea	a15,[a15]@los(balance_gyro_pd)
-.L561:
+.L579:
 	movh	d15,#17530
-.L562:
+.L580:
 	st.w	[a15]8,d15
-.L563:
+.L581:
 	movh.a	a15,#@his(balance_gyro_pd)
 	lea	a15,[a15]@los(balance_gyro_pd)
-.L564:
+.L582:
 	mov	d15,#0
-.L565:
+.L583:
 	st.w	[a15]12,d15
-.L566:
+.L584:
 	movh.a	a15,#@his(balance_gyro_pd)
 	lea	a15,[a15]@los(balance_gyro_pd)
-.L567:
+.L585:
 	mov	d15,#0
-.L568:
+.L586:
 	st.w	[a15]20,d15
-.L569:
+.L587:
 	movh.a	a15,#@his(balance_gyro_pd)
 	lea	a15,[a15]@los(balance_gyro_pd)
-.L570:
+.L588:
 	mov	d15,#0
-.L571:
+.L589:
 	st.w	[a15]24,d15
-.L572:
+.L590:
 	movh.a	a15,#@his(balance_gyro_pd)
 	lea	a15,[a15]@los(balance_gyro_pd)
-.L573:
+.L591:
 	mov	d15,#0
-.L574:
+.L592:
 	st.w	[a15]16,d15
-.L575:
+.L593:
 	ret
-.L195:
+.L200:
 	
 __balance_gyro_pd_init_function_end:
 	.size	balance_gyro_pd_init,__balance_gyro_pd_init_function_end-balance_gyro_pd_init
-.L102:
+.L107:
 	; End of function
 	
 	.sdecl	'.text.balance.balance_rollangle_PI',code,cluster('balance_rollangle_PI')
@@ -1118,74 +1163,74 @@ __balance_gyro_pd_init_function_end:
 	
 	.global	balance_rollangle_PI
 ; Function balance_rollangle_PI
-.L46:
+.L51:
 balance_rollangle_PI:	.type	func
 	movh.a	a15,#@his(balance_rollangle_pi)
 	lea	a15,[a15]@los(balance_rollangle_pi)
-.L621:
+.L639:
 	sub.f	d15,d5,d4
-.L622:
+.L640:
 	st.w	[a15]16,d15
-.L623:
+.L641:
 	movh.a	a2,#@his(Total_roll)
 	lea	a2,[a2]@los(Total_roll)
-.L624:
+.L642:
 	movh.a	a15,#@his(balance_rollangle_pi)
 	lea	a15,[a15]@los(balance_rollangle_pi)
-.L625:
+.L643:
 	ld.w	d0,[a15]
-.L626:
+.L644:
 	sub.f	d1,d5,d4
-.L627:
+.L645:
 	movh.a	a15,#@his(balance_rollangle_pi)
 	lea	a15,[a15]@los(balance_rollangle_pi)
-.L628:
+.L646:
 	ld.w	d2,[a15]8
-.L629:
+.L647:
 	sub.f	d3,d5,d4
-.L630:
+.L648:
 	movh.a	a15,#@his(balance_rollangle_pi)
 	lea	a15,[a15]@los(balance_rollangle_pi)
-.L631:
+.L649:
 	ld.w	d15,[a15]20
-.L632:
+.L650:
 	sub.f	d15,d3,d15
-.L633:
+.L651:
 	mul.f	d15,d2,d15
-.L634:
+.L652:
 	madd.f	d15,d15,d0,d1
-.L635:
+.L653:
 	st.w	[a2],d15
-.L636:
+.L654:
 	movh.a	a15,#@his(balance_rollangle_pi)
 	lea	a15,[a15]@los(balance_rollangle_pi)
-.L637:
+.L655:
 	movh.a	a2,#@his(balance_rollangle_pi)
 	lea	a2,[a2]@los(balance_rollangle_pi)
-.L638:
+.L656:
 	ld.w	d15,[a2]20
-.L639:
+.L657:
 	st.w	[a15]24,d15
-.L640:
+.L658:
 	movh.a	a15,#@his(balance_rollangle_pi)
 	lea	a15,[a15]@los(balance_rollangle_pi)
-.L641:
+.L659:
 	sub.f	d15,d5,d4
-.L642:
+.L660:
 	st.w	[a15]20,d15
-.L643:
+.L661:
 	movh.a	a15,#@his(Total_roll)
 	lea	a15,[a15]@los(Total_roll)
 	ld.w	d2,[a15]
-.L644:
-	j	.L20
-.L20:
+.L662:
+	j	.L25
+.L25:
 	ret
-.L201:
+.L206:
 	
 __balance_rollangle_PI_function_end:
 	.size	balance_rollangle_PI,__balance_rollangle_PI_function_end-balance_rollangle_PI
-.L117:
+.L122:
 	; End of function
 	
 	.sdecl	'.text.balance.balance_rollangle_pi_init',code,cluster('balance_rollangle_pi_init')
@@ -1194,63 +1239,63 @@ __balance_rollangle_PI_function_end:
 	
 	.global	balance_rollangle_pi_init
 ; Function balance_rollangle_pi_init
-.L48:
+.L53:
 balance_rollangle_pi_init:	.type	func
 	movh.a	a15,#@his(balance_rollangle_pi)
 	lea	a15,[a15]@los(balance_rollangle_pi)
-.L649:
-	movh	d15,#16384
-.L650:
-	st.w	[a15],d15
-.L651:
-	movh.a	a15,#@his(balance_rollangle_pi)
-	lea	a15,[a15]@los(balance_rollangle_pi)
-.L652:
-	mov	d15,#0
-.L653:
-	st.w	[a15]4,d15
-.L654:
-	movh.a	a15,#@his(balance_rollangle_pi)
-	lea	a15,[a15]@los(balance_rollangle_pi)
-.L655:
-	movh	d15,#16544
-.L656:
-	st.w	[a15]8,d15
-.L657:
-	movh.a	a15,#@his(balance_rollangle_pi)
-	lea	a15,[a15]@los(balance_rollangle_pi)
-.L658:
-	mov	d15,#0
-.L659:
-	st.w	[a15]12,d15
-.L660:
-	movh.a	a15,#@his(balance_rollangle_pi)
-	lea	a15,[a15]@los(balance_rollangle_pi)
-.L661:
-	mov	d15,#0
-.L662:
-	st.w	[a15]20,d15
-.L663:
-	movh.a	a15,#@his(balance_rollangle_pi)
-	lea	a15,[a15]@los(balance_rollangle_pi)
-.L664:
-	mov	d15,#0
-.L665:
-	st.w	[a15]24,d15
-.L666:
-	movh.a	a15,#@his(balance_rollangle_pi)
-	lea	a15,[a15]@los(balance_rollangle_pi)
 .L667:
-	mov	d15,#0
+	movh	d15,#16384
 .L668:
-	st.w	[a15]16,d15
+	st.w	[a15],d15
 .L669:
+	movh.a	a15,#@his(balance_rollangle_pi)
+	lea	a15,[a15]@los(balance_rollangle_pi)
+.L670:
+	mov	d15,#0
+.L671:
+	st.w	[a15]4,d15
+.L672:
+	movh.a	a15,#@his(balance_rollangle_pi)
+	lea	a15,[a15]@los(balance_rollangle_pi)
+.L673:
+	movh	d15,#16544
+.L674:
+	st.w	[a15]8,d15
+.L675:
+	movh.a	a15,#@his(balance_rollangle_pi)
+	lea	a15,[a15]@los(balance_rollangle_pi)
+.L676:
+	mov	d15,#0
+.L677:
+	st.w	[a15]12,d15
+.L678:
+	movh.a	a15,#@his(balance_rollangle_pi)
+	lea	a15,[a15]@los(balance_rollangle_pi)
+.L679:
+	mov	d15,#0
+.L680:
+	st.w	[a15]20,d15
+.L681:
+	movh.a	a15,#@his(balance_rollangle_pi)
+	lea	a15,[a15]@los(balance_rollangle_pi)
+.L682:
+	mov	d15,#0
+.L683:
+	st.w	[a15]24,d15
+.L684:
+	movh.a	a15,#@his(balance_rollangle_pi)
+	lea	a15,[a15]@los(balance_rollangle_pi)
+.L685:
+	mov	d15,#0
+.L686:
+	st.w	[a15]16,d15
+.L687:
 	ret
-.L204:
+.L209:
 	
 __balance_rollangle_pi_init_function_end:
 	.size	balance_rollangle_pi_init,__balance_rollangle_pi_init_function_end-balance_rollangle_pi_init
-.L122:
+.L127:
 	; End of function
 	
 	.sdecl	'.data.balance.momentumwheel_pwm',data,cluster('momentumwheel_pwm')
@@ -1436,17 +1481,17 @@ balance_rollangle_pi:	.type	object
 	.calls	'balance_rollangle_pi_init','',0
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
-.L50:
+.L55:
 	.word	143502
 	.half	3
-	.word	.L51
+	.word	.L56
 	.byte	4
-.L49:
+.L54:
 	.byte	1
 	.byte	'../code/balance.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1
-	.word	.L52
+	.word	.L57
 	.byte	2,1,1,3
 	.word	146
 	.byte	4
@@ -1455,7 +1500,7 @@ balance_rollangle_pi:	.type	object
 	.word	149
 	.byte	6,0,7
 	.byte	'__fract',0,4,128,1
-.L168:
+.L173:
 	.byte	7
 	.byte	'float',0,4,4,8
 	.byte	'Ifx__float_to_fract',0,3,1,152,2,18
@@ -1483,7 +1528,7 @@ balance_rollangle_pi:	.type	object
 	.word	292
 	.byte	6,0,7
 	.byte	'unsigned int',0,4,7
-.L193:
+.L198:
 	.byte	7
 	.byte	'int',0,4,5,7
 	.byte	'unsigned int',0,4,7,10
@@ -6481,7 +6526,7 @@ balance_rollangle_pi:	.type	object
 	.byte	'alti',0,17,191,18,82
 	.word	32153
 	.byte	6,0
-.L205:
+.L210:
 	.byte	7
 	.byte	'short int',0,2,5,7
 	.byte	'long int',0,4,5,20,19,60,9,12,13
@@ -20763,7 +20808,7 @@ balance_rollangle_pi:	.type	object
 	.byte	'SEEKFREE_ASSISTANT_SCC8660',0,3,0,28
 	.byte	'seekfree_assistant_image_type_enum',0,51,86,2
 	.word	140970
-.L206:
+.L211:
 	.byte	20,52,8,9,28,13
 	.byte	'kp',0
 	.word	206
@@ -20817,12 +20862,12 @@ balance_rollangle_pi:	.type	object
 	.byte	3
 	.word	585
 	.byte	3
-	.word	.L244-.L50
+	.word	.L249-.L55
 	.byte	30,1,1,31
 	.word	141554
 	.byte	0,3
 	.word	141559
-.L244:
+.L249:
 	.byte	10
 	.byte	'kf_t',0,56,16,16,180,2,13
 	.byte	'FilteredValue',0
@@ -21124,7 +21169,7 @@ balance_rollangle_pi:	.type	object
 	.byte	1,1,0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
-.L51:
+.L56:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,21,0,54,15,39,12,0,0,3,15,0,73,19,0,0,4,46,1,3,8,32,13
 	.byte	58,15,59,15,57,15,54,15,39,12,0,0,5,5,0,3,8,58,15,59,15,57,15,73,19,0,0,6,11,0,0,0,7,36,0,3,8,11,15,62
 	.byte	15,0,0,8,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,9,59,0,3,8,0,0,10,19,1,3,8,58,15,59,15
@@ -21137,12 +21182,12 @@ balance_rollangle_pi:	.type	object
 	.byte	15,73,19,63,12,60,12,0,0,0
 	.sdecl	'.debug_line',debug
 	.sect	'.debug_line'
-.L52:
-	.word	.L246-.L245
-.L245:
+.L57:
+	.word	.L251-.L250
+.L250:
 	.half	3
-	.word	.L248-.L247
-.L247:
+	.word	.L253-.L252
+.L252:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
 	.byte	'H:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg',0
 	.byte	'H:\\\\13333\\\\COMPETE DOUCMENT\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math',0
@@ -21238,155 +21283,12 @@ balance_rollangle_pi:	.type	object
 	.byte	'kalman_filter.h',0,3,0,0
 	.byte	'QuaternionEKF.h',0,3,0,0
 	.byte	'zf_common_headfile.h',0,6,0,0,0
-.L248:
-.L246:
+.L253:
+.L251:
 	.sdecl	'.debug_info',debug,cluster('balance_encoder_PD')
 	.sect	'.debug_info'
-.L53:
-	.word	243
-	.half	3
-	.word	.L54
-	.byte	4,1
-	.byte	'../code/balance.c',0
-	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1
-	.word	.L56,.L55
-	.byte	2
-	.word	.L49
-	.byte	3
-	.byte	'balance_encoder_PD',0,1,242,1,6,1,1,1
-	.word	.L38,.L167,.L37
-	.byte	4
-	.byte	'encoder',0,1,242,1,31
-	.word	.L168,.L169
-	.byte	4
-	.byte	'exspeed',0,1,242,1,46
-	.word	.L168,.L170
-	.byte	5
-	.word	.L38,.L167
-	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('balance_encoder_PD')
-	.sect	'.debug_abbrev'
-.L54:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
-	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('balance_encoder_PD')
-	.sect	'.debug_line'
-.L55:
-	.word	.L250-.L249
-.L249:
-	.half	3
-	.word	.L252-.L251
-.L251:
-	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'../code/balance.c',0,0,0,0,0
-.L252:
-	.byte	5,6,7,0,5,2
-	.word	.L38
-	.byte	3,241,1,1,5,5,9
-	.half	.L253-.L38
-	.byte	3,3,1,5,40,9
-	.half	.L223-.L253
-	.byte	1,5,30,9
-	.half	.L224-.L223
-	.byte	1,5,5,9
-	.half	.L254-.L224
-	.byte	3,3,1,5,23,9
-	.half	.L255-.L254
-	.byte	1,5,56,9
-	.half	.L225-.L255
-	.byte	1,5,35,9
-	.half	.L226-.L225
-	.byte	1,5,8,9
-	.half	.L256-.L226
-	.byte	3,5,1,5,26,9
-	.half	.L257-.L256
-	.byte	1,5,40,9
-	.half	.L258-.L257
-	.byte	1,5,38,9
-	.half	.L259-.L258
-	.byte	1,5,5,9
-	.half	.L260-.L259
-	.byte	1,5,52,7,9
-	.half	.L261-.L260
-	.byte	1,5,84,9
-	.half	.L262-.L261
-	.byte	1,5,82,9
-	.half	.L263-.L262
-	.byte	1,5,88,9
-	.half	.L264-.L263
-	.byte	1,5,13,9
-	.half	.L17-.L264
-	.byte	3,1,1,5,31,9
-	.half	.L265-.L17
-	.byte	1,5,45,9
-	.half	.L266-.L265
-	.byte	1,5,43,9
-	.half	.L267-.L266
-	.byte	1,5,10,9
-	.half	.L268-.L267
-	.byte	1,5,52,7,9
-	.half	.L269-.L268
-	.byte	1,5,84,9
-	.half	.L270-.L269
-	.byte	1,5,82,9
-	.half	.L271-.L270
-	.byte	1,5,5,9
-	.half	.L18-.L271
-	.byte	3,3,1,5,17,9
-	.half	.L272-.L18
-	.byte	3,2,1,5,35,9
-	.half	.L273-.L272
-	.byte	1,5,60,9
-	.half	.L227-.L273
-	.byte	1,5,69,9
-	.half	.L228-.L227
-	.byte	1,5,87,9
-	.half	.L274-.L228
-	.byte	1,5,67,9
-	.half	.L275-.L274
-	.byte	1,5,17,9
-	.half	.L276-.L275
-	.byte	3,126,1,5,35,9
-	.half	.L277-.L276
-	.byte	1,5,59,9
-	.half	.L229-.L277
-	.byte	1,5,17,9
-	.half	.L230-.L229
-	.byte	3,1,1,5,35,9
-	.half	.L278-.L230
-	.byte	1,5,41,9
-	.half	.L221-.L278
-	.byte	1,5,59,9
-	.half	.L279-.L221
-	.byte	1,5,39,9
-	.half	.L280-.L279
-	.byte	1,5,15,9
-	.half	.L281-.L280
-	.byte	1,9
-	.half	.L282-.L281
-	.byte	3,1,1,9
-	.half	.L222-.L282
-	.byte	3,126,1,5,5,9
-	.half	.L283-.L222
-	.byte	3,4,1,5,55,9
-	.half	.L231-.L283
-	.byte	1,5,35,9
-	.half	.L232-.L231
-	.byte	1,5,1,9
-	.half	.L284-.L232
-	.byte	3,1,1,7,9
-	.half	.L57-.L284
-	.byte	0,1,1
-.L250:
-	.sdecl	'.debug_ranges',debug,cluster('balance_encoder_PD')
-	.sect	'.debug_ranges'
-.L56:
-	.word	-1,.L38,0,.L57-.L38,0,0
-	.sdecl	'.debug_info',debug,cluster('balance_encoder_pd_init')
-	.sect	'.debug_info'
 .L58:
-	.word	206
+	.word	243
 	.half	3
 	.word	.L59
 	.byte	4,1
@@ -21395,85 +21297,173 @@ balance_rollangle_pi:	.type	object
 	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1
 	.word	.L61,.L60
 	.byte	2
-	.word	.L49
+	.word	.L54
 	.byte	3
-	.byte	'balance_encoder_pd_init',0,1,137,2,6,1,1,1
-	.word	.L40,.L171,.L39
+	.byte	'balance_encoder_PD',0,1,246,1,6,1,1,1
+	.word	.L43,.L172,.L42
 	.byte	4
-	.word	.L40,.L171
+	.byte	'encoder',0,1,246,1,31
+	.word	.L173,.L174
+	.byte	4
+	.byte	'exspeed',0,1,246,1,46
+	.word	.L173,.L175
+	.byte	5
+	.word	.L43,.L172
 	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('balance_encoder_pd_init')
+	.sdecl	'.debug_abbrev',debug,cluster('balance_encoder_PD')
 	.sect	'.debug_abbrev'
 .L59:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
-	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('balance_encoder_pd_init')
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('balance_encoder_PD')
 	.sect	'.debug_line'
 .L60:
-	.word	.L286-.L285
-.L285:
+	.word	.L255-.L254
+.L254:
 	.half	3
-	.word	.L288-.L287
-.L287:
+	.word	.L257-.L256
+.L256:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/balance.c',0,0,0,0,0
-.L288:
-	.byte	5,5,7,0,5,2
-	.word	.L40
-	.byte	3,138,2,1,5,29,9
-	.half	.L289-.L40
-	.byte	1,5,27,9
-	.half	.L290-.L289
-	.byte	1,5,5,9
-	.half	.L291-.L290
-	.byte	3,1,1,5,29,9
-	.half	.L292-.L291
-	.byte	1,5,27,9
-	.half	.L293-.L292
-	.byte	1,5,5,9
-	.half	.L294-.L293
-	.byte	3,1,1,5,29,9
-	.half	.L295-.L294
-	.byte	1,5,27,9
-	.half	.L296-.L295
-	.byte	1,5,5,9
-	.half	.L297-.L296
-	.byte	3,1,1,5,37,9
-	.half	.L298-.L297
-	.byte	1,5,35,9
-	.half	.L299-.L298
-	.byte	1,5,5,9
-	.half	.L300-.L299
-	.byte	3,1,1,5,37,9
-	.half	.L301-.L300
-	.byte	1,5,35,9
-	.half	.L302-.L301
-	.byte	1,5,5,9
-	.half	.L303-.L302
-	.byte	3,1,1,5,37,9
-	.half	.L304-.L303
-	.byte	1,5,35,9
-	.half	.L305-.L304
-	.byte	1,5,5,9
-	.half	.L306-.L305
-	.byte	3,1,1,5,32,9
-	.half	.L307-.L306
+.L257:
+	.byte	5,6,7,0,5,2
+	.word	.L43
+	.byte	3,245,1,1,5,5,9
+	.half	.L258-.L43
+	.byte	3,3,1,5,40,9
+	.half	.L228-.L258
 	.byte	1,5,30,9
-	.half	.L308-.L307
+	.half	.L229-.L228
+	.byte	1,5,5,9
+	.half	.L259-.L229
+	.byte	3,3,1,5,23,9
+	.half	.L260-.L259
+	.byte	1,5,56,9
+	.half	.L230-.L260
+	.byte	1,5,35,9
+	.half	.L231-.L230
+	.byte	1,5,8,9
+	.half	.L261-.L231
+	.byte	3,3,1,5,26,9
+	.half	.L262-.L261
+	.byte	1,5,40,9
+	.half	.L263-.L262
+	.byte	1,5,38,9
+	.half	.L264-.L263
+	.byte	1,5,5,9
+	.half	.L265-.L264
+	.byte	1,5,52,7,9
+	.half	.L266-.L265
+	.byte	1,5,84,9
+	.half	.L267-.L266
+	.byte	1,5,82,9
+	.half	.L268-.L267
+	.byte	1,5,88,9
+	.half	.L269-.L268
+	.byte	1,5,13,9
+	.half	.L17-.L269
+	.byte	3,1,1,5,31,9
+	.half	.L270-.L17
+	.byte	1,5,45,9
+	.half	.L271-.L270
+	.byte	1,5,43,9
+	.half	.L272-.L271
+	.byte	1,5,10,9
+	.half	.L273-.L272
+	.byte	1,5,52,7,9
+	.half	.L274-.L273
+	.byte	1,5,84,9
+	.half	.L275-.L274
+	.byte	1,5,82,9
+	.half	.L276-.L275
+	.byte	1,5,5,9
+	.half	.L18-.L276
+	.byte	3,3,1,5,17,9
+	.half	.L277-.L18
+	.byte	3,2,1,5,35,9
+	.half	.L278-.L277
+	.byte	1,5,60,9
+	.half	.L232-.L278
+	.byte	1,5,69,9
+	.half	.L233-.L232
+	.byte	1,5,87,9
+	.half	.L279-.L233
+	.byte	1,5,67,9
+	.half	.L280-.L279
+	.byte	1,5,17,9
+	.half	.L281-.L280
+	.byte	3,126,1,5,35,9
+	.half	.L282-.L281
+	.byte	1,5,59,9
+	.half	.L234-.L282
+	.byte	1,5,17,9
+	.half	.L235-.L234
+	.byte	3,1,1,5,35,9
+	.half	.L283-.L235
+	.byte	1,5,41,9
+	.half	.L226-.L283
+	.byte	1,5,59,9
+	.half	.L284-.L226
+	.byte	1,5,39,9
+	.half	.L285-.L284
+	.byte	1,5,15,9
+	.half	.L286-.L285
+	.byte	1,9
+	.half	.L287-.L286
+	.byte	3,1,1,9
+	.half	.L227-.L287
+	.byte	3,126,1,5,9,9
+	.half	.L288-.L227
+	.byte	3,8,1,5,31,9
+	.half	.L289-.L288
+	.byte	1,5,45,9
+	.half	.L290-.L289
+	.byte	1,5,12,7,9
+	.half	.L20-.L290
+	.byte	3,4,1,5,24,9
+	.half	.L291-.L20
+	.byte	1,5,9,9
+	.half	.L292-.L291
+	.byte	1,5,36,7,9
+	.half	.L293-.L292
+	.byte	1,5,48,9
+	.half	.L294-.L293
+	.byte	1,5,46,9
+	.half	.L295-.L294
+	.byte	1,5,52,9
+	.half	.L296-.L295
+	.byte	1,5,17,9
+	.half	.L22-.L296
+	.byte	3,1,1,5,29,9
+	.half	.L297-.L22
+	.byte	1,5,14,9
+	.half	.L298-.L297
+	.byte	1,5,36,7,9
+	.half	.L299-.L298
+	.byte	1,5,48,9
+	.half	.L300-.L299
+	.byte	1,5,46,9
+	.half	.L301-.L300
+	.byte	1,5,5,9
+	.half	.L21-.L301
+	.byte	3,3,1,5,55,9
+	.half	.L236-.L21
+	.byte	1,5,35,9
+	.half	.L237-.L236
 	.byte	1,5,1,9
-	.half	.L309-.L308
+	.half	.L302-.L237
 	.byte	3,1,1,7,9
-	.half	.L62-.L309
+	.half	.L62-.L302
 	.byte	0,1,1
-.L286:
-	.sdecl	'.debug_ranges',debug,cluster('balance_encoder_pd_init')
+.L255:
+	.sdecl	'.debug_ranges',debug,cluster('balance_encoder_PD')
 	.sect	'.debug_ranges'
 .L61:
-	.word	-1,.L40,0,.L62-.L40,0,0
-	.sdecl	'.debug_info',debug,cluster('balance_location_PID')
+	.word	-1,.L43,0,.L62-.L43,0,0
+	.sdecl	'.debug_info',debug,cluster('balance_encoder_pd_init')
 	.sect	'.debug_info'
 .L63:
-	.word	303
+	.word	206
 	.half	3
 	.word	.L64
 	.byte	4,1
@@ -21482,141 +21472,85 @@ balance_rollangle_pi:	.type	object
 	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1
 	.word	.L66,.L65
 	.byte	2
-	.word	.L49
+	.word	.L54
 	.byte	3
-	.byte	'balance_location_PID',0,1,46,7
-	.word	.L168
-	.byte	1,1,1
-	.word	.L22,.L172,.L21
+	.byte	'balance_encoder_pd_init',0,1,151,2,6,1,1,1
+	.word	.L45,.L176,.L44
 	.byte	4
-	.byte	'err',0,1,46,34
-	.word	.L168,.L173
-	.byte	5
-	.word	.L22,.L172
-	.byte	6
-	.byte	'location_banlance_error',0,1,48,11
-	.word	.L168,.L174
-	.byte	6
-	.byte	'a',0,1,49,11
-	.word	.L168,.L175
-	.byte	6
-	.byte	'b',0,1,50,11
-	.word	.L168,.L176
-	.byte	6
-	.byte	'Gkd',0,1,51,11
-	.word	.L168,.L177
-	.byte	0,0,0
-	.sdecl	'.debug_abbrev',debug,cluster('balance_location_PID')
+	.word	.L45,.L176
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('balance_encoder_pd_init')
 	.sect	'.debug_abbrev'
 .L64:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
-	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
-	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
-	.sdecl	'.debug_line',debug,cluster('balance_location_PID')
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('balance_encoder_pd_init')
 	.sect	'.debug_line'
 .L65:
-	.word	.L311-.L310
-.L310:
+	.word	.L304-.L303
+.L303:
 	.half	3
-	.word	.L313-.L312
-.L312:
+	.word	.L306-.L305
+.L305:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/balance.c',0,0,0,0,0
-.L313:
-	.byte	5,17,7,0,5,2
-	.word	.L22
-	.byte	3,50,1,5,5,9
-	.half	.L314-.L22
-	.byte	3,2,1,5,32,9
+.L306:
+	.byte	5,5,7,0,5,2
+	.word	.L45
+	.byte	3,152,2,1,5,29,9
+	.half	.L307-.L45
+	.byte	1,5,27,9
+	.half	.L308-.L307
+	.byte	1,5,5,9
+	.half	.L309-.L308
+	.byte	3,1,1,5,29,9
+	.half	.L310-.L309
+	.byte	1,5,27,9
+	.half	.L311-.L310
+	.byte	1,5,5,9
+	.half	.L312-.L311
+	.byte	3,1,1,5,29,9
+	.half	.L313-.L312
+	.byte	1,5,27,9
+	.half	.L314-.L313
+	.byte	1,5,5,9
 	.half	.L315-.L314
-	.byte	1,5,5,9
+	.byte	3,1,1,5,37,9
 	.half	.L316-.L315
-	.byte	3,1,1,5,25,9
+	.byte	1,5,35,9
 	.half	.L317-.L316
-	.byte	1,5,37,9
+	.byte	1,5,5,9
 	.half	.L318-.L317
-	.byte	1,5,8,9
+	.byte	3,1,1,5,37,9
 	.half	.L319-.L318
-	.byte	3,2,1,5,30,9
+	.byte	1,5,35,9
 	.half	.L320-.L319
-	.byte	1,5,43,9
+	.byte	1,5,5,9
 	.half	.L321-.L320
-	.byte	1,5,9,7,9
-	.half	.L2-.L321
-	.byte	3,2,1,5,34,9
-	.half	.L322-.L2
-	.byte	1,5,33,9
+	.byte	3,1,1,5,37,9
+	.half	.L322-.L321
+	.byte	1,5,35,9
 	.half	.L323-.L322
-	.byte	1,5,36,9
+	.byte	1,5,5,9
 	.half	.L324-.L323
-	.byte	1,5,9,9
-	.half	.L3-.L324
-	.byte	3,4,1,5,35,9
-	.half	.L325-.L3
-	.byte	1,5,33,9
+	.byte	3,1,1,5,32,9
+	.half	.L325-.L324
+	.byte	1,5,30,9
 	.half	.L326-.L325
-	.byte	1,5,32,9
-	.half	.L4-.L326
-	.byte	3,5,1,5,52,9
-	.half	.L327-.L4
-	.byte	1,5,87,9
-	.half	.L328-.L327
-	.byte	1,5,107,9
-	.half	.L329-.L328
-	.byte	1,5,140,1,9
-	.half	.L330-.L329
-	.byte	1,5,160,1,9
-	.half	.L331-.L330
-	.byte	1,5,138,1,9
-	.half	.L332-.L331
-	.byte	1,5,110,9
-	.half	.L333-.L332
-	.byte	1,5,85,9
-	.half	.L334-.L333
-	.byte	1,5,20,9
-	.half	.L335-.L334
-	.byte	3,1,1,5,33,9
-	.half	.L336-.L335
-	.byte	1,5,13,9
-	.half	.L337-.L336
-	.byte	1,5,37,9
-	.half	.L208-.L337
-	.byte	3,4,1,5,35,9
-	.half	.L338-.L208
-	.byte	1,5,9,9
-	.half	.L339-.L338
-	.byte	1,5,68,7,9
-	.half	.L340-.L339
-	.byte	1,5,71,9
-	.half	.L341-.L340
-	.byte	1,5,42,9
-	.half	.L5-.L341
-	.byte	3,1,1,5,40,9
-	.half	.L342-.L5
-	.byte	1,5,14,9
-	.half	.L343-.L342
-	.byte	1,5,74,7,9
-	.half	.L344-.L343
-	.byte	1,5,5,9
-	.half	.L6-.L344
-	.byte	3,3,1,5,37,9
-	.half	.L345-.L6
-	.byte	1,5,5,9
-	.half	.L346-.L345
-	.byte	3,2,1,5,1,9
-	.half	.L8-.L346
+	.byte	1,5,1,9
+	.half	.L327-.L326
 	.byte	3,1,1,7,9
-	.half	.L67-.L8
+	.half	.L67-.L327
 	.byte	0,1,1
-.L311:
-	.sdecl	'.debug_ranges',debug,cluster('balance_location_PID')
+.L304:
+	.sdecl	'.debug_ranges',debug,cluster('balance_encoder_pd_init')
 	.sect	'.debug_ranges'
 .L66:
-	.word	-1,.L22,0,.L67-.L22,0,0
-	.sdecl	'.debug_info',debug,cluster('balance_location_pid_init')
+	.word	-1,.L45,0,.L67-.L45,0,0
+	.sdecl	'.debug_info',debug,cluster('balance_location_PID')
 	.sect	'.debug_info'
 .L68:
-	.word	207
+	.word	303
 	.half	3
 	.word	.L69
 	.byte	4,1
@@ -21625,85 +21559,141 @@ balance_rollangle_pi:	.type	object
 	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1
 	.word	.L71,.L70
 	.byte	2
-	.word	.L49
+	.word	.L54
 	.byte	3
-	.byte	'balance_location_pid_init',0,1,81,6,1,1,1
-	.word	.L24,.L178,.L23
+	.byte	'balance_location_PID',0,1,46,7
+	.word	.L173
+	.byte	1,1,1
+	.word	.L27,.L177,.L26
 	.byte	4
-	.word	.L24,.L178
-	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('balance_location_pid_init')
+	.byte	'err',0,1,46,34
+	.word	.L173,.L178
+	.byte	5
+	.word	.L27,.L177
+	.byte	6
+	.byte	'location_banlance_error',0,1,48,11
+	.word	.L173,.L179
+	.byte	6
+	.byte	'a',0,1,49,11
+	.word	.L173,.L180
+	.byte	6
+	.byte	'b',0,1,50,11
+	.word	.L173,.L181
+	.byte	6
+	.byte	'Gkd',0,1,51,11
+	.word	.L173,.L182
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('balance_location_PID')
 	.sect	'.debug_abbrev'
 .L69:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
-	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('balance_location_pid_init')
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('balance_location_PID')
 	.sect	'.debug_line'
 .L70:
-	.word	.L348-.L347
-.L347:
+	.word	.L329-.L328
+.L328:
 	.half	3
-	.word	.L350-.L349
-.L349:
+	.word	.L331-.L330
+.L330:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/balance.c',0,0,0,0,0
-.L350:
-	.byte	5,5,7,0,5,2
-	.word	.L24
-	.byte	3,210,0,1,5,31,9
-	.half	.L351-.L24
-	.byte	1,5,29,9
-	.half	.L352-.L351
+.L331:
+	.byte	5,17,7,0,5,2
+	.word	.L27
+	.byte	3,50,1,5,5,9
+	.half	.L332-.L27
+	.byte	3,2,1,5,32,9
+	.half	.L333-.L332
 	.byte	1,5,5,9
-	.half	.L353-.L352
-	.byte	3,1,1,5,31,9
-	.half	.L354-.L353
-	.byte	1,5,29,9
-	.half	.L355-.L354
-	.byte	1,5,5,9
-	.half	.L356-.L355
-	.byte	3,1,1,5,31,9
-	.half	.L357-.L356
-	.byte	1,5,29,9
-	.half	.L358-.L357
-	.byte	1,5,5,9
-	.half	.L359-.L358
-	.byte	3,1,1,5,39,9
-	.half	.L360-.L359
+	.half	.L334-.L333
+	.byte	3,1,1,5,25,9
+	.half	.L335-.L334
 	.byte	1,5,37,9
-	.half	.L361-.L360
-	.byte	1,5,5,9
-	.half	.L362-.L361
-	.byte	3,1,1,5,39,9
-	.half	.L363-.L362
-	.byte	1,5,37,9
-	.half	.L364-.L363
-	.byte	1,5,5,9
-	.half	.L365-.L364
-	.byte	3,1,1,5,39,9
-	.half	.L366-.L365
-	.byte	1,5,37,9
-	.half	.L367-.L366
-	.byte	1,5,5,9
-	.half	.L368-.L367
-	.byte	3,1,1,5,34,9
-	.half	.L369-.L368
+	.half	.L336-.L335
+	.byte	1,5,8,9
+	.half	.L337-.L336
+	.byte	3,2,1,5,30,9
+	.half	.L338-.L337
+	.byte	1,5,43,9
+	.half	.L339-.L338
+	.byte	1,5,9,7,9
+	.half	.L2-.L339
+	.byte	3,2,1,5,34,9
+	.half	.L340-.L2
+	.byte	1,5,33,9
+	.half	.L341-.L340
+	.byte	1,5,36,9
+	.half	.L342-.L341
+	.byte	1,5,9,9
+	.half	.L3-.L342
+	.byte	3,4,1,5,35,9
+	.half	.L343-.L3
+	.byte	1,5,33,9
+	.half	.L344-.L343
 	.byte	1,5,32,9
-	.half	.L370-.L369
-	.byte	1,5,1,9
-	.half	.L371-.L370
+	.half	.L4-.L344
+	.byte	3,5,1,5,52,9
+	.half	.L345-.L4
+	.byte	1,5,87,9
+	.half	.L346-.L345
+	.byte	1,5,107,9
+	.half	.L347-.L346
+	.byte	1,5,140,1,9
+	.half	.L348-.L347
+	.byte	1,5,160,1,9
+	.half	.L349-.L348
+	.byte	1,5,138,1,9
+	.half	.L350-.L349
+	.byte	1,5,110,9
+	.half	.L351-.L350
+	.byte	1,5,85,9
+	.half	.L352-.L351
+	.byte	1,5,20,9
+	.half	.L353-.L352
+	.byte	3,1,1,5,33,9
+	.half	.L354-.L353
+	.byte	1,5,13,9
+	.half	.L355-.L354
+	.byte	1,5,37,9
+	.half	.L213-.L355
+	.byte	3,4,1,5,35,9
+	.half	.L356-.L213
+	.byte	1,5,9,9
+	.half	.L357-.L356
+	.byte	1,5,68,7,9
+	.half	.L358-.L357
+	.byte	1,5,71,9
+	.half	.L359-.L358
+	.byte	1,5,42,9
+	.half	.L5-.L359
+	.byte	3,1,1,5,40,9
+	.half	.L360-.L5
+	.byte	1,5,14,9
+	.half	.L361-.L360
+	.byte	1,5,74,7,9
+	.half	.L362-.L361
+	.byte	1,5,5,9
+	.half	.L6-.L362
+	.byte	3,3,1,5,37,9
+	.half	.L363-.L6
+	.byte	1,5,5,9
+	.half	.L364-.L363
+	.byte	3,2,1,5,1,9
+	.half	.L8-.L364
 	.byte	3,1,1,7,9
-	.half	.L72-.L371
+	.half	.L72-.L8
 	.byte	0,1,1
-.L348:
-	.sdecl	'.debug_ranges',debug,cluster('balance_location_pid_init')
+.L329:
+	.sdecl	'.debug_ranges',debug,cluster('balance_location_PID')
 	.sect	'.debug_ranges'
 .L71:
-	.word	-1,.L24,0,.L72-.L24,0,0
-	.sdecl	'.debug_info',debug,cluster('balance_velocity_PID')
+	.word	-1,.L27,0,.L72-.L27,0,0
+	.sdecl	'.debug_info',debug,cluster('balance_location_pid_init')
 	.sect	'.debug_info'
 .L73:
-	.word	297
+	.word	207
 	.half	3
 	.word	.L74
 	.byte	4,1
@@ -21712,151 +21702,85 @@ balance_rollangle_pi:	.type	object
 	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1
 	.word	.L76,.L75
 	.byte	2
-	.word	.L49
+	.word	.L54
 	.byte	3
-	.byte	'balance_velocity_PID',0,1,132,1,7
-	.word	.L168
-	.byte	1,1,1
-	.word	.L26,.L179,.L25
+	.byte	'balance_location_pid_init',0,1,81,6,1,1,1
+	.word	.L29,.L183,.L28
 	.byte	4
-	.byte	'encoder',0,1,132,1,34
-	.word	.L168,.L180
-	.byte	4
-	.byte	'exspeed',0,1,132,1,49
-	.word	.L168,.L181
-	.byte	5
-	.word	.L26,.L179
-	.byte	5
-	.word	.L10,.L179
-	.byte	6
-	.byte	'vertical_banlance_error',0,1,143,1,11
-	.word	.L168,.L182
-	.byte	0,0,0,0
-	.sdecl	'.debug_abbrev',debug,cluster('balance_velocity_PID')
+	.word	.L29,.L183
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('balance_location_pid_init')
 	.sect	'.debug_abbrev'
 .L74:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
-	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
-	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
-	.sdecl	'.debug_line',debug,cluster('balance_velocity_PID')
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('balance_location_pid_init')
 	.sect	'.debug_line'
 .L75:
-	.word	.L373-.L372
-.L372:
+	.word	.L366-.L365
+.L365:
 	.half	3
-	.word	.L375-.L374
-.L374:
+	.word	.L368-.L367
+.L367:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/balance.c',0,0,0,0,0
-.L375:
+.L368:
 	.byte	5,5,7,0,5,2
-	.word	.L26
-	.byte	3,134,1,1,5,44,9
-	.half	.L376-.L26
-	.byte	1,5,34,9
+	.word	.L29
+	.byte	3,210,0,1,5,31,9
+	.half	.L369-.L29
+	.byte	1,5,29,9
+	.half	.L370-.L369
+	.byte	1,5,5,9
+	.half	.L371-.L370
+	.byte	3,1,1,5,31,9
+	.half	.L372-.L371
+	.byte	1,5,29,9
+	.half	.L373-.L372
+	.byte	1,5,5,9
+	.half	.L374-.L373
+	.byte	3,1,1,5,31,9
+	.half	.L375-.L374
+	.byte	1,5,29,9
+	.half	.L376-.L375
+	.byte	1,5,5,9
 	.half	.L377-.L376
-	.byte	1,5,5,9
+	.byte	3,1,1,5,39,9
 	.half	.L378-.L377
-	.byte	3,2,1,5,42,9
+	.byte	1,5,37,9
 	.half	.L379-.L378
-	.byte	1,5,32,9
+	.byte	1,5,5,9
 	.half	.L380-.L379
-	.byte	1,5,5,9
+	.byte	3,1,1,5,39,9
 	.half	.L381-.L380
-	.byte	3,1,1,5,25,9
+	.byte	1,5,37,9
 	.half	.L382-.L381
-	.byte	1,5,60,9
+	.byte	1,5,5,9
 	.half	.L383-.L382
-	.byte	1,5,37,9
+	.byte	3,1,1,5,39,9
 	.half	.L384-.L383
-	.byte	1,5,8,9
-	.half	.L385-.L384
-	.byte	3,2,1,5,28,9
-	.half	.L386-.L385
-	.byte	1,5,41,9
-	.half	.L387-.L386
-	.byte	1,5,40,9
-	.half	.L388-.L387
-	.byte	1,5,5,9
-	.half	.L389-.L388
-	.byte	1,5,50,7,9
-	.half	.L390-.L389
-	.byte	1,5,83,9
-	.half	.L391-.L390
-	.byte	1,5,81,9
-	.half	.L392-.L391
-	.byte	1,5,85,9
-	.half	.L393-.L392
-	.byte	1,5,13,9
-	.half	.L9-.L393
-	.byte	3,1,1,5,33,9
-	.half	.L394-.L9
-	.byte	1,5,46,9
-	.half	.L395-.L394
-	.byte	1,5,45,9
-	.half	.L396-.L395
-	.byte	1,5,10,9
-	.half	.L397-.L396
-	.byte	1,5,50,7,9
-	.half	.L398-.L397
-	.byte	1,5,83,9
-	.half	.L399-.L398
-	.byte	1,5,81,9
-	.half	.L400-.L399
-	.byte	1,5,156,1,9
-	.half	.L10-.L400
-	.byte	3,2,1,5,176,1,9
-	.half	.L401-.L10
-	.byte	1,5,205,1,9
-	.half	.L402-.L401
-	.byte	1,5,214,1,9
-	.half	.L403-.L402
-	.byte	1,5,234,1,9
-	.half	.L404-.L403
-	.byte	1,5,212,1,9
-	.half	.L405-.L404
-	.byte	1,5,39,9
-	.half	.L406-.L405
-	.byte	1,5,59,9
-	.half	.L407-.L406
-	.byte	1,5,85,9
-	.half	.L408-.L407
-	.byte	1,5,94,9
-	.half	.L409-.L408
-	.byte	1,5,114,9
-	.half	.L410-.L409
-	.byte	1,5,121,9
-	.half	.L411-.L410
-	.byte	1,5,141,1,9
-	.half	.L412-.L411
-	.byte	1,5,118,9
-	.half	.L413-.L412
-	.byte	1,5,92,9
-	.half	.L414-.L413
-	.byte	1,5,154,1,9
-	.half	.L415-.L414
-	.byte	1,5,5,9
-	.half	.L209-.L415
-	.byte	3,1,1,5,59,9
-	.half	.L416-.L209
 	.byte	1,5,37,9
-	.half	.L417-.L416
+	.half	.L385-.L384
 	.byte	1,5,5,9
-	.half	.L418-.L417
-	.byte	3,2,1,5,1,9
-	.half	.L12-.L418
+	.half	.L386-.L385
+	.byte	3,1,1,5,34,9
+	.half	.L387-.L386
+	.byte	1,5,32,9
+	.half	.L388-.L387
+	.byte	1,5,1,9
+	.half	.L389-.L388
 	.byte	3,1,1,7,9
-	.half	.L77-.L12
+	.half	.L77-.L389
 	.byte	0,1,1
-.L373:
-	.sdecl	'.debug_ranges',debug,cluster('balance_velocity_PID')
+.L366:
+	.sdecl	'.debug_ranges',debug,cluster('balance_location_pid_init')
 	.sect	'.debug_ranges'
 .L76:
-	.word	-1,.L26,0,.L77-.L26,0,0
-	.sdecl	'.debug_info',debug,cluster('balance_velocity_pid_init')
+	.word	-1,.L29,0,.L77-.L29,0,0
+	.sdecl	'.debug_info',debug,cluster('balance_velocity_PID')
 	.sect	'.debug_info'
 .L78:
-	.word	208
+	.word	297
 	.half	3
 	.word	.L79
 	.byte	4,1
@@ -21865,85 +21789,151 @@ balance_rollangle_pi:	.type	object
 	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1
 	.word	.L81,.L80
 	.byte	2
-	.word	.L49
+	.word	.L54
 	.byte	3
-	.byte	'balance_velocity_pid_init',0,1,150,1,6,1,1,1
-	.word	.L28,.L183,.L27
+	.byte	'balance_velocity_PID',0,1,132,1,7
+	.word	.L173
+	.byte	1,1,1
+	.word	.L31,.L184,.L30
 	.byte	4
-	.word	.L28,.L183
-	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('balance_velocity_pid_init')
+	.byte	'encoder',0,1,132,1,34
+	.word	.L173,.L185
+	.byte	4
+	.byte	'exspeed',0,1,132,1,49
+	.word	.L173,.L186
+	.byte	5
+	.word	.L31,.L184
+	.byte	5
+	.word	.L10,.L184
+	.byte	6
+	.byte	'vertical_banlance_error',0,1,143,1,11
+	.word	.L173,.L187
+	.byte	0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('balance_velocity_PID')
 	.sect	'.debug_abbrev'
 .L79:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
-	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('balance_velocity_pid_init')
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('balance_velocity_PID')
 	.sect	'.debug_line'
 .L80:
-	.word	.L420-.L419
-.L419:
+	.word	.L391-.L390
+.L390:
 	.half	3
-	.word	.L422-.L421
-.L421:
+	.word	.L393-.L392
+.L392:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/balance.c',0,0,0,0,0
-.L422:
+.L393:
 	.byte	5,5,7,0,5,2
-	.word	.L28
-	.byte	3,151,1,1,5,31,9
-	.half	.L423-.L28
-	.byte	1,5,29,9
-	.half	.L424-.L423
+	.word	.L31
+	.byte	3,134,1,1,5,44,9
+	.half	.L394-.L31
+	.byte	1,5,34,9
+	.half	.L395-.L394
 	.byte	1,5,5,9
-	.half	.L425-.L424
-	.byte	3,1,1,5,31,9
-	.half	.L426-.L425
-	.byte	1,5,29,9
-	.half	.L427-.L426
+	.half	.L396-.L395
+	.byte	3,2,1,5,42,9
+	.half	.L397-.L396
+	.byte	1,5,32,9
+	.half	.L398-.L397
 	.byte	1,5,5,9
-	.half	.L428-.L427
-	.byte	3,1,1,5,31,9
-	.half	.L429-.L428
-	.byte	1,5,29,9
-	.half	.L430-.L429
-	.byte	1,5,5,9
-	.half	.L431-.L430
-	.byte	3,1,1,5,39,9
-	.half	.L432-.L431
+	.half	.L399-.L398
+	.byte	3,1,1,5,25,9
+	.half	.L400-.L399
+	.byte	1,5,60,9
+	.half	.L401-.L400
 	.byte	1,5,37,9
+	.half	.L402-.L401
+	.byte	1,5,8,9
+	.half	.L403-.L402
+	.byte	3,2,1,5,28,9
+	.half	.L404-.L403
+	.byte	1,5,41,9
+	.half	.L405-.L404
+	.byte	1,5,40,9
+	.half	.L406-.L405
+	.byte	1,5,5,9
+	.half	.L407-.L406
+	.byte	1,5,50,7,9
+	.half	.L408-.L407
+	.byte	1,5,83,9
+	.half	.L409-.L408
+	.byte	1,5,81,9
+	.half	.L410-.L409
+	.byte	1,5,85,9
+	.half	.L411-.L410
+	.byte	1,5,13,9
+	.half	.L9-.L411
+	.byte	3,1,1,5,33,9
+	.half	.L412-.L9
+	.byte	1,5,46,9
+	.half	.L413-.L412
+	.byte	1,5,45,9
+	.half	.L414-.L413
+	.byte	1,5,10,9
+	.half	.L415-.L414
+	.byte	1,5,50,7,9
+	.half	.L416-.L415
+	.byte	1,5,83,9
+	.half	.L417-.L416
+	.byte	1,5,81,9
+	.half	.L418-.L417
+	.byte	1,5,156,1,9
+	.half	.L10-.L418
+	.byte	3,2,1,5,176,1,9
+	.half	.L419-.L10
+	.byte	1,5,205,1,9
+	.half	.L420-.L419
+	.byte	1,5,214,1,9
+	.half	.L421-.L420
+	.byte	1,5,234,1,9
+	.half	.L422-.L421
+	.byte	1,5,212,1,9
+	.half	.L423-.L422
+	.byte	1,5,39,9
+	.half	.L424-.L423
+	.byte	1,5,59,9
+	.half	.L425-.L424
+	.byte	1,5,85,9
+	.half	.L426-.L425
+	.byte	1,5,94,9
+	.half	.L427-.L426
+	.byte	1,5,114,9
+	.half	.L428-.L427
+	.byte	1,5,121,9
+	.half	.L429-.L428
+	.byte	1,5,141,1,9
+	.half	.L430-.L429
+	.byte	1,5,118,9
+	.half	.L431-.L430
+	.byte	1,5,92,9
+	.half	.L432-.L431
+	.byte	1,5,154,1,9
 	.half	.L433-.L432
 	.byte	1,5,5,9
-	.half	.L434-.L433
-	.byte	3,1,1,5,39,9
+	.half	.L214-.L433
+	.byte	3,1,1,5,59,9
+	.half	.L434-.L214
+	.byte	1,5,37,9
 	.half	.L435-.L434
-	.byte	1,5,37,9
+	.byte	1,5,5,9
 	.half	.L436-.L435
-	.byte	1,5,5,9
-	.half	.L437-.L436
-	.byte	3,1,1,5,39,9
-	.half	.L438-.L437
-	.byte	1,5,37,9
-	.half	.L439-.L438
-	.byte	1,5,5,9
-	.half	.L440-.L439
-	.byte	3,1,1,5,34,9
-	.half	.L441-.L440
-	.byte	1,5,32,9
-	.half	.L442-.L441
-	.byte	1,5,1,9
-	.half	.L443-.L442
+	.byte	3,2,1,5,1,9
+	.half	.L12-.L436
 	.byte	3,1,1,7,9
-	.half	.L82-.L443
+	.half	.L82-.L12
 	.byte	0,1,1
-.L420:
-	.sdecl	'.debug_ranges',debug,cluster('balance_velocity_pid_init')
+.L391:
+	.sdecl	'.debug_ranges',debug,cluster('balance_velocity_PID')
 	.sect	'.debug_ranges'
 .L81:
-	.word	-1,.L28,0,.L82-.L28,0,0
-	.sdecl	'.debug_info',debug,cluster('balance_angle_P')
+	.word	-1,.L31,0,.L82-.L31,0,0
+	.sdecl	'.debug_info',debug,cluster('balance_velocity_pid_init')
 	.sect	'.debug_info'
 .L83:
-	.word	300
+	.word	208
 	.half	3
 	.word	.L84
 	.byte	4,1
@@ -21952,146 +21942,85 @@ balance_rollangle_pi:	.type	object
 	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1
 	.word	.L86,.L85
 	.byte	2
-	.word	.L49
+	.word	.L54
 	.byte	3
-	.byte	'balance_angle_P',0,1,165,1,7
-	.word	.L168
-	.byte	1,1,1
-	.word	.L30,.L184,.L29
+	.byte	'balance_velocity_pid_init',0,1,150,1,6,1,1,1
+	.word	.L33,.L188,.L32
 	.byte	4
-	.byte	'realangle',0,1,165,1,29
-	.word	.L168,.L185
-	.byte	4
-	.byte	'Expectangle',0,1,165,1,45
-	.word	.L168,.L186
-	.byte	5
-	.word	.L30,.L184
-	.byte	6
-	.byte	'k',0,1,167,1,11
-	.word	.L168,.L187
-	.byte	6
-	.byte	'angle_banlance_error',0,1,168,1,11
-	.word	.L168,.L188
-	.byte	0,0,0
-	.sdecl	'.debug_abbrev',debug,cluster('balance_angle_P')
+	.word	.L33,.L188
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('balance_velocity_pid_init')
 	.sect	'.debug_abbrev'
 .L84:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
-	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
-	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
-	.sdecl	'.debug_line',debug,cluster('balance_angle_P')
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('balance_velocity_pid_init')
 	.sect	'.debug_line'
 .L85:
-	.word	.L445-.L444
-.L444:
+	.word	.L438-.L437
+.L437:
 	.half	3
-	.word	.L447-.L446
-.L446:
+	.word	.L440-.L439
+.L439:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/balance.c',0,0,0,0,0
-.L447:
+.L440:
 	.byte	5,5,7,0,5,2
-	.word	.L30
-	.byte	3,168,1,1,5,39,9
-	.half	.L448-.L30
-	.byte	1,5,27,9
-	.half	.L449-.L448
+	.word	.L33
+	.byte	3,151,1,1,5,31,9
+	.half	.L441-.L33
+	.byte	1,5,29,9
+	.half	.L442-.L441
 	.byte	1,5,5,9
+	.half	.L443-.L442
+	.byte	3,1,1,5,31,9
+	.half	.L444-.L443
+	.byte	1,5,29,9
+	.half	.L445-.L444
+	.byte	1,5,5,9
+	.half	.L446-.L445
+	.byte	3,1,1,5,31,9
+	.half	.L447-.L446
+	.byte	1,5,29,9
+	.half	.L448-.L447
+	.byte	1,5,5,9
+	.half	.L449-.L448
+	.byte	3,1,1,5,39,9
 	.half	.L450-.L449
-	.byte	3,1,1,5,20,9
+	.byte	1,5,37,9
 	.half	.L451-.L450
-	.byte	1,5,50,9
+	.byte	1,5,5,9
 	.half	.L452-.L451
-	.byte	1,5,32,9
+	.byte	3,1,1,5,39,9
 	.half	.L453-.L452
-	.byte	1,5,8,9
+	.byte	1,5,37,9
 	.half	.L454-.L453
-	.byte	3,2,1,5,23,9
+	.byte	1,5,5,9
 	.half	.L455-.L454
-	.byte	1,5,36,9
+	.byte	3,1,1,5,39,9
 	.half	.L456-.L455
-	.byte	1,5,35,9
+	.byte	1,5,37,9
 	.half	.L457-.L456
 	.byte	1,5,5,9
 	.half	.L458-.L457
-	.byte	1,5,47,7,9
+	.byte	3,1,1,5,34,9
 	.half	.L459-.L458
-	.byte	1,5,75,9
-	.half	.L460-.L459
-	.byte	1,5,73,9
-	.half	.L461-.L460
-	.byte	1,5,79,9
-	.half	.L462-.L461
-	.byte	1,5,13,9
-	.half	.L13-.L462
-	.byte	3,1,1,5,28,9
-	.half	.L463-.L13
-	.byte	1,5,42,9
-	.half	.L464-.L463
-	.byte	1,5,40,9
-	.half	.L465-.L464
-	.byte	1,5,10,9
-	.half	.L466-.L465
-	.byte	1,5,48,7,9
-	.half	.L467-.L466
-	.byte	1,5,76,9
-	.half	.L468-.L467
-	.byte	1,5,74,9
-	.half	.L469-.L468
-	.byte	1,5,120,9
-	.half	.L14-.L469
-	.byte	3,3,1,5,135,1,9
-	.half	.L470-.L14
-	.byte	1,5,155,1,9
-	.half	.L471-.L470
-	.byte	1,5,163,1,9
-	.half	.L472-.L471
-	.byte	1,5,178,1,9
-	.half	.L473-.L472
-	.byte	1,5,161,1,9
-	.half	.L474-.L473
-	.byte	1,5,29,9
-	.half	.L475-.L474
-	.byte	1,5,44,9
-	.half	.L476-.L475
-	.byte	1,5,65,9
-	.half	.L477-.L476
-	.byte	1,5,74,9
-	.half	.L478-.L477
-	.byte	1,5,89,9
-	.half	.L479-.L478
-	.byte	1,5,93,9
-	.half	.L480-.L479
-	.byte	1,5,108,9
-	.half	.L481-.L480
-	.byte	1,5,92,9
-	.half	.L482-.L481
-	.byte	1,5,72,9
-	.half	.L483-.L482
-	.byte	1,5,119,9
-	.half	.L484-.L483
-	.byte	1,5,5,9
-	.half	.L210-.L484
-	.byte	3,1,1,5,49,9
-	.half	.L485-.L210
 	.byte	1,5,32,9
-	.half	.L486-.L485
-	.byte	1,5,5,9
-	.half	.L487-.L486
-	.byte	3,17,1,5,1,9
-	.half	.L16-.L487
+	.half	.L460-.L459
+	.byte	1,5,1,9
+	.half	.L461-.L460
 	.byte	3,1,1,7,9
-	.half	.L87-.L16
+	.half	.L87-.L461
 	.byte	0,1,1
-.L445:
-	.sdecl	'.debug_ranges',debug,cluster('balance_angle_P')
+.L438:
+	.sdecl	'.debug_ranges',debug,cluster('balance_velocity_pid_init')
 	.sect	'.debug_ranges'
 .L86:
-	.word	-1,.L30,0,.L87-.L30,0,0
-	.sdecl	'.debug_info',debug,cluster('balance_angle_p_init')
+	.word	-1,.L33,0,.L87-.L33,0,0
+	.sdecl	'.debug_info',debug,cluster('balance_angle_P')
 	.sect	'.debug_info'
 .L88:
-	.word	203
+	.word	300
 	.half	3
 	.word	.L89
 	.byte	4,1
@@ -22100,85 +22029,146 @@ balance_rollangle_pi:	.type	object
 	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1
 	.word	.L91,.L90
 	.byte	2
-	.word	.L49
+	.word	.L54
 	.byte	3
-	.byte	'balance_angle_p_init',0,1,197,1,6,1,1,1
-	.word	.L32,.L189,.L31
+	.byte	'balance_angle_P',0,1,165,1,7
+	.word	.L173
+	.byte	1,1,1
+	.word	.L35,.L189,.L34
 	.byte	4
-	.word	.L32,.L189
-	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('balance_angle_p_init')
+	.byte	'realangle',0,1,165,1,29
+	.word	.L173,.L190
+	.byte	4
+	.byte	'Expectangle',0,1,165,1,45
+	.word	.L173,.L191
+	.byte	5
+	.word	.L35,.L189
+	.byte	6
+	.byte	'k',0,1,167,1,11
+	.word	.L173,.L192
+	.byte	6
+	.byte	'angle_banlance_error',0,1,168,1,11
+	.word	.L173,.L193
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('balance_angle_P')
 	.sect	'.debug_abbrev'
 .L89:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
-	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('balance_angle_p_init')
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('balance_angle_P')
 	.sect	'.debug_line'
 .L90:
-	.word	.L489-.L488
-.L488:
+	.word	.L463-.L462
+.L462:
 	.half	3
-	.word	.L491-.L490
-.L490:
+	.word	.L465-.L464
+.L464:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/balance.c',0,0,0,0,0
-.L491:
+.L465:
 	.byte	5,5,7,0,5,2
-	.word	.L32
-	.byte	3,198,1,1,5,26,9
-	.half	.L492-.L32
-	.byte	1,5,24,9
-	.half	.L493-.L492
+	.word	.L35
+	.byte	3,168,1,1,5,39,9
+	.half	.L466-.L35
+	.byte	1,5,27,9
+	.half	.L467-.L466
 	.byte	1,5,5,9
-	.half	.L494-.L493
-	.byte	3,1,1,5,26,9
-	.half	.L495-.L494
-	.byte	1,5,24,9
-	.half	.L496-.L495
-	.byte	1,5,5,9
-	.half	.L497-.L496
-	.byte	3,1,1,5,26,9
-	.half	.L498-.L497
-	.byte	1,5,24,9
-	.half	.L499-.L498
-	.byte	1,5,5,9
-	.half	.L500-.L499
-	.byte	3,1,1,5,34,9
-	.half	.L501-.L500
+	.half	.L468-.L467
+	.byte	3,1,1,5,20,9
+	.half	.L469-.L468
+	.byte	1,5,50,9
+	.half	.L470-.L469
 	.byte	1,5,32,9
+	.half	.L471-.L470
+	.byte	1,5,8,9
+	.half	.L472-.L471
+	.byte	3,2,1,5,23,9
+	.half	.L473-.L472
+	.byte	1,5,36,9
+	.half	.L474-.L473
+	.byte	1,5,35,9
+	.half	.L475-.L474
+	.byte	1,5,5,9
+	.half	.L476-.L475
+	.byte	1,5,47,7,9
+	.half	.L477-.L476
+	.byte	1,5,75,9
+	.half	.L478-.L477
+	.byte	1,5,73,9
+	.half	.L479-.L478
+	.byte	1,5,79,9
+	.half	.L480-.L479
+	.byte	1,5,13,9
+	.half	.L13-.L480
+	.byte	3,1,1,5,28,9
+	.half	.L481-.L13
+	.byte	1,5,42,9
+	.half	.L482-.L481
+	.byte	1,5,40,9
+	.half	.L483-.L482
+	.byte	1,5,10,9
+	.half	.L484-.L483
+	.byte	1,5,48,7,9
+	.half	.L485-.L484
+	.byte	1,5,76,9
+	.half	.L486-.L485
+	.byte	1,5,74,9
+	.half	.L487-.L486
+	.byte	1,5,120,9
+	.half	.L14-.L487
+	.byte	3,3,1,5,135,1,9
+	.half	.L488-.L14
+	.byte	1,5,155,1,9
+	.half	.L489-.L488
+	.byte	1,5,163,1,9
+	.half	.L490-.L489
+	.byte	1,5,178,1,9
+	.half	.L491-.L490
+	.byte	1,5,161,1,9
+	.half	.L492-.L491
+	.byte	1,5,29,9
+	.half	.L493-.L492
+	.byte	1,5,44,9
+	.half	.L494-.L493
+	.byte	1,5,65,9
+	.half	.L495-.L494
+	.byte	1,5,74,9
+	.half	.L496-.L495
+	.byte	1,5,89,9
+	.half	.L497-.L496
+	.byte	1,5,93,9
+	.half	.L498-.L497
+	.byte	1,5,108,9
+	.half	.L499-.L498
+	.byte	1,5,92,9
+	.half	.L500-.L499
+	.byte	1,5,72,9
+	.half	.L501-.L500
+	.byte	1,5,119,9
 	.half	.L502-.L501
 	.byte	1,5,5,9
-	.half	.L503-.L502
-	.byte	3,1,1,5,34,9
+	.half	.L215-.L502
+	.byte	3,1,1,5,49,9
+	.half	.L503-.L215
+	.byte	1,5,32,9
 	.half	.L504-.L503
-	.byte	1,5,32,9
+	.byte	1,5,5,9
 	.half	.L505-.L504
-	.byte	1,5,5,9
-	.half	.L506-.L505
-	.byte	3,1,1,5,34,9
-	.half	.L507-.L506
-	.byte	1,5,32,9
-	.half	.L508-.L507
-	.byte	1,5,5,9
-	.half	.L509-.L508
-	.byte	3,1,1,5,29,9
-	.half	.L510-.L509
-	.byte	1,5,27,9
-	.half	.L511-.L510
-	.byte	1,5,1,9
-	.half	.L512-.L511
+	.byte	3,17,1,5,1,9
+	.half	.L16-.L505
 	.byte	3,1,1,7,9
-	.half	.L92-.L512
+	.half	.L92-.L16
 	.byte	0,1,1
-.L489:
-	.sdecl	'.debug_ranges',debug,cluster('balance_angle_p_init')
+.L463:
+	.sdecl	'.debug_ranges',debug,cluster('balance_angle_P')
 	.sect	'.debug_ranges'
 .L91:
-	.word	-1,.L32,0,.L92-.L32,0,0
-	.sdecl	'.debug_info',debug,cluster('balance_gyro_PD')
+	.word	-1,.L35,0,.L92-.L35,0,0
+	.sdecl	'.debug_info',debug,cluster('balance_angle_p_init')
 	.sect	'.debug_info'
 .L93:
-	.word	281
+	.word	203
 	.half	3
 	.word	.L94
 	.byte	4,1
@@ -22187,143 +22177,85 @@ balance_rollangle_pi:	.type	object
 	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1
 	.word	.L96,.L95
 	.byte	2
-	.word	.L49
+	.word	.L54
 	.byte	3
-	.byte	'balance_gyro_PD',0,1,151,2,6,1,1,1
-	.word	.L42,.L190,.L41
+	.byte	'balance_angle_p_init',0,1,197,1,6,1,1,1
+	.word	.L37,.L194,.L36
 	.byte	4
-	.byte	'gyro',0,1,151,2,28
-	.word	.L168,.L191
-	.byte	4
-	.byte	'angle_banlance_error',0,1,151,2,39
-	.word	.L168,.L192
-	.byte	5
-	.word	.L42,.L190
-	.byte	6
-	.byte	'PWM_compensation',0,1,153,2,9
-	.word	.L193,.L194
-	.byte	0,0,0
-	.sdecl	'.debug_abbrev',debug,cluster('balance_gyro_PD')
+	.word	.L37,.L194
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('balance_angle_p_init')
 	.sect	'.debug_abbrev'
 .L94:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
-	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
-	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
-	.sdecl	'.debug_line',debug,cluster('balance_gyro_PD')
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('balance_angle_p_init')
 	.sect	'.debug_line'
 .L95:
-	.word	.L514-.L513
-.L513:
+	.word	.L507-.L506
+.L506:
 	.half	3
-	.word	.L516-.L515
-.L515:
+	.word	.L509-.L508
+.L508:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/balance.c',0,0,0,0,0
-.L516:
-	.byte	5,6,7,0,5,2
-	.word	.L42
-	.byte	3,150,2,1,5,5,9
-	.half	.L517-.L42
-	.byte	3,4,1,5,50,9
-	.half	.L235-.L517
-	.byte	1,5,27,9
-	.half	.L236-.L235
+.L509:
+	.byte	5,5,7,0,5,2
+	.word	.L37
+	.byte	3,198,1,1,5,26,9
+	.half	.L510-.L37
+	.byte	1,5,24,9
+	.half	.L511-.L510
 	.byte	1,5,5,9
-	.half	.L518-.L236
-	.byte	3,2,1,5,144,1,9
+	.half	.L512-.L511
+	.byte	3,1,1,5,26,9
+	.half	.L513-.L512
+	.byte	1,5,24,9
+	.half	.L514-.L513
+	.byte	1,5,5,9
+	.half	.L515-.L514
+	.byte	3,1,1,5,26,9
+	.half	.L516-.L515
+	.byte	1,5,24,9
+	.half	.L517-.L516
+	.byte	1,5,5,9
+	.half	.L518-.L517
+	.byte	3,1,1,5,34,9
 	.half	.L519-.L518
-	.byte	1,5,159,1,9
+	.byte	1,5,32,9
 	.half	.L520-.L519
-	.byte	1,5,179,1,9
-	.half	.L234-.L520
-	.byte	1,5,188,1,9
-	.half	.L237-.L234
-	.byte	1,5,203,1,9
-	.half	.L521-.L237
-	.byte	1,5,186,1,9
+	.byte	1,5,5,9
+	.half	.L521-.L520
+	.byte	3,1,1,5,34,9
 	.half	.L522-.L521
-	.byte	1,5,185,1,9
+	.byte	1,5,32,9
 	.half	.L523-.L522
-	.byte	1,5,215,1,9
+	.byte	1,5,5,9
 	.half	.L524-.L523
-	.byte	1,5,230,1,9
+	.byte	3,1,1,5,34,9
 	.half	.L525-.L524
-	.byte	1,5,214,1,9
+	.byte	1,5,32,9
 	.half	.L526-.L525
-	.byte	1,5,25,9
+	.byte	1,5,5,9
 	.half	.L527-.L526
-	.byte	1,5,40,9
+	.byte	3,1,1,5,29,9
 	.half	.L528-.L527
-	.byte	1,5,62,9
-	.half	.L238-.L528
-	.byte	1,5,71,9
-	.half	.L239-.L238
-	.byte	1,5,86,9
-	.half	.L529-.L239
-	.byte	1,5,69,9
-	.half	.L530-.L529
-	.byte	1,5,101,9
-	.half	.L531-.L530
-	.byte	1,5,116,9
-	.half	.L532-.L531
-	.byte	1,5,135,1,9
-	.half	.L240-.L532
-	.byte	1,5,119,9
-	.half	.L241-.L240
-	.byte	1,5,99,9
-	.half	.L533-.L241
-	.byte	1,5,142,1,9
-	.half	.L534-.L533
-	.byte	1,5,23,9
-	.half	.L233-.L534
-	.byte	1,5,5,9
-	.half	.L535-.L233
-	.byte	3,1,1,5,14,9
-	.half	.L536-.L535
-	.byte	1,5,12,9
-	.half	.L537-.L536
-	.byte	1,5,5,9
-	.half	.L538-.L537
-	.byte	3,2,1,5,34,9
-	.half	.L539-.L538
-	.byte	1,5,49,9
-	.half	.L540-.L539
-	.byte	1,5,32,9
-	.half	.L541-.L540
-	.byte	1,5,5,9
-	.half	.L542-.L541
-	.byte	3,1,1,5,49,9
-	.half	.L242-.L542
-	.byte	1,5,32,9
-	.half	.L243-.L242
-	.byte	1,5,38,9
-	.half	.L543-.L243
-	.byte	3,3,1,5,37,9
-	.half	.L544-.L543
-	.byte	1,5,48,9
-	.half	.L545-.L544
-	.byte	1,5,46,9
-	.half	.L546-.L545
-	.byte	1,5,38,9
-	.half	.L547-.L546
-	.byte	3,1,1,5,48,9
-	.half	.L548-.L547
-	.byte	1,5,46,9
-	.half	.L549-.L548
+	.byte	1,5,27,9
+	.half	.L529-.L528
 	.byte	1,5,1,9
-	.half	.L550-.L549
+	.half	.L530-.L529
 	.byte	3,1,1,7,9
-	.half	.L97-.L550
+	.half	.L97-.L530
 	.byte	0,1,1
-.L514:
-	.sdecl	'.debug_ranges',debug,cluster('balance_gyro_PD')
+.L507:
+	.sdecl	'.debug_ranges',debug,cluster('balance_angle_p_init')
 	.sect	'.debug_ranges'
 .L96:
-	.word	-1,.L42,0,.L97-.L42,0,0
-	.sdecl	'.debug_info',debug,cluster('balance_gyro_pd_init')
+	.word	-1,.L37,0,.L97-.L37,0,0
+	.sdecl	'.debug_info',debug,cluster('balance_gyro_PD')
 	.sect	'.debug_info'
 .L98:
-	.word	203
+	.word	281
 	.half	3
 	.word	.L99
 	.byte	4,1
@@ -22332,85 +22264,143 @@ balance_rollangle_pi:	.type	object
 	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1
 	.word	.L101,.L100
 	.byte	2
-	.word	.L49
+	.word	.L54
 	.byte	3
-	.byte	'balance_gyro_pd_init',0,1,168,2,6,1,1,1
-	.word	.L44,.L195,.L43
+	.byte	'balance_gyro_PD',0,1,165,2,6,1,1,1
+	.word	.L47,.L195,.L46
 	.byte	4
-	.word	.L44,.L195
-	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('balance_gyro_pd_init')
+	.byte	'gyro',0,1,165,2,28
+	.word	.L173,.L196
+	.byte	4
+	.byte	'angle_banlance_error',0,1,165,2,39
+	.word	.L173,.L197
+	.byte	5
+	.word	.L47,.L195
+	.byte	6
+	.byte	'PWM_compensation',0,1,167,2,9
+	.word	.L198,.L199
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('balance_gyro_PD')
 	.sect	'.debug_abbrev'
 .L99:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
-	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('balance_gyro_pd_init')
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('balance_gyro_PD')
 	.sect	'.debug_line'
 .L100:
-	.word	.L552-.L551
-.L551:
+	.word	.L532-.L531
+.L531:
 	.half	3
-	.word	.L554-.L553
-.L553:
+	.word	.L534-.L533
+.L533:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/balance.c',0,0,0,0,0
-.L554:
-	.byte	5,5,7,0,5,2
-	.word	.L44
-	.byte	3,169,2,1,5,26,9
-	.half	.L555-.L44
-	.byte	1,5,24,9
-	.half	.L556-.L555
+.L534:
+	.byte	5,6,7,0,5,2
+	.word	.L47
+	.byte	3,164,2,1,5,5,9
+	.half	.L535-.L47
+	.byte	3,4,1,5,50,9
+	.half	.L240-.L535
+	.byte	1,5,27,9
+	.half	.L241-.L240
 	.byte	1,5,5,9
+	.half	.L536-.L241
+	.byte	3,2,1,5,144,1,9
+	.half	.L537-.L536
+	.byte	1,5,159,1,9
+	.half	.L538-.L537
+	.byte	1,5,179,1,9
+	.half	.L239-.L538
+	.byte	1,5,188,1,9
+	.half	.L242-.L239
+	.byte	1,5,203,1,9
+	.half	.L539-.L242
+	.byte	1,5,186,1,9
+	.half	.L540-.L539
+	.byte	1,5,185,1,9
+	.half	.L541-.L540
+	.byte	1,5,215,1,9
+	.half	.L542-.L541
+	.byte	1,5,230,1,9
+	.half	.L543-.L542
+	.byte	1,5,214,1,9
+	.half	.L544-.L543
+	.byte	1,5,25,9
+	.half	.L545-.L544
+	.byte	1,5,40,9
+	.half	.L546-.L545
+	.byte	1,5,62,9
+	.half	.L243-.L546
+	.byte	1,5,71,9
+	.half	.L244-.L243
+	.byte	1,5,86,9
+	.half	.L547-.L244
+	.byte	1,5,69,9
+	.half	.L548-.L547
+	.byte	1,5,101,9
+	.half	.L549-.L548
+	.byte	1,5,116,9
+	.half	.L550-.L549
+	.byte	1,5,135,1,9
+	.half	.L245-.L550
+	.byte	1,5,119,9
+	.half	.L246-.L245
+	.byte	1,5,99,9
+	.half	.L551-.L246
+	.byte	1,5,142,1,9
+	.half	.L552-.L551
+	.byte	1,5,23,9
+	.half	.L238-.L552
+	.byte	1,5,5,9
+	.half	.L553-.L238
+	.byte	3,1,1,5,14,9
+	.half	.L554-.L553
+	.byte	1,5,12,9
+	.half	.L555-.L554
+	.byte	1,5,5,9
+	.half	.L556-.L555
+	.byte	3,2,1,5,34,9
 	.half	.L557-.L556
-	.byte	3,1,1,5,26,9
+	.byte	1,5,49,9
 	.half	.L558-.L557
-	.byte	1,5,24,9
+	.byte	1,5,32,9
 	.half	.L559-.L558
 	.byte	1,5,5,9
 	.half	.L560-.L559
-	.byte	3,1,1,5,26,9
-	.half	.L561-.L560
-	.byte	1,5,24,9
+	.byte	3,1,1,5,49,9
+	.half	.L247-.L560
+	.byte	1,5,32,9
+	.half	.L248-.L247
+	.byte	1,5,38,9
+	.half	.L561-.L248
+	.byte	3,3,1,5,37,9
 	.half	.L562-.L561
-	.byte	1,5,5,9
+	.byte	1,5,48,9
 	.half	.L563-.L562
-	.byte	3,1,1,5,34,9
+	.byte	1,5,46,9
 	.half	.L564-.L563
-	.byte	1,5,32,9
+	.byte	1,5,38,9
 	.half	.L565-.L564
-	.byte	1,5,5,9
+	.byte	3,1,1,5,48,9
 	.half	.L566-.L565
-	.byte	3,1,1,5,34,9
+	.byte	1,5,46,9
 	.half	.L567-.L566
-	.byte	1,5,32,9
-	.half	.L568-.L567
-	.byte	1,5,5,9
-	.half	.L569-.L568
-	.byte	3,1,1,5,34,9
-	.half	.L570-.L569
-	.byte	1,5,32,9
-	.half	.L571-.L570
-	.byte	1,5,5,9
-	.half	.L572-.L571
-	.byte	3,1,1,5,29,9
-	.half	.L573-.L572
-	.byte	1,5,27,9
-	.half	.L574-.L573
 	.byte	1,5,1,9
-	.half	.L575-.L574
+	.half	.L568-.L567
 	.byte	3,1,1,7,9
-	.half	.L102-.L575
+	.half	.L102-.L568
 	.byte	0,1,1
-.L552:
-	.sdecl	'.debug_ranges',debug,cluster('balance_gyro_pd_init')
+.L532:
+	.sdecl	'.debug_ranges',debug,cluster('balance_gyro_PD')
 	.sect	'.debug_ranges'
 .L101:
-	.word	-1,.L44,0,.L102-.L44,0,0
-	.sdecl	'.debug_info',debug,cluster('balance_gyro_weizhi_PD')
+	.word	-1,.L47,0,.L102-.L47,0,0
+	.sdecl	'.debug_info',debug,cluster('balance_gyro_pd_init')
 	.sect	'.debug_info'
 .L103:
-	.word	288
+	.word	203
 	.half	3
 	.word	.L104
 	.byte	4,1
@@ -22419,95 +22409,85 @@ balance_rollangle_pi:	.type	object
 	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1
 	.word	.L106,.L105
 	.byte	2
-	.word	.L49
+	.word	.L54
 	.byte	3
-	.byte	'balance_gyro_weizhi_PD',0,1,213,1,6,1,1,1
-	.word	.L34,.L196,.L33
+	.byte	'balance_gyro_pd_init',0,1,182,2,6,1,1,1
+	.word	.L49,.L200,.L48
 	.byte	4
-	.byte	'gyro',0,1,213,1,35
-	.word	.L168,.L197
-	.byte	4
-	.byte	'angle_banlance_error',0,1,213,1,46
-	.word	.L168,.L198
-	.byte	5
-	.word	.L34,.L196
-	.byte	6
-	.byte	'PWM_compensation',0,1,215,1,9
-	.word	.L193,.L199
-	.byte	0,0,0
-	.sdecl	'.debug_abbrev',debug,cluster('balance_gyro_weizhi_PD')
+	.word	.L49,.L200
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('balance_gyro_pd_init')
 	.sect	'.debug_abbrev'
 .L104:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
-	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
-	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
-	.sdecl	'.debug_line',debug,cluster('balance_gyro_weizhi_PD')
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('balance_gyro_pd_init')
 	.sect	'.debug_line'
 .L105:
-	.word	.L577-.L576
-.L576:
+	.word	.L570-.L569
+.L569:
 	.half	3
-	.word	.L579-.L578
-.L578:
+	.word	.L572-.L571
+.L571:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/balance.c',0,0,0,0,0
-.L579:
-	.byte	5,6,7,0,5,2
-	.word	.L34
-	.byte	3,212,1,1,5,5,9
-	.half	.L580-.L34
-	.byte	3,5,1,5,57,9
-	.half	.L213-.L580
-	.byte	1,5,34,9
-	.half	.L214-.L213
+.L572:
+	.byte	5,5,7,0,5,2
+	.word	.L49
+	.byte	3,183,2,1,5,26,9
+	.half	.L573-.L49
+	.byte	1,5,24,9
+	.half	.L574-.L573
 	.byte	1,5,5,9
-	.half	.L581-.L214
-	.byte	3,2,1,5,19,9
+	.half	.L575-.L574
+	.byte	3,1,1,5,26,9
+	.half	.L576-.L575
+	.byte	1,5,24,9
+	.half	.L577-.L576
+	.byte	1,5,5,9
+	.half	.L578-.L577
+	.byte	3,1,1,5,26,9
+	.half	.L579-.L578
+	.byte	1,5,24,9
+	.half	.L580-.L579
+	.byte	1,5,5,9
+	.half	.L581-.L580
+	.byte	3,1,1,5,34,9
 	.half	.L582-.L581
-	.byte	1,5,41,9
+	.byte	1,5,32,9
 	.half	.L583-.L582
-	.byte	1,5,70,9
-	.half	.L215-.L583
-	.byte	1,5,80,9
-	.half	.L216-.L215
-	.byte	1,5,102,9
-	.half	.L584-.L216
-	.byte	1,5,131,1,9
-	.half	.L217-.L584
-	.byte	1,5,140,1,9
-	.half	.L218-.L217
-	.byte	1,5,162,1,9
-	.half	.L585-.L218
-	.byte	1,5,138,1,9
-	.half	.L586-.L585
-	.byte	1,5,106,9
-	.half	.L587-.L586
-	.byte	1,5,78,9
-	.half	.L588-.L587
-	.byte	1,5,17,9
-	.half	.L211-.L588
 	.byte	1,5,5,9
-	.half	.L589-.L211
-	.byte	3,1,1,5,63,9
-	.half	.L219-.L589
-	.byte	1,5,39,9
-	.half	.L220-.L219
-	.byte	1,5,31,9
-	.half	.L590-.L220
-	.byte	3,2,1,5,1,9
+	.half	.L584-.L583
+	.byte	3,1,1,5,34,9
+	.half	.L585-.L584
+	.byte	1,5,32,9
+	.half	.L586-.L585
+	.byte	1,5,5,9
+	.half	.L587-.L586
+	.byte	3,1,1,5,34,9
+	.half	.L588-.L587
+	.byte	1,5,32,9
+	.half	.L589-.L588
+	.byte	1,5,5,9
+	.half	.L590-.L589
+	.byte	3,1,1,5,29,9
 	.half	.L591-.L590
-	.byte	3,3,1,7,9
-	.half	.L107-.L591
+	.byte	1,5,27,9
+	.half	.L592-.L591
+	.byte	1,5,1,9
+	.half	.L593-.L592
+	.byte	3,1,1,7,9
+	.half	.L107-.L593
 	.byte	0,1,1
-.L577:
-	.sdecl	'.debug_ranges',debug,cluster('balance_gyro_weizhi_PD')
+.L570:
+	.sdecl	'.debug_ranges',debug,cluster('balance_gyro_pd_init')
 	.sect	'.debug_ranges'
 .L106:
-	.word	-1,.L34,0,.L107-.L34,0,0
-	.sdecl	'.debug_info',debug,cluster('balance_gyro_weizhi_pd_init')
+	.word	-1,.L49,0,.L107-.L49,0,0
+	.sdecl	'.debug_info',debug,cluster('balance_gyro_weizhi_PD')
 	.sect	'.debug_info'
 .L108:
-	.word	210
+	.word	288
 	.half	3
 	.word	.L109
 	.byte	4,1
@@ -22516,85 +22496,95 @@ balance_rollangle_pi:	.type	object
 	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1
 	.word	.L111,.L110
 	.byte	2
-	.word	.L49
+	.word	.L54
 	.byte	3
-	.byte	'balance_gyro_weizhi_pd_init',0,1,228,1,6,1,1,1
-	.word	.L36,.L200,.L35
+	.byte	'balance_gyro_weizhi_PD',0,1,213,1,6,1,1,1
+	.word	.L39,.L201,.L38
 	.byte	4
-	.word	.L36,.L200
-	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('balance_gyro_weizhi_pd_init')
+	.byte	'gyro',0,1,213,1,35
+	.word	.L173,.L202
+	.byte	4
+	.byte	'angle_banlance_error',0,1,213,1,46
+	.word	.L173,.L203
+	.byte	5
+	.word	.L39,.L201
+	.byte	6
+	.byte	'PWM_compensation',0,1,215,1,9
+	.word	.L198,.L204
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('balance_gyro_weizhi_PD')
 	.sect	'.debug_abbrev'
 .L109:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
-	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('balance_gyro_weizhi_pd_init')
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('balance_gyro_weizhi_PD')
 	.sect	'.debug_line'
 .L110:
-	.word	.L593-.L592
-.L592:
-	.half	3
 	.word	.L595-.L594
 .L594:
+	.half	3
+	.word	.L597-.L596
+.L596:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/balance.c',0,0,0,0,0
-.L595:
-	.byte	5,5,7,0,5,2
-	.word	.L36
-	.byte	3,229,1,1,5,33,9
-	.half	.L596-.L36
-	.byte	1,5,31,9
-	.half	.L597-.L596
-	.byte	1,5,5,9
-	.half	.L598-.L597
-	.byte	3,1,1,5,33,9
-	.half	.L599-.L598
-	.byte	1,5,31,9
-	.half	.L600-.L599
-	.byte	1,5,5,9
-	.half	.L601-.L600
-	.byte	3,1,1,5,33,9
-	.half	.L602-.L601
-	.byte	1,5,31,9
-	.half	.L603-.L602
-	.byte	1,5,5,9
-	.half	.L604-.L603
-	.byte	3,1,1,5,41,9
-	.half	.L605-.L604
-	.byte	1,5,39,9
-	.half	.L606-.L605
-	.byte	1,5,5,9
-	.half	.L607-.L606
-	.byte	3,1,1,5,41,9
-	.half	.L608-.L607
-	.byte	1,5,39,9
-	.half	.L609-.L608
-	.byte	1,5,5,9
-	.half	.L610-.L609
-	.byte	3,1,1,5,41,9
-	.half	.L611-.L610
-	.byte	1,5,39,9
-	.half	.L612-.L611
-	.byte	1,5,5,9
-	.half	.L613-.L612
-	.byte	3,1,1,5,36,9
-	.half	.L614-.L613
+.L597:
+	.byte	5,6,7,0,5,2
+	.word	.L39
+	.byte	3,212,1,1,5,5,9
+	.half	.L598-.L39
+	.byte	3,5,1,5,57,9
+	.half	.L218-.L598
 	.byte	1,5,34,9
-	.half	.L615-.L614
-	.byte	1,5,1,9
-	.half	.L616-.L615
-	.byte	3,1,1,7,9
-	.half	.L112-.L616
+	.half	.L219-.L218
+	.byte	1,5,5,9
+	.half	.L599-.L219
+	.byte	3,2,1,5,19,9
+	.half	.L600-.L599
+	.byte	1,5,41,9
+	.half	.L601-.L600
+	.byte	1,5,70,9
+	.half	.L220-.L601
+	.byte	1,5,80,9
+	.half	.L221-.L220
+	.byte	1,5,102,9
+	.half	.L602-.L221
+	.byte	1,5,131,1,9
+	.half	.L222-.L602
+	.byte	1,5,140,1,9
+	.half	.L223-.L222
+	.byte	1,5,162,1,9
+	.half	.L603-.L223
+	.byte	1,5,138,1,9
+	.half	.L604-.L603
+	.byte	1,5,106,9
+	.half	.L605-.L604
+	.byte	1,5,78,9
+	.half	.L606-.L605
+	.byte	1,5,17,9
+	.half	.L216-.L606
+	.byte	1,5,5,9
+	.half	.L607-.L216
+	.byte	3,1,1,5,63,9
+	.half	.L224-.L607
+	.byte	1,5,39,9
+	.half	.L225-.L224
+	.byte	1,5,31,9
+	.half	.L608-.L225
+	.byte	3,2,1,5,1,9
+	.half	.L609-.L608
+	.byte	3,3,1,7,9
+	.half	.L112-.L609
 	.byte	0,1,1
-.L593:
-	.sdecl	'.debug_ranges',debug,cluster('balance_gyro_weizhi_pd_init')
+.L595:
+	.sdecl	'.debug_ranges',debug,cluster('balance_gyro_weizhi_PD')
 	.sect	'.debug_ranges'
 .L111:
-	.word	-1,.L36,0,.L112-.L36,0,0
-	.sdecl	'.debug_info',debug,cluster('balance_rollangle_PI')
+	.word	-1,.L39,0,.L112-.L39,0,0
+	.sdecl	'.debug_info',debug,cluster('balance_gyro_weizhi_pd_init')
 	.sect	'.debug_info'
 .L113:
-	.word	249
+	.word	210
 	.half	3
 	.word	.L114
 	.byte	4,1
@@ -22603,101 +22593,85 @@ balance_rollangle_pi:	.type	object
 	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1
 	.word	.L116,.L115
 	.byte	2
-	.word	.L49
+	.word	.L54
 	.byte	3
-	.byte	'balance_rollangle_PI',0,1,184,2,7
-	.word	.L168
-	.byte	1,1,1
-	.word	.L46,.L201,.L45
+	.byte	'balance_gyro_weizhi_pd_init',0,1,228,1,6,1,1,1
+	.word	.L41,.L205,.L40
 	.byte	4
-	.byte	'roll',0,1,184,2,34
-	.word	.L168,.L202
-	.byte	4
-	.byte	'expectroll',0,1,184,2,45
-	.word	.L168,.L203
-	.byte	5
-	.word	.L46,.L201
+	.word	.L41,.L205
 	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('balance_rollangle_PI')
+	.sdecl	'.debug_abbrev',debug,cluster('balance_gyro_weizhi_pd_init')
 	.sect	'.debug_abbrev'
 .L114:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
-	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('balance_rollangle_PI')
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('balance_gyro_weizhi_pd_init')
 	.sect	'.debug_line'
 .L115:
-	.word	.L618-.L617
-.L617:
+	.word	.L611-.L610
+.L610:
 	.half	3
-	.word	.L620-.L619
-.L619:
+	.word	.L613-.L612
+.L612:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/balance.c',0,0,0,0,0
-.L620:
+.L613:
 	.byte	5,5,7,0,5,2
-	.word	.L46
-	.byte	3,186,2,1,5,45,9
-	.half	.L621-.L46
-	.byte	1,5,32,9
+	.word	.L41
+	.byte	3,229,1,1,5,33,9
+	.half	.L614-.L41
+	.byte	1,5,31,9
+	.half	.L615-.L614
+	.byte	1,5,5,9
+	.half	.L616-.L615
+	.byte	3,1,1,5,33,9
+	.half	.L617-.L616
+	.byte	1,5,31,9
+	.half	.L618-.L617
+	.byte	1,5,5,9
+	.half	.L619-.L618
+	.byte	3,1,1,5,33,9
+	.half	.L620-.L619
+	.byte	1,5,31,9
+	.half	.L621-.L620
+	.byte	1,5,5,9
 	.half	.L622-.L621
-	.byte	1,5,5,9
+	.byte	3,1,1,5,41,9
 	.half	.L623-.L622
-	.byte	3,4,1,5,18,9
+	.byte	1,5,39,9
 	.half	.L624-.L623
-	.byte	1,5,38,9
+	.byte	1,5,5,9
 	.half	.L625-.L624
-	.byte	1,5,65,9
+	.byte	3,1,1,5,41,9
 	.half	.L626-.L625
-	.byte	1,5,75,9
+	.byte	1,5,39,9
 	.half	.L627-.L626
-	.byte	1,5,95,9
+	.byte	1,5,5,9
 	.half	.L628-.L627
-	.byte	1,5,122,9
+	.byte	3,1,1,5,41,9
 	.half	.L629-.L628
-	.byte	1,5,131,1,9
+	.byte	1,5,39,9
 	.half	.L630-.L629
-	.byte	1,5,151,1,9
+	.byte	1,5,5,9
 	.half	.L631-.L630
-	.byte	1,5,129,1,9
+	.byte	3,1,1,5,36,9
 	.half	.L632-.L631
-	.byte	1,5,99,9
+	.byte	1,5,34,9
 	.half	.L633-.L632
-	.byte	1,5,73,9
-	.half	.L634-.L633
-	.byte	1,5,16,9
-	.half	.L635-.L634
-	.byte	1,5,5,9
-	.half	.L636-.L635
-	.byte	3,2,1,5,39,9
-	.half	.L637-.L636
-	.byte	1,5,59,9
-	.half	.L638-.L637
-	.byte	1,5,37,9
-	.half	.L639-.L638
-	.byte	1,5,5,9
-	.half	.L640-.L639
-	.byte	3,1,1,5,59,9
-	.half	.L641-.L640
-	.byte	1,5,37,9
-	.half	.L642-.L641
-	.byte	1,5,12,9
-	.half	.L643-.L642
-	.byte	3,2,1,5,5,9
-	.half	.L644-.L643
 	.byte	1,5,1,9
-	.half	.L20-.L644
+	.half	.L634-.L633
 	.byte	3,1,1,7,9
-	.half	.L117-.L20
+	.half	.L117-.L634
 	.byte	0,1,1
-.L618:
-	.sdecl	'.debug_ranges',debug,cluster('balance_rollangle_PI')
+.L611:
+	.sdecl	'.debug_ranges',debug,cluster('balance_gyro_weizhi_pd_init')
 	.sect	'.debug_ranges'
 .L116:
-	.word	-1,.L46,0,.L117-.L46,0,0
-	.sdecl	'.debug_info',debug,cluster('balance_rollangle_pi_init')
+	.word	-1,.L41,0,.L117-.L41,0,0
+	.sdecl	'.debug_info',debug,cluster('balance_rollangle_PI')
 	.sect	'.debug_info'
 .L118:
-	.word	208
+	.word	249
 	.half	3
 	.word	.L119
 	.byte	4,1
@@ -22706,845 +22680,948 @@ balance_rollangle_pi:	.type	object
 	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1
 	.word	.L121,.L120
 	.byte	2
-	.word	.L49
+	.word	.L54
 	.byte	3
-	.byte	'balance_rollangle_pi_init',0,1,200,2,6,1,1,1
-	.word	.L48,.L204,.L47
+	.byte	'balance_rollangle_PI',0,1,198,2,7
+	.word	.L173
+	.byte	1,1,1
+	.word	.L51,.L206,.L50
 	.byte	4
-	.word	.L48,.L204
+	.byte	'roll',0,1,198,2,34
+	.word	.L173,.L207
+	.byte	4
+	.byte	'expectroll',0,1,198,2,45
+	.word	.L173,.L208
+	.byte	5
+	.word	.L51,.L206
 	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('balance_rollangle_pi_init')
+	.sdecl	'.debug_abbrev',debug,cluster('balance_rollangle_PI')
 	.sect	'.debug_abbrev'
 .L119:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
-	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('balance_rollangle_pi_init')
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('balance_rollangle_PI')
 	.sect	'.debug_line'
 .L120:
-	.word	.L646-.L645
-.L645:
+	.word	.L636-.L635
+.L635:
 	.half	3
-	.word	.L648-.L647
-.L647:
+	.word	.L638-.L637
+.L637:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/balance.c',0,0,0,0,0
-.L648:
+.L638:
 	.byte	5,5,7,0,5,2
-	.word	.L48
-	.byte	3,201,2,1,5,31,9
-	.half	.L649-.L48
-	.byte	1,5,29,9
-	.half	.L650-.L649
+	.word	.L51
+	.byte	3,200,2,1,5,45,9
+	.half	.L639-.L51
+	.byte	1,5,32,9
+	.half	.L640-.L639
 	.byte	1,5,5,9
+	.half	.L641-.L640
+	.byte	3,4,1,5,18,9
+	.half	.L642-.L641
+	.byte	1,5,38,9
+	.half	.L643-.L642
+	.byte	1,5,65,9
+	.half	.L644-.L643
+	.byte	1,5,75,9
+	.half	.L645-.L644
+	.byte	1,5,95,9
+	.half	.L646-.L645
+	.byte	1,5,122,9
+	.half	.L647-.L646
+	.byte	1,5,131,1,9
+	.half	.L648-.L647
+	.byte	1,5,151,1,9
+	.half	.L649-.L648
+	.byte	1,5,129,1,9
+	.half	.L650-.L649
+	.byte	1,5,99,9
 	.half	.L651-.L650
-	.byte	3,1,1,5,31,9
+	.byte	1,5,73,9
 	.half	.L652-.L651
-	.byte	1,5,29,9
+	.byte	1,5,16,9
 	.half	.L653-.L652
 	.byte	1,5,5,9
 	.half	.L654-.L653
-	.byte	3,1,1,5,31,9
+	.byte	3,2,1,5,39,9
 	.half	.L655-.L654
-	.byte	1,5,29,9
+	.byte	1,5,59,9
 	.half	.L656-.L655
-	.byte	1,5,5,9
+	.byte	1,5,37,9
 	.half	.L657-.L656
-	.byte	3,1,1,5,39,9
+	.byte	1,5,5,9
 	.half	.L658-.L657
-	.byte	1,5,37,9
+	.byte	3,1,1,5,59,9
 	.half	.L659-.L658
-	.byte	1,5,5,9
+	.byte	1,5,37,9
 	.half	.L660-.L659
-	.byte	3,1,1,5,39,9
+	.byte	1,5,12,9
 	.half	.L661-.L660
-	.byte	1,5,37,9
+	.byte	3,2,1,5,5,9
 	.half	.L662-.L661
-	.byte	1,5,5,9
-	.half	.L663-.L662
-	.byte	3,1,1,5,39,9
-	.half	.L664-.L663
-	.byte	1,5,37,9
-	.half	.L665-.L664
-	.byte	1,5,5,9
-	.half	.L666-.L665
-	.byte	3,1,1,5,34,9
-	.half	.L667-.L666
-	.byte	1,5,32,9
-	.half	.L668-.L667
 	.byte	1,5,1,9
-	.half	.L669-.L668
+	.half	.L25-.L662
 	.byte	3,1,1,7,9
-	.half	.L122-.L669
+	.half	.L122-.L25
 	.byte	0,1,1
-.L646:
-	.sdecl	'.debug_ranges',debug,cluster('balance_rollangle_pi_init')
+.L636:
+	.sdecl	'.debug_ranges',debug,cluster('balance_rollangle_PI')
 	.sect	'.debug_ranges'
 .L121:
-	.word	-1,.L48,0,.L122-.L48,0,0
-	.sdecl	'.debug_info',debug,cluster('momentumwheel_pwm')
+	.word	-1,.L51,0,.L122-.L51,0,0
+	.sdecl	'.debug_info',debug,cluster('balance_rollangle_pi_init')
 	.sect	'.debug_info'
 .L123:
-	.word	177
+	.word	208
 	.half	3
 	.word	.L124
 	.byte	4,1
 	.byte	'../code/balance.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1
+	.word	.L126,.L125
+	.byte	2
+	.word	.L54
+	.byte	3
+	.byte	'balance_rollangle_pi_init',0,1,214,2,6,1,1,1
+	.word	.L53,.L209,.L52
+	.byte	4
+	.word	.L53,.L209
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('balance_rollangle_pi_init')
+	.sect	'.debug_abbrev'
+.L124:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('balance_rollangle_pi_init')
+	.sect	'.debug_line'
+.L125:
+	.word	.L664-.L663
+.L663:
+	.half	3
+	.word	.L666-.L665
+.L665:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/balance.c',0,0,0,0,0
+.L666:
+	.byte	5,5,7,0,5,2
+	.word	.L53
+	.byte	3,215,2,1,5,31,9
+	.half	.L667-.L53
+	.byte	1,5,29,9
+	.half	.L668-.L667
+	.byte	1,5,5,9
+	.half	.L669-.L668
+	.byte	3,1,1,5,31,9
+	.half	.L670-.L669
+	.byte	1,5,29,9
+	.half	.L671-.L670
+	.byte	1,5,5,9
+	.half	.L672-.L671
+	.byte	3,1,1,5,31,9
+	.half	.L673-.L672
+	.byte	1,5,29,9
+	.half	.L674-.L673
+	.byte	1,5,5,9
+	.half	.L675-.L674
+	.byte	3,1,1,5,39,9
+	.half	.L676-.L675
+	.byte	1,5,37,9
+	.half	.L677-.L676
+	.byte	1,5,5,9
+	.half	.L678-.L677
+	.byte	3,1,1,5,39,9
+	.half	.L679-.L678
+	.byte	1,5,37,9
+	.half	.L680-.L679
+	.byte	1,5,5,9
+	.half	.L681-.L680
+	.byte	3,1,1,5,39,9
+	.half	.L682-.L681
+	.byte	1,5,37,9
+	.half	.L683-.L682
+	.byte	1,5,5,9
+	.half	.L684-.L683
+	.byte	3,1,1,5,34,9
+	.half	.L685-.L684
+	.byte	1,5,32,9
+	.half	.L686-.L685
+	.byte	1,5,1,9
+	.half	.L687-.L686
+	.byte	3,1,1,7,9
+	.half	.L127-.L687
+	.byte	0,1,1
+.L664:
+	.sdecl	'.debug_ranges',debug,cluster('balance_rollangle_pi_init')
+	.sect	'.debug_ranges'
+.L126:
+	.word	-1,.L53,0,.L127-.L53,0,0
+	.sdecl	'.debug_info',debug,cluster('momentumwheel_pwm')
+	.sect	'.debug_info'
+.L128:
+	.word	177
+	.half	3
+	.word	.L129
+	.byte	4,1
+	.byte	'../code/balance.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1,2
-	.word	.L49
+	.word	.L54
 	.byte	3
 	.byte	'momentumwheel_pwm',0,25,6,7
-	.word	.L205
+	.word	.L210
 	.byte	1,5,3
 	.word	momentumwheel_pwm
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('momentumwheel_pwm')
 	.sect	'.debug_abbrev'
-.L124:
+.L129:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_info',debug,cluster('motor_pwm')
 	.sect	'.debug_info'
-.L125:
+.L130:
 	.word	169
 	.half	3
-	.word	.L126
+	.word	.L131
 	.byte	4,1
 	.byte	'../code/balance.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1,2
-	.word	.L49
+	.word	.L54
 	.byte	3
 	.byte	'motor_pwm',0,25,7,7
-	.word	.L205
+	.word	.L210
 	.byte	1,5,3
 	.word	motor_pwm
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('motor_pwm')
 	.sect	'.debug_abbrev'
-.L126:
+.L131:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_info',debug,cluster('balance_pwm')
 	.sect	'.debug_info'
-.L127:
+.L132:
 	.word	171
 	.half	3
-	.word	.L128
+	.word	.L133
 	.byte	4,1
 	.byte	'../code/balance.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1,2
-	.word	.L49
+	.word	.L54
 	.byte	3
 	.byte	'balance_pwm',0,25,8,7
-	.word	.L205
+	.word	.L210
 	.byte	1,5,3
 	.word	balance_pwm
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('balance_pwm')
 	.sect	'.debug_abbrev'
-.L128:
+.L133:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_info',debug,cluster('balance_velocity_PID_Encoder')
 	.sect	'.debug_info'
-.L129:
+.L134:
 	.word	188
 	.half	3
-	.word	.L130
+	.word	.L135
 	.byte	4,1
 	.byte	'../code/balance.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1,2
-	.word	.L49
+	.word	.L54
 	.byte	3
 	.byte	'balance_velocity_PID_Encoder',0,25,13,7
-	.word	.L168
+	.word	.L173
 	.byte	1,5,3
 	.word	balance_velocity_PID_Encoder
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('balance_velocity_PID_Encoder')
 	.sect	'.debug_abbrev'
-.L130:
+.L135:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_info',debug,cluster('PWM_OUT')
 	.sect	'.debug_info'
-.L131:
+.L136:
 	.word	167
 	.half	3
-	.word	.L132
+	.word	.L137
 	.byte	4,1
 	.byte	'../code/balance.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1,2
-	.word	.L49
+	.word	.L54
 	.byte	3
 	.byte	'PWM_OUT',0,25,10,5
-	.word	.L193
+	.word	.L198
 	.byte	1,5,3
 	.word	PWM_OUT
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('PWM_OUT')
 	.sect	'.debug_abbrev'
-.L132:
+.L137:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_info',debug,cluster('PWM_OUT_sudu')
 	.sect	'.debug_info'
-.L133:
+.L138:
 	.word	172
 	.half	3
-	.word	.L134
+	.word	.L139
 	.byte	4,1
 	.byte	'../code/balance.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1,2
-	.word	.L49
+	.word	.L54
 	.byte	3
 	.byte	'PWM_OUT_sudu',0,25,11,5
-	.word	.L193
+	.word	.L198
 	.byte	1,5,3
 	.word	PWM_OUT_sudu
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('PWM_OUT_sudu')
 	.sect	'.debug_abbrev'
-.L134:
+.L139:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_info',debug,cluster('Expectroll')
 	.sect	'.debug_info'
-.L135:
+.L140:
 	.word	170
 	.half	3
-	.word	.L136
+	.word	.L141
 	.byte	4,1
 	.byte	'../code/balance.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1,2
-	.word	.L49
+	.word	.L54
 	.byte	3
 	.byte	'Expectroll',0,25,12,7
-	.word	.L168
+	.word	.L173
 	.byte	1,5,3
 	.word	Expectroll
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('Expectroll')
 	.sect	'.debug_abbrev'
-.L136:
+.L141:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_info',debug,cluster('Expectroll_T')
 	.sect	'.debug_info'
-.L137:
+.L142:
 	.word	172
 	.half	3
-	.word	.L138
+	.word	.L143
 	.byte	4,1
 	.byte	'../code/balance.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1,2
-	.word	.L49
+	.word	.L54
 	.byte	3
 	.byte	'Expectroll_T',0,25,17,7
-	.word	.L168
+	.word	.L173
 	.byte	1,5,3
 	.word	Expectroll_T
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('Expectroll_T')
 	.sect	'.debug_abbrev'
-.L138:
+.L143:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_info',debug,cluster('balance_encoder_pd')
 	.sect	'.debug_info'
-.L139:
+.L144:
 	.word	178
 	.half	3
-	.word	.L140
+	.word	.L145
 	.byte	4,1
 	.byte	'../code/balance.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1,2
-	.word	.L49
+	.word	.L54
 	.byte	3
 	.byte	'balance_encoder_pd',0,25,35,20
-	.word	.L206
+	.word	.L211
 	.byte	1,5,3
 	.word	balance_encoder_pd
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('balance_encoder_pd')
 	.sect	'.debug_abbrev'
-.L140:
+.L145:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_info',debug,cluster('balance_location_pid')
 	.sect	'.debug_info'
-.L141:
+.L146:
 	.word	180
 	.half	3
-	.word	.L142
+	.word	.L147
 	.byte	4,1
 	.byte	'../code/balance.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1,2
-	.word	.L49
+	.word	.L54
 	.byte	3
 	.byte	'balance_location_pid',0,25,34,20
-	.word	.L206
+	.word	.L211
 	.byte	1,5,3
 	.word	balance_location_pid
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('balance_location_pid')
 	.sect	'.debug_abbrev'
-.L142:
+.L147:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_info',debug,cluster('balance_velocity_pid')
 	.sect	'.debug_info'
-.L143:
+.L148:
 	.word	180
 	.half	3
-	.word	.L144
+	.word	.L149
 	.byte	4,1
 	.byte	'../code/balance.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1,2
-	.word	.L49
+	.word	.L54
 	.byte	3
 	.byte	'balance_velocity_pid',0,25,30,20
-	.word	.L206
+	.word	.L211
 	.byte	1,5,3
 	.word	balance_velocity_pid
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('balance_velocity_pid')
 	.sect	'.debug_abbrev'
-.L144:
+.L149:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_info',debug,cluster('balance_angle_p')
 	.sect	'.debug_info'
-.L145:
+.L150:
 	.word	175
 	.half	3
-	.word	.L146
+	.word	.L151
 	.byte	4,1
 	.byte	'../code/balance.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1,2
-	.word	.L49
+	.word	.L54
 	.byte	3
 	.byte	'balance_angle_p',0,25,31,20
-	.word	.L206
+	.word	.L211
 	.byte	1,5,3
 	.word	balance_angle_p
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('balance_angle_p')
 	.sect	'.debug_abbrev'
-.L146:
+.L151:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_info',debug,cluster('balance_gyro_pd')
 	.sect	'.debug_info'
-.L147:
+.L152:
 	.word	175
 	.half	3
-	.word	.L148
+	.word	.L153
 	.byte	4,1
 	.byte	'../code/balance.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1,2
-	.word	.L49
+	.word	.L54
 	.byte	3
 	.byte	'balance_gyro_pd',0,25,32,20
-	.word	.L206
+	.word	.L211
 	.byte	1,5,3
 	.word	balance_gyro_pd
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('balance_gyro_pd')
 	.sect	'.debug_abbrev'
-.L148:
+.L153:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_info',debug,cluster('balance_gyro_weizhi_pd')
 	.sect	'.debug_info'
-.L149:
+.L154:
 	.word	182
 	.half	3
-	.word	.L150
+	.word	.L155
 	.byte	4,1
 	.byte	'../code/balance.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1,2
-	.word	.L49
+	.word	.L54
 	.byte	3
 	.byte	'balance_gyro_weizhi_pd',0,25,33,20
-	.word	.L206
+	.word	.L211
 	.byte	1,5,3
 	.word	balance_gyro_weizhi_pd
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('balance_gyro_weizhi_pd')
 	.sect	'.debug_abbrev'
-.L150:
+.L155:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_info',debug,cluster('balance_rollangle_pi')
 	.sect	'.debug_info'
-.L151:
+.L156:
 	.word	180
 	.half	3
-	.word	.L152
+	.word	.L157
 	.byte	4,1
 	.byte	'../code/balance.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1,2
-	.word	.L49
+	.word	.L54
 	.byte	3
 	.byte	'balance_rollangle_pi',0,25,36,20
-	.word	.L206
+	.word	.L211
 	.byte	1,5,3
 	.word	balance_rollangle_pi
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('balance_rollangle_pi')
 	.sect	'.debug_abbrev'
-.L152:
+.L157:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_info',debug,cluster('Lp_Circle')
 	.sect	'.debug_info'
-.L153:
+.L158:
 	.word	169
 	.half	3
-	.word	.L154
+	.word	.L159
 	.byte	4,1
 	.byte	'../code/balance.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1,2
-	.word	.L49
+	.word	.L54
 	.byte	3
 	.byte	'Lp_Circle',0,25,19,7
-	.word	.L168
+	.word	.L173
 	.byte	1,5,3
 	.word	Lp_Circle
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('Lp_Circle')
 	.sect	'.debug_abbrev'
-.L154:
+.L159:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_info',debug,cluster('Lp_Base')
 	.sect	'.debug_info'
-.L155:
+.L160:
 	.word	167
 	.half	3
-	.word	.L156
+	.word	.L161
 	.byte	4,1
 	.byte	'../code/balance.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1,2
-	.word	.L49
+	.word	.L54
 	.byte	3
 	.byte	'Lp_Base',0,25,20,7
-	.word	.L168
+	.word	.L173
 	.byte	1,5,3
 	.word	Lp_Base
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('Lp_Base')
 	.sect	'.debug_abbrev'
-.L156:
+.L161:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_info',debug,cluster('BASE_p_L')
 	.sect	'.debug_info'
-.L157:
+.L162:
 	.word	168
 	.half	3
-	.word	.L158
+	.word	.L163
 	.byte	4,1
 	.byte	'../code/balance.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1,2
-	.word	.L49
+	.word	.L54
 	.byte	3
 	.byte	'BASE_p_L',0,25,25,7
-	.word	.L168
+	.word	.L173
 	.byte	1,5,3
 	.word	BASE_p_L
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('BASE_p_L')
 	.sect	'.debug_abbrev'
-.L158:
+.L163:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_info',debug,cluster('BASE_p_R')
 	.sect	'.debug_info'
-.L159:
+.L164:
 	.word	168
 	.half	3
-	.word	.L160
+	.word	.L165
 	.byte	4,1
 	.byte	'../code/balance.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1,2
-	.word	.L49
+	.word	.L54
 	.byte	3
 	.byte	'BASE_p_R',0,25,26,7
-	.word	.L168
+	.word	.L173
 	.byte	1,5,3
 	.word	BASE_p_R
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('BASE_p_R')
 	.sect	'.debug_abbrev'
-.L160:
+.L165:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_info',debug,cluster('Total_roll')
 	.sect	'.debug_info'
-.L161:
+.L166:
 	.word	170
 	.half	3
-	.word	.L162
+	.word	.L167
 	.byte	4,1
 	.byte	'../code/balance.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1,2
-	.word	.L49
+	.word	.L54
 	.byte	3
 	.byte	'Total_roll',0,25,9,7
-	.word	.L168
+	.word	.L173
 	.byte	1,5,3
 	.word	Total_roll
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('Total_roll')
 	.sect	'.debug_abbrev'
-.L162:
+.L167:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_info',debug,cluster('BASE_p')
 	.sect	'.debug_info'
-.L163:
+.L168:
 	.word	166
 	.half	3
-	.word	.L164
+	.word	.L169
 	.byte	4,1
 	.byte	'../code/balance.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1,2
-	.word	.L49
+	.word	.L54
 	.byte	3
 	.byte	'BASE_p',0,25,18,7
-	.word	.L168
+	.word	.L173
 	.byte	1,5,3
 	.word	BASE_p
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('BASE_p')
 	.sect	'.debug_abbrev'
-.L164:
+.L169:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_info',debug,cluster('BASE_p2')
 	.sect	'.debug_info'
-.L165:
+.L170:
 	.word	167
 	.half	3
-	.word	.L166
+	.word	.L171
 	.byte	4,1
 	.byte	'../code/balance.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'H:\\13333\\COMPETE DOUCMENT\\Debug\\',0,12,1,2
-	.word	.L49
+	.word	.L54
 	.byte	3
 	.byte	'BASE_p2',0,25,27,7
-	.word	.L168
+	.word	.L173
 	.byte	1,5,3
 	.word	BASE_p2
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('BASE_p2')
 	.sect	'.debug_abbrev'
-.L166:
+.L171:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_loc',debug,cluster('balance_angle_P')
 	.sect	'.debug_loc'
-.L186:
-	.word	-1,.L30,0,.L184-.L30
+.L191:
+	.word	-1,.L35,0,.L189-.L35
 	.half	1
 	.byte	85
 	.word	0,0
-.L188:
-	.word	-1,.L30,.L210-.L30,.L184-.L30
+.L193:
+	.word	-1,.L35,.L215-.L35,.L189-.L35
 	.half	1
 	.byte	82
 	.word	0,0
-.L29:
-	.word	-1,.L30,0,.L184-.L30
+.L34:
+	.word	-1,.L35,0,.L189-.L35
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L187:
+.L192:
 	.word	0,0
-.L185:
-	.word	-1,.L30,0,.L184-.L30
+.L190:
+	.word	-1,.L35,0,.L189-.L35
 	.half	1
 	.byte	84
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('balance_angle_p_init')
 	.sect	'.debug_loc'
-.L31:
-	.word	-1,.L32,0,.L189-.L32
+.L36:
+	.word	-1,.L37,0,.L194-.L37
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('balance_encoder_PD')
 	.sect	'.debug_loc'
-.L37:
-	.word	-1,.L38,0,.L167-.L38
+.L42:
+	.word	-1,.L43,0,.L172-.L43
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L169:
-	.word	-1,.L38,0,.L221-.L38
+.L174:
+	.word	-1,.L43,0,.L226-.L43
 	.half	1
 	.byte	84
-	.word	.L223-.L38,.L224-.L38
+	.word	.L228-.L43,.L229-.L43
 	.half	1
 	.byte	88
-	.word	.L225-.L38,.L226-.L38
+	.word	.L230-.L43,.L231-.L43
 	.half	1
 	.byte	88
-	.word	.L227-.L38,.L228-.L38
+	.word	.L232-.L43,.L233-.L43
 	.half	1
 	.byte	88
-	.word	.L229-.L38,.L230-.L38
+	.word	.L234-.L43,.L235-.L43
 	.half	1
 	.byte	88
-	.word	.L231-.L38,.L232-.L38
+	.word	.L236-.L43,.L237-.L43
 	.half	1
 	.byte	88
 	.word	0,0
-.L170:
-	.word	-1,.L38,0,.L222-.L38
+.L175:
+	.word	-1,.L43,0,.L227-.L43
 	.half	1
 	.byte	85
-	.word	.L223-.L38,.L224-.L38
+	.word	.L228-.L43,.L229-.L43
 	.half	1
 	.byte	89
-	.word	.L225-.L38,.L226-.L38
+	.word	.L230-.L43,.L231-.L43
 	.half	1
 	.byte	89
-	.word	.L227-.L38,.L228-.L38
+	.word	.L232-.L43,.L233-.L43
 	.half	1
 	.byte	89
-	.word	.L229-.L38,.L230-.L38
+	.word	.L234-.L43,.L235-.L43
 	.half	1
 	.byte	89
-	.word	.L231-.L38,.L232-.L38
+	.word	.L236-.L43,.L237-.L43
 	.half	1
 	.byte	89
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('balance_encoder_pd_init')
 	.sect	'.debug_loc'
-.L39:
-	.word	-1,.L40,0,.L171-.L40
+.L44:
+	.word	-1,.L45,0,.L176-.L45
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('balance_gyro_PD')
 	.sect	'.debug_loc'
-.L194:
+.L199:
 	.word	0,0
-.L192:
-	.word	-1,.L42,0,.L233-.L42
+.L197:
+	.word	-1,.L47,0,.L238-.L47
 	.half	1
 	.byte	85
-	.word	.L235-.L42,.L236-.L42
+	.word	.L240-.L47,.L241-.L47
 	.half	1
 	.byte	89
-	.word	.L234-.L42,.L237-.L42
+	.word	.L239-.L47,.L242-.L47
 	.half	1
 	.byte	89
-	.word	.L238-.L42,.L239-.L42
+	.word	.L243-.L47,.L244-.L47
 	.half	1
 	.byte	89
-	.word	.L240-.L42,.L241-.L42
+	.word	.L245-.L47,.L246-.L47
 	.half	1
 	.byte	89
-	.word	.L242-.L42,.L243-.L42
+	.word	.L247-.L47,.L248-.L47
 	.half	1
 	.byte	89
 	.word	0,0
-.L41:
-	.word	-1,.L42,0,.L190-.L42
+.L46:
+	.word	-1,.L47,0,.L195-.L47
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L191:
-	.word	-1,.L42,0,.L234-.L42
+.L196:
+	.word	-1,.L47,0,.L239-.L47
 	.half	1
 	.byte	84
-	.word	.L235-.L42,.L236-.L42
+	.word	.L240-.L47,.L241-.L47
 	.half	1
 	.byte	88
-	.word	.L234-.L42,.L237-.L42
+	.word	.L239-.L47,.L242-.L47
 	.half	1
 	.byte	88
-	.word	.L238-.L42,.L239-.L42
+	.word	.L243-.L47,.L244-.L47
 	.half	1
 	.byte	88
-	.word	.L240-.L42,.L241-.L42
+	.word	.L245-.L47,.L246-.L47
 	.half	1
 	.byte	88
-	.word	.L242-.L42,.L243-.L42
+	.word	.L247-.L47,.L248-.L47
 	.half	1
 	.byte	88
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('balance_gyro_pd_init')
 	.sect	'.debug_loc'
-.L43:
-	.word	-1,.L44,0,.L195-.L44
+.L48:
+	.word	-1,.L49,0,.L200-.L49
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('balance_gyro_weizhi_PD')
 	.sect	'.debug_loc'
-.L199:
+.L204:
 	.word	0,0
-.L198:
-	.word	-1,.L34,0,.L211-.L34
+.L203:
+	.word	-1,.L39,0,.L216-.L39
 	.half	1
 	.byte	85
-	.word	.L213-.L34,.L214-.L34
+	.word	.L218-.L39,.L219-.L39
 	.half	1
 	.byte	89
-	.word	.L215-.L34,.L216-.L34
+	.word	.L220-.L39,.L221-.L39
 	.half	1
 	.byte	89
-	.word	.L217-.L34,.L218-.L34
+	.word	.L222-.L39,.L223-.L39
 	.half	1
 	.byte	89
-	.word	.L219-.L34,.L220-.L34
+	.word	.L224-.L39,.L225-.L39
 	.half	1
 	.byte	89
 	.word	0,0
-.L33:
-	.word	-1,.L34,0,.L196-.L34
+.L38:
+	.word	-1,.L39,0,.L201-.L39
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L197:
-	.word	-1,.L34,0,.L212-.L34
+.L202:
+	.word	-1,.L39,0,.L217-.L39
 	.half	1
 	.byte	84
-	.word	.L213-.L34,.L214-.L34
+	.word	.L218-.L39,.L219-.L39
 	.half	1
 	.byte	88
-	.word	.L215-.L34,.L216-.L34
+	.word	.L220-.L39,.L221-.L39
 	.half	1
 	.byte	88
-	.word	.L217-.L34,.L218-.L34
+	.word	.L222-.L39,.L223-.L39
 	.half	1
 	.byte	88
-	.word	.L219-.L34,.L220-.L34
+	.word	.L224-.L39,.L225-.L39
 	.half	1
 	.byte	88
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('balance_gyro_weizhi_pd_init')
 	.sect	'.debug_loc'
-.L35:
-	.word	-1,.L36,0,.L200-.L36
+.L40:
+	.word	-1,.L41,0,.L205-.L41
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('balance_location_PID')
 	.sect	'.debug_loc'
-.L177:
-	.word	-1,.L22,.L207-.L22,.L172-.L22
+.L182:
+	.word	-1,.L27,.L212-.L27,.L177-.L27
 	.half	5
 	.byte	144,32,157,32,0
 	.word	0,0
-.L175:
+.L180:
 	.word	0,0
-.L176:
+.L181:
 	.word	0,0
-.L21:
-	.word	-1,.L22,0,.L172-.L22
+.L26:
+	.word	-1,.L27,0,.L177-.L27
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L173:
-	.word	-1,.L22,0,.L172-.L22
+.L178:
+	.word	-1,.L27,0,.L177-.L27
 	.half	1
 	.byte	84
 	.word	0,0
-.L174:
-	.word	-1,.L22,.L208-.L22,.L172-.L22
+.L179:
+	.word	-1,.L27,.L213-.L27,.L177-.L27
 	.half	1
 	.byte	82
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('balance_location_pid_init')
 	.sect	'.debug_loc'
-.L23:
-	.word	-1,.L24,0,.L178-.L24
+.L28:
+	.word	-1,.L29,0,.L183-.L29
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('balance_rollangle_PI')
 	.sect	'.debug_loc'
-.L45:
-	.word	-1,.L46,0,.L201-.L46
+.L50:
+	.word	-1,.L51,0,.L206-.L51
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L203:
-	.word	-1,.L46,0,.L201-.L46
+.L208:
+	.word	-1,.L51,0,.L206-.L51
 	.half	1
 	.byte	85
 	.word	0,0
-.L202:
-	.word	-1,.L46,0,.L201-.L46
+.L207:
+	.word	-1,.L51,0,.L206-.L51
 	.half	1
 	.byte	84
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('balance_rollangle_pi_init')
 	.sect	'.debug_loc'
-.L47:
-	.word	-1,.L48,0,.L204-.L48
+.L52:
+	.word	-1,.L53,0,.L209-.L53
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('balance_velocity_PID')
 	.sect	'.debug_loc'
-.L25:
-	.word	-1,.L26,0,.L179-.L26
+.L30:
+	.word	-1,.L31,0,.L184-.L31
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L180:
-	.word	-1,.L26,0,.L179-.L26
+.L185:
+	.word	-1,.L31,0,.L184-.L31
 	.half	1
 	.byte	84
 	.word	0,0
-.L181:
-	.word	-1,.L26,0,.L179-.L26
+.L186:
+	.word	-1,.L31,0,.L184-.L31
 	.half	1
 	.byte	85
 	.word	0,0
-.L182:
-	.word	-1,.L26,.L209-.L26,.L179-.L26
+.L187:
+	.word	-1,.L31,.L214-.L31,.L184-.L31
 	.half	1
 	.byte	82
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('balance_velocity_pid_init')
 	.sect	'.debug_loc'
-.L27:
-	.word	-1,.L28,0,.L183-.L28
+.L32:
+	.word	-1,.L33,0,.L188-.L33
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_frame',debug
 	.sect	'.debug_frame'
-.L670:
+.L688:
 	.word	48
 	.word	-1
 	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
@@ -23552,68 +23629,68 @@ balance_rollangle_pi:	.type	object
 	.sdecl	'.debug_frame',debug,cluster('balance_location_PID')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L670,.L22,.L172-.L22
+	.word	.L688,.L27,.L177-.L27
 	.byte	8,19,8,20,8,21,8,22,8,23,0,0
 	.sdecl	'.debug_frame',debug,cluster('balance_location_pid_init')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L670,.L24,.L178-.L24
+	.word	.L688,.L29,.L183-.L29
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('balance_velocity_PID')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L670,.L26,.L179-.L26
+	.word	.L688,.L31,.L184-.L31
 	.byte	8,19,8,20,8,21,8,22,8,23,0,0
 	.sdecl	'.debug_frame',debug,cluster('balance_velocity_pid_init')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L670,.L28,.L183-.L28
+	.word	.L688,.L33,.L188-.L33
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('balance_angle_P')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L670,.L30,.L184-.L30
+	.word	.L688,.L35,.L189-.L35
 	.byte	8,19,8,20,8,21,8,22,8,23,0,0
 	.sdecl	'.debug_frame',debug,cluster('balance_angle_p_init')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L670,.L32,.L189-.L32
+	.word	.L688,.L37,.L194-.L37
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('balance_gyro_weizhi_PD')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L670,.L34,.L196-.L34
+	.word	.L688,.L39,.L201-.L39
 	.sdecl	'.debug_frame',debug,cluster('balance_gyro_weizhi_pd_init')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L670,.L36,.L200-.L36
+	.word	.L688,.L41,.L205-.L41
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('balance_encoder_PD')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L670,.L38,.L167-.L38
+	.word	.L688,.L43,.L172-.L43
 	.sdecl	'.debug_frame',debug,cluster('balance_encoder_pd_init')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L670,.L40,.L171-.L40
+	.word	.L688,.L45,.L176-.L45
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('balance_gyro_PD')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L670,.L42,.L190-.L42
+	.word	.L688,.L47,.L195-.L47
 	.sdecl	'.debug_frame',debug,cluster('balance_gyro_pd_init')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L670,.L44,.L195-.L44
+	.word	.L688,.L49,.L200-.L49
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('balance_rollangle_PI')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L670,.L46,.L201-.L46
+	.word	.L688,.L51,.L206-.L51
 	.byte	8,19,8,20,8,21,8,22,8,23,0,0
 	.sdecl	'.debug_frame',debug,cluster('balance_rollangle_pi_init')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L670,.L48,.L204-.L48
+	.word	.L688,.L53,.L209-.L53
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	; Module end

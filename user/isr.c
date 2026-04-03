@@ -88,41 +88,57 @@ IFX_INTERRUPT(cc61_pit_ch1_isr, 0, CCU6_1_CH1_ISR_PRIORITY)
     if(balance_encoder_pid_cnt == 20)
     {
         momentumwheel_encoder_forward = motor_value.receive_left_speed_data;
-
         momentumwheel_encoder_after   = motor_value.receive_right_speed_data;
-
-
 
         momentumwheel_encoder_mid = (momentumwheel_encoder_forward - momentumwheel_encoder_after)/2.0;
 
-        Encoder_pre *= 0.7;                                                       //===一阶低通滤波器
-        Encoder_pre += momentumwheel_encoder_mid * 0.3;                           //===一阶低通滤波器
+        // =========================================================
+        // 【修复 1】阻断落地冲击波
+        // 在起跳、腾空、落地的剧烈阶段（1~4），强行清零滤波速度。
+        // 防止落地的机械震动作为“残余速度”遗留到常态控制中。
+        // =========================================================
+        if (hengduan_flag >= 1 && hengduan_flag <= 4) {
+            Encoder_pre = 0; 
+        } else {
+            Encoder_pre *= 0.7;                                                      
+            Encoder_pre += momentumwheel_encoder_mid * 0.3;                          
+        }
 
         momentumwheel_encoder_chasu = (float) (momentumwheel_encoder_after + momentumwheel_encoder_forward);
 
 
-        if(mode_stop)
+        // =========================================================
+        // 【修复 2】精准限定“失忆”范围，放过阶段 5
+        // =========================================================
+        if (hengduan_flag >= 1 && hengduan_flag <= 4) 
         {
-            Exceptspeed=0;
+            Exceptspeed = 0; 
+            balance_encoder_pd.i_integral = 0.0f; // 核心：空中的位置偏差清零
+            balance_encoder_pd.last_error = 0.0f; // 核心：清空速度偏差的D项(微分)，防止落地瞬间猛烈反抽
+        }
+        else 
+        {
+            // 【关键】当 hengduan_flag 为 0(常态) 或 5(落地冷却站立期) 时
+            // 必须执行正常的期望速度赋值，并让积分重新累计，否则无法锁死位置！
+            if(mode_stop)
+            {
+                Exceptspeed = 0;
+            }
+            else if(mode_stright)
+            {
+                Exceptspeed = 150;
+            }
+            else if(mode_back)
+            {
+                Exceptspeed = -150;
+            }
         }
 
-        if(mode_stright)
-        {
-            Exceptspeed=150;
-        }
-
-        if(mode_back)
-        {
-            Exceptspeed=-150;
-        }
-
-
-        balance_encoder_PD(Encoder_pre,Exceptspeed);
-
-
+        balance_encoder_PD(Encoder_pre, Exceptspeed);
 
         balance_encoder_pid_cnt = 0;
     }
+//****************************************************//
 //****************************************************//
 //****************************************************//
 //****************************************************//
