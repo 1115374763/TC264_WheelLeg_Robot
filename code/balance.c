@@ -327,17 +327,30 @@ void balance_gyro_pd_init(void)
 
 
 /*-------------------------------------------------------------------------------------------------------------------
-  @brief    roll轴补偿环
-  @note     增量式
+  @brief     roll轴补偿环
+  @note      (实际为PD位置式)
 -------------------------------------------------------------------------------------------------------------------*/
-float balance_rollangle_PI(float roll,float expectroll)           //roll轴补偿环 增量式
+float balance_rollangle_PI(float roll,float expectroll)           
 {
-    float compensate_roll;
     balance_rollangle_pi.error = expectroll - roll;
 
+    // =========================================================
+    // 【修复横向震荡】高重心下铜柱发生微震，说明 D 项太敏感了
+    // =========================================================
+    float run_kp = balance_rollangle_pi.kp;
+    float run_kd = balance_rollangle_pi.kd;
 
+    if (SingleBridge_mode == 1) 
+    {
+        // 进一步降低 P（刚性），让车身允许有一丁点的柔和余量
+        run_kp = balance_rollangle_pi.kp * 0.5f; 
+        
+        // 【核心修复】之前的 2.5f 放大了铜柱的弹性震荡！
+        // 降回 1.2f（只保留微弱的额外阻尼即可，甚至可以改成 1.0f）
+        run_kd = balance_rollangle_pi.kd * 1.2f; 
+    }
 
-    Total_roll = balance_rollangle_pi.kp * (balance_rollangle_pi.error) + balance_rollangle_pi.kd * (balance_rollangle_pi.error - balance_rollangle_pi.last_error);
+    Total_roll = run_kp * (balance_rollangle_pi.error) + run_kd * (balance_rollangle_pi.error - balance_rollangle_pi.last_error);
 
     balance_rollangle_pi.next_error = balance_rollangle_pi.last_error;
     balance_rollangle_pi.last_error = balance_rollangle_pi.error;

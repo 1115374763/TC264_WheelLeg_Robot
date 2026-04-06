@@ -220,7 +220,7 @@ void inverseKinematics()
         // 2. 【强化劈叉】既然主板水平放置，必须让腿部彻底吸收高度差！
         // 既然陀螺仪和主板平行，目标 Roll 必须设为绝对水平(0.0)
         // 将补偿倍数大幅提高到 2.2 倍 (如果上桥时那边腿缩得还是不够短，可以直接加大到 2.5)
-        Ex_roll = balance_rollangle_PI(QEKF_INS.Roll, 0.0f) * 2.2f; 
+        Ex_roll = balance_rollangle_PI(QEKF_INS.Roll, 0.0f) * 3.5f; 
         
         // 3. 【高度拔升】用绝对的高度优势来防止前膝盖磕碰到桥边缘
         // 平地是 51，我们直接拉高到 90，给底盘和膝盖留出巨大的避障空间

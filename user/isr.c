@@ -107,10 +107,7 @@ IFX_INTERRUPT(cc61_pit_ch1_isr, 0, CCU6_1_CH1_ISR_PRIORITY)
         momentumwheel_encoder_chasu = (float) (momentumwheel_encoder_after + momentumwheel_encoder_forward);
 
 
-        // =========================================================
-        // 【修复 2】精准限定“失忆”范围，放过阶段 5
-        // =========================================================
-        if (hengduan_flag >= 1 && hengduan_flag <= 4) 
+  if (hengduan_flag >= 1 && hengduan_flag <= 4) 
         {
             Exceptspeed = 0; 
             balance_encoder_pd.i_integral = 0.0f; // 核心：空中的位置偏差清零
@@ -118,23 +115,30 @@ IFX_INTERRUPT(cc61_pit_ch1_isr, 0, CCU6_1_CH1_ISR_PRIORITY)
         }
         else 
         {
-            // 【关键】当 hengduan_flag 为 0(常态) 或 5(落地冷却站立期) 时
-            // 必须执行正常的期望速度赋值，并让积分重新累计，否则无法锁死位置！
+            // 引入一个目标速度缓存变量
+            float target_speed = 0.0f;
+            
             if(mode_stop)
             {
-                Exceptspeed = 0;
+                target_speed = 0.0f;
             }
             else if(mode_stright)
             {
-                Exceptspeed = 150;
+                target_speed = 200.0f;
             }
             else if(mode_back)
             {
-                Exceptspeed = -150;
+                target_speed = -200.0f;
             }
+
+            // 【核心平滑逻辑】电子刹车缓冲
+            // 每次只逼近目标速度的 15%，而不是瞬间变成 0。
+            // 这样松开摇杆时，车子会有一个约 0.2 秒的极速软刹车过程，彻底消除纵向震波！
+            // 如果觉得刹车还是有点猛，就把 0.15f 改成 0.1f 或更小。
+            Exceptspeed = Exceptspeed + (target_speed - Exceptspeed) * 0.15f;
         }
 
-        balance_encoder_PD(Encoder_pre, Exceptspeed);
+        balance_encoder_PD(Encoder_pre, Exceptspeed);  
 
         balance_encoder_pid_cnt = 0;
     }
