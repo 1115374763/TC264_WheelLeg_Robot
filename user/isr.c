@@ -205,9 +205,19 @@ IFX_INTERRUPT(cc61_pit_ch1_isr, 0, CCU6_1_CH1_ISR_PRIORITY)
              balance_gyro_weizhi_PD(QEKF_INS.Gyro[1],angle_banlance_error);//调直立环硬度
              balance_gyro_pd_cnt = 0;
          }
-         if(balance_angle_p_cnt == 4)
+        if(balance_angle_p_cnt == 4)
          {
-             angle_banlance_error = balance_angle_P(QEKF_INS.Pitch,Balance_Target_Angle);//Expectroll_T
+             float current_target_angle = Balance_Target_Angle; 
+             
+             if (SingleBridge_mode == 1) 
+             {
+                 // 【修复1】恢复水平基准！绝不能加 12 这么大的角度，主板必须平行地面
+                 // 如果抬高腿导致重心微小变化，最多给个 +0.5 或 -0.5 的微调，0.0 是最平的。
+                 current_target_angle = Balance_Target_Angle + 0.0f; 
+             }
+             
+             angle_banlance_error = balance_angle_P(QEKF_INS.Pitch, current_target_angle);
+             
              balance_angle_p_cnt = 0;
          }
 

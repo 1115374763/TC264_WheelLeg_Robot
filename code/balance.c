@@ -164,7 +164,6 @@ void balance_velocity_pid_init(void)
 -------------------------------------------------------------------------------------------------------------------*/
 float balance_angle_P(float realangle,float Expectangle)      //角度环
 {
-    float k = 0.0;
     float angle_banlance_error;
     balance_angle_p.error = realangle - Expectangle ;
     balance_angle_p.i_integral += balance_angle_p.error;
@@ -172,25 +171,33 @@ float balance_angle_P(float realangle,float Expectangle)      //角度环
     if(balance_angle_p.i_integral <-100)      balance_angle_p.i_integral= -100; //限幅
     else if(balance_angle_p.i_integral > 100)  balance_angle_p.i_integral= 100 ; //限幅
 
+    // =========================================================
+    // 【修复稳定性】根据重心高度动态调度 PID 参数
+    // =========================================================
+    float run_kp = balance_angle_p.kp;
+    float run_kd = balance_angle_p.kd;
 
-    angle_banlance_error =  balance_angle_p.kp * balance_angle_p.error + balance_angle_p.ki*balance_angle_p.i_integral+balance_angle_p.kd*(balance_angle_p.error- balance_angle_p.last_error);
+    if (hengduan_flag != 0) 
+    {
+        // 跳跃和腾空时的硬度
+        run_kp = 30.0f;
+        run_kd = 15.0f;
+    }
+    else if (SingleBridge_mode == 1) 
+    {
+        // 单边桥模式：重心高达 80+，需要更小/更柔和的 P，以及更大的 D 来抑制震荡
+        // (注：这里的参数你可能需要微调，通常重心变高，P要稍微减小，D要增加)
+        run_kp = balance_angle_p.kp * 0.8f; // 在你调好的基础 P 上打 8 折
+        run_kd = balance_angle_p.kd * 1.2f; // 在你调好的基础 D 上增加 1.2 倍
+    }
+
+    // 使用动态计算出来的 run_kp 和 run_kd 进行运算
+    angle_banlance_error =  run_kp * balance_angle_p.error 
+                          + balance_angle_p.ki * balance_angle_p.i_integral
+                          + run_kd * (balance_angle_p.error - balance_angle_p.last_error);
+                          
     balance_angle_p.last_error = balance_angle_p.error;
 
-//     if(hengduan_flag!=0)
-//    {
-//         balance_angle_p.kp = 30;//50
-//         balance_angle_p.kd = 15;//0.01
-//    }
-//     else if(SingleBridge_mode==1)
-//     {
-//         balance_angle_p.kp = 40;//50
-//         balance_angle_p.kd = 25;//0.01
-//     }
-//     else{
-//         balance_angle_p.kp = 50;//50
-//         balance_angle_p.ki = 0;//
-//         balance_angle_p.kd = 30;//0.01
-//     }
     return angle_banlance_error;
 }
 

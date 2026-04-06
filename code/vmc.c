@@ -207,19 +207,27 @@ void inverseKinematics()
         if(IKParam.YRight > 175) IKParam.YRight = 175;
         else if(IKParam.YRight < 45) IKParam.YRight = 45;
     }
-    // =========================================================
+// =========================================================
     // 【常态与其他模式】只有不在跳跃时才执行，绝对互斥！
     // =========================================================
-else if (SingleBridge_mode == 1) // === 单边桥模式 ===
+    else if (SingleBridge_mode == 1) // === 单边桥模式 ===
     {
-        // 2. Roll轴姿态补偿 (建议将 -4.0 改为 0.0，除非陀螺仪安装偏了必须靠 -4.0 调平)
-        Ex_roll = balance_rollangle_PI(QEKF_INS.Roll, -1.0); 
+        // 1. 【核心恢复】X 轴基准恢复为平地状态！这是保证主板水平且不倒车的物理前提
+        // 绝对不能改成 0，否则物理重心不对必然倒车。
+        IKParam.XLeft  = o11 + 20.0f;  
+        IKParam.XRight = o11 + 20.0f;
         
-        // 计算目标高度 (基准高度抬升至 79)
-        float target_YLeft  = 79.0f - Ex_roll;
-        float target_YRight = 79.0f + Ex_roll;
+        // 2. 【强化劈叉】既然主板水平放置，必须让腿部彻底吸收高度差！
+        // 既然陀螺仪和主板平行，目标 Roll 必须设为绝对水平(0.0)
+        // 将补偿倍数大幅提高到 2.2 倍 (如果上桥时那边腿缩得还是不够短，可以直接加大到 2.5)
+        Ex_roll = balance_rollangle_PI(QEKF_INS.Roll, 0.0f) * 2.2f; 
+        
+        // 3. 【高度拔升】用绝对的高度优势来防止前膝盖磕碰到桥边缘
+        // 平地是 51，我们直接拉高到 90，给底盘和膝盖留出巨大的避障空间
+        float target_YLeft  = 90.0f - Ex_roll; 
+        float target_YRight = 90.0f + Ex_roll;
 
-        // 3. 丝滑过渡：一阶低通滤波，防止进桥瞬间腿长突变把车弹飞
+        // 4. 丝滑过渡：一阶低通滤波
         IKParam.YLeft  = IKParam.YLeft  + (target_YLeft  - IKParam.YLeft)  * 0.15f;
         IKParam.YRight = IKParam.YRight + (target_YRight - IKParam.YRight) * 0.15f;
 
