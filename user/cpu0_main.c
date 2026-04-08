@@ -2,6 +2,7 @@
 #include "zf_device_tld7002.h"
 #include "zf_device_dot_matrix_screen.h"
 #include "swj.h"
+#include "dht11.h"
 #pragma section all "cpu0_dsram"
 extern int single_mode;
 extern int hengduan_flag;
@@ -30,6 +31,11 @@ typedef struct {
 RC_State_t rc = {0};
 // **************************** 代码区域 ****************************
 int holderX = 0;
+// 增加全局变量保存温湿度
+uint8 env_temperature = 0;
+uint8 env_humidity = 0;
+uint16 dht11_timer_cnt = 0; // 计时器
+extern uint16 real_dht11_timer;
 int core0_main(void)
 {
     clock_init();
@@ -44,6 +50,11 @@ int core0_main(void)
     pit_ms_init(CCU61_CH1,1);
     uart_receiver_init();
     uart_init(UART_0, 115200, UART0_TX_P15_2, UART0_RX_P15_3);
+    if(DHT11_Init() == 0) {
+        printf("DHT11 Init Success!\r\n");
+    } else {
+        printf("DHT11 Init Failed! Check Wiring.\r\n");
+    }
     cpu_wait_event_ready();
 // 新增：用于解析 K230 数据帧的状态机变量
     uint8 recv_dat = 0;
@@ -70,7 +81,7 @@ int core0_main(void)
                             if(k230_fire_flag == 1) {
                                 printf(">>> ALERT: FIRE DETECTED! <<<\r\n");
                             } else {
-                                printf(">>> INFO: Safe (No Fire).\r\n");
+                                //printf(">>> INFO: Safe (No Fire).\r\n");
                             }
                         }
                         rx_state = 0;
@@ -78,6 +89,25 @@ int core0_main(void)
                         rx_state = 0;
                     }
                 }
+// ---------------------------------------------------------
+        // 2. 温湿度真实定时读取逻辑
+        // ---------------------------------------------------------
+        // 当真实时间超过 2000ms（2秒）时，读取一次
+        if (real_dht11_timer >= 2000) 
+        {
+            real_dht11_timer = 0; // 清零重新计时
+            
+            if(DHT11_Read_Data(&env_temperature, &env_humidity) == 0) 
+            {
+                // 读取成功，现在它终于可以实时更新了！
+                printf("Real-Time Temp: %d C, Humi: %d %%\r\n", env_temperature, env_humidity);
+            }
+            else
+            {
+                // 打印出校验失败的信息，方便你排查
+                printf("DHT11 Checksum Error or No Response.\r\n");
+            }
+        }
         // =========================================================
         // 独立按键启动逻辑
         // =========================================================

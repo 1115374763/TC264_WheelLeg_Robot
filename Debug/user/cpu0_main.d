@@ -374,3 +374,5 @@ cpu0_main.o :	"H:\\13333\\COMPETE DOUCMENT\\code\zf_device_dot_matrix_screen.h"
 "H:\\13333\\COMPETE DOUCMENT\\code\zf_device_dot_matrix_screen.h" :
 cpu0_main.o :	"H:\\13333\\COMPETE DOUCMENT\\code\swj.h"
 "H:\\13333\\COMPETE DOUCMENT\\code\swj.h" :
+cpu0_main.o :	"H:\\13333\\COMPETE DOUCMENT\\code\dht11.h"
+"H:\\13333\\COMPETE DOUCMENT\\code\dht11.h" :

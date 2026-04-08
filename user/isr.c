@@ -76,12 +76,12 @@ IFX_INTERRUPT(cc61_pit_ch0_isr, 0, CCU6_1_CH0_ISR_PRIORITY)
 
 int xxxx=0;
 
-
+uint16 real_dht11_timer = 0;
 IFX_INTERRUPT(cc61_pit_ch1_isr, 0, CCU6_1_CH1_ISR_PRIORITY)
 {
     interrupt_global_enable(0);                     // ¿ªÆôÖÐ¶ÏÇ¶Ì×
 
-
+    real_dht11_timer++;
     balance_encoder_pid_cnt++;
 
 //****************************************************//

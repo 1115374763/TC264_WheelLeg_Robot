@@ -192,6 +192,7 @@
 "code/QuaternionEKF.o"
 "code/balance.o"
 "code/camera.o"
+"code/dht11.o"
 "code/disply.o"
 "code/element.o"
 "code/image.o"

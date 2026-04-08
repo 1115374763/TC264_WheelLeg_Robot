@@ -9,6 +9,7 @@ C_SRCS += \
 "../code/QuaternionEKF.c" \
 "../code/balance.c" \
 "../code/camera.c" \
+"../code/dht11.c" \
 "../code/disply.c" \
 "../code/element.c" \
 "../code/image.c" \
@@ -31,6 +32,7 @@ COMPILED_SRCS += \
 "code/QuaternionEKF.src" \
 "code/balance.src" \
 "code/camera.src" \
+"code/dht11.src" \
 "code/disply.src" \
 "code/element.src" \
 "code/image.src" \
@@ -53,6 +55,7 @@ C_DEPS += \
 "./code/QuaternionEKF.d" \
 "./code/balance.d" \
 "./code/camera.d" \
+"./code/dht11.d" \
 "./code/disply.d" \
 "./code/element.d" \
 "./code/image.d" \
@@ -75,6 +78,7 @@ OBJS += \
 "code/QuaternionEKF.o" \
 "code/balance.o" \
 "code/camera.o" \
+"code/dht11.o" \
 "code/disply.o" \
 "code/element.o" \
 "code/image.o" \
@@ -112,6 +116,10 @@ OBJS += \
 "code/camera.src":"../code/camera.c" "code/subdir.mk"
 	cctc -cs --dep-file="$*.d" --misrac-version=2004 -D__CPU__=tc26xb "-fH:/13333/COMPETE DOUCMENT/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc26xb -Y0 -N0 -Z0 -o "$@" "$<"
 "code/camera.o":"code/camera.src" "code/subdir.mk"
+	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
+"code/dht11.src":"../code/dht11.c" "code/subdir.mk"
+	cctc -cs --dep-file="$*.d" --misrac-version=2004 -D__CPU__=tc26xb "-fH:/13333/COMPETE DOUCMENT/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc26xb -Y0 -N0 -Z0 -o "$@" "$<"
+"code/dht11.o":"code/dht11.src" "code/subdir.mk"
 	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
 "code/disply.src":"../code/disply.c" "code/subdir.mk"
 	cctc -cs --dep-file="$*.d" --misrac-version=2004 -D__CPU__=tc26xb "-fH:/13333/COMPETE DOUCMENT/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc26xb -Y0 -N0 -Z0 -o "$@" "$<"
@@ -177,7 +185,7 @@ OBJS += \
 clean: clean-code
 
 clean-code:
-	-$(RM) ./code/Attitude.d ./code/Attitude.o ./code/Attitude.src ./code/MenuElement.d ./code/MenuElement.o ./code/MenuElement.src ./code/QuaternionEKF.d ./code/QuaternionEKF.o ./code/QuaternionEKF.src ./code/balance.d ./code/balance.o ./code/balance.src ./code/camera.d ./code/camera.o ./code/camera.src ./code/disply.d ./code/disply.o ./code/disply.src ./code/element.d ./code/element.o ./code/element.src ./code/image.d ./code/image.o ./code/image.src ./code/image1.d ./code/image1.o ./code/image1.src ./code/kalman_filter.d ./code/kalman_filter.o ./code/kalman_filter.src ./code/matrix.d ./code/matrix.o ./code/matrix.src ./code/momentumwheel.d ./code/momentumwheel.o ./code/momentumwheel.src ./code/pid.d ./code/pid.o ./code/pid.src ./code/servo.d ./code/servo.o ./code/servo.src ./code/small_driver_uart_control.d ./code/small_driver_uart_control.o ./code/small_driver_uart_control.src ./code/swj.d ./code/swj.o ./code/swj.src ./code/vmc.d ./code/vmc.o ./code/vmc.src ./code/zf_device_dot_matrix_screen.d ./code/zf_device_dot_matrix_screen.o ./code/zf_device_dot_matrix_screen.src ./code/zf_device_lora3a22.d ./code/zf_device_lora3a22.o ./code/zf_device_lora3a22.src ./code/zf_device_tld7002.d ./code/zf_device_tld7002.o ./code/zf_device_tld7002.src
+	-$(RM) ./code/Attitude.d ./code/Attitude.o ./code/Attitude.src ./code/MenuElement.d ./code/MenuElement.o ./code/MenuElement.src ./code/QuaternionEKF.d ./code/QuaternionEKF.o ./code/QuaternionEKF.src ./code/balance.d ./code/balance.o ./code/balance.src ./code/camera.d ./code/camera.o ./code/camera.src ./code/dht11.d ./code/dht11.o ./code/dht11.src ./code/disply.d ./code/disply.o ./code/disply.src ./code/element.d ./code/element.o ./code/element.src ./code/image.d ./code/image.o ./code/image.src ./code/image1.d ./code/image1.o ./code/image1.src ./code/kalman_filter.d ./code/kalman_filter.o ./code/kalman_filter.src ./code/matrix.d ./code/matrix.o ./code/matrix.src ./code/momentumwheel.d ./code/momentumwheel.o ./code/momentumwheel.src ./code/pid.d ./code/pid.o ./code/pid.src ./code/servo.d ./code/servo.o ./code/servo.src ./code/small_driver_uart_control.d ./code/small_driver_uart_control.o ./code/small_driver_uart_control.src ./code/swj.d ./code/swj.o ./code/swj.src ./code/vmc.d ./code/vmc.o ./code/vmc.src ./code/zf_device_dot_matrix_screen.d ./code/zf_device_dot_matrix_screen.o ./code/zf_device_dot_matrix_screen.src ./code/zf_device_lora3a22.d ./code/zf_device_lora3a22.o ./code/zf_device_lora3a22.src ./code/zf_device_tld7002.d ./code/zf_device_tld7002.o ./code/zf_device_tld7002.src
 
 .PHONY: clean-code
 
