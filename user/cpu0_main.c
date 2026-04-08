@@ -15,6 +15,7 @@ int mode_stop,mode_stright,mode_back;
 #define RC_MID_VAL 1000
 // 定义全局方向误差变量
 float remote_dir_err = 0.0f;
+uint8 k230_fire_flag = 0; // 0代表无火，1代表有火
 typedef struct {
     uint8_t ch3_state;
     uint8_t ch5_state;
@@ -42,10 +43,38 @@ int core0_main(void)
     small_driver_uart_init();
     pit_ms_init(CCU61_CH1,1);
     uart_receiver_init();
+    uart_init(UART_1, 115200, UART1_TX_P15_0, UART1_RX_P15_1);
     cpu_wait_event_ready();
-
+// 新增：用于解析 K230 数据帧的状态机变量
+    uint8 recv_dat = 0;
+    static uint8 rx_state = 0;
+    static uint8 rx_data = 0;
     while (1)
     {
+
+        // =========================================================
+        // 【新增】读取 K230 串口数据逻辑 (非阻塞查询方式)
+        // 解析协议帧：0xA5 (帧头) -> 数据 (0x01或0x00) -> 0x5A (帧尾)
+        // =========================================================
+        while (uart_query_byte(UART_1, &recv_dat)) 
+        {
+            if (rx_state == 0 && recv_dat == 0xA5) {          // 收到帧头
+                rx_state = 1;
+            } else if (rx_state == 1) {                       // 收到数据段
+                rx_data = recv_dat;
+                rx_state = 2;
+            } else if (rx_state == 2) {                       // 收到帧尾
+                if (recv_dat == 0x5A) {
+                    k230_fire_flag = rx_data;                 // 帧校验成功，更新火源标志位
+                    
+                    // 【调试用】你可以解除下面这行的注释，在屏幕或串口查看是否收到了数据
+                    // printf("K230 Fire State: %d\r\n", k230_fire_flag);
+                }
+                rx_state = 0; // 无论成功与否，重置状态机，准备接收下一帧
+            } else {
+                rx_state = 0;
+            }
+        }
         // =========================================================
         // 独立按键启动逻辑
         // =========================================================
