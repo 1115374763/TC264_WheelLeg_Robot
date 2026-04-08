@@ -35,7 +35,7 @@ int core0_main(void)
     clock_init();
     debug_init();
     // 此处编写用户代码 例如外设初始化代码等
-    disply_init();
+    //disply_init();
     pid_all_init();
     imu660ra_init();
     Attitude_Init();
@@ -43,7 +43,7 @@ int core0_main(void)
     small_driver_uart_init();
     pit_ms_init(CCU61_CH1,1);
     uart_receiver_init();
-    uart_init(UART_1, 115200, UART1_TX_P15_0, UART1_RX_P15_1);
+    uart_init(UART_0, 115200, UART0_TX_P15_2, UART0_RX_P15_3);
     cpu_wait_event_ready();
 // 新增：用于解析 K230 数据帧的状态机变量
     uint8 recv_dat = 0;
@@ -53,28 +53,31 @@ int core0_main(void)
     {
 
         // =========================================================
-        // 【新增】读取 K230 串口数据逻辑 (非阻塞查询方式)
-        // 解析协议帧：0xA5 (帧头) -> 数据 (0x01或0x00) -> 0x5A (帧尾)
-        // =========================================================
-        while (uart_query_byte(UART_1, &recv_dat)) 
-        {
-            if (rx_state == 0 && recv_dat == 0xA5) {          // 收到帧头
-                rx_state = 1;
-            } else if (rx_state == 1) {                       // 收到数据段
-                rx_data = recv_dat;
-                rx_state = 2;
-            } else if (rx_state == 2) {                       // 收到帧尾
-                if (recv_dat == 0x5A) {
-                    k230_fire_flag = rx_data;                 // 帧校验成功，更新火源标志位
-                    
-                    // 【调试用】你可以解除下面这行的注释，在屏幕或串口查看是否收到了数据
-                    // printf("K230 Fire State: %d\r\n", k230_fire_flag);
+                // 【核心修改】从 UART_0 读取数据
+                // =========================================================
+                while (uart_query_byte(UART_0, &recv_dat))
+                {
+                    if (rx_state == 0 && recv_dat == 0xA5) {
+                        rx_state = 1;
+                    } else if (rx_state == 1) {
+                        rx_data = recv_dat;
+                        rx_state = 2;
+                    } else if (rx_state == 2) {
+                        if (recv_dat == 0x5A) {
+                            k230_fire_flag = rx_data;
+
+                            // 【调试必看】如果收到了，就在你的 Debug 串口打印出来
+                            if(k230_fire_flag == 1) {
+                                printf(">>> ALERT: FIRE DETECTED! <<<\r\n");
+                            } else {
+                                printf(">>> INFO: Safe (No Fire).\r\n");
+                            }
+                        }
+                        rx_state = 0;
+                    } else {
+                        rx_state = 0;
+                    }
                 }
-                rx_state = 0; // 无论成功与否，重置状态机，准备接收下一帧
-            } else {
-                rx_state = 0;
-            }
-        }
         // =========================================================
         // 独立按键启动逻辑
         // =========================================================
@@ -83,7 +86,7 @@ int core0_main(void)
             system_delay_ms(20);        // 软件消抖 (延时20ms，逐飞库自带此函数)
             if (gpio_get_level(P20_9) == 0) // 再次确认按键确实被按下了
             {
-                motor_enable = 1;       // 启动电机标志位置 1             
+                motor_enable = 1;       // 启动电机标志位置 1
                 while(gpio_get_level(P20_9) == 0); // 松手检测：死循环等待直到按键松开，防止一直触发
             }
         }
